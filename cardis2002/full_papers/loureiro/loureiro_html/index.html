@@ -1,0 +1,1204 @@
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+<link REL="STYLESHEET" href="CARDIS2002-final.css" CHARSET="ISO-8859-1" TYPE="text/css">
+
+
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 111-124 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+
+
+<center>
+<dt CLASS="Heading1">
+<b><font size=+3>Extending Tamper-Proof Hardware Security to Untrusted
+Execution Environments</font></b></dt></center>
+
+<div CLASS="Heading1">
+<center>Sergio Loureiro, Laurent Bussard, and Yves Roudier</center>
+</div>
+
+<div CLASS="Heading1">
+<center><i><a href="http://www.eurecom.fr">Institut Eurecom</a>, 2229 route
+des Cr&ecirc;tes, B.P. 193</i></center>
+</div>
+
+<div CLASS="Heading1">
+<center><i>06904 Sophia Antipolis, France</i></center>
+</div>
+
+<div CLASS="Heading1">
+<center><font face="Courier New,Courier">{loureiro, bussard, roudier}@eurecom.fr</font></center>
+
+<p><br></div>
+
+<div CLASS="Heading1">
+<center><b><font size=+2>Abstract</font></b></center>
+</div>
+
+<div CLASS="Heading1">This paper addresses mobile code protection with
+respect to potential integrity and confidentiality violations originating
+from the untrusted runtime environment where the code execution takes place.
+Both security properties are defined in a framework where code is modeled
+using Boolean circuits. Two protection schemes are presented. The first
+scheme addresses the protection of a function that is evaluated by an untrusted
+environment and yields an encrypted result only meaningful for the party
+providing the function. The second scheme addresses the protection of a piece of software executed by an untrusted environment.
+It enforces the secure execution of a series of functions while allowing
+interactions with the untrusted party. The latter technique relies on trusted
+tamper-proof hardware with limited capability. Executing a small part of
+the computations in the tamper-proof hardware extends its intrinsic security
+to the overall environment.</div>
+
+<h1 CLASS="Heading1">
+1 Introduction</h1>
+
+<div CLASS="Body">The mobile code paradigm is becoming increasingly praised
+for its flexibility in the management of remote computers and programmable
+devices. Unsurprisingly, more flexibility leads to new challenging security
+problems. Mobile code presents vulnerabilities unheard of in the traditional
+programming world. On one hand, attacks may be performed by mobile programs
+against a remote execution environment and its resources. On the other
+hand, a mobile code may be subverted by a malicious remote execution environment.
+The former issue has been widely addressed <a href="index.html#15909" CLASS="XRef">[25]</a>,
+for instance through containment mechanisms like the sandbox, the applet-firewall,
+etc., but few solutions deal with the latter.</div>
+
+<div CLASS="Body">&nbsp;
+<br>This paper extends our work on the protection of mobile code <a href="index.html#30057" CLASS="XRef">[23]</a>,
+<a href="index.html#49291" CLASS="XRef">[24]</a>.
+The problem addressed here is as follows: Alice (A) wants a piece of code
+to be executed on Bob's (B) workstation, the result of its execution being
+eventually returned to A. However, B cannot be trusted and might try to
+modify the execution of this program. In addition, in the context of mobile
+code, interacting with A during the program execution is not an option.
+In other words, the code sent by A must be executed autonomously by B who
+only provides additional input parameters. It is necessary to ensure that
+B cannot get information about the semantics of the code provided by A
+and that A can be assured, without performing the computation herself,
+that the execution has not been tampered with. This is different from volunteer
+computing scenarios <a href="index.html#57214" CLASS="XRef">[34]</a>such
+as Seti@home where data to treat is provided by A.</div>
+
+<div CLASS="Body">&nbsp;
+<br>In this model, "integrity of execution" means that B cannot alter the
+execution of the program and surreptitiously modify its results. "Confidentiality
+of execution", sometimes termed "privacy of computation" although it bears
+no relationship with anonymity, aims at preventing the disclosure of program
+semantics. Integrity and confidentiality are tightly entangled in our proposal
+because of the cryptographic protection scheme used. However, confidentiality
+and integrity are independent properties and thus will be evaluated separately
+in each solution.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The use of tamper-proof hardware (TPH) has long been the only solution
+for protecting the execution of critical programs from an untrusted party:
+the program is completely executed within the hardware that is trusted
+by the code owner. With the advent of mobile code, TPH has logically been
+advocated as the most obvious solution for protecting a program from its
+untrusted execution environment. <a href="index.html#88155" CLASS="XRef">[43]</a>
+is a good example of this hardware-only trend. However, existing solutions
+based on tamper-proof hardware suffer from inherent limitations ranging
+from the cost and difficulty of retrofitting tamper-proof and powerful
+cryptographic boards on everybody's workstations to the lack of computing
+power in smart cards.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Prompted by the limitation of TPH-based solutions, alternative approaches
+were brought up as application-specific solutions <a href="index.html#68760" CLASS="XRef">[10]</a>,
+solutions aimed at protecting specific classes of mathematical functions
+<a href="index.html#54204" CLASS="XRef">[33]</a>,
+<a href="index.html#21934" CLASS="XRef">[32]</a>,
+or even empirical and mathematically unfounded ones like obfuscation <a href="index.html#29154" CLASS="XRef">[16]</a>.
+Our proposal also takes into account the inherent limitations of tamper-proof
+hardware. Mathematical functions, which can be represented by Boolean circuits,
+are a building block for programs. Section 2 presents a scheme ensuring
+a secure non-interactive evaluation of such functions. To this end, the
+circuit implementing the function is encrypted using a technique inspired
+by the McEliece public key scheme <a href="index.html#44186" CLASS="XRef">[28]</a>.
+Based on this solution, Section 3 describes a scheme for the secure non-interactive
+evaluation of a piece of software consisting of the combination of several
+functions and of a control structure scheduling these functions. In this
+case, a Tamper-Proof Hardware acting on behalf of the party providing the
+mobile code is required. Executing a small part of the computations in
+the TPH extends the intrinsic security of the TPH to the overall environment.
+In Section 4, this solution is compared with similar approaches dealing
+with integrity or confidentiality of execution.</div>
+
+<h1 CLASS="Heading1">
+2 Protecting Functions</h1>
+
+<div CLASS="Body">As a first step towards integrity and confidentiality
+of execution, a solution for protecting mathematical functions is proposed.
+This solution is inspired by the work of Sander and Tschudin <a href="index.html#54204" CLASS="XRef">[33]</a>,
+<a href="index.html#21934" CLASS="XRef">[32]</a>,
+who devised a function hiding scheme for non-interactive protocols (see
+Section 4.1).</div>
+<img src="CARDIS2002-final-1.gif" USEMAP="#CARDIS2002-final-1" >
+<div CLASS="Body">&nbsp;
+<br>Figure 1 describes the main steps of the function protection process
+using this solution. Using EA, function f is encrypted by its originator
+A into a new function f'. The untrusted host B evaluates f' on the cleartext
+input x and gets y' as the encrypted result of this evaluation. Using the
+secret decryption algorithm DA, A can retrieve y that is the cleartext
+result of the original function f, based on the following property of the
+function hiding scheme: y = DA(y') = DA(f'(x)) = DA(EA(f(x))) = f(x). Moreover,
+an integrity verification algorithm VA is used by A to check the computation
+performed by B.</div>
+
+<h2 CLASS="Heading2">
+2.1 Computational Model</h2>
+
+<div CLASS="Body">This section defines the mechanisms required to ensure
+integrity and confidentiality of execution in an untrusted environment.
+Section 2.2 describes more precisely how those concepts are implemented
+in our approach.</div>
+
+<h3 CLASS="Heading3">
+General Overview</h3>
+
+<div CLASS="Body">Since fixed-length inputs and outputs are used, it is
+possible to deal with functions using a Boolean circuit representation.
+Let us represent the function f with a circuit called c (in the sequel
+of this paper, circuit and function are largely used as equivalents). The
+number of binary inputs (l) and outputs (k) will be defined according to
+the possible input and output values of the function. X is the unrestricted
+set of all possible inputs (e.g. {0,1}l ). Fl,k represent the family of
+Boolean circuits with l inputs and k outputs (<img src="CARDIS2002-final-2.gif" >
+). Circuit&nbsp;<img src="CARDIS2002-final-3.gif" > defines a relation
+between input&nbsp;<img src="CARDIS2002-final-4.gif" > and output&nbsp;<img src="CARDIS2002-final-5.gif" >
+,&nbsp;<img src="CARDIS2002-final-6.gif" > ,&nbsp;<img src="CARDIS2002-final-7.gif" >
+. The circuit c may also be seen as a set of k functions:&nbsp;<img src="CARDIS2002-final-8.gif" >
+. Each of these functions is defined by a Boolean equation. The corresponding
+k equations are the inputs to algorithm EA (Figure 2). The result is a
+set of n Boolean equations that define a new Boolean circuit&nbsp;<img src="CARDIS2002-final-9.gif" >
+. The circuit c' defined by A is evaluated by B who provides input data&nbsp;<img src="CARDIS2002-final-10.gif" >
+, but the encryption by EA prevents the disclosure of c to B. Look at Section
+2.2 for details on the encryption mechanism EA.</div>
+<img src="CARDIS2002-final-11.gif" USEMAP="#CARDIS2002-final-11" >
+<h3 CLASS="Heading3">
+Confidentiality of Execution</h3>
+
+<div CLASS="Body">The circuit c'=EA(c) preserves the confidentiality of
+c if it is computationally infeasible to derive c from c'. A decryption
+algorithm DA must be used in order to retrieve the desired cleartext result
+y=c(x) from the obtained ciphertext result y'=c'(x). A polynomial time
+decryption algorithm is necessary to remain realistic.</div>
+
+<h3 CLASS="Heading3">
+Integrity of Execution</h3>
+
+<div CLASS="Body">Alice receives a ciphertext result y' corresponding to
+the evaluation of the encrypted circuit c' with Bob's cleartext inputs.
+Alice should be able to retrieve from y' the cleartext result y corresponding
+to the evaluation of the circuit c using the same input. VA has to define
+a polynomial time verification of this result since for practical applications,
+the circuit owner must be able to efficiently verify the result of the
+circuit execution. The verifier concept is introduced to address the problem
+of integrity of execution. The verifier shares some similarities with CS
+Proofs <a href="index.html#27356" CLASS="XRef">[29]</a> in that
+there can exist invalid proofs but those should be hard to find. Basically,
+the verifier concept relies on the difficulty of finding valid values (y')
+that do not correspond to valid cleartext outputs (y). Using the terminology
+of <a href="index.html#57082" CLASS="XRef">[9]</a>, Alice's
+verifier VA checks that there exists an x such that y=c(x). It can be defined
+as follows:</div>
+
+<div CLASS="Body">&nbsp;
+<br>if&nbsp;<img src="CARDIS2002-final-12.gif" >&nbsp; then&nbsp;<img src="CARDIS2002-final-13.gif" ></div>
+
+<div CLASS="Body">&nbsp;
+<br>Even if the result is verified and cannot be forged randomly, a malicious
+remote host is able to identify possible outputs of a circuit for chosen
+inputs. Therefore, integrity of execution alone (i.e. without confidentiality
+of execution) does not prevent B from performing several executions of
+the circuit and selecting the best result. A scheme that ensures both integrity
+and confidentiality of execution is thus highly desirable.</div>
+
+<h2 CLASS="Heading2">
+2.2 Detailed Protection Scheme</h2>
+
+<div CLASS="Body">This section presents our solution to encrypt functions.
+A technique derived from the McEliece <a href="index.html#44186" CLASS="XRef">[28]</a>
+public key cryptosystem is used. Unlike the McEliece scheme that encrypts
+data, our approach encrypts functions. Moreover, this asymmetric scheme
+is used as a symmetric one by keeping both public and private keys secret.
+As a result, part of the attacks possible against the McEliece cryptosystem
+are not relevant in our scheme because attackers do not know the public
+key.</div>
+
+<h3 CLASS="Heading3">
+Circuit Encryption</h3>
+
+<div CLASS="Body">All Boolean equations of the original plaintext circuit
+c are encrypted using the McEliece technique
+<a href="index.html#44186" CLASS="XRef">[28]</a>
+where data are replaced by equations c' = EA(c) :</div>
+
+<div CLASS="Body"><img src="CARDIS2002-final-14.gif" >
+<br><img src="CARDIS2002-final-15.gif" ></div>
+
+<div CLASS="Body">Boolean equations yi = fi(x0..xl-1) are multiplied by
+the&nbsp;<img src="CARDIS2002-final-16.gif" > matrix SGP (for more details
+on Boolean circuit encryption, look at Figure 3). G is a generating matrix
+for a&nbsp;<img src="CARDIS2002-final-17.gif" > Goppa code C <a href="index.html#86576" CLASS="XRef">[27]</a>
+and t is the number of errors that the code is able to correct. P is a
+random&nbsp;<img src="CARDIS2002-final-18.gif" > permutation matrix. Because
+of the importance of hiding the systematic form of the code <a href="index.html#38363" CLASS="XRef">[13]</a>,
+an additional matrix S is used. S is a random dense&nbsp;<img src="CARDIS2002-final-19.gif" >
+non-singular matrix. S, G and P are kept secret by Alice. The SGP matrix
+multiplication leads to a linear composition of each cleartext Boolean
+equation of c. The difference with respect to the original McEliece scheme
+is that the result of the encryption is interpreted as Boolean equations
+defining the encrypted circuit.</div>
+<img src="CARDIS2002-final-20.gif" USEMAP="#CARDIS2002-final-20" >
+<div CLASS="Body">&nbsp;
+<br>In addition to the SGP multiplication, algorithm EA introduces errors
+in the circuit in order to detect integrity attacks and prevent confidentiality
+attacks as explained below. As error-correcting codes, Goppa codes allow
+to efficiently remove these errors at decoding time. Errors introduced
+by EA can be viewed as an error circuit that, given an l-bit argument,
+returns an n-bit string with a Hamming weight of t that is computationally
+indistinguishable from a random n-bit vector with the same weight. Such
+a function, called z, computationally indistinguishable from the set of
+functions satisfying the weight restriction exists. <a href="index.html#14664" CLASS="XRef">[31]</a>
+proposes an efficient construction for functions that output words of a
+given weight.</div>
+
+<h3 CLASS="Heading3">
+Encrypted Circuit Evaluation and Verification</h3>
+
+<div CLASS="Body">Once c' is created, the protocol between Alice and Bob
+is the following:</div>
+
+<ul>
+<li CLASS="Bulleted">
+Alice sends c' to Bob.</li>
+
+<li CLASS="Bulleted">
+Bob evaluates c' on his data</li>
+
+<br><img src="CARDIS2002-final-21.gif" > and gets the result&nbsp;<img src="CARDIS2002-final-22.gif" >
+. There is an increase in the number of Boolean outputs while the number
+of inputs is kept unchanged. The result&nbsp;<img src="CARDIS2002-final-23.gif" >
+is then sent to Alice.</ul>
+
+<ul>
+<li CLASS="Bulleted">
+Alice decrypts the result (algorithm DA). She first removes permutation
+P:</li>
+
+<br><img src="CARDIS2002-final-24.gif" > . Permuting individual error contributions
+does not change the Hamming weight of the vector and thus,&nbsp;<img src="CARDIS2002-final-25.gif" >
+. The vector z is a correctable error vector since it is defined as:&nbsp;<img src="CARDIS2002-final-26.gif" >
+exactly. The decoding algorithm for the code generated by G can correct
+an error with a weight of at most t, thus Alice is able to retrieve the
+cleartext result&nbsp;<img src="CARDIS2002-final-27.gif" > and the error
+vector z from zP-1.</ul>
+
+<ul>
+<li CLASS="Bulleted">
+Alice finally performs the integrity verification (algorithm VA): if</li>
+
+<br><img src="CARDIS2002-final-28.gif" > , the output is accepted, tampering
+with the evaluation of c' is assumed otherwise. For integrity verification,
+the error weight is fixed. The maximum error weight that can be corrected
+using Goppa codes is t.</ul>
+
+<h2 CLASS="Heading2">
+2.3 Scheme evaluation</h2>
+
+<h3 CLASS="Heading3">
+Confidentiality of Execution</h3>
+
+<div CLASS="Body">Confidentiality of execution relies on the hardness of
+retrieving the equations of the circuit c after their multiplication with
+matrix SGP and after adding the error z. First of all, an enumeration attack
+to recover the circuit c directly from c' is unfeasible using the code
+size proposed by McEliece ( [n=1024, k=524, t=50] ). Moreover this attacker
+requires the public key that is not even available to him here.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Retrieving the error circuit z from circuit&nbsp;<img src="CARDIS2002-final-29.gif" >
+is another possible attack. It is equivalent to trying to retrieving a
+subspace from a set of codewords with errors. In another context, this
+problem was termed Decision Rank Reduction <a href="index.html#20898" CLASS="XRef">[38]</a>
+and was proven to be NP-complete. In order to avoid this attack our solution
+is based on errors with a Hamming weight equal to the maximum correction
+capability of the code.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Nonetheless, transformation EA does not hide everything about circuit
+c. Bob can identify inputs&nbsp;<img src="CARDIS2002-final-30.gif" > that
+have the same cleartext output&nbsp;<img src="CARDIS2002-final-31.gif" >
+because the distance&nbsp;<img src="CARDIS2002-final-32.gif" > between
+the ciphertext values will be small so that errors remain correctable.
+In that case,&nbsp;<img src="CARDIS2002-final-33.gif" > =&nbsp;<img src="CARDIS2002-final-34.gif" ><img src="CARDIS2002-final-35.gif" >
+(mod 2). An attacker would be able to recognize such values because the
+Hamming weight of their sum is at most equal to 2t even though he does
+not know the result cleartext value yi. Differential cryptanalyse exploiting
+the fact that the error circuit z does not completely hide the linearity
+of the transformation were described in <a href="index.html#38363" CLASS="XRef">[13]</a>
+and <a href="index.html#70587" CLASS="XRef">[7]</a>. These attacks
+only apply when the public key is available but this one is kept secret
+in our scheme. Moreover, the identification of ciphertexts corresponding
+to the same cleartext can be suppressed <a href="index.html#44311" CLASS="XRef">[35]</a>
+but implies an increase in the computational complexity of the encryption,
+decryption, and verification algorithms.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The majority voting attack described in <a href="index.html#76376" CLASS="XRef">[30]</a>,
+<a href="index.html#14004" CLASS="XRef">[39]</a>
+exploits the non-deterministic nature of the cryptosystem to recover the
+secret code. The probability of success of this attack depends on getting
+a high number of different ciphertexts for each plaintext. This is not
+possible in our scheme that keeps secret the public key.</div>
+
+<h3 CLASS="Heading3">
+Integrity of execution</h3>
+
+<div CLASS="Body">Let us establish the probability that the verifier accept
+an invalid y'. The set of acceptable cleartext outputs is&nbsp;<img src="CARDIS2002-final-36.gif" >
+. Due to the definition of the error function, it is assumed that it is
+hard to establish any link between the inputs to the error function and
+the error patterns. Thus, picking a random encrypted output value&nbsp;<img src="CARDIS2002-final-37.gif" >has
+a probability&nbsp;<img src="CARDIS2002-final-38.gif" > of being accepted.
+A's result y can only be valid if its value is an element of&nbsp;<img src="CARDIS2002-final-39.gif" >
+. The probability of a successful attack can be calculated as "the probability
+of choosing an y existing in Y" times "the probability of generating a
+correct error weight". Generating a correct error means finding a t bit
+vector chosen at random among n bits. The worst case (<img src="CARDIS2002-final-40.gif" >
+) leads to a probability of a successful attack of:&nbsp;<img src="CARDIS2002-final-41.gif" >
+. For a Goppa code [n=1024, k=524, t=101], the probability of a successful
+attack is:&nbsp;<img src="CARDIS2002-final-42.gif" ></div>
+<img src="CARDIS2002-final-43.gif" USEMAP="#CARDIS2002-final-43" >
+<h3 CLASS="Heading3">
+Circuit Size Evaluation</h3>
+
+<div CLASS="Body">The circuit c' being evaluated by a remote host, it is
+important to minimize the impact of encryption on the circuit size, measured
+by its number of logical gates. Expansion rate cannot be calculated because
+it is specific to the structure of the original circuit. However, it is
+possible to study the worst case. The encrypted function can be implemented
+by a modular circuit c' as shown in Figure 4.</div>
+
+<div CLASS="Body">&nbsp;
+<br>In practice, the encrypted function is implemented by a circuit based
+on simplified equations, the size of this circuit being necessarily smaller
+than that of the equivalent modular circuit shown in Figure 4. The circuit
+based on simplified equations offers the same functionality as the three
+different modules of Figure 4. Integrity and confidentiality properties
+of the protection scheme do not allow an attacker to retrieve the modular
+circuit from the equations. The size of the actual encrypted circuit is
+smaller than the sum of the sizes of the three modules:</div>
+
+<div CLASS="Body">&nbsp;
+<br>Sizec'&nbsp;<img src="CARDIS2002-final-44.gif" > SizeSGP + Sizez +
+SizeXOR + Sizec</div>
+
+<div CLASS="Body">&nbsp;
+<br>The matrix SGP multiplication transforms the k cleartext circuit outputs
+yi into n encoded outputs that are noted ySGP,j : for instance, ySGP,0
+= 1.y1 + (0.y2) + 1.y3 + (0.y4)+ 1.y5 , and so on. For a given fixed number
+of inputs and outputs, the size of the SGP-encoding circuit (SizeSGP) is
+fixed (proportional to&nbsp;<img src="CARDIS2002-final-46.gif" > ) and
+the size of the error circuit (Sizez) can be chosen. Both are independent
+of the original circuit size (Sizec) and thus Sizec'&nbsp;<img src="CARDIS2002-final-47.gif" >
+Sizec +&nbsp;<img src="CARDIS2002-final-48.gif" > . When the circuit is
+simple (e.g. y = NOT(x) or y=2x), then Sizec &lt;&lt;&nbsp;<img src="CARDIS2002-final-49.gif" >
+and encrypting a circuit increases significantly the circuit size. However,
+when the circuit is large compared with the sizes of equivalent circuits
+for SGP multiplication and error, then Sizec >&nbsp;<img src="CARDIS2002-final-50.gif" >
+and encrypting the circuit has a negligible effect on the circuit size
+increase: Sizec'&nbsp;<img src="CARDIS2002-final-51.gif" > Sizec (the size
+of the XOR function being negligible).</div>
+
+<h1 CLASS="Heading1">
+3 Protecting Functions within a Program</h1>
+<img src="CARDIS2002-final-52.gif" USEMAP="#CARDIS2002-final-52" >
+<div CLASS="Body">&nbsp;
+<br>As explained in the previous section, function protection only allows
+the execution of one function while a program has to perform several functions
+in sequence. A na&iuml;ve approach is to represent a program as a single
+Boolean circuit and protect this one using the function protection scheme
+described above. Unfortunately, this approach, which requires huge circuits,
+is totally unrealistic.</div>
+
+<div CLASS="Body">&nbsp;
+<br>We propose a solution to the problem of software protection that consists
+in delegating the verification and decryption tasks (originally performed
+by the circuit owner A) to a trusted tamper-proof hardware (TPH) located
+at the untrusted site (a preliminary proposal was described in <a href="index.html#61917" CLASS="XRef">[26]</a>).
+This TPH must be directly accessible by the untrusted host in order to
+suppress all interactions with the code owner (A) when the software is
+executed. The suggested solution assures the security of the circuits executed
+on an untrusted runtime environment. It also makes it possible to securely
+perform multi-step evaluation of functions. Additionally, this scheme enables
+a program to deliver a cleartext result to the untrusted host without having
+to contact the code owner.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Assuming a wide deployment of mobile codes makes it unlikely that expensive
+tamper-proof hardware be used: this implies that the TPH will be limited
+in terms of storage and computational capacity. Even though our solution
+for multi-step execution is based on the protection technique described
+in the Section 2, it has to be adapted to cope with the computation power
+limitations imposed by the TPH (look at Section 3.2). The use of a TPH
+has already been suggested for delegating the functionality of a trusted
+party in specific contexts as can be seen in host-assisted secret key <a href="index.html#96337" CLASS="XRef">[8]</a>
+or public key <a href="index.html#45784" CLASS="XRef">[17]</a>
+cryptography applications. <a href="index.html#21913" CLASS="XRef">[6]</a>
+proposes to separate a program into several pieces but does not deal with
+encrypted functions.</div>
+
+<h2 CLASS="Heading2">
+3.1 Computational Model</h2>
+
+<div CLASS="Body">A program can be modeled as a set of functions plus a
+control structure, which defines the sequencing of functions. As in the
+previous section, functions are implemented with circuits. The computation
+of each individual circuit ci depends on a set of inputs x received from
+the host and from the memory of the TPH. As before, the protection of each
+circuit from the untrusted environment where it is evaluated is achieved
+through its encryption. The control structure is uploaded to the tamper-proof
+hardware to protect it. Based on this control structure, the TPH instructs
+the untrusted environment to execute one of the encrypted circuits ci'.
+For each output of circuit ci', the TPH is able to verify the integrity
+of the result and to retrieve the cleartext result y in an efficient way.
+Each circuit ci is encoded with a new algorithm E'A.</div>
+
+<div CLASS="Body">&nbsp;
+<br>A state of the computation can be maintained in the trusted TPH, in
+other words memory attacks need not be taken in consideration. It is mandatory
+that B receives a TPH trusted by A, which is not a very restrictive hypothesis.
+For instance, A could be a bank or an operator that provides a smart card
+to its client B, just like they already provide credit cards and SIM cards.
+A verification and decryption algorithm must be installed on the TPH via
+a secure channel, either before the TPH is distributed to clients or transmitted
+in encrypted form using a secret shared by A and her TPH.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Once the encrypted circuits (c'1 ... c'm) are installed (Figure 5)
+on host B, the TPH is in charge of choosing which function has to be evaluated
+and of providing a part of the inputs (xTPH), the other part being provided
+by B (xB). After each step (i.e. each encrypted function evaluation), the
+TPH deciphers and verifies the returned result (Figure 6). Note that a
+given function can be evaluated more than once with different inputs. When
+the TPH chooses the next encrypted function to execute (ci+n), it provides
+input data (xTPH, i+n). Those data are stored on the TPH.
+<p><img src="CARDIS2002-final-53.gif" USEMAP="#CARDIS2002-final-53" ></div>
+
+<h2 CLASS="Heading2">
+3.2 Protection Scheme</h2>
+
+<div CLASS="Body">The algorithms devised in the protection scheme of Section
+2 have to be adapted to the new scenario in which the TPH has less computational
+power than the party that it represents. The algorithm used for function
+encryption remains the same since this operation is performed by the code
+owner, but the error computation is modified in order to simplify the verification
+performed by the TPH. The new verification and decryption algorithms are
+respectively called VTPH and DTPH. In order to simplify the verification
+and decryption, xB is transmitted to the TPH.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The integrity of execution relies on the difficulty of creating forged
+pairs&nbsp;<img src="CARDIS2002-final-54.gif" > that pass the verification
+process (xTPH being known). Using the same terminology as in the previous
+section, this probability can be defined as follows:</div>
+
+<div CLASS="Body">&nbsp;
+<br>if&nbsp;<img src="CARDIS2002-final-55.gif" > then&nbsp;<img src="CARDIS2002-final-56.gif" ></div>
+
+<p><br>x being (xTPH | xB)
+<h3 CLASS="Heading3">
+Error Circuit</h3>
+
+<div CLASS="Body">As in the classical McEliece scheme, the function protection
+scheme of Section 2 introduced at most (and in our case, exactly) t errors
+into the encoded circuit: this represents the maximum number of correctable
+errors using the capacity of the code, since in the scheme, A did not know
+B's input x. This value is now retrieved on the TPH that also possesses
+the error circuit z(x) and can entirely suppress the error without restraining
+to a specific correction capacity. It is thus possible to introduce much
+more weighted errors into the encrypted circuit.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The security parameter q, with&nbsp;<img src="CARDIS2002-final-57.gif" >
+, indicates the maximum weight of the error introduced. Using a Goppa code
+[n=1024, k=524, t=101], this parameter might be as high as 1024 bits, meaning
+that all bits of a given output y' might be in error, instead of t=101
+bits as in the scheme of Section 2. In the general case, the number of
+errors introduced will be smaller than this upper bound, yet higher than
+the correctable case. This considerably limits enumeration attacks for
+retrieving the error circuit.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Nonetheless, the error circuit size must remain reasonable to retain
+any advantage from executing c' on the untrusted host rather than c on
+the TPH. For the construction of the error circuit, a trade-off should
+be found between the highest possible number n of simple error equations
+and a smaller number of more complex equations closer to a random error.</div>
+
+<h3 CLASS="Heading3">
+Result Decryption</h3>
+
+<div CLASS="Body">In the new scheme, the decipherment is based on the inputs
+and outputs of the encrypted function evaluation. For each evaluation of
+circuit c', the TPH, which knows xTPH, receives y' and xB. The encrypted
+result can be written:<img src="CARDIS2002-final-58.gif" > . S, G, and
+P being known to the TPH, as well as the error circuit z(x), it is possible
+to first compute and remove the error pattern:</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-59.gif" ></div>
+
+<div CLASS="Body">&nbsp;
+<br>Since matrix G is in systematic form (I | A), the GP encoding can be
+removed as follows:</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-60.gif" > (eq 1)</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-61.gif" > (eq 2)</div>
+
+<div CLASS="Body">&nbsp;
+<br>where&nbsp;<img src="CARDIS2002-final-62.gif" > is the vector formed
+by the first i bits of vector v.</div>
+
+<div CLASS="Body">The cleartext output y can finally be retrieved as follows:</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-63.gif" ></div>
+
+<h3 CLASS="Heading3">
+Integrity Verification</h3>
+
+<div CLASS="Body">The verification algorithm is adapted to the new construction
+of the error circuit. Integrity of execution is ensured by controlling
+that all bits of the cleartext output are correct after having removed
+the supposed error pattern. Since the cleartext output y can be obtained
+by using only the first k bits of ySG, the remaining and redundant n-k
+bits are used to verify that the output computed by the untrusted host
+has not been tampered with.</div>
+
+<div CLASS="Body">&nbsp;
+<br>From decryption equation 1 (above), and using only the last n-k bits
+of ySG :</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-64.gif" ></div>
+
+<div CLASS="Body">&nbsp;
+<br>where&nbsp;<img src="CARDIS2002-final-65.gif" > is the vector formed
+by the last i bits of vector v.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Since ySA = (yS)A, it can be deduced from decryption equation 2 that
+the TPH needs only verify that the following equation is satisfied:</div>
+
+<div CLASS="Body">&nbsp;
+<br><img src="CARDIS2002-final-66.gif" ><img src="CARDIS2002-final-67.gif" ></div>
+
+<h2 CLASS="Heading2">
+3.3 Scheme Evaluation</h2>
+
+<h3 CLASS="Heading3">
+Confidentiality of Execution</h3>
+
+<div CLASS="Body">Evaluating the confidentiality relies on the same principles
+as in the previous section. Since it is now possible to introduce more
+weighted errors, the complexity of retrieving the initial circuit is increased
+in a ratio depending upon the chosen security parameter q.</div>
+
+<div CLASS="Body">&nbsp;
+<br>A new problem is introduced by the multi-step execution concerning
+intermediate cleartext results. It sometimes happens that xTPH, i = DTPH(yi-n'),
+that is, B can observe the cleartext result of a previously computed function.
+The fact that the cleartext result may be given back to the untrusted environment
+is critical. With a sufficient number of pairs of cleartext inputs and
+outputs, the untrusted host would be able to interpolate circuit c. For
+more details, refer to the limitations section below.</div>
+
+<h3 CLASS="Heading3">
+Integrity of Execution</h3>
+
+<div CLASS="Body">An enumeration attack amounts to obtaining a forged pair
+(x, y') acceptable for the verifier. Since the TPH can get access to the
+input in addition to the encrypted output of circuit evaluation, the verification
+is now performed using the actual error pattern and not the error weight
+as before. The probability of such an attack being successful is thus even
+smaller than in the scheme of Section 2. Like for confidentiality, the
+use of more weighted errors can even further increase the difficulty of
+breaking the integrity of execution.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Moreover, part of the input is provided by the TPH and cannot be modified
+by the untrusted host: this makes it possible to obtain the equivalent
+of a variable error pattern for the inputs restricted to xB, the untrusted
+host inputs. In other words, even if the untrusted host B is able to determine
+the error pattern for a given xTPH, this pattern will not be useful for
+another value of xTPH. In practice, xTPH will vary for nearly each computation
+of a given function throughout the lifetime of a program.</div>
+
+<h3 CLASS="Heading3">
+Limitations</h3>
+
+<div CLASS="Body">As to the limitations of this approach, it is obvious
+that the algorithmic structure of the protected program is not hidden:
+the repeated execution of a function can be traced. Private Information
+Retrieval techniques (PIR) <a href="index.html#93065" CLASS="XRef">[15]</a>
+and oblivious RAM models <a href="index.html#77553" CLASS="XRef">[20]</a>
+that hide the sequence of accesses provide a sophisticated solution to
+this problem. Unfortunately, those works have shown that hiding access
+patterns is prohibitively expensive. This is the reason why our scheme
+addresses the protection of each function used by a program rather than
+the protection of its algorithmic structure.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The result of some encrypted function fi can be used as the input to
+another function fj. This means that a malicious host can sometimes observe
+the cleartext result of one of the encrypted functions that form the building
+blocks of a program. Depending on the function and on the number of times
+it is evaluated, it might be possible to obtain enough cleartext inputs
+and outputs to interpolate the function. In order to avoid this problem
+a scheme using enciphered inputs and outputs could be used but the performance
+penalty is important.</div>
+
+<div CLASS="Body">&nbsp;
+<br>However, even if the confidentiality of execution is partly broken,
+the integrity is not attacked. Indeed, interpolating a function allows
+an attacker to compute all corresponding cleartext outputs y, but knowing
+y and y' is already not sufficient to break the McEliece cryptosystem.</div>
+
+<div CLASS="Body">
+<h3>
+Implementability</h3>
+</div>
+
+<div CLASS="Body">Any function with fixed-length inputs and outputs can
+be represented as a Boolean circuit and thus encrypted by our scheme. However,
+to have an efficient implementation, it is necessary to define a computation
+model fitting the requirement of this approach. The TPH and the untrusted
+host have to support two different computing models:</div>
+
+<ul>
+<li CLASS="Bulleted">
+An algorithmic logic similar to what can be found in smart cards.</li>
+
+<li CLASS="Bulleted">
+A functional model supporting a representation of Boolean circuits. It
+could be implemented as truth tables (memory) or as circuits (programmable
+logic).</li>
+</ul>
+
+<h1 CLASS="Heading1">
+4 Related Work</h1>
+
+<div CLASS="Body">This section presents other work related to the confidentiality
+or the integrity of execution. We also compare our solution with two other
+approaches, truth table encryption and gate-level encryption, that can
+be used to protect functions represented as Boolean circuits.</div>
+
+<h2 CLASS="Heading2">
+4.1 Confidentiality of Execution</h2>
+
+<div CLASS="Body">Secure function evaluation is an instance of the more
+general problem of confidentiality of execution. Secure function evaluation
+has been addressed by many researchers (<a href="index.html#77884" CLASS="XRef">[41]</a>,
+<a href="index.html#19306" CLASS="XRef">[42]</a>,
+<a href="index.html#42130" CLASS="XRef">[19]</a>,
+<a href="index.html#77975" CLASS="XRef">[3]</a>,
+and <a href="index.html#82988" CLASS="XRef">[2]</a>, just to
+mention a few). Non-interactivity is an important requirement for mobile
+code, but the protocols addressing the circuit model need a round complexity
+dependent on the number of gates or depth of the circuit and are thus not
+well adapted to mobile code.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Sander and Tschudin <a href="index.html#54204" CLASS="XRef">[33]</a>,
+<a href="index.html#21934" CLASS="XRef">[32]</a>
+defined what they called a function hiding scheme and focused on non-interactive
+protocols. In their framework, the privacy of f is assured by a encrypting
+transformation. The authors illustrated the concept with a method that
+allows computing with encrypted polynomials, based on the Goldwasser-Micali
+encryption scheme
+<a href="index.html#51190" CLASS="XRef">[18]</a>.
+Sander and Tschudin took advantage of the homomorphic properties of the
+above encryption scheme to encrypt the coefficients of the polynomial,
+thus their technique does not hide the skeleton of the polynomial. Moreover,
+polynomials are not as expressive as Boolean circuits.</div>
+
+<div CLASS="Body">&nbsp;
+<br><a href="index.html#84682" CLASS="XRef">[36]</a> presented
+a non-interactive solution for secure evaluation of circuits but which
+is restricted to log depth circuits (or NC1 circuits). Protocols were designed
+for processing NOT and OR gates in a private way. The restriction on the
+depth of the circuit comes from the increase of the output size by a constant
+factor when computing an OR gate.</div>
+
+<div CLASS="Body">&nbsp;
+<br>In <a href="index.html#82406" CLASS="XRef">[14]</a> and
+<a href="index.html#64510" CLASS="XRef">[1]</a>,
+more efficient techniques are presented, that combine encrypted circuits
+<a href="index.html#19306" CLASS="XRef">[42]</a>
+and one round oblivious transfers. However, the circuit expansion is high
+with this technique and this expansion compromises the narrow advantage
+in performance of mobile code as shown in <a href="index.html#47523" CLASS="XRef">[22]</a>.</div>
+
+<h2 CLASS="Heading2">
+4.2 Integrity of Execution</h2>
+
+<div CLASS="Body">Integrity of execution is the possibility for the circuit
+owner to verify the correctness of the execution of his circuit. This problem
+has been extensively studied for achieving reliability (see for example
+<a href="index.html#54211" CLASS="XRef">[12]</a>
+for a survey) but security requirements taking into account possible malicious
+behavior from the execution environment were not considered.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Other solutions cope with the maliciousness of the execution environment.
+Yee <a href="index.html#52607" CLASS="XRef">[44]</a> suggested
+the use of proof based techniques, in which the untrusted host has to forward
+a proof of the correctness of the execution together with the result. Complexity
+theory shows how to build proofs for NP-languages and recently how to build
+Probabilistic Checkable Proofs (PCP) <a href="index.html#22126" CLASS="XRef">[4]</a>,
+<a href="index.html#59576" CLASS="XRef">[5]</a>.
+PCP proofs require checking only a subset of the proof in order to assure
+the correctness of a statement. However, this subset has to be randomly
+determined by the checker, so the problem of using PCP proofs in our non-interactive
+scenario is that the prover has to commit to the overall PCP proof. We
+refer the interested reader to <a href="index.html#67823" CLASS="XRef">[21]</a>
+for a comprehensive survey of the work on proofs.</div>
+
+<div CLASS="Body">&nbsp;
+<br>In <a href="index.html#50011" CLASS="XRef">[11]</a>, the
+authors presented an interesting model for mobile computing and a solution
+that overcomes the problem of using PCP proofs. The agent is modeled as
+a probabilistic Turing machine, and the set of all possible states of this
+machine constitutes a NP language. There exists a verification process
+for language membership, that is, it is possible to check if an obtained
+state belongs to the language. This scheme relies on the use of non-interactive
+Private Information Retrieval techniques to avoid the transmission of the
+overall PCP proof of the specified language, the randomly chosen queries
+from the checker being encrypted. Our second scheme allows us to "trace"
+in real-time an execution step-by-step, one step being a function evaluation,
+and ensuring that each step is performed in accordance with the program
+semantics. In our scheme, verifying an execution does not require verifying
+a complex trace.</div>
+
+<h2 CLASS="Heading2">
+4.3Encrypted Boolean Circuit Approaches</h2>
+
+<div CLASS="Body">Boolean circuits can be protected from confidentiality
+and integrity attacks using three different encryption techniques: circuit
+encryption (our approach from Section 2), truth table encryption, and gate-level
+encryption <a href="index.html#84682" CLASS="XRef">[36]</a>,
+<a href="index.html#42130" CLASS="XRef">[19]</a>.</div>
+
+<h3 CLASS="Heading3">
+Circuit Encryption vs. Truth Table Encryption</h3>
+
+<div CLASS="Body">Evaluating a function with a truth table simply corresponds
+to choosing the right line of the table that corresponds to the inputs
+and contains the outputs of a circuit. A simple protection of this scheme
+is to encrypt line-by-line each output of the truth table with a standard
+encryption algorithm. A new truth table with encrypted outputs is then
+obtained. In this approach, each result is pre-calculated.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The truth table outputs being encrypted line by line, the encrypted
+function it represents is by definition constructed randomly. Shannon showed
+that the size of almost every function with l inputs and one output is
+bigger than 2l/l. The size of the circuit implementing an encrypted truth
+table with n outputs can thus be assumed to be bigger than n<img src="CARDIS2002-final-68.gif" >
+2l/l gates. This size does not depend on the initial cleartext circuit
+but essentially on the number of inputs and can be bounded: any function
+with l inputs and one output can be computed by a circuit of size O(l<img src="CARDIS2002-final-69.gif" >
+2l) <a href="index.html#67202" CLASS="XRef">[40]</a>.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Our scheme modifies Boolean equations rather than outputs and, as shown
+in Section 2.3, Sizec' = Sizec +&nbsp;<img src="CARDIS2002-final-70.gif" >
+. It is possible to have Sizec'&nbsp;<img src="CARDIS2002-final-71.gif" >
+Sizec under reasonable assumptions about the size of c compared with the
+size of the error circuit or the SGP multiplication circuit (in a modular
+implementation). In the worst case, when the cleartext circuit size Sizec
+is close to l<img src="CARDIS2002-final-72.gif" > 2l, the size Sizec' of
+the resulting encrypted circuit is not better than the size of an equivalent
+encrypted truth table.</div>
+
+<h3 CLASS="Heading3">
+Circuit Encryption vs. Gate Level Encryption</h3>
+
+<div CLASS="Body">The gate-level encryption<a href="index.html#84682" CLASS="XRef">[36]</a>,
+<a href="index.html#42130" CLASS="XRef">[19]</a>
+is a Computing with Encrypted Data scheme. Each gate of the circuit is
+replaced by a cryptographic module that use keys as inputs and outputs
+to represent true or false Boolean values. A function evaluation corresponds
+to cryptographic operations performed gate by gate. However, it is possible
+to observe the resulting construction and to deduce the initial circuit.
+This solution thus does not ensure confidentiality but only integrity.
+Valiant's universal circuit <a href="index.html#39144" CLASS="XRef">[37]</a>
+makes it possible to see circuits as data. Thanks to it, it is possible
+to convert the Computing with Encrypted Data scheme into Computing with
+Encrypted Functions.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The main advantage of the gate-level encryption scheme is the linear
+impact of the encryption on the circuit size. Indeed, each gate of the
+initial circuit is replaced by one module and associated keys. When the
+universal circuit is used, the resulting size is O(d<img src="CARDIS2002-final-73.gif" >
+s<img src="CARDIS2002-final-74.gif" > log(s)) modules, where s is the size
+of the initial circuit and d its depth. This size increase is small and
+only depends on the initial circuit.</div>
+
+<div CLASS="Body">&nbsp;
+<br>This approach has drawbacks: it is necessary either to interact with
+the circuit owner for each gate evaluation or to use oblivious transfers
+to provide inputs. Moreover, the scheme allows only one evaluation of the
+circuit otherwise the integrity, and confidentiality in case of use of
+a universal circuit, cannot be ensured.</div>
+
+<div CLASS="Body">&nbsp;
+<br>In comparison, our approach is similar to the truth table in that it
+is an encryption of the whole output that is performed instead of a bit-by-bit
+encryption of the output. This makes it possible to evaluate a function
+more than once. Bit-by-bit encryption yields too much information about
+the circuit structure to permit two consecutive evaluations: a new encrypted
+circuit has to be recomputed after each evaluation.</div>
+
+<h1 CLASS="Heading1">
+5 Conclusion</h1>
+
+<div CLASS="Body">This paper presented basic building blocks for securing
+mobile code executed in a potentially hostile environment. It first described
+a scheme that can autonomously evaluate a Boolean circuit in a potentially
+malicious environment. This scheme ensures at the same time the integrity
+and confidentiality of evaluation of the circuit. The protection is derived
+from the McEliece data encryption scheme, thus allowing an efficient encryption,
+verification and decryption. The original circuit is encrypted into a new
+circuit, which can be executed by an untrusted environment although its
+result can only be decrypted by the circuit owner. This scheme can generate
+an encrypted circuit with a size close to that of the original circuit.
+All functions implementable with Boolean circuits can be protected using
+this scheme.</div>
+
+<div CLASS="Body">&nbsp;
+<br>Any program can be implemented as a single circuit and thus be protected
+using this function protection scheme. In practice however, that approach
+is totally unrealistic because of the huge size of the circuit. The second
+part of this article introduces another protection scheme that deals with
+programs rather than functions. This scheme resorts to using a tamper-proof
+hardware, albeit with a limited capacity compared with the program processing
+needs. The tamper-proof hardware protects the scheduling of a set of encrypted
+functions executed directly in the untrusted environment. The tamper-proof
+hardware also performs the result decryption and verification, which were
+previously done by the code owner.</div>
+
+<div CLASS="Body">&nbsp;
+<br>The practical deployment of the latter scheme may finally be questioned
+because of the lingering requirement for a tamper-proof hardware. However,
+few years ago, authentication had similar needs and now such hardware is
+in wide use for authentication purposes. We envision the use of cheap tamper-resistant
+hardware like slightly modified smart cards as a possible solution.</div>
+
+<h1 CLASS="Heading1">
+References</h1>
+
+<div CLASS="Reference">1)&nbsp;<a NAME="pgfId-776089"></a><a NAME="64510"></a>J.
+Algesheimer, C. Cachin, J. Camenisch, and G. Karjoth. Cryptographic security
+for mobile code. In Proc. of the IEEE Symposium on Security and Privacy,
+May 2001.
+<br>&nbsp;</div>
+
+<div CLASS="Reference">2)&nbsp;<a NAME="pgfId-776092"></a><a NAME="82988"></a>Mart&iacute;n
+Abadi and Joan Feigenbaum. Secure circuit evaluation. Journal of Cryptology,
+2(1):1-12, 1990.</div>
+
+<div CLASS="Reference">&nbsp;
+<br>3)&nbsp;<a NAME="pgfId-765309"></a><a NAME="77975"></a>Mart&iacute;n
+Abadi, Joan Feigenbaum, and Joe Kilian. On hiding information from an oracle.
+Journal of Computer and System Sciences, 39(1):21-50, August 1989.
+<br>&nbsp;</div>
+
+<div CLASS="Reference">4)&nbsp;<a NAME="pgfId-765310"></a><a NAME="22126"></a>Sanjeev
+Arora, Carsten Lund, Rajeev Motwani, Madhu Sudan, and Mario Szegedy. Proof
+verification and hardness of approximation problems. In Proc. 33rd IEEE
+Foundations of Computer Science, pages 14-23, October 1991.</div>
+
+
+<p CLASS="Reference">5)&nbsp;<a NAME="pgfId-765311"></a><a NAME="59576"></a>Sanjeev
+Arora and Shmuel Safra. Probabilistic checking of proofs: A new characterization
+of NP. Journal of the ACM, 45(1):70-122, 1998.
+
+<p CLASS="Reference">6)&nbsp;<a NAME="pgfId-777202"></a><a NAME="21913"></a>D.
+Aucsmith. Tamper resistant software: an implementation. In Proc. International
+Workshop on Information Hiding, 1996. Cambridge, UK.
+
+<p CLASS="Reference">7)&nbsp;<a NAME="pgfId-765313"></a><a NAME="70587"></a>Thomas
+A. Berson. Failure of the McEliece public-key cryptosystem under message-resend
+and related-message attack. In Burton S. Kaliski Jr., editor, Advances
+in Cryptology--CRYPTO '97, volume 1294 of Lecture Notes in Computer Science,
+pages 213-220. Springer-Verlag, 17-21 August 1997.
+
+<p CLASS="Reference">8)&nbsp;<a NAME="pgfId-765314"></a><a NAME="96337"></a>Matt
+Blaze, Joan Feigenbaum, and Moni Naor. A formal treatment of remotely keyed
+encryption. In Kaisa Nyberg, editor, Advances in Crytology - EUROCRYPT
+'98, Lecture Notes in Computer Science, pages 251-265, Finland, 1998. Springer-Verlag.
+
+<p CLASS="Reference">9)&nbsp;<a NAME="pgfId-765315"></a><a NAME="57082"></a>Manuel
+Blum and Sampath Kannan. Designing programs that check their work. In Proceedings
+of the Twenty First Annual ACM Symposium on Theory of Computing, pages
+86-97, Seattle, Washington, 15-17 May 1989.
+
+<p CLASS="Reference">10)&nbsp;<a NAME="pgfId-765316"></a><a NAME="68760"></a>Matt
+Blaze. High-bandwidth encryption with low-bandwidth smartcards. In Dieter
+Grollman, editor, Fast Software Encryption: Third International Workshop,
+volume 1039 of Lecture Notes in Computer Science, pages 33-40, Cambridge,
+UK, 21-23 February 1996. Springer-Verlag.
+
+<p CLASS="Reference">11)&nbsp;<a NAME="pgfId-765317"></a><a NAME="50011"></a>Ingrid
+Biehl, Bernd Meyer, and Susanne Wetzel. Ensuring the integrity of agent-based
+computations by short proofs. In Kurt Rothermel and Fritz Hohl, editors,
+Proc. of the Second International Workshop, Mobile Agents 98, pages 183-194,
+1998. Springer-Verlag Lecture Notes in Computer Science No. 1477.
+
+<p CLASS="Reference">12)&nbsp;<a NAME="pgfId-765318"></a><a NAME="54211"></a>Manuel
+Blum and Hal Wasserman. Software reliability via run-time result-checking.
+Journal of the ACM, 44(6):826-849, November 1997.
+
+<p CLASS="Reference">13)&nbsp;<a NAME="pgfId-765319"></a><a NAME="38363"></a>Anne
+Canteaut. Attaques de Cryptosyst&egrave;mes &agrave; Mots de Poids Faible
+et Construction de Fonctions t-R&eacute;silientes. PhD thesis, Universit&eacute;
+Paris VI, October 1996.
+
+<p CLASS="Reference">14)&nbsp;<a NAME="pgfId-765320"></a><a NAME="82406"></a>C.
+Cachin, J. Camenisch, J. Kilian, and Joy Muller. One-round secure computation
+and secure autonomous mobile agents. In Proceedings of the 27th International
+Colloquium on Automata, Languages and Programming-ICALP 2000, Geneva, July
+2000.
+
+<p CLASS="Reference">15)&nbsp;<a NAME="pgfId-768977"></a><a NAME="93065"></a>B.
+Chor, O. Goldreich, E. Kushilevitz and M. Sudan, Private information retrieval,
+Proceedings of 36th IEEE Conference on the Foundations of Computer Science
+(FOCS), p. 41--50, 1995.
+
+<p CLASS="Reference">16)&nbsp;<a NAME="pgfId-768971"></a><a NAME="29154"></a>C.
+Collberg, C. Thomborson and, D. Low, A taxonomy of obfuscating transformations,
+Technical Report 148, Department of Computer Science, University of Auckland,
+1996.
+
+<p CLASS="Reference">17)&nbsp;<a NAME="pgfId-774513"></a><a NAME="45784"></a>Joan
+Feigenbaum. Locally random reductions in interactive complexity theory.
+DIMACS Series in Discrete Mathematics and Theoretical Computer Science,
+13:73-98, 1993.
+
+<p CLASS="Reference">18)&nbsp;<a NAME="pgfId-774515"></a><a NAME="51190"></a>Shafi
+Goldwasser and Silvio Micali. Probabilistic encryption. Journal of Computer
+and System Sciences, 28(2):270-299, April 1984.
+
+<p CLASS="Reference">19)&nbsp;<a NAME="pgfId-765324"></a><a NAME="42130"></a>Oded
+Goldreich, Silvio Micali, and Avi Wigderson. How to play any mental game
+or a completeness theorem for protocols with honest majority. In Proceedings
+of the Nineteenth Annual ACM Symposium on Theory of Computing, pages 218-229,
+New York City, 25-27 May 1987.
+
+<p CLASS="Reference">20)&nbsp;<a NAME="pgfId-765325"></a><a NAME="77553"></a>Oded
+Goldreich and Rafail Ostrovsky. Software protection and simulation on oblivious
+RAMs. Journal of the ACM, 43(3):431-473, May 1996.
+
+<p CLASS="Reference">21)&nbsp;<a NAME="pgfId-765326"></a><a NAME="67823"></a>Oded
+Goldreich. Modern Cryptography, Probabilistic Proofs and Pseudorandomness.
+Springer-Verlag, 1999.
+
+<p CLASS="Reference">22)&nbsp;<a NAME="pgfId-765327"></a><a NAME="47523"></a>Daniel
+Hagimont and Leila Ismail. A performance evaluation of the mobile agent
+paradigm. In Proceedings of the Conference on Object-Oriented Programming,
+Systems, Languages and Applications, pages 306-313, Denver-USA, November
+1999.
+
+<p CLASS="Reference">23)&nbsp;<a NAME="pgfId-765328"></a><a NAME="30057"></a>Sergio
+Loureiro and Refik Molva. Function hiding based on error correcting codes.
+In Manuel Blum and C. H. Lee, editors, Proceedings of Cryptec'99 - International
+Workshop on Cryptographic Techniques and Electronic Commerce, pages 92-98.
+City University of Hong-Kong, July 1999.
+
+<p CLASS="Reference">24)&nbsp;<a NAME="pgfId-771936"></a><a NAME="49291"></a>Sergio
+Loureiro and Refik Molva. Privacy for Mobile Code. In Proceedings of the
+Distributed Object Security Workshop - OOPSLA'99, pages 37-42, Denver,
+November 1999.
+
+<p CLASS="Reference">25)&nbsp;<a NAME="pgfId-768926"></a><a NAME="15909"></a>Sergio
+Loureiro, Refik Molva, and Yves Roudier. Mobile code security. In Proceedings
+of ISYPAR'2000, 4&egrave;me Ecole d'Informatique des Syst&egrave;mes Parall&egrave;les
+et R&eacute;partis, Toulouse, France, February 2000.
+
+<p CLASS="Reference">26)<a NAME="pgfId-776095"></a><a NAME="61917"></a>Sergio
+Loureiro and Refik Molva. Mobile Code Protection with Smartcards. In 6th
+ECOOP Workshop on Mobile Object System. Cannes. France. June 2000.
+
+<p CLASS="Reference">27)&nbsp;<a NAME="pgfId-768955"></a><a NAME="86576"></a>R.
+J. McEliece. The theory of information and coding, Encyclopedia of Mathematics
+and its Applications, Vol. 3, Addison-Wesley, Reading, MA, 1977.
+
+<p CLASS="Reference">28)&nbsp;<a NAME="pgfId-768931"></a><a NAME="44186"></a>R.
+McEliece. A public-key cryptosystem based on algebraic coding theory. In
+Jet Propulsion Lab. DSN Progress Report, 1978.
+
+<p CLASS="Reference">29)&nbsp;<a NAME="pgfId-765331"></a><a NAME="27356"></a>Silvio
+Micali. CS Proofs (extended abstract). In IEEE Proceedings of Foundations
+on Computer Science, pages 436-453, 1994.
+
+<p CLASS="Reference">30)&nbsp;<a NAME="pgfId-765333"></a><a NAME="76376"></a>Joost
+Meijers and Johan van Tilburg. Extended majority voting and private-key
+algebraic-code encryptions. In Hideki Imai, Ronald L. Rivest, and Tsutomu
+Matsumoto, editors, Advances in Cryptology--ASIACRYPT '91, volume 739 of
+Lecture Notes in Computer Science, pages 288-298, Fujiyoshida, Japan, 11-14
+November 1991. Springer-Verlag. Published 1993.
+
+<p CLASS="Reference">31)&nbsp;<a NAME="pgfId-765336"></a><a NAME="14664"></a>Nicolas
+Sendrier. Efficient generation of binary words of given weight. In Colin
+Boyd, editor, Cryptography and Coding; proceedings of the 5th IMA conference,
+number 1025 in Lecture Notes in Computer Science, pages 184-187. Springer-Verlag,
+1995.
+
+<p CLASS="Reference">32)&nbsp;<a NAME="pgfId-765337"></a><a NAME="21934"></a>Tomas
+Sander and Christian Tschudin. On software protection via function hiding.
+In Proceedings of the Second Workshop on Information Hiding, Portland,
+Oregon, USA, April 1998.
+
+<p CLASS="Reference">33)&nbsp;<a NAME="pgfId-765338"></a><a NAME="54204"></a>Tomas
+Sander and Christian Tschudin. Towards mobile cryptography. In Proceeding
+of the 1998 IEEE Symposium on Security and Privacy, Oakland, California,
+May 1998.
+
+<p CLASS="Reference">34)&nbsp;<a NAME="pgfId-777156"></a><a NAME="57214"></a>Luis
+F. G. Sarmenta. Volunteer Computing. Ph.D. thesis. Dept. of Electrical
+Engineering and Computer Science, MIT, March 2001.
+
+<p CLASS="Reference">35)&nbsp;<a NAME="pgfId-765340"></a><a NAME="44311"></a>Hung-Min
+Sun. Improving the security of the McEliece public-key cryptosystem. In
+Proceedings of Asiacrypt 98, pages 200-213, 1998.
+
+<p CLASS="Reference">36)&nbsp;<a NAME="pgfId-765341"></a><a NAME="84682"></a>Tomas
+Sander, Adam Young, and Moti Yung. Non-interactive cryptocomputing for
+NC1. In Proceedings of the IEEE FOCS, October 1999.
+
+<p CLASS="Reference">37)&nbsp;<a NAME="pgfId-768776"></a><a NAME="39144"></a>Leslie
+G. Valiant. Universal circuits (preliminary report). In Conference Record
+of the Eighth Annual ACM Symposium on Theory of Computing, pages 196-203,
+Hershey, Pennsylvania, 3-5 May 1976.
+
+<p CLASS="Reference">38)&nbsp;<a NAME="pgfId-765342"></a><a NAME="20898"></a>A.
+Valembois. Recognition of binary linear codes as vector-subspaces. In Workshop
+on Coding and Cryptography'99, Book of abstracts, pages 43-51, Paris, France,
+January 1999.
+
+<p CLASS="Reference">39)&nbsp;<a NAME="pgfId-768771"></a><a NAME="14004"></a>Johan
+van Tilburg. Security-Analysis of a Class of Cryptosystems Based on Linear
+Error-Correcting Codes. PhD thesis, Technische Universiteit Eindhoven,
+1994.
+
+<p CLASS="Reference">40)&nbsp;<a NAME="pgfId-770377"></a><a NAME="67202"></a>Ingo
+Wegener. The Complexity of Boolean Functions. Eiley-Teubner, 1987.
+
+<p CLASS="Reference">41)&nbsp;<a NAME="pgfId-765344"></a><a NAME="77884"></a>A.C.
+Yao. Protocols for secure computations. In IEEE Symposium on Foundations
+of Computer Science 82, pages 160-164, Chicago, 1982.
+
+<p CLASS="Reference">42)&nbsp;<a NAME="pgfId-765345"></a><a NAME="19306"></a>A.C.
+Yao. How to generate and exchange secrets. In IEEE Symposium on Foundations
+of Computer Science 86, pages 162-167, Toronto, 1986.
+
+<p CLASS="Reference">43)&nbsp;<a NAME="pgfId-769238"></a><a NAME="88155"></a>Bennet
+Yee. Using Secure Coprocessors. Technical Report CMU-CS-94-149. School
+of Computer Science, Carnegie Mellon University. May 1994.
+
+<p CLASS="Reference">44)&nbsp;<a NAME="pgfId-763607"></a><a NAME="52607"></a>Bennet
+Yee. A sanctuary for mobile agents. Technical Report CS97-537, UC at San
+Diego, Dept. of Computer Science and Engineering, April 1997.
+
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":118,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></body>
+</html>
+

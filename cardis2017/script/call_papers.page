@@ -1,0 +1,49 @@
+<h1>Call for papers</h1>
+
+<p class="text-center bg-info cfp">Sixteenth Smart Card Research and Advanced Application Conference</p> 
+
+<p>
+To download the call please <a href="./assets/data/CARDIS2017_CfP.pdf">click here </a>
+</p>
+
+<h3>Scope</h3>
+<p>Since its creation, CARDIS has provided a space for security experts from industry and academia to exchange on security of smart cards and related applications. Those objects are part of our daily life for years now: banking cards, SIM cards, electronic passports, etc.  But the world is changing; the smartcard, as a secure element is more and more often the hardware root of trust of bigger systems. Their applications and use cases are also increasing through M2M and massive IoT. As such, smartcard-security is key since the security of entire systems relies on it.
+With the growing use of smartcard technology, the attack surface is also increasing, from physical attacks to logical attacks, from local attacks to remote attacks. Combined attacks are also to be considered. It is more important than ever that we understand how smart cards, and related systems, can be secured.</p>
+
+<p>The sixteenth Smart Card Research and Advanced Application Conference is organized by ALaRI and will be held in Lugano, Switzerland on November 13-15, 2017.</p>
+
+<h3>Topics</h3>
+<p>The program committee is seeking original papers on all aspects of the security of smart cards and embedded systems as well as their applications. Submissions across a broad range of the development phases are encouraged, from exploratory research and proof-of-concept studies to practical applications and deployment of smart cards and related technologies. Topics of interest include, but are not limited to:</p>
+
+<ul>
+    <li>Physical attacks and countermeasures</li>
+    <li>Reverse engineering of secure embedded systems</li>
+    <li>Efficient cryptographic implementations for smart cards and embedded systems</li>
+    <li>Smart cards and their applications (identification, mobile payment, access controls, pay TV)</li>
+    <li>Security of automotive devices and applications</li>
+    <li>Security of IoT devices and applications</li>
+    <li>Security of Systems on Chip (SoC) </li>
+    <li>Security of mobile connected devices (mobile handset, Set Top Boxes, ...)</li>
+    <li>Trusted computing (TPMs, TEE, Whitebox Cryptography, ...)</li>
+    <li>Hardware architectures for secure embedded systems</li>
+    <li>Software architectures for secure embedded systems (operating systems, µ-kernel, hypervisors, virtual machines, ...)</li>
+    <li>PUFs, anti-cloning and anti-counterfeiting technologies</li>
+    <li>Software security  </li>
+</ul>
+
+<h3>Papers</h3>
+<p>Authors are invited to submit papers (PDF format) with novel contributions electronically using the submission form available on the following web site: 
+<a href="https://easychair.org/conferences/?conf=cardis2017">https://easychair.org/conferences/?conf=cardis2017</a>.</p>
+
+<p>Submitted papers must be original, unpublished, anonymous and not submitted to journals or other conferences/workshops that have proceedings. Submissions must be written in English, strictly follow Springer LNCS
+format (with default margins, font size, etc.) and should be at most 15 pages, excluding references. Papers not meeting these guidelines risk rejection without consideration. All submissions will be blind-refereed. Submission implies the willingness of at least one of the authors to register and present the paper. 
+
+Revised selected papers will be published as a post-proceedings in  <a href="www.springer.com/lncs">Springer Lecture Notes in Computer Science (LNCS)</a>. Accepted papers must follow the LNCS default author instructions at <a href="http://www.springer.de/comp/lncs/authors.html">conference proceedings guidelines</a>.</p>
+
+
+<a href="http://www.springer.com"> <img src="http://www.springer.com/spcom/sites/sgw/images/logo.png" alt="LOGO_LNCS"> </a>
+
+
+
+
+

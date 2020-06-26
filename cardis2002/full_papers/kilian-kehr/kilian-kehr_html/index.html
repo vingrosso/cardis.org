@@ -1,0 +1,1141 @@
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 11-18 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+
+
+<h1 align="center">Smart Cards in Interaction:<br />
+	 Towards Trustworthy Digital Signatures
+ </h1>
+
+<p>
+
+<h3 align="center">Roger Kilian-Kehr &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Joachim Posegga<br />
+</h3>
+<p align="center"><em>SAP AG Corporate Research, CEC Karlsruhe</em><br/>
+<em>Vincenz-Priessnitz-Str.&nbsp;1, D-76131 Karlsruhe, Germany</em><br />
+<em>{roger.kilian-kehr, joachim.posegga}@sap.com</em>
+
+<p>
+
+<h2> Abstract</h2>
+  We present approaches to raise the security level in the process of
+  electronic signature creation by shifting as many tasks as possible
+  involved in digitally signing data into a tamper-resistant and
+  trustworthy smart card.  We describe the fundamental technical
+  principles our approach is based on, illustrate resulting design
+  options, and compare the security of our approach with traditional
+  electronic signature scenarios.
+
+<p>
+  <b>Keywords:</b> electronic signatures, smart cards.
+
+<p><br/>
+
+<p>
+ <h2><a name="tth_sEc1">
+1</a>&nbsp;&nbsp;Introduction</h2>
+
+<p>
+The cryptographic underpinnings of electronic signatures such as
+mathematical one-way functions or public key cryptography are well
+understood, and practically secure algorithms and key lengths are
+widely established. From this perspective, electronically signing
+documents is a straightforward undertaking.
+
+<p>
+The actual procedure for digitally signing a document or a
+transaction, however, is a complex scenario in practice which involves
+numerous issues beyond cryptography: Since a person who wants to
+create a digital signature will usually not carry out the relevant
+computation by herself, she needs to delegate this to some application
+running on a platform (device) that can perform such computations. The
+security level of the overall signature creation process therefore
+depends on the security of several other, non-cryptographic factors,
+e.g.&nbsp;the environment where the document/data presentation takes
+place, the security of the communication channel to a user, or the
+security properties of the environment where the cryptographic
+computations are carried out.
+
+<p>
+Consider a scenario where a user signs a document displayed in a Web
+browser on a PC; at best, this involves a smart card, where the
+signing key is stored, and the cryptographic algorithm to encrypt the
+document hash (and other relevant data) is executed within the card.
+An attacker who wants to trick the user into signing a fake document
+would likely not attack the smart card, but the environment within it
+is used (i.e.: the OS, the driver of the smart card reader, the
+signing application, the Web browser, etc.).
+
+<p>
+The ``added value'' of a smart card is such a scenario is, largely,
+that it makes it hard to compromise the cryptographic key, but the
+card contributes little to the actual trustworthiness of an individual
+digital signature: The card is used as a tamperproof device that
+executes a fixed computational function, i.e., it reads a data block,
+encrypts it, and it returns the result. The card itself, however, does
+not interact directly with the user (card holder), but through a
+mediator like a PC or a mobile phone. But these devices are usually a
+lot less secure that a typical smart card.
+
+<p>
+This problem is, in theory, easy to solve: Raise the security level
+and require a closed, trustworthy system for applying electronic
+signatures.  Unfortunately, this solution is extremely hard to roll
+out in practice, both because it is expensive and since dedicated
+hardware, which would be required, simply does not fit into today's
+computing world.
+
+<p>
+We propose to take another direction, and build upon execution
+platforms that are provided by today's smart cards, in particular SIMs
+and USIMs used for GSM and UMTS. Such cards offer functionality beyond
+the &quot;hard-wired'', secure token that smart cards are mostly figured:
+Besides holding a secret key and performing cryptographic algorithms,
+GSM SIMs and UMTS USIMs include application platforms (e.g.&nbsp;[<a href="index.html#javacard:www" name="CITEjavacard:www">7</a>,<a href="index.html#windowscard:www" name="CITEwindowscard:www">15</a>]), that allow programs that
+run inside these smart cards to use services of its host. A mobile
+phone hosting such a SIM provides I/O and networking capabilities to
+the SIM over standardized protocols
+[<a href="index.html#gsm11.14" name="CITEgsm11.14">6</a>,<a href="index.html#gsm03.48" name="CITEgsm03.48">3</a>,<a href="index.html#gsm02.19" name="CITEgsm02.19">4</a>,<a href="index.html#gsm03.19" name="CITEgsm03.19">5</a>,<a href="index.html#usat:interp:arch" name="CITEusat:interp:arch">1</a>,<a href="index.html#usat:interp:bc" name="CITEusat:interp:bc">2</a>].
+As a result, applications running inside a SIM can actively initiate
+and control user interaction, communicate over the network, etc.
+
+<p>
+Our paper discusses the various options for enhancing the security of
+the process of signing a document by involving a secure execution
+platform in such a smart card; essentially we investigate the
+following question underlying such an approach:
+
+<blockquote>
+  <em>How much in terms of security can be obtained, if as much
+    functionality as possible is shifted from untrusted components
+    into a trustworthy platform available in a tamper-resistant
+    device?</em>
+</blockquote>
+Overall, our research provides means for increasing the
+trustworthiness of digital signature by imposing less assumptions on
+the integrity of a card terminal that classic approaches do.
+
+<p>
+
+<h3>Paper Outline</h3>
+
+<p>
+The main research contribution of our paper is given within
+Sect.&nbsp;<a href="index.html#sec:sig">2</a>. After introducing some notational conventions
+with standard digital signatures in Sect.&nbsp;<a href="index.html#sec:notation">2.1</a>, we
+investigate basic, on-card hash computation in
+Sect.&nbsp;<a href="index.html#sec:sig:oncardhash">2.2</a>. Section&nbsp;<a href="index.html#sec:ttphash">2.3</a> extends this
+by involving a trusted third party. A third approach integrating the
+identity of the document's originator into the signature protocol is
+presented in Sect.&nbsp;<a href="index.html#sec:addressing">2.4</a>. Although all the approaches
+are vulnerable to so-called ``conspiracy attacks'' they represent
+significant improvements in the overall security of an electronic
+signature creation process.
+
+<p>
+Based on the results of the previous approaches
+Sect.&nbsp;<a href="index.html#sec:sign-interaction">2.5</a> proposes to digitally sign user
+interactions triggered by scripts that run inside smart cards to
+enable the comfortable, application-driven creation of electronic
+signatures on mobile devices.
+
+<p>
+
+<p>
+Section&nbsp;<a href="index.html#sec:relwork">3</a> compares our work to related approaches, and
+we finally wrap-up our work in Sect.&nbsp;<a href="index.html#sec:conc">4</a>.
+
+<p>
+
+<p>
+ <h2><a name="tth_sEc2">
+2</a>&nbsp;&nbsp;Smarter Signing with  Smart Cards</h2>
+<a name="sec:sig">
+</a>
+
+<p>
+
+<p>
+This section explores several options for implementing the process of
+digitally signing documents by taking advantage of secure application
+platforms in smart cards: We discuss the security benefits of moving
+more and more of the required computation into the secure environment
+of a card.
+
+<p>
+As the starting point, consider the ``traditional'' procedure, where
+smart cards are used as crypto tokens holding a secret key and
+providing an implementation of cryptographic algorithms.
+
+<p>
+     <h3><a name="tth_sEc2.1">
+2.1</a>&nbsp;&nbsp;Basic Electronic Signature Protocol</h3>
+<a name="sec:notation">
+</a>
+
+<p>
+The most important roles in scenarios for electronic signature
+creation are the signer S owning a public key pair (S<sub>S</sub>,P<sub>S</sub>), the
+document to be signed D, the signature creation application&nbsp;A, a
+document viewer V interacting with the signer, a smart card&nbsp;C, and
+the originator O of the document D. The basic protocol is as
+follows:
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(1) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+O<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(2) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> V,S:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(3) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+S,V<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+<i>accept</i>/<i>reject</i></td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(4) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> C:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{h(D)}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(5) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C<font face="symbol">®</font
+> A<font face="symbol">®</font
+> O:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>S<sub>S</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+Here, (1) denotes the document transfer from the originator to the
+signature creation application, (2) the document presentation, (3) the
+signer's interaction/choice, (4) the hash computation, and (5) the
+signing process.
+
+<p>
+The above procedure can be improved w.r.t.&nbsp;security when moving some of
+these individual steps partially into the secure environment of a
+smart card. First we consider on-card hash computation.
+
+<p>
+
+<p>
+     <h3><a name="tth_sEc2.2">
+2.2</a>&nbsp;&nbsp;Electronic Signatures with On-Card Hash Computation</h3>
+<a name="sec:sig:oncardhash">
+</a>
+
+<p>
+The computation of the hash function is certainly a possible target
+for an attacker who wants to manipulate a signing procedure; but
+performing the hash computation inside a trusted device such as a
+smart card itself is not a panacea: it is important how the document
+presentation <em>and</em> hash computation is done in the overall
+signature protocol. Consider for example the following case:
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(1) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> C:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(2) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>S<sub>S</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+In this case, (1) denotes the document transfer to the smart card and
+(2) the document signing process. From a security point of view an
+intruder I who is in control of A can easily exchange document D
+with another document D<font face="symbol">¢</font
+> which is subsequently sent to the card,
+hashed, and finally signed. Hence, compared with the basic protocol,
+no additional benefit can be gained from moving a hash computation
+into a card in a straightforward way.
+
+<p>
+
+<h3>On-Card Hash Computation Protocol</h3>
+
+<p>
+Assuming a scenario in which the signature creation application A is
+located in a security module C, and the viewer in a (less
+trustworthy) terminal a possible protocol is as follows:
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(1) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+O<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(2) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> V,S:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(3) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+S,V<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+<i>accept</i>/<i>reject</i></td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(4) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C,A<font face="symbol">®</font
+> O:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>S<sub>S</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+Here, (1) denotes the document transfer to the application being
+hosted by the smart card, (2) the document presentation, (3) the
+user's choice, and (4) the hash and signature computation in the card.
+
+<p>
+Assuming end-to-end secure communication between O and A/C, an
+intruder is not able to control the hash computation anymore. Only the
+document presentation and the user's <em>accept/response</em> could be
+manipulated, although the intruder controlling V cannot gain
+anything from such manipulation, except by mounting the following
+attack.
+
+<p>
+
+<p>
+
+<h3>A Conspiracy Attack on On-Card Hash Computation</h3>
+<a name="sec:attack">
+</a>
+
+<p>
+
+<ul>        
+<li> The intruder I and the originator O cooperate.<p></li>
+
+<li> O sends the document D<font face="symbol">¢</font
+>, i.e., the document which the
+  attackers want to be signed by S.<p></li>
+
+<li> Upon invocation of V, I presents a fake document D, which
+  S might accept for signing.<p></li>
+
+<li> In the card, D<font face="symbol">¢</font
+> is signed and sent back to O.<p></li>
+</ul>
+Hence, an attack is still possible, if the intruder subverting V and
+the originator O of the document directly cooperate. Although this
+attack is of general importance, practically, it means that it is not
+sufficient anymore to attack the user's terminal only, but also to
+manage to actively send a faked document which the user subsequently
+signs.
+
+<p>
+As a consequence, shifting the hash computation in the above manner to
+a tamper-resistant device seems to give a substantial improvement in
+the overall security of the signature creation process.
+
+<p>
+
+<p>
+     <h3><a name="tth_sEc2.3">
+2.3</a>&nbsp;&nbsp;Electronic Signatures Assisted by a Trusted Third Party</h3>
+<a name="sec:ttphash">
+</a>
+
+<p>
+On-card hash computation is often not feasible, e.g.&nbsp;due to the
+limited bandwith one can use when communicating with a smart card. The
+process of computing hashes can, however, also be delegated to a
+trusted third party T as the following protocol outlines. A
+URL <i>url</i><sub>D</sub> is used to denote some resource where D can be
+fetched from. The trusted third party T then computes D's hash on
+behalf of A and signs it. A just forwards the URL to the document
+viewer V and the further protocol steps are the same as in the
+on-card hash computation protocol (cf.&nbsp;Sect.&nbsp;<a href="index.html#sec:attack">2.2</a>).
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(1) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+O<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>url</i><sub>D</sub>}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(2) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> T:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>url</i><sub>D</sub>}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(3) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+T<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>T</sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(4) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> V,S:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>url</i><sub>D</sub>}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(5) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+S,V<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+<i>accept</i>/<i>reject</i> </td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(6) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> C:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>T</sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(7) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C<font face="symbol">®</font
+> A<font face="symbol">®</font
+> O:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>S<sub>S</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+In this protocol, (1) denotes the transmission of the URL under which
+the document to be signed is located to the application, (2) passing
+the URL to the TTP, (3)&nbsp;TTP fetches document and computes the hash, (4)
+represents the document presentation to the user, (5) the user's
+choice, (6) pass-through of the TTP's signature to the card and
+verification the the signature, and (7) the final signature
+computation by the smart card.
+
+<p>
+Similar to the on-card hash computation protocol, it is vulnerable to
+a conspiracy attack as described above.
+
+<p>
+
+<p>
+     <h3><a name="tth_sEc2.4">
+2.4</a>&nbsp;&nbsp;Electronic Signatures with Recipient Addressing</h3>
+<a name="sec:addressing">
+</a>
+
+<p>
+Looking at the traditional signature creation protocol it becomes
+obvious that authenticity of a document sender is not of particular
+concern. In electronic business processes, however, signatures are
+often used to provide the technical means for contracts between two
+parties.  Although the identities of the contract partners are usually
+somehow denoted in the document D, this is by no means
+cryptographically protected.
+
+<p>
+To improve the signature process further, we include the cryptographic
+identity of the document originator into the signature process. In
+particular we propose the following protocol which is based on the
+on-card hash computation protocol (cf.&nbsp;Sect.&nbsp;<a href="index.html#sec:attack">2.2</a>) and the
+public key pair (S<sub>O</sub>,P<sub>O</sub>) of the originator&nbsp;O denoted by
+<i>id</i><sub>O</sub>:
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(1) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+O<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D,<i>sig</i><sub>S<sub>O</sub></sub>(D)}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(2) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+A<font face="symbol">®</font
+> V,S:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{D,<i>id</i><sub>O</sub>}</td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(3) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+S,V<font face="symbol">®</font
+> A:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+<i>accept</i>/<i>reject</i></td></tr></table></td></tr>
+<tr><td align="center"><table border="0"><tr><td nowrap="nowrap" align="center">
+(4) </td></tr></table></td><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C,A<font face="symbol">®</font
+> O:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+{<i>sig</i><sub>S<sub>S</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+h(D),<i>sig</i><sub>S<sub>O</sub></sub>(D)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+}</td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+Here, (1) denotes the document and signature transmission, (2) the
+presentation of the document and the identity of the originator, (3)
+the user's choice, and (4) the final hash and signature computation.
+
+<p>
+This protocol now achieves that an electronic signature is created
+over both - the cryptographic hash of the document and the identity
+of the recipient or originator of the signature.
+
+<p>
+To assess the advantages of this approach consider that in a
+traditional signature attack scenario an intruder could ``hijack''
+the signing process of an arbitrary document D<sub>O</sub> with its intended
+recipient O to infiltrate another document D<font face="symbol">¢</font
+> to be signed. The
+intruder I could then claim that the user has signed this document
+which is likely of advantage to the intruder. In the above protocol,
+however, the intruder I is not able to obtain a signature
+<i>sig</i><sub>S<sub>S</sub></sub>(h(D<font face="symbol">¢</font
+>),<i>sig</i><sub>S<sub>I</sub></sub>(D<font face="symbol">¢</font
+>)) since the
+signature <i>sig</i><sub>S<sub>I</sub></sub>(D<font face="symbol">¢</font
+>) cannot be generated. At best
+<i>sig</i><sub>S<sub>S</sub></sub>(h(D<font face="symbol">¢</font
+>),<i>sig</i><sub>S<sub>O</sub></sub>(D<font face="symbol">¢</font
+>)) could be
+obtained, but leading to a contradiction between the information
+available in D<font face="symbol">¢</font
+> denoting I as the recipient and the envelope
+signature <i>sig</i><sub>S<sub>O</sub></sub>. Therefore, we argue that linking the
+document and the recipient in the signature gives advantages to
+standard electronic signature creation.
+
+<p>
+<br />Basically, the same conspiracy attack presented in the on-card hash
+computation in Section&nbsp;<a href="index.html#sec:sig:oncardhash">2.2</a> can be mounted in the
+recipient addressing scheme. Again, if originator O and intruder I
+cooperate, the user is not able to distinguish that signature creation
+occurs with a document that she does not intend to sign.
+
+<p>
+
+<p>
+     <h3><a name="tth_sEc2.5">
+2.5</a>&nbsp;&nbsp;Electronic Signatures on Interactions</h3>
+<a name="sec:sign-interaction">
+</a>
+
+<p>
+We have so far considered electronic signatures on standard clients,
+e.g.&nbsp;desktop PCs.  One of the most problematic issues with electronic
+signatures on mobile devices is the fact that such signatures are
+computed over complex documents. In particular this means that
+according to current signature laws, e.g.&nbsp;those in Germany, the
+document must be presented to the user who then either accepts or
+rejects the subsequent signature creation. Hence, a document to be
+signed must be presented as a whole in a suitably rendered fashion,
+which is often difficult on small, mobile devices. The problem of
+encoding and subsequently displaying a document in a reproducible and
+standardized way has been extensively discussed by
+Scheibelhofer&nbsp;[<a href="index.html#scheibelhofer:wysiwys" name="CITEscheibelhofer:wysiwys">13</a>]. In his approach he uses
+XML style sheets defining mappings to a possibly certified rendering
+engine.
+
+<p>
+To tackle this presentation problem, we consider not only the
+presentation of a document but also the way the document is created.
+We argue that a document is often the result of some kind of
+interaction between a service provider, e.g.&nbsp;who offers goods, and a
+client who selects goods to buy.  Finally, after all selections are
+made, a document containing the complete list of goods is presented
+and signed accordingly.
+
+<p>
+If such an interaction ``document'' is encoded as an executable
+script, the execution of the script is <em>deterministic</em> as long as
+all <em>non-deterministic</em> input which is received from ``outside''
+the script such as user input, random number generator, persistent
+variables, etc.&nbsp;is recorded. A ``document'' over which the signature
+is computed is then comprised of
+
+<p>
+&nbsp; 
+<ol type="1">        
+
+<li> the executed script,<p></li>
+
+<li> the persistent state used during the computation,<p></li>
+
+<li> all user input,<p></li>
+
+<li> all messages received from other communication channels,<p></li>
+
+<li> the current time and progress of execution,<p></li>
+
+<li> some platform characteristics such as version numbers, serial
+  numbers, etc.
+<p></li>
+</ol>
+The signature can be easily verified by executing the script in a
+simulated environment using the recorded and signed input values.
+Thus, a signed document in this sense is not intended to be
+human-readable, but rather meant to record and log the interaction
+that happened between a service provider and a user.
+
+<p>
+
+<h3>A Smart Card Platform for Mobile Code</h3>
+
+<p>
+More concretely, we propose to use a secure platform for the execution
+of (remote) code in a smart card which functions as follows:
+
+<ul>        
+<li> The smart card implements an interpreter for mobile code written
+  in a domain-specific language optimally supporting the intended
+  application domain.<p></li>
+
+<li> A client such as a service provider sends messages containing
+  so-called <em>scripts</em> written in the domain-specific language the
+  card-resident interpreter understands.<p></li>
+
+<li> The card's runtime platform executes the script, handles user
+  interaction, and sends back the responses to the client.<p></li>
+
+<li> The platform implements key management facilities in order to
+  provide end-to-end security between the client and the
+  smart card.<p></li>
+</ul>
+Such a platform must be <em>secure</em> in the sense that neither the
+mobile code nor the user is able to harm the platform's integrity.
+Furthermore, the platform gives certain guarantees to both - code and
+user - that the scripts are executed as intended and no information
+leakage or secret storage manipulation can occur by malicious code or
+an external attacker.
+
+<p>
+Thus, the platform acts as a <em>trusted computing base</em> running in
+a tamper-resistant device protecting the user from the code and vice
+versa. 
+
+<p>
+
+<p>
+
+<h3>Example: Mobile Auctions</h3>
+
+<p>
+For illustration purposes we provide an example illustrating our
+approach in the domain of mobile auctions (Fig.&nbsp;<a href="index.html#fig:lst:record">1</a>).
+This example is based on the one presented in
+[<a href="index.html#simspeak:esmart2001" name="CITEsimspeak:esmart2001">8</a>], however, it has been extended to support
+the creation of signatures on user interaction.
+
+<p>
+
+<p>
+<a name="tth_fIg1">
+</a>   <center>  <table border="0"><tr><td></td><td><table border="0"><tr><td>
+<pre>
+ 1   script { 
+ 2
+ 3      provider &quot;bidbiz.com&quot;;
+ 4      name     &quot;bidbiz auction client&quot;;
+ 5      id       &quot;20011223/24357&quot;;
+ 6      options  signed-interaction;
+ 7    
+ 8      implementation {
+ 9         playtone;
+10         push(&quot;News from bidbiz.com: in auction #3576 (Antique watch): EUR 63.&quot;);
+11         display;
+12
+13         push(mark);
+14         push(&quot;Place new bid?&quot;);
+15         push(&quot;New bid...&quot;);
+16         push(&quot;Cancel&quot;);
+17         select;
+18
+19         push( 2 );
+20         eq?;
+21         if (true) goto end;
+22
+23   enter: 
+24         push(&quot;Enter new bid (&gt;EUR 63):&quot;)
+25         input;
+26         dup();
+27         push(63);
+28         le?;
+29         if (true) goto end:
+30         playtone;
+31         push(&quot;Please enter a bid greater than EUR 63.&quot;);
+32         display;
+33         goto enter;
+34
+35   end:  sign-interaction;
+36         response;
+37         exit;
+38      }
+39   }
+</pre>
+   
+        
+  
+</td></tr></table><!--vbox-->
+</td><td></td></tr></table><!--hboxt-->  
+<center>Figure 1: Mobile auction client with interaction signatures</center>  <a name="fig:lst:record">
+</a></center>
+<p>
+The given example illustrates the use of the stack-based
+domain-specific language we use to write our scripts without going
+into full detail. An in-depth description of the language can be found
+in [<a href="index.html#mobsecsc:2002" name="CITEmobsecsc:2002">10</a>].
+
+<p>
+A script starts with header information about the name of the script
+and its provider (lines&nbsp;3-5). Line&nbsp;6 denotes that the script's
+execution should be implicitly signed by the interpreter. The
+<tt>implementation</tt> part (line&nbsp;7) contains the actual program.
+
+<p>
+Lines&nbsp;9-12 demonstrate how to display an initial message about the
+latest news of the online auction.  Lines&nbsp;14-18 show how the
+arguments for a user selection (primitive <tt>select</tt>) are pushed
+onto the stack marked by the initial marker set in line&nbsp;14. After the
+selection has been performed the arguments including the marker are
+removed from the stack and the number of the selected item is
+available on the stack.
+
+<p>
+Lines&nbsp;20-22 check, whether the subscriber selected item no.&nbsp;2 (i.e.&nbsp;``Cancel'') in which case a jump to the label `<tt>end</tt>' is
+performed. Otherwise an input dialog is opened in lines&nbsp;25-26 and the
+input from the subscriber is returned on the topmost stack position
+and duplicated in line&nbsp;27.  Then the entered amount is checked in
+lines&nbsp;28-30, whether its is greater than&nbsp;64. Otherwise a text is
+displayed in lines&nbsp;31-33 and execution resumes to the input dialogue
+(label `<tt>enter</tt>').
+
+<p>
+Finally, in line&nbsp;36, the whole recorded execution of the script is
+signed and a signature object containing all the relevant information
+about the script's execution including the signature is pushed onto
+the stack. The signature object is then sent back to the originator in
+line&nbsp;37 and execution terminates.
+
+<p>
+During execution the runtime environment collects the
+non-deterministic input from the various sources into a log
+L={i<sub>1</sub>,<font face="symbol">π</font
+>,i<sub>n</sub>} of inputs i<sub>j</sub>. In the above example execution
+thus yields
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+L={(<tt>int</tt>, `<tt>1</tt><font face="symbol">¢</font
+>),(<tt>string</tt>, `<tt>70</tt><font face="symbol">¢</font
+>)},</td></tr></table>
+</td></tr></table>
+
+
+i.e., for each input we record the type information and the data. The
+overall interactive log of an execution of script P with the
+identifier <i>id</i><sub>P</sub> is computed and returned together with
+additional platform information R to the original sender S as
+follows:
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="right"><table border="0"><tr><td nowrap="nowrap" align="center">
+C<font face="symbol">®</font
+> S:</td></tr></table></td><td><table border="0"><tr><td nowrap="nowrap" align="center">
+</td><td align="left" class="cl"><font face="symbol">
+ì<br />í<br />
+î
+</font></td><td nowrap="nowrap" align="center">
+<i>id</i><sub>P</sub>,L,R, <i>sig</i><sub>S<sub>C</sub></sub></td><td align="left" class="cl"><font face="symbol">
+æ<br />è
+</font></td><td nowrap="nowrap" align="center">
+<i>hash</i>(<i>id</i><sub>P</sub>,P,L,R)</td><td align="left" class="cl"><font face="symbol">
+ö<br />ø
+</font></td><td nowrap="nowrap" align="center">
+</td><td align="left" class="cl"><font face="symbol">
+ü<br />‡<br />
+ﬂ
+</font></td><td nowrap="nowrap" align="center">
+. </td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+The receiver must be able to verify the authenticity of the signature
+by simulating the execution of the script according to the log L.
+Based on this simulation, the interaction of the script and the user
+can be replayed and the user's choices and inputs can be examined to
+take appropriate action.
+
+<p>
+The execution of the script should occur in a transactional context,
+i.e.&nbsp;if for some reason the execution is terminated, no signature is
+created. 
+
+<p>
+
+<h3>Summary</h3>
+
+<p>
+Using signatures on runtime execution audits combined with recording
+user interactions as a means to implement non-repudiation is,
+to the best of our knowledge, a novel approach. We consider this
+approach particularly useful for our application domain for the
+following reasons:
+
+<ul>        
+<li> Due to the lack of user input and output facilities, performing
+  all possible executions within the trust domain of the smart card is
+  from a security point of view desirable.<p></li>
+
+<li> All interaction which leaves the trust boundary of the smart card
+  is reduced to the bare minimum, i.e.&nbsp;to user interactions only.<p></li>
+
+<li> The approach is very flexible, since it offers scripts a full
+  control over the way signatures are built, how encryption is
+  performed, and how interaction takes place. As such it is able to
+  offer applications means to implement security policies as needed.<p></li>
+</ul>
+Thus, our approach allows to take full advantage of the smart card as
+an open platform for running security-critical applications in the
+tamper-resistant context of the physical device. More precisely, it
+represents one instance of the on-card hash computation approach as
+presented in Sect.&nbsp;<a href="index.html#sec:sig:oncardhash">2.2</a>. Furthermore, it can be
+easily extended to also support the third-party assisted approach in
+Sect.&nbsp;<a href="index.html#sec:ttphash">2.3</a> and the recipient addressing approach in
+Sect.&nbsp;<a href="index.html#sec:addressing">2.4</a> assuming available key management facilities
+as described in&nbsp;[<a href="index.html#mobsecsc:2002" name="CITEmobsecsc:2002">10</a>].
+
+<p>
+
+<p>
+ <h2><a name="tth_sEc3">
+3</a>&nbsp;&nbsp;Related Work</h2>
+<a name="sec:relwork">
+</a>
+
+<p>
+The main contribution of our research is in increasing the
+trustworthiness of digital signatures by building as much as possible
+on the security properties of execution platforms in smart cards.
+
+<p>
+Alternatively, one can try to enhance the trustworthiness of devices;
+[<a href="index.html#pfitzmann:vis95" name="CITEpfitzmann:vis95">11</a>,<a href="index.html#pfitzmann:ibmtr" name="CITEpfitzmann:ibmtr">12</a>] discuss portable end-user
+devices (POBs) and security modules and define a number of
+requirements to be made for such devices. They observe that
+trustworthy POBs do not exist and conclude that therefore the
+development of secure applications should concentrate on protocols and
+procedures. A related approach is, e.g.&nbsp;described in
+[<a href="index.html#pca:cqre1999" name="CITEpca:cqre1999">9</a>] that comprises two different devices, a PDA and a
+smart card, that together implement a security-sensitive application:
+the smart card does not perform its task without the PDA and the PDA
+cannot perform the task without the help of the smart card.
+
+<p>
+One of the key ideas of this paper is documenting user interaction
+involved with digital signatures; a suitable, lightweight scripting
+language suitable for on-the-fly download to smart cards has been
+proposed in [<a href="index.html#simspeak:esmart2001" name="CITEsimspeak:esmart2001">8</a>,<a href="index.html#mobsecsc:2002" name="CITEmobsecsc:2002">10</a>].
+
+<p>
+The actual runtime execution monitoring using an execution log has
+been investigated by Vigna as a means to protect the execution of
+mobile agents in hostile environments [<a href="index.html#vigna98:cryptotraces" name="CITEvigna98:cryptotraces">14</a>]. The
+sender of a mobile agent can use this signed execution log to verify
+whether the agent has been tampered with while executing on a remote
+agent platform.
+
+<p>
+
+<p>
+ <h2><a name="tth_sEc4">
+4</a>&nbsp;&nbsp;Conclusion</h2>
+<a name="sec:conc">
+</a>
+
+<p>
+Starting from the observation that the process of electronic signature
+creation is still vulnerable in many practical settings, we have
+proposed three protocol variants that aim at shifting functionality
+from untrusted components into a smart card.
+
+<p>
+The first option considers on-card hash computation combined with
+end-to-end secure transfer of the document to be signed from the
+originator to the smart card. Another approach uses a trusted third
+party to perform resource-intensive computation of the document's hash
+outside the card. The third approach is characterized by the
+integration of identity of the document's originator into the protocol
+eliminating further attacks. However, so-called ``conspiracy attacks''
+in which an intruder and an originator cooperate are still, yet less
+easily, mountable.
+
+<p>
+Based on the new protocols a novel approach for the creation of
+electronic signatures based on a runtime execution platform for smart
+cards has been presented. This approach is able to include the
+different protocol options presented and is especially suited for use
+in mobile settings characterized by the limited device capabilities in
+terms of user input and output. We have illustrated our approach with
+an example in the domain of mobile auctions - an application that is
+ideally suited to be run on mobile phones.
+
+<p>
+Generally, we suggest that GSM SIMs and UMTS USIMs might be ideal
+candidates for hosting such a smart card platform. Our results
+demonstrate that improvements in the electronic signature creation
+process are feasible if the environment the creation takes place is
+suitably taken into consideration.
+
+<p>
+
+<p>
+<h2>References</h2>
+
+<dl compact="compact">
+<font size="-1"></font> <dt><a href="index.html#CITEusat:interp:arch" name="usat:interp:arch">[1]</a></dt><dd>
+3rd Generation Partnership Project.
+ <em>3GPP TS 31.112 V5.0.0 (2001-09) Technical Specification 3rd
+  Generation Partnership Project; Technical Specification Group Terminals; USIM
+  Application Toolkit (USAT) Interpreter Architecture Description (Release
+  5)</em>, Sept. 2001.
+ Available at http://www.3gpp.org.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEusat:interp:bc" name="usat:interp:bc">[2]</a></dt><dd>
+3rd Generation Partnership Project.
+ <em>3GPP TS 31.113 V5.0.0 (2001-09) Technical Specification 3rd
+  Generation Partnership Project; Technical Specification Group Terminals; USAT
+  Interpreter Byte Codes (Release 5)</em>, Sept. 2001.
+ Available at http://www.3gpp.org.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEgsm03.48" name="gsm03.48">[3]</a></dt><dd>
+European Telecommunication Standardization Institution (ETSI).
+ <em>Digital cellular telecommunications system (Phase 2+); Security
+  Mechanisms for the SIM application toolkit; Stage 2 (GSM 03.48 version 8.1.0
+  Release 99)</em>, Nov. 1999.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEgsm02.19" name="gsm02.19">[4]</a></dt><dd>
+European Telecommunication Standardization Institution (ETSI), Sophia
+  Antipolis, France.
+ <em>Digital cellular telecommunications system (Phase 2+, Release
+  98): Subscriber Identity Module Application Programming Interface (SIM API);
+  Service description; Stage 2 (GSM 02.19 version 7.0.0 Release 1998)</em>, 2000.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEgsm03.19" name="gsm03.19">[5]</a></dt><dd>
+European Telecommunication Standardization Institution (ETSI), Sophia
+  Antipolis, France.
+ <em>Digital cellular telecommunications system (Phase 2+):
+  Subscriber Identity Module Application Programming Interface (SIM API); SIM
+  API for Java Card; Stage 2 (GSM 03.19 version 7.1.0, Release 1998)</em>, 2000.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEgsm11.14" name="gsm11.14">[6]</a></dt><dd>
+European Telecommunications Standard Institute.
+ <em>Digital cellular telecommunications system (Phase 2+);
+  Specification of the SIM Application Toolkit for the Subscriber Identity
+  Module - Mobile Equipment (SIM-ME) interface (GSM&nbsp;11.14)</em>, 1998.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEjavacard:www" name="javacard:www">[7]</a></dt><dd>
+Java Card Technology.
+ Specifications are available at
+  http://java.sun.com/products/javacard/.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEsimspeak:esmart2001" name="simspeak:esmart2001">[8]</a></dt><dd>
+R.&nbsp;Kehr and H.&nbsp;Mieves.
+ SIMspeak: Towards an open and secure platform for GSM SIMs.
+ In I.&nbsp;Attali and T.&nbsp;Jensen, editors, <em>Proceedings of
+  International Conference on Research in Smart Cards: Smart Card Programming
+  and Security, E-smart 2001, Cannes, France,</em>, volume 2140 of <em>Lecture
+  Notes in Computer Science</em>. Springer-Verlag, September, 19-21 2001.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEpca:cqre1999" name="pca:cqre1999">[9]</a></dt><dd>
+R.&nbsp;Kehr, J.&nbsp;Posegga, and H.&nbsp;Vogt.
+ PCA: Jini-based Personal Card Assistant.
+ In R.&nbsp;Baumgart, editor, <em>Proceedings of Secure Networking - CQRE
+  [Secure]'99, Düsseldorf, Germany</em>, volume 1740 of <em>Lecture Notes in
+  Computer Science</em>, pages 64-75. Springer-Verlag, November&nbsp;30 - December&nbsp;2,
+  1999.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEmobsecsc:2002" name="mobsecsc:2002">[10]</a></dt><dd>
+R.&nbsp;Kilian-Kehr.
+ <em>Mobile Security with Smartcards</em>.
+ PhD thesis, Darmstadt University of Technology, May 2002.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEpfitzmann:vis95" name="pfitzmann:vis95">[11]</a></dt><dd>
+A.&nbsp;Pfitzmann, B.&nbsp;Pfitzmann, M.&nbsp;Schunter, and M.&nbsp;Waidner.
+ Vertrauenswürdiger Entwurf portabler Benutzerendgeräte und
+  Sicherheitsmodule.
+ In <em>Proceedings of Verläßliche Informationssysteme VIS'95</em>, pages
+  329-350. Vieweg, 1995.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEpfitzmann:ibmtr" name="pfitzmann:ibmtr">[12]</a></dt><dd>
+A.&nbsp;Pfitzmann, B.&nbsp;Pfitzmann, M.&nbsp;Schunter, and M.&nbsp;Waidner.
+ Mobile user devices and security modules: Design for
+  trustworthiness.
+ Technical Report RZ 2784 (#89262), IBM Research Division, Zurich,
+  May 1996.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEscheibelhofer:wysiwys" name="scheibelhofer:wysiwys">[13]</a></dt><dd>
+K.&nbsp;Scheibelhofer.
+ What you see is what you sign.
+ In <em>Proceedings of IFIP conference on Communications and
+  Multimedia Security (CMS&nbsp;'2001), Darmstadt, Germany</em>, May 21-22, 2001.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEvigna98:cryptotraces" name="vigna98:cryptotraces">[14]</a></dt><dd>
+G.&nbsp;Vigna.
+ Cryptographic traces for mobile agents.
+ In G.&nbsp;Vigna, editor, <em>Mobile Agents and Security</em>, volume 1419 of
+  <em>Lecture Notes in Computer Science</em>. Springer-Verlag, June 1998.
+
+<p>
+</dd>
+ <dt><a href="index.html#CITEwindowscard:www" name="windowscard:www">[15]</a></dt><dd>
+Windows for Smartcards.
+ www.microsoft.com/smartcard/.</dd>
+</dl>
+
+
+
+<p>
+
+<br /><br /><hr /><small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.13.<br />On 25 Sep 2002, 08:50.</small>
+</html>
+

@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<TITLE>cardis'04</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF background="images/fond-menu.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/cardis_4-OVER.gif','images/cardis_4-ON.gif','images/cardis_6-OVER.gif','images/cardis_6-ON.gif','images/cardis_7-OVER.gif','images/cardis_7-ON.gif','images/cardis_8-OVER.gif','images/cardis_8-ON.gif','images/cardis_9-OVER.gif','images/cardis_9-ON.gif','images/cardis_10-OVER.gif','images/cardis_10-ON.gif','images/cardis_11-OVER.gif','images/cardis_11-ON.gif','images/cardis_12-OVER.gif','images/cardis_12-ON.gif','images/cardis_13-OVER.gif','images/cardis_13-ON.gif','images/cardis_14-OVER.gif','images/cardis_14-ON.gif'),'images/cardis_16-OVER.gif','images/cardis_16-ON.gif')">
+
+<!-- ImageReady Slices (cardis2004.psd - Slices: 04, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15) -->
+<TABLE WIDTH=134 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		
+    <TD> <a href="scope.html" target="mainFrame" onClick="MM_nbGroup('down','group1','scope','images/cardis_4-OVER.gif',1)" onMouseOver="MM_nbGroup('over','scope','images/cardis_4-ON.gif','images/cardis_4-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_4.gif" ALT="" name="scope" WIDTH=134 HEIGHT=34 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="committees.html" target="mainFrame" onClick="MM_nbGroup('down','group1','committees','images/cardis_6-OVER.gif',1)" onMouseOver="MM_nbGroup('over','committees','images/cardis_6-ON.gif','images/cardis_6-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_6.gif" ALT="" name="committees" WIDTH=134 HEIGHT=25 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="call-for-paper.html" target="mainFrame" onClick="MM_nbGroup('down','group1','call','images/cardis_7-OVER.gif',1)" onMouseOver="MM_nbGroup('over','call','images/cardis_7-ON.gif','images/cardis_7-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_7.gif" ALT="" name="call" WIDTH=134 HEIGHT=26 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="awards.html" target="mainFrame" onClick="MM_nbGroup('down','group1','awards','images/cardis_8-OVER.gif',1)" onMouseOver="MM_nbGroup('over','awards','images/cardis_8-ON.gif','images/cardis_8-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_8.gif" ALT="" name="awards" WIDTH=134 HEIGHT=25 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="grants.html" target="mainFrame" onClick="MM_nbGroup('down','group1','grants','images/cardis_9-OVER.gif',1)" onMouseOver="MM_nbGroup('over','grants','images/cardis_9-ON.gif','images/cardis_9-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_9.gif" ALT="" name="grants" WIDTH=134 HEIGHT=27 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="http://www.wcc2004.org/cardis" target="_blank" onClick="MM_nbGroup('down','group1','submission','images/cardis_10-OVER.gif',1)" onMouseOver="MM_nbGroup('over','submission','images/cardis_10-ON.gif','images/cardis_10-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_10.gif" ALT="" name="submission" WIDTH=134 HEIGHT=25 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="program.html" target="mainFrame" onClick="MM_nbGroup('down','group1','program','images/cardis_11-OVER.gif',1)" onMouseOver="MM_nbGroup('over','program','images/cardis_11-ON.gif','images/cardis_11-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_11.gif" ALT="" name="program" WIDTH=134 HEIGHT=25 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="dates.html" target="mainFrame" onClick="MM_nbGroup('down','group1','dates','images/cardis_12-OVER.gif',1)" onMouseOver="MM_nbGroup('over','dates','images/cardis_12-ON.gif','images/cardis_12-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_12.gif" ALT="" name="dates" WIDTH=134 HEIGHT=27 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="contacts.html" target="mainFrame" onClick="MM_nbGroup('down','group1','contacts','images/cardis_13-OVER.gif',1)" onMouseOver="MM_nbGroup('over','contacts','images/cardis_13-ON.gif','images/cardis_13-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_13.gif" ALT="" name="contacts" WIDTH=134 HEIGHT=25 border="0"></a></TD>
+	</TR>
+	<TR>
+		
+    <TD> <a href="venue.html" target="mainFrame" onClick="MM_nbGroup('down','group1','venue','images/cardis_14-OVER.gif',1)" onMouseOver="MM_nbGroup('over','venue','images/cardis_14-ON.gif','images/cardis_14-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_14.gif" ALT="" name="venue" WIDTH=134 HEIGHT=28 border="0"></a></TD>
+	</TR>
+
+<TR>
+		
+    <TD> <a href="http://www.wcc2004.org/registration.htm" target="_blank"   onClick="MM_nbGroup('down','group1','registration','images/cardis_16-OVER.gif',1)" onMouseOver="MM_nbGroup('over','registration','images/cardis_16-ON.gif','images/cardis_16-OVER.gif',1)" onMouseOut="MM_nbGroup('out')"><IMG SRC="images/cardis_16.gif" ALT="" name="registration" WIDTH=134 HEIGHT=28 border="0"></a></TD>
+	</TR>
+
+	<TR>
+		
+    <TD> <IMG SRC="images/cardis_15.gif" ALT="" WIDTH=134 HEIGHT=52 border="0" usemap="#Map"></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+<map name="Map">
+  <area shape="rect" coords="16,33,106,44" href="mailto:w3master@laas.fr">
+</map>
+</BODY>
+</HTML>

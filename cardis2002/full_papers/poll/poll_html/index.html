@@ -1,0 +1,1272 @@
+
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 75-86 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+<P>
+<H1 ALIGN="CENTER"><FONT SIZE="+2"><B>A Java Reference Model of Transacted Memory for Smart Cards</B></FONT></H1>
+<P ALIGN="CENTER"><STRONG>Erik Poll 
+
+<BR><EM>University of Nijmegen, the Netherlands</EM> 
+</STRONG></P>
+
+<P ALIGN="CENTER"><STRONG>Pieter Hartel 
+
+<BR><EM>University of Twente, the Netherlands</EM>
+</STRONG></P>
+
+<P></P>
+
+<P ALIGN="CENTER"><STRONG>Eduard de Jong 
+
+<BR><EM>Sun Microsystems, Inc., Santa Clara, USA</EM>
+</STRONG></P>
+
+<P>
+
+<P>
+
+<H2><A NAME="SECTION00001000000000000000">
+Abstract</A>
+</H2>
+Transacted Memory offers persistence, undoability and auditing. We present a
+Java/JML Reference Model of the Transacted Memory system on the basis of our
+earlier separate Z model and C implementation. We conclude that Java/JML
+combines the advantages of a high level specification in the JML part (based
+on our Z model), with a detailed implementation in the Java part (based on
+our C implementation).
+
+<P>
+
+<H1><A NAME="SECTION00010000000000000000">
+1 Introduction</A>
+</H1>
+
+<P>
+In a previous paper&nbsp;[<A
+ href="index.html#Har00b">6</A>] we introduced Transacted Memory as an
+efficient means to implement atomic updates of arbitrarily sized information
+on smart cards. Smart cards need such a facility, as a transaction can
+be aborted by a <EM>card tear</EM>, i.e. by pulling the smart card 
+out of the Card Acceptance Device (CAD), at any moment.
+A patent application has been filed for this Transacted Memory
+[<A
+ href="index.html#Jon00">5</A>]. 
+Its design allows a much smaller implementation overhead than the 
+transaction mechanism in the current Java Card API<A NAME="tex2html1"
+  href="index.html#foot22"><SUP>1</SUP></A>, which does not 
+even provide generational, logging, or multiple concurrent 
+transactions.
+
+<P>
+In our earlier paper we provided a succinct abstract Z
+specification&nbsp;[<A
+ href="index.html#Spi89">13</A>] of the system, a first Z refinement that takes
+into account the peculiarities of EEPROM memory (i.e. byte read versus block
+write), a second Z refinement that deals with card tear, and, finally, an
+(inefficient) C implementation. (The inefficiency is due to the use of many
+simple for-loops that search the memory; we are working on a VHDL
+specification of a hardware module that will replace the for-loops by
+efficient parallel searches but this is beyond the scope of the present
+paper.) The C implementation has been coded in such a way that it also serves
+as a SPIN&nbsp;[<A
+ href="index.html#Hol97">8</A>] model.
+
+<P>
+From our earlier work we concluded that a formal connection between
+specification and implementation would have been highly desirable, yet such a
+connection cannot be obtained using Z and C. While a formal connection can be
+established using SPIN, we believe the readability leaves much to be desired, 
+as specification and implementation tend to be intertwined in a SPIN model.
+
+<P>
+In the present paper we adopt an integrated approach to specification and
+implementation that solves the problems of readability and the lack of a formal
+connection between specification and implementation. 
+We use the Java/JML&nbsp;[<A
+ href="index.html#Lea99a">9</A>] modelling method and tools,
+which means we write formal specifications by annotating the Java
+code with invariants, preconditions, and postconditions, using the 
+specification language JML (see <TT>www.jmlspecs.org</TT>). 
+These formal specifications can then be compiled into runtime-checks 
+[<A
+ href="index.html#Cheon-Leavens02b">4</A>], providing a convenient way of checking 
+specifications against code. The Java/JML modelling method and the
+runtime assertion checker ensure a strong, formal connection between Java
+implementation and JML specification. 
+
+<P>
+In the present work we apply Java/JML to what we hope will become a component
+of a future version of the Java Card technology.
+JML has already  been used to specify the entire Java Card 
+API&nbsp;[<A
+ href="index.html#PollBJ00">11</A>,<A
+ href="index.html#PollBJ01">12</A>], and other tools than the runtime
+assertion checker have already been used to verify JML specifications of
+Java Card applets&nbsp;[<A
+ href="index.html#CatanoHuisman02">3</A>,<A
+ href="index.html#BreunesseJacobsBerg02">1</A>].
+
+<P>
+The contributions of the present paper are:
+
+<UL>
+<LI>Several bugs have been detected and repaired in the 
+implementation of the Transacted Memory.
+
+<P>
+</LI>
+<LI>We make the pre- and postconditions of the memory operations
+explicit in the JML specifications. The readability of these specifications
+is better because the reader does not have to trawl through the entire Z
+specification to discover the pre- and postconditions. The connection
+between specification and implementation is formal, and has been checked
+using the runtime assertion checker.
+
+<P>
+</LI>
+<LI>The previous C implementation cum SPIN model relied on implicit
+methods of modelling the recovery from card tears. In the Java/JML model we
+use exception handling as an explicit, clearer method for modelling recovery.
+This allows us to test the behaviour of the Java implementation 
+in the presence of (simulated) card tears, and to use JML to precisely 
+specify the conditions that should hold after a card tear.
+
+<P>
+</LI>
+<LI>We contribute a <I>reference model</I> of the Transacted Memory
+system to SUN's collection, instead of just a <I>reference
+implementation</I>. The difference is in the presence of the formal JML
+specification.
+
+<P>
+</LI>
+</UL>
+
+<P>
+In Section&nbsp;<A href="index.html#section:memory">2</A> we review briefly how Transacted Memory
+works. Section&nbsp;<A href="index.html#section:Java">3</A> describes the Java implementation of
+the system,
+Section&nbsp;<A href="index.html#section:JML">4</A> discusses the JML specification
+for this Java implementation.  The last section concludes.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="figure:process"></A><A NAME="72"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+The process</CAPTION>
+<TR><TD><IMG
+ WIDTH="148" HEIGHT="508" BORDER="0"
+ src="poll1.png"
+ ALT="\begin{figure}\setlength{\unitlength}{4mm}\begin{center}
+\begin{picture}(8,30)(1...
+...1){4}} \put(17,1){\makebox(5,0){Informal}}
+\end{picture}\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<H1><A NAME="SECTION00020000000000000000"></A>
+<A NAME="section:memory"></A><BR>
+2 The Transacted Memory
+</H1>
+
+<P>
+Figure&nbsp;<A href="index.html#figure:process">1</A> describes the relationship between the various
+specifications and implementations of the Transacted Memory system. The
+Java/JML reference model, which is the subject of this paper, was derived by
+hand from the closely corresponding C implementation cum SPIN model for the
+Java part, and from the final refinement of the Z specification for the JML
+part. While Java and C are similar in many ways, there are some important
+differences, discussed in Section&nbsp;<A href="index.html#section:Java">3</A> below. Here we
+concentrate on how Transacted Memory works, giving excerpts of the abstract Z
+specification to make the present paper self contained; the details are in 
+[<A
+ href="index.html#Har00b">6</A>,<A
+ href="index.html#But97a">2</A>].
+
+<P>
+Transacted Memory is designed around two notions: tags and 
+information sequences. A <EM>Tag</EM> is merely a unique
+address, i.e. an identifier of a particular information sequence. 
+An information sequence is a sequence of <EM>Info</EM>'s,
+where <EM>Info</EM> is the unit of data stored and retrieved. 
+A sequence of <EM>Info</EM>'s would be used to store a collection of 
+object instances that are logically part
+of a transaction.
+
+<P>
+The abstract Z specification (below) makes no specific assumptions about either
+component:
+
+<P>
+<BR>
+<IMG
+ WIDTH="68" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ src="poll2.png"
+ ALT="\begin{zed}[Tag, Info]
+\end{zed}">
+<BR>
+
+<P>
+The existence of a finite set of available tags is assumed (<EM>tags</EM>),
+as well as limits on the size of the memory (<EM>msize</EM>).
+There may be several generations of the information associated with a tag,
+and there is a maximum number of generations that may be associated with any 
+tag (<EM>maxgen</EM>):
+
+<P>
+<BR>
+<IMG
+ WIDTH="100" HEIGHT="57" ALIGN="BOTTOM" BORDER="0"
+ src="poll3.png"
+ ALT="\begin{axdef}
+tags : \finset Tag \\
+msize : \nat_1 \\
+maxgen : \nat_1
+\end{axdef}">
+<BR>
+
+<P>
+The abstract Z specification represents the memory system as two partial
+functions <EM>assoc</EM> and <EM>size</EM> and a set <EM>committed</EM>,
+as shown below. We have omitted the constraints on the partial functions and
+the set: 
+
+<P>
+<BR>
+<IMG
+ WIDTH="492" HEIGHT="110" ALIGN="BOTTOM" BORDER="0"
+ src="poll4.png"
+ ALT="\begin{schema}{AMemSys}
+assoc : tags \pfun \seq(\seq Info) \\
+size : tags \pfun \nat_1 \\
+committed : \power tags \\
+\where
+\dots
+\end{schema}">
+<BR>
+
+<P>
+The <EM>assoc</EM> function associates a tag with a sequence of sequences of
+information.
+The first sequence of information represents the current information
+associated with a tag.
+Any further information sequences give older generations of this information,
+in order of increasing age.
+
+<P>
+The <EM>size</EM> function gives the length of the information
+sequences associated with a tag. The <EM>committed</EM> set records those
+tags for which the current state of the transacted data has been committed.
+
+<P>
+Operations are provided to write a new generation, and to read the current or
+older generations. All generations associated with a tag have the same size,
+although this could be generalised.
+
+<P>
+The transaction processing capability of the memory is supported by a commit
+operation, which makes the most recently written information the current
+generation. The oldest generation is automatically purged should the number of
+generations for a tag exceed a preset maximum.
+It should be noted that the support for recording multiple
+generations, which can be useful for logging, essentially comes for free,
+i.e. without any additional implementation cost.
+
+<P>
+As an example,
+the abstract Z specification of the operation <EM>ACommit</EM> is shown
+below.  The operation commits the current generation of information associated
+with a tag. The tag must have an associated information sequence, which is
+flagged as committed.
+
+<P>
+<BR>
+<IMG
+ WIDTH="492" HEIGHT="129" ALIGN="BOTTOM" BORDER="0"
+ src="poll5.png"
+ ALT="\begin{schema}{ACommit}
+\Delta AMemSys \\
+t? : tags
+\where
+t? \in \dom assoc...
+...soc~t? \neq \langle \rangle \\
+committed' = committed \cup \{t?\}
+\end{schema}">
+<BR>
+
+<P>
+The Transacted Memory must be used in such a way that a sequence of
+operations either completes normally, or that a sequence is interrupted at an
+arbitrary moment by a card tear. A recovery operation <TT>Tidy</TT> is
+provided to return the Transacted memory to a known state. The idea is that
+each time the card is inserted in the CAD, the recovery operation is
+automatically started.
+
+<P>
+Transacted Memory thus provides undoability (by being able to revert to a previous generation) and persistence (by using EEPROM technology). These are precisely the ingredients necessary to support transactions&nbsp;[<A
+ href="index.html#Net91">10</A>].
+
+<P>
+To provide this functionality, Transacted Memory maintains a certain amount of bookkeeping information. In its most abstract form, the bookkeeping information records three items:
+
+<P>
+
+<UL>
+<LI>The length of the information sequence that is associated with a tag.
+
+<P>
+</LI>
+<LI>The different generations of information associated with each tag. It is possible that there is no information associated with a tag.
+
+<P>
+</LI>
+<LI>Which tags are currently committed.
+
+<P>
+</LI>
+</UL>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="155"></A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+Transacted Memory data structures and functions for C.</CAPTION>
+<TR><TD><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>typedef struct { Gen old, new ; byte cnt ; } GenGenbyte ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>structure used to hold the number of the oldest and newest generation,
+   and the number of generations.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>typedef struct { Size size ; Info data[ssize] ; } InfoSeq ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>structure used to hold an information sequence and its size.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>GenGenbyte DGeneration( Tag ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Return all available information for the given tag. The result is    undefined if the tag is not in use.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>Tag DNewTag( Size ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Return an unused tag of the specified size. The result is undefined if no tag is available.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DTidy( ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Recover from an interrupted write operation.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>InfoSeq DReadGeneration( Tag, Gen ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Read the information sequence of a given tag and generation. The information sequence is undefined if the tag is not in use.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>InfoSeq DRead( Tag ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Read the information sequence of the current generation associated with the given tag.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DCommit( Tag ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Commit the current generation for the given tag. The operation has no effect if the tag is already committed.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DRelease( Tag ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Release all information associated with the given tag. The operation has no effect if the tag is not in use.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DWriteFirst( Tag, InfoSeq ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Write to a tag immediately after the <TT>DNewTag</TT> operation. The result is undefined if insufficient space is available.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DWriteUncommitted( Tag, InfoSeq ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Write to a tag whose current generation is uncommitted.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DWriteCommittedAddGen( Tag, InfoSeq ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Write to a tag whose current generation has been committed, and whose maximum number of generations has <I>not</I> been reached.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=2><TT>void DWriteCommittedMaxGen( Tag, InfoSeq ) ;</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=312>Write to a tag whose current generation has been committed, and whose maximum number of generations <I>has</I> been written. The oldest generation will be dropped.</TD>
+</TR>
+</TABLE>
+<A NAME="table:api"></A></TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+
+<P>
+The details of the Z specification may be found in a technical
+report&nbsp;[<A
+ href="index.html#But97a">2</A>]; here we focus on the API of the Transacted Memory,
+taken from our previous paper&nbsp;[<A
+ href="index.html#Har00b">6</A>] and shown in
+Figure&nbsp;<A href="index.html#table:api">2</A>, because this is where the pre- and postconditions of
+the Java/JML specification provide the major contribution to readability and
+rigour.  
+
+<P>
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="section:Java"></A><BR>
+3 A Java implementation of Transacted Memory
+</H1>
+
+<P>
+The Java implementation was obtained by manually transliterating the C code
+to Java code.  This is not difficult as the languages are close, and for a
+program of this size (1200 lines) the effort involved is small. We have been
+careful in transliterating the C code, and we are confident that our Java
+implementation closely mimics the C implementation. There are two essential
+differences between the Java implementation and the C implementation, as
+explained below.  
+
+<H3><A NAME="SECTION00030100000000000000">
+Static Type Checking</A>
+</H3>
+
+<P>
+The C implementation contains several macros to define ``types'' for the
+different kinds of numeric values (bytes) that are used, such as generations,
+locations, page numbers, tags, versions, etc.:
+<BR>
+<PRE>
+#define Gen  byte  /* 0 .. maxgen  */
+#define Loc  byte  /* 0 .. msize-1 */
+#define PageNo  byte
+#define Tag  byte  /* 0 .. tsize-1 */
+#define Ver  byte  /* 0 .. 2 */
+#define Inf  byte  /* 0 .. isize-1 */
+#define Seq  byte  /* 0 .. ssize   */
+</PRE>
+<BR>
+These are just macros, and although they increase the readability of the
+code, they do not provide any type-safety.  
+
+<P>
+In the Java implementation we have chosen to use different classes for these
+different kinds of values.  This is inefficient since we make what is just a
+simple byte into an object.  The inefficiency is not a primary concern here;
+we believe it to be more important for a reference model to be as clear and
+concise as possible<A NAME="tex2html4"
+  href="index.html#foot167"><SUP>2</SUP></A>. Modelling bytes by classes has the advantage of
+providing type-safety, as for instance `generations' and `tags' are no longer
+assignment-compatible. Interestingly, this increased type safety immediately
+revealed a bug in the C code (and SPIN model): in one place a `version
+number' was used in a place where a `page number' was expected. This bug
+seems to have been a simple typo in the C code.
+This bug was not discovered in the model checking using SPIN, nor in
+testing of the C implementation, because the test harness for the 
+Transacted Memory used there was fairly restricted.
+
+<P>
+The discovery of this bug illustrates the value of a statically enforced type system.  Especially for code like that of the Transacted Memory, which is littered with different `kinds' of bytes, it is easy to confuse a byte representing a page number with a byte representing a `version'. It is a pity that C and Java do not have type-safe enumeration types, and that JML does not improve the level of expressiveness of the Java/JML combination in this respect.
+
+<P>
+
+<H3><A NAME="SECTION00030200000000000000">
+Modelling card tear</A>
+</H3>
+
+<P>
+The second, and more important, aspect in which the Java implementation 
+essentially differs from the C implementation is that we use Java's 
+exception mechanism to model card tears.  We introduce a special 
+exception class <TT>CardTearException</TT>, and a card tear is simulated 
+by throwing this exception.
+This is useful, because it allows us 
+<BR>
+
+<OL>
+<LI>to <EM>test</EM> the behaviour of the program when card tears occur;
+in the Java method that models atomic writes to EEPROM
+we can easily simulate random card tears by randomly choosing
+to throw a <TT>CardTearException</TT> or not, before or after the 
+atomic write to EEPROM.
+</LI>
+<LI>to <EM>specify</EM> in JML the properties that should hold after
+a card tear occurs;
+this will be discussed in Section&nbsp;<A href="index.html#section:JML">4</A>.
+</LI>
+</OL>
+<BR>
+In fact, though we will not pursue this point in this paper, 
+a card tear can be modelled very accurately as an (uncatchable) Java exception, 
+for which the power-on mechanism of the card provides the exception handler;
+see&nbsp;[<A
+ href="index.html#Har00a">7</A>].
+
+<P>
+In a later stage we will also introduce Java exceptions to signal
+that there is insufficient free transacted memory to carry out an operation,
+as discussed at the end of Section&nbsp;<A href="index.html#section:JML">4</A>.
+
+<P>
+
+<H1><A NAME="SECTION00040000000000000000"></A>
+<A NAME="section:JML"></A><BR>
+4 JML specifications for the Java implementation
+</H1>
+
+<P>
+The Java Modeling Language (JML) [<A
+ href="index.html#Lea99a">9</A>] is a behavioural 
+interface specification language tailored to Java.
+JML is developed primarily by Gary T. Leavens at Iowa State University.
+Java programs can be specified using JML by
+annotating them with invariants, pre- and postconditions, and other kinds of
+assertions.  JML combines features of Eiffel (or `Design by Contract') and
+model-based approaches, such as Larch/LSL and VDM.
+
+<P>
+JML annotations are written as a special kind of Java comments.
+This means they are ignored by normal Java compilers,
+but can be used by special tools for JML.
+The tools we have used on our JML-annotated code are the JML type-checker
+and the JML runtime assertion compiler [<A
+ href="index.html#Cheon-Leavens02b">4</A>].
+Both these tools can be downloaded from <TT>www.jmlspecs.org</TT>.
+The runtime assertion compiler turns annotations into runtime checks,
+so that any violation of an annotation at runtime produces
+an error.
+
+<P>
+To create the JML specifications for the Java implementation,
+elements of the Z specifications and of the informal comments given 
+in the C code were converted into pre- and  postconditions, 
+class invariants, and loop invariants.  
+The JML specifications we have written are partial in the sense that they do 
+not give a complete specification of Transacted Memory.
+Still, the specifications do express the main properties that should hold
+for the Transacted Memory, and have proven to be sufficiently detailed to 
+find bugs, as we will discuss later.
+
+<P>
+Figure&nbsp;<A href="index.html#figure:JMLspec">2</A> gives an example of a JML specification, 
+namely the specification of the method <TT>DWriteUncommitted</TT>.
+The JML specification is written between the annotation markers
+<code>/*@</code> and <code>@*/</code>.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="figure:JMLspec"></A><A NAME="357"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+JML specification of <TT>DWriteUncommitted</TT></CAPTION>
+<TR><TD><IMG
+ WIDTH="580" HEIGHT="282" BORDER="0"
+ src="poll6.png"
+ ALT="\begin{figure*}\begin{verbatim}/* Write to a tag whose current generation is u...
+...mitted(Tag tag, InfoSeq i)
+throws CardTearException;\end{verbatim}\end{figure*}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+The first three lines of the JML specification, starting with 
+<TT>requires</TT>, give the <EM>precondition</EM> of the method.
+Here the precondition is that the <TT>tag</TT> should
+be in use, the information sequence <TT>i</TT> should be of the right length, and the
+<TT>tag</TT> should not be committed.  When doing runtime assertion checking,
+any invocation of <TT>DWriteUncommitted</TT> which violates these preconditions
+will produce an error message<A NAME="tex2html6"
+  href="index.html#foot358"><SUP>3</SUP></A>.
+
+<P>
+The next two lines, starting with <TT>ensures</TT>, give the <EM>postcondition</EM> of the method.  
+The first of these lines says that if we read back the value
+for <TT>tag</TT> using <TT>DRead</TT> we get the value <TT>i</TT> we just assigned to
+it, the second says that the  <TT>tag</TT> is still not committed.  When doing
+runtime assertion checking, any invocation of <TT>DWriteUncommitted</TT> which
+does not establish these postconditions will produce an error message.
+
+<P>
+Finally, the last lines  of the JML specification,  
+starting with <TT>signals</TT>,
+give the <EM>exceptional postcondition</EM>.  Whereas <TT>ensures</TT> 
+clauses specify the `normal' postconditions, i.e. properties that should hold after normal termination of a method invocation,
+<TT>signals</TT> clauses specify properties that should hold at the end of 
+a method invocation if an exception is thrown.  
+The first <TT>signals</TT> clause here says that if a 
+<TT>CardTearException</TT> 
+is thrown then the tag remains uncommitted.
+The second <TT>signals</TT> 
+clause says that if a <TT>CardTearException</TT> is thrown, then
+either
+<BR>
+<PRE>
+ DRead(tag).equals(i)
+</PRE>
+<BR>
+or
+<BR>
+<PRE>
+ DRead(tag).equals(\old( DRead(tag)))
+</PRE>
+<BR>
+i.e. reading back the value for <TT>tag</TT> either produces the `new' value 
+<TT>i</TT> just written or it produces the `old' value of <TT>DRead(tag)</TT>.  
+The JML keyword <code>\old</code> is used here 
+to refer to the value an expression had before execution of the method.
+
+<P>
+Note that the information sequence
+<TT>i</TT> may consist of several bytes, and that 
+a single <TT>DWriteUncommitted</TT>
+operation may require several writes to EEPROM. EEPROM is typically written
+block by block, where the block size depends on the particular EEPROM.  So
+the second <TT>signals</TT> clause states the atomicity of the 
+<TT>DWriteUncommitted</TT> operation!  
+
+<P>
+When doing runtime assertion checking, any invocation of 
+<TT>DWriteUncommitted</TT> which throws a <TT>CardTearException</TT> 
+and which does not
+establish the exceptional postconditions will produce an error message.
+Throwing an exception that is not a <TT>CardTearException</TT>
+will also produce an error message, as there are no <TT>signals</TT>
+clauses allowing other exceptions to be thrown.
+
+<P>
+Everything the runtime assertion checker does could be programmed by hand, as
+tests in the code - the C implementation has a number of these tests
+scattered through the code -, but note that for something like the second
+<TT>signals</TT> clause above this is far from trivial! It would involve
+catching and re-throwing exceptions at the end of the method, as well as
+somehow recording the `old' value that <TT>DRead(tag)</TT> has in the 
+pre-state.  The JML runtime assertion tool compiles all this into the code
+automatically, which is useful, as it means we can concentrate on the essentials.  
+
+<P>
+The other three write-operations
+- <TT>DWriteFirst</TT>, <TT>DWriteCommittedAddGen</TT>, and
+<TT>DWriteCommittedMaxGen</TT> -
+have specifications very similar to the one discussed above.
+The only difference is in their preconditions.
+
+<P>
+The specification of <TT>DWriteUncommitted</TT> above is still
+incomplete. For example, it does not specify that the older
+generations of the <TT>tag</TT> are left unchanged. Still, specifications
+like this turn out to be detailed enough to give useful feedback when
+checking them at runtime.  As discussed below, several problems with the
+implementation came to light when performing runtime assertion checks.
+
+<P>
+
+<H3><A NAME="SECTION00040100000000000000">
+Bug 1 - Uncommitting new generations</A>
+</H3>
+
+<P>
+Performing tests of the Transacted Memory the runtime assertion checker
+immediately reported that <TT>DWriteCommittedAddGen</TT> and 
+<TT>DWriteCommittedMaxGen</TT> do not establish their postconditions; more
+specifically, they fail to establish 
+<BR>
+<PRE>
+ ensures !ddata[tag.value].committed;
+</PRE>
+<BR>
+The implementations of these methods forget to reset the committed flag of
+the tag.  This bug was not discovered using SPIN, because the test harness
+used there committed every new generation immediately after the write operation.  
+
+<P>
+Note that even in the Java/JML model we could have forgotten this
+postcondition, and then we would not have discovered the problem either.
+However, by systematically writing specifications for all the operations
+we believe one is less likely to forget something like this.  
+
+<P>
+
+<H3><A NAME="SECTION00040200000000000000">
+Bug 2 - Inadvertent commit</A>
+</H3>
+
+<P>
+After Bug 1 was repaired, a second bug was discovered by runtime
+assertion checking.
+We also repaired the SPIN model and re-ran the model checker on that, 
+and found the same error there.
+
+<P>
+The operations <TT>DWriteCommittedAddGen</TT>
+and <TT>DWriteCommittedMaxGen</TT> start a new,
+uncommitted, generation,
+but a card tear at a certain point in their execution 
+may inadvertently commit the new generation written.
+Both <TT>DWriteCommittedAddGen</TT>
+and <TT>DWriteCommittedMaxGen</TT> first write 
+the data for the new generation.
+This may take several atomic writes, but the last of these 
+implicitly records that the whole write has been successful
+(in effect, making the whole writing of the data atomic).
+Then the commit flag is cleared  - also atomically, but separate from 
+the last write for the data. If a card tear
+occurs immediately after the data is written, but before the commit flag is
+cleared, the tag will appear committed 
+to the recovery process, whereas in reality it should be uncommitted. 
+The recovery process was not designed to
+detect this, and indeed a warning to this effect appears in the original Z
+specification&nbsp;[<A
+ href="index.html#But97a">2</A>, page 34].  
+
+<P>
+The solution which we have implemented is to use not a boolean commit 
+flag, but a three-valued flag, so that a 
+<TT>DWriteCommittedAddGen</TT> or <TT>DWriteCommittedMaxGen</TT> 
+interrupted at the precise point above can be detected during recovery.
+(An alternative solution would be to store the last of the data and the commit 
+flag together in the same EEPROM block, as opposed to storing them in 
+separate areas, so that writing the last of the data and the clearing
+the commit flag becomes one atomic operation.)
+
+<P>
+
+<H2><A NAME="SECTION00041000000000000000">
+Optimisations and Improvements in the Algorithm</A>
+</H2>
+
+<P>
+In addition to finding the bugs above,
+the systematic analysis of the code required to write the JML specifications
+also had the benefit of suggesting several optimisations and improvements 
+to the code.
+
+<P>
+
+<H3><A NAME="SECTION00041100000000000000">
+Efficiency Improvements</A>
+</H3>
+
+<P>
+The method <TT>DGeneration(Tag tag)</TT> discovers the generation indices
+associated with a tag, and then returns the indices of the oldest and newest
+generation, as well as the number of generations.  To better understand the
+implementation of this method, it was annotated with JML <TT>assert</TT>
+clauses.  An <TT>assert</TT> clause can occur anywhere in a method body, and
+specifies a property that should hold at this point in the program.  When doing
+runtime assertion checking, any violation of an <TT>assert</TT> clause will 
+produce an error message.
+
+<P>
+Annotating the implementation of <TT>DGeneration(Tag tag)</TT>
+with  <TT>assert</TT> clauses,
+we discovered that one for-loop could be removed,
+as the value it computed could already be computed directly
+from values already known.
+
+<P>
+Also, a redundant modulo operation <TT>%</TT>
+(i.e. one where the first argument will always be smaller than the modulus)
+was discovered in the implementation of <TT>DGeneration</TT>.
+
+<P>
+
+<H3><A NAME="SECTION00041200000000000000">
+Interface Improvements</A>
+</H3>
+
+<P>
+The four operations for writing to the Transacted Memory are:
+<BR>
+
+<UL>
+<LI><TT>DWriteFirst</TT>
+</LI>
+<LI><TT>DWriteUncommitted</TT>
+</LI>
+<LI><TT>DWriteCommittedAddGen</TT>
+</LI>
+<LI><TT>DWriteCommittedMaxGen</TT>
+</LI>
+</UL>
+<BR>
+These operations have identical postconditions, and only differ in their
+preconditions.  This raises the question whether it is not better to have a
+single method <TT>DWrite</TT>, which chooses the `right' write operation and
+executes it. Indeed the original Z specification offers such a `comprehensive'
+write operation, defined by way of a schema conjunction of the write
+operations listed above.
+However, this operation was forgotten in the development of the C cum
+SPIN code.
+
+<P>
+An unsatisfactory feature of the Transacted Memory
+as originally implemented in C is that
+if there is insufficient space to perform a write operation,
+it may be carried out only partially, resulting in an inconsistent state,
+without any warning.
+The informal specification of <TT>DWriteFirst</TT> in Table&nbsp;<A
+href="index.html#table:api">2</A>
+does indeed say that its effect is undefined if insufficient space is 
+available.
+The same can happen in the other write operations,
+although their informal specifications do not say this.
+
+<P>
+Our initial JML specifications for the write methods, 
+e.g. the one in Figure&nbsp;<A href="index.html#figure:JMLspec">2</A>, did not allow for this, 
+and the runtime assertion checker warned about violations of them.
+
+<P>
+We improved the Java implementation so that a 
+<TT>OutOfTransactedMemoryException</TT> 
+is thrown in case insufficient space is available to perform a write
+operation.  The JML specifications were adapted accordingly.
+For example, in the specification for <TT>DWriteUncommitted</TT> 
+in Figure&nbsp;<A href="index.html#figure:JMLspec">2</A> we added 
+<BR>
+<PRE>
+ signals 
+  (OutOfTransactedMemoryException) 
+      DRead(tag).equals(is) &amp;&amp; 
+      ! ddata[tag.value].committed;
+</PRE>
+<BR>
+stating that the write operation won't happen at all in case
+an <TT>OutOfTransactedMemoryException</TT> is thrown.
+
+<P>
+Similarly, the operation <TT>DNewTag</TT> was adapted to throw
+an <TT>OutOfTagsException</TT> when no additional tag is available,
+rather than producing an undefined result in this case.
+
+<P>
+
+<H2><A NAME="SECTION00042000000000000000"></A>
+<A NAME="subsection:future"></A><BR>
+4.1 Future Work with these JML specs
+</H2>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="ACommit"></A><A NAME="294"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+JML specification of <tt>ACommit</tt></CAPTION>
+<TR><TD><IMG
+ WIDTH="496" HEIGHT="147" BORDER="0"
+ src="poll7.png"
+ ALT="\begin{figure*}\begin{verbatim}//@ import org.jmlspecs.models.*;
+public vo...
+...es committed.equals( \old(committed).insert(t));
+@*/\end{verbatim}\end{figure*}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+We also translated the abstract Z specification given in&nbsp;[<A
+ href="index.html#Har00b">6</A>] to Java/JML.
+This was not difficult, given that JML comes with a package
+<TT>org.jmlspecs.models</TT> that provides Java implementations of all the standard
+mathematical concepts used in the Z specification.
+For example, Figure&nbsp;<A href="index.html#ACommit">3</A> gives the JML translation of 
+the Z specification of the operation <EM>ACommit</EM> shown in 
+Section&nbsp;<A href="index.html#section:memory">2</A>.
+
+<P>
+One obvious difference is that the Z specification looks prettier, as in
+Java/JML we do not have conventional mathematical notation, such as <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="poll8.png"
+ ALT="$\in$"> or
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ src="poll9.png"
+ ALT="$\not=$">.
+
+<P>
+A more important difference is that the JML/Java specification can be turned
+into an executable one, namely
+<BR>
+<PRE>
+ public void ACommit(Tag t)
+ { committed = committed.insert(t);
+ }
+</PRE>
+<BR>
+We could use this Java implementation of the abstract specification
+to give a more detailed specification for our current Java implementation.
+Basically, the idea would be to define a Java implementation which executes
+the current Java implementation and this more abstract one side by side, and
+express the relation between the two in JML assertions.
+However, as the abstract specification does <EM>not</EM> consider the possibility
+of card tears, the precise relation between this abstract implementation
+and the current Java implementation is not trivial to make precise.
+This is left as future work.
+
+<P>
+
+<H1><A NAME="SECTION00050000000000000000">
+5 Conclusions</A>
+</H1>
+
+<P>
+The work described in this paper,
+i.e.  
+<BR>
+
+<UL>
+<LI>developing a Java implementation based on a C implementation, and
+</LI>
+<LI>developing JML specifications based on a Z specification, and 
+</LI>
+<LI>checking the Java implementation against the JML specification using 
+runtime assertion checking,
+</LI>
+</UL> 
+<BR>
+has been successful in finding bugs and improving the implementation.  
+The bugs we found range from simple 
+typos to more serious errors, and to some misunderstandings between 
+different people that have been
+involved in the design of the Transacted Memory.
+
+<P>
+It is disappointing that the careful development of the system as reported in
+our previous paper&nbsp;[<A
+ href="index.html#Har00b">6</A>] - starting from a formal abstract Z
+specification that was refined to an C/SPIN implementation, which was
+model-checked  - did leave these bugs in the final implementation.  
+
+<P>
+In all fairness, we must admit that the original testing scenario for the
+C/SPIN implementation with the model-checker SPIN was too restricted.
+Conventional testing of the C implementation would have discovered
+many of the bugs that we found, but probably with more effort.
+Runtime assertion checking of JML specifications makes it easier to locate 
+bugs than conventional testing.  
+Indeed, no complicated testing scenarios were needed to find any
+of the bugs discussed.
+
+<P>
+Some problems and possible improvements
+were found before we even tried runtime assertion checking,
+but were spotted when trying to come up with good specifications
+in the first place.  Annotating Java code with JML specifications provides a
+systematic way of performing a thorough code review, which can help to
+discover bugs and may point to possible optimisations or improvements.
+By contrast, testing of the code may find the bugs, but will probably
+not suggest optimisations or improvements.
+
+<P>
+There is a fairly standard recipe for annotating Java code with JML.
+Typically, one starts by giving pre- and postconditions for each method;
+these can be based on existing informal specifications,
+on our informal understanding of the program,
+and - somewhat exceptionally here - on the formal Z specifications.
+For each method implementation one then informally checks that any 
+method invocations it contains do not violate their preconditions; 
+this may require further strengthening of its precondition, or the
+introduction of loop invariants.
+Then one compares the different pre- and postconditions that have been written.
+Commonalities between pre- and postconditions may suggest class invariants.
+Differences between them may point out possible omissions;
+e.g if the precondition of <TT>DWriteUncommitted (Tag tag)</TT> 
+requires a tag to be uncommitted, then its postcondition 
+should probably state whether this tag remains uncommitted or not, 
+and possibly other methods that have a tag as argument should be 
+specified with similar conditions.
+Finally, any violations of assertions found during runtime assertion checking 
+in test scenarios may of course lead to improvements in the JML specifications.
+
+<P>
+For the system we considered, a vital advantage of using Java over using C
+is that we can conveniently model card tears using Java's
+exception mechanism.
+A disadvantage of using Java instead of C is that C is probably
+closer to a realistic implementation in actual hardware.
+
+<P>
+
+<P><BR>
+
+<P>
+Using Java and JML, rather than C and Z, for implementation and 
+specification, has had several advantages.  
+
+<P>
+Firstly, it becomes possible to check the relation between 
+implementation and specification: runtime assertion checking tells us where
+Java implementation  and JML specification disagree.
+This may of course just
+as well be a mistake in the Java implementation as a mistake in the JML
+specification.
+
+<P>
+Secondly, Java implementation and JML specification are close together, 
+in the same file.  The usefulness of this is illustrated by the fact that 
+the Z specification actually discusses the possibility of bug 2, but in a 
+footnote on page 34 of [<A
+ href="index.html#But97a">2</A>], something one is not likely 
+to notice or remember when working on the C implementation.
+
+<P>
+Finally, 
+the JML specifications are a lot easier to understand than the Z
+specifications, except for experts in Z.  JML mainly uses Java
+notions and notations, and it has been the overriding design principle
+in the design of JML that specifications should be easy to understand by
+any Java programmer.  
+Indeed, a point we would like to stress is that formal methods need not involve 
+notations and tools that only specialists can use.  
+Our formal model is a Java program, that can be understood by anyone 
+familiar with Java, as can the formal specifications for it written in JML.  
+In this respect, it is interesting to note the contrast with Z and SPIN - 
+or indeed UML!  
+Developing the kind of JML specifications we discussed in this paper and 
+using the runtime assertion checker should not pose any problem for 
+competent Java programmers.
+
+<P>
+
+<H1><A NAME="SECTION00060000000000000000">
+6 Acknowledgments</A>
+</H1>
+
+<P>
+The work by Erik Poll is financially supported by the IST Programme of
+the European Union, as part of ``VerifiCard'' project (IST-2000-26328).
+
+<P>
+
+<H2><A NAME="SECTION00070000000000000000">
+Bibliography</A>
+</H2><DL COMPACT><DD><P></P><DT><A NAME="BreunesseJacobsBerg02">1</A>
+<DD>
+C.-B. Breunesse, B.&nbsp;Jacobs, and J.&nbsp;van&nbsp;den Berg.
+<BR>Specifying and verifying a decimal representation in Java for smart
+  cards.
+<BR>In <EM>9th Algebraic Methodology and Software Technology (AMAST)</EM>,
+  volume LNCS 2422, pages 304-318, St. Gilles les Bains, Reunion Island,
+  France, Sep 2002. Springer-Verlag, Berlin.
+
+<P></P><DT><A NAME="But97a">2</A>
+<DD>
+M.&nbsp;J. Butler, P.&nbsp;H. Hartel, E.&nbsp;K. de&nbsp;Jong, and M.&nbsp;Longley.
+<BR>Applying formal methods to the design of smart card software.
+<BR>Declarative Systems &amp; Software Engineering Technical Reports
+  DSSE-TR-97-8, Univ. of Southampton, 1997.
+<BR><code>http://</code><code>www.dsse.ecs.soton.ac.uk/</code><code>techreports/</code>
+  <code>97-8.html</code>.
+
+<P></P><DT><A NAME="CatanoHuisman02">3</A>
+<DD>
+N.&nbsp;Cata&#241;o and M.&nbsp;Huisman.
+<BR>Formal specification of Gemplus's electronic purse case study.
+<BR>In L.&nbsp;H. Eriksson and P.&nbsp;A. Lindsay, editors, <EM>Formal Methods:
+  getting IT right - Formal Methods Europe (FME)</EM>, volume LNCS 2391, pages
+  272 - 289, Copenhagen, Denmark, Jul 2002. Springer-Verlag, Berlin.
+
+<P></P><DT><A NAME="Cheon-Leavens02b">4</A>
+<DD>
+Y.&nbsp;Cheon and G.T. Leavens.
+<BR>A runtime assertion checker for the Java Modeling Language (JML).
+<BR>In Hamid&nbsp;R. Arabnia and Youngsong Mun, editors, <EM>Proceedings of
+  the International Conference on Software Engineering Research and Practice
+  (SERP '02), Las Vegas, Nevada, USA, June 24-27, 2002</EM>, pages 322-328. CSREA
+  Press, June 2002.
+
+<P></P><DT><A NAME="Jon00">5</A>
+<DD>
+Eduard Karel de Jong and Jurjen Norbert Bos.
+<BR><EM>Arrangements Storing Different Versions of a Set of Data in
+Separate Memory
+Areas and Method for Updating a Set of data in a Memory.</EM>
+<BR>Dutch Patent Application, PCT/NL99/00360, June 10, 1999.
+<BR>International Publication Number WO 00/77640, 2000. WIPO, Vienna.
+
+<P></P><DT><A NAME="Har00b">6</A>
+<DD>
+P.&nbsp;H. Hartel, M.&nbsp;J. Butler, E.&nbsp;K. de&nbsp;Jong&nbsp;Frz, and M.&nbsp;Longley.
+<BR>Transacted memory for smart cards.
+<BR>In J.&nbsp;N. Olivieira and P.&nbsp;Zave, editors, <EM>10th Formal Methods for
+  Increasing Software Productivity (FME)</EM>, volume LNCS 2021, pages 478-499,
+  Berlin, Germany, Mar 2001. Springer-Verlag, Berlin.
+<BR><code>http://</code><code>www.dsse.ecs.soton.ac.uk/</code><code>techreports/</code><code>2000-9.html</code>.
+
+<P></P><DT><A NAME="Har00a">7</A>
+<DD>
+P.&nbsp;H. Hartel and E.&nbsp;K. de&nbsp;Jong&nbsp;Frz.
+<BR>A programming and a modelling perspective on the evaluation of Java
+  card implementations.
+<BR>In I.&nbsp;Attali and T.&nbsp;Jensen, editors, <EM>1st Java on Smart Cards:
+  Programming and Security (e-Smart)</EM>, volume LNCS 2041, pages 52-72,
+  Cannes, France, Sep 2000. Springer-Verlag, Berlin.
+<BR><code>http://</code><code>www.dsse.ecs.soton.ac.uk/</code><code>techreports/</code><code>2000-8.html</code>.
+
+<P></P><DT><A NAME="Hol97">8</A>
+<DD>
+G.&nbsp;J. Holzmann.
+<BR>The model checker SPIN.
+<BR><EM>IEEE Transactions on software engineering</EM>, 23(5):279-295,
+  1997.
+<BR><code>http://</code><code>cm.bell-labs.com/</code><code>cm/</code><code>cs/</code><code>who/</code><code>gerard/</code>.
+
+<P></P><DT><A NAME="Lea99a">9</A>
+<DD>
+G.&nbsp;T. Leavens, A.&nbsp;L. Baker, and C.&nbsp;Ruby.
+<BR>JML: A notation for detailed design.
+<BR>In H.&nbsp;Kilov, B.&nbsp;Rumpe, and I.&nbsp;Simmonds, editors, <EM>Behavioral
+  Specifications of Business and Systems</EM>, pages 175-188. Kluwer Academic
+  Publishers, Boston/Dordrecht/London, 1999.
+
+<P></P><DT><A NAME="Net91">10</A>
+<DD>
+S.&nbsp;M. Nettles and J.&nbsp;M. Wing.
+<BR>Persistence+undoability=transactions.
+<BR>In <EM>25th Hawaii System Sciences (HICS)</EM>, volume&nbsp;2, pages
+  832-843. IEEE Comput. Soc. Press., Los Alamitos, California, 1991.
+
+<P></P><DT><A NAME="PollBJ00">11</A>
+<DD>
+E.&nbsp;Poll, J.&nbsp;van&nbsp;den Berg, and B.&nbsp;Jacobs.
+<BR>Specification of the JavaCard API in JML.
+<BR>In J.&nbsp;Domingo-Ferrer and A.&nbsp;Watson, editors, <EM>Fourth Smart Card
+  Research and Advanced Application Conf. (CARDIS)</EM>, pages 135-154, Bristol,
+  UK, Sep 2000. Kluwer Academic Publishers, Boston/Dordrecht/London.
+
+<P></P><DT><A NAME="PollBJ01">12</A>
+<DD>
+E.&nbsp;Poll, J.&nbsp;van&nbsp;den Berg, and B.&nbsp;Jacobs.
+<BR>Formal specification of the JavaCard API in JML: the APDU
+  class.
+<BR><EM>Computer Networks</EM>, 36(4):407-421, Jul 2001.
+<BR>The JML specs of the JavaCard API 2.1.1 are available online at
+  <code>http://</code><code>www.cs.kun.nl/</code><code>~erikpoll/</code><code>publications/</code><code>jc211_specs.html</code>.
+
+<P></P><DT><A NAME="Spi89">13</A>
+<DD>
+J.&nbsp;M. Spivey.
+<BR><EM>The Z notation</EM>.
+<BR>Prentice Hall, Englewood Cliffs, New Jersey, 1989.
+</DL>
+
+</FONT>
+<P>
+
+<DL>
+<DT><A NAME="foot22">... API</A><A NAME="foot22"
+ href="index.html#tex2html1"><SUP>1</SUP></A>
+<DD>Java 
+and all Java-based trademarks and logos are trademarks or registered 
+trademarks of Sun Microsystems, Inc. in the U.S.  or other countries, 
+and are used under license.
+
+<DT><A NAME="foot167">... possible</A><A NAME="foot167"
+ href="index.html#tex2html4"><SUP>2</SUP></A>
+<DD>Also, the Java Card technology offers the possibility
+to optimize API components, such as the transacted memory API, in the
+offcard converter.
+
+<DT><A NAME="foot358">... message</A><A NAME="foot358"
+ href="index.html#tex2html6"><SUP>3</SUP></A>
+<DD>Actually, JML is so expressive that 
+some JML assertions are not decidable, e.g. assertions using the 
+keyword <TT>forall</TT> to quantify over an infinite domain; 
+these (parts of) JML assertions are not compiled into runtime checks.
+
+</DL>
+
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":117,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>

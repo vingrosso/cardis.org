@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pushdown Systems</TITLE>
+<META NAME="description" CONTENT="Pushdown Systems">
+<META NAME="keywords" CONTENT="paper">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="paper.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html81"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html79"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html73"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html82"
+  HREF="node6.html">Specification Language</A>
+<B> Up:</B> <A NAME="tex2html80"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html74"
+  HREF="node4.html">Model Checking Method Call</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00031000000000000000"></A>
+<A NAME="sect:to_pds"></A>
+<BR>
+Pushdown Systems
+</H2>
+
+<P>
+Pushdown systems provide a natural execution model for programs with 
+recursion. They form a well-studied class of infinite-state systems
+for which many important problems like equivalence checking and model 
+checking are decidable&nbsp;[<A
+ HREF="node20.html#burkart00verification">4</A>].
+
+<P>
+<P>
+<DIV><A NAME="PDADefLab"><B>Definition  2</B></A> (PDS, from&nbsp;[<A
+ HREF="node20.html#esparza00efficient">7</A>])  &nbsp; 
+A <EM>pushdown system (PDS)</EM> is a tuple
+<!-- MATH
+ \begin{displaymath}
+{\cal P} \;\stackrel {\Delta}{=}\; (P, \Gamma, \Delta)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="109" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle {\cal P} \;\stackrel {\Delta}{=}\; (P, \Gamma, \Delta)$">
+</DIV><P></P>
+where:
+<DL COMPACT>
+<DT>(i)</DT>
+<DD><IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ P$"> is a finite set of <EM>control locations</EM>;
+</DD>
+<DT>(ii)</DT>
+<DD><IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="$ \Gamma$"> is a finite set of <EM>stack symbols</EM>;
+</DD>
+<DT>(iii)</DT>
+<DD><!-- MATH
+ $\Delta \subseteq (P \times \Gamma) \times (P \times \Gamma^{\star})$
+ -->
+<IMG
+ WIDTH="176" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \Delta \subseteq (P \times \Gamma) \times (P \times \Gamma^{\star})$"> 
+is a finite set of <EM>rewrite rules</EM> of the shape
+<!-- MATH
+ $\ensuremath{{\left< p, \gamma \right>}\xrightarrow{{\scriptsize }}{\left< q, \sigma \right>}}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \ensuremath{{\left&lt; p, \gamma \right&gt;}\xrightarrow{{\scriptsize }}{\left&lt; q, \sigma \right&gt;}}$">.
+</DD>
+</DL></DIV><P></P>
+
+<P>
+The set <!-- MATH
+ $P \times \Gamma^{\star}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$ P \times \Gamma^{\star}$"> are the <EM>configurations</EM> of <IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \cal P$">. 
+If <!-- MATH
+ $\ensuremath{{\left< p, \gamma \right>}\xrightarrow{{\scriptsize }}{\left< q, \sigma \right>}}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \ensuremath{{\left&lt; p, \gamma \right&gt;}\xrightarrow{{\scriptsize }}{\left&lt; q, \sigma \right&gt;}}$"> is a rewrite rule of
+<IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \cal P$">, then for each 
+<!-- MATH
+ $\omega \in \Gamma^{\star}$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \omega \in \Gamma^{\star}$"> the configuration <!-- MATH
+ $\left< q, \sigma\cdot\omega \right>$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \left&lt; q, \sigma\cdot\omega \right&gt;$"> 
+is an <EM>immediate successor</EM> of the configuration 
+<!-- MATH
+ $\left< p, \gamma\cdot\omega \right>$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \left&lt; p, \gamma\cdot\omega \right&gt;$">. A <EM>run</EM> of <IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \cal P$"> is a sequence
+<!-- MATH
+ $\rho = \left< p_0, \sigma_0 \right>\left< p_1, \sigma_1 \right>\left< p_2, \sigma_2 \right>\cdots$
+ -->
+<IMG
+ WIDTH="217" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ \rho = \left&lt; p_0, \sigma_0 \right&gt;\left&lt; p_1, \sigma_1 \right&gt;\left&lt; p_2, \sigma_2 \right&gt;\cdots$">,
+such that for all <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.png"
+ ALT="$ i$">, <!-- MATH
+ $\left< p_{i+1}, \sigma_{i+1} \right>$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ \left&lt; p_{i+1}, \sigma_{i+1} \right&gt;$"> is an immediate 
+successor of <!-- MATH
+ $\left< p_i, \sigma_i \right>$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ \left&lt; p_i, \sigma_i \right&gt;$">. 
+
+<P>
+We now define how a set of methods <IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ M$"> induces a PDS.
+
+<P>
+<P>
+<DIV><A NAME="IndPDSDefLab"><B>Definition  3</B></A> (Induced PDS, formalising&nbsp;[<A
+ HREF="node20.html#moped">8</A>])  &nbsp; 
+A set of methods <IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ M$"> <EM>induces</EM> a PDS
+<!-- MATH
+ \begin{displaymath}
+{\cal P} \;\stackrel {\Delta}{=}\; (P, \Gamma, \Delta)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="109" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle {\cal P} \;\stackrel {\Delta}{=}\; (P, \Gamma, \Delta)$">
+</DIV><P></P>
+as follows: 
+<DL COMPACT>
+<DT>(i)</DT>
+<DD><IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ P$"> consists of the single control location <IMG
+ WIDTH="14" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ p$">;
+</DD>
+<DT>(ii)</DT>
+<DD><IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="$ \Gamma$"> is the set <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ V$"> of program points;
+</DD>
+<DT>(iii)</DT>
+<DD><IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="$ \Delta$"> is the set <!-- MATH
+ $\bigcup_{m \in M} \bigcup_{v \in V_m} \mbox{Prod}(v)$
+ -->
+<IMG
+ WIDTH="103" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$ \bigcup_{m \in M} \bigcup_{v \in V_m}$">&nbsp; &nbsp;Prod<IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$ (v)$">, 
+where <!-- MATH
+ $\mbox{Prod}(v)$
+ -->
+Prod<IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$ (v)$"> is a set of rewrite rules defined as:
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{l}
+\left\{ \ensuremath{{\left< p, v \right>}\xrightarrow{{\scriptsize }}{\left< p, v' \right>}}\mid v \rightarrow_{m} v' \right\}\\
+   \quad\mbox{if $v : \mbox{\sf entry}$\  or $v : \mbox{\sf seq}$} \\[10pt]
+\par\bigcup_{m' \in \mu_m(v)}
+\left\{
+\begin{array}{l}
+\ensuremath{{\left< p, v \right>}\xrightarrow{{\scriptsize }}{\left< p, v'\cdot v'' \right>}}\mid \\
+\quad v' : \mbox{\sf entry } m', v \rightarrow_{m} v'' 
+\end{array}
+\right\} \\
+   \quad\mbox{if $v : \mbox{\sf call}$} \\[10pt]
+\par\{\ensuremath{{\left< p, v \right>}\xrightarrow{{\scriptsize }}{\left< p, \epsilon \right>}}\} \\
+   \quad\mbox{if $v : \mbox{\sf return}$}
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="427" HEIGHT="182" BORDER="0"
+ SRC="img37.png"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{l}
+\left\{ \ensuremath{{\left&lt; p, v \r...
+...\
+\quad\mbox{if $v : \mbox{\sf return}$}
+\end{array}\right.
+\end{displaymath}">
+</DIV><P></P>
+</DD>
+</DL></DIV><P></P>
+
+<P>
+The rewrite rules of the
+pushdown system can be interpreted
+as simply manipulating the calling stack
+of the program from which the PDS was obtained.
+Given a configuration <!-- MATH
+ $c\equiv\left< p, v\cdot\sigma \right>$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$ c\equiv\left&lt; p, v\cdot\sigma \right&gt;$"> let 
+<!-- MATH
+ $\mbox{\sf point }(c)\;\stackrel {\Delta}{=}\; v$
+ -->
+<I>point </I><IMG
+ WIDTH="64" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$ (c)\;\stackrel {\Delta}{=}\; v$">.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html81"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html79"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html73"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html82"
+  HREF="node6.html">Specification Language</A>
+<B> Up:</B> <A NAME="tex2html80"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html74"
+  HREF="node4.html">Model Checking Method Call</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Lars-Ake Fredlund
+2002-09-23
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":87,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></BODY>
+</HTML>

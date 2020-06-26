@@ -1,0 +1,573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Specification Language</TITLE>
+<META NAME="description" CONTENT="Specification Language">
+<META NAME="keywords" CONTENT="paper">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="paper.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html91"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html89"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html83"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html92"
+  HREF="node7.html">Specification Patterns</A>
+<B> Up:</B> <A NAME="tex2html90"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html84"
+  HREF="node5.html">Pushdown Systems</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00032000000000000000"></A>
+<A NAME="sect:ltl"></A>
+<BR>
+Specification Language
+</H2>
+
+<P>
+Our specification language is linear temporal logic (LTL), 
+with program point predicates <IMG
+ WIDTH="14" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ p$"> as atomic propositions
+but omitting the type predicate <IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$ v : t$">. 
+The choice of linear temporal logic as the specification language, 
+instead of for instance the modal <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$ \mu$">-calculus for which 
+the model checking problem for our encoding
+into pushdown systems
+is also efficiently decidable, was solely motivated by the existence
+of the efficient model checker Moped&nbsp;[<A
+ HREF="node20.html#moped">8</A>] for LTL.
+
+<P>
+The operators of the logic
+are the standard ones. If <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \phi$">
+and <IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \psi$"> are formulas then so are
+<IMG
+ WIDTH="26" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$ \neg \phi$">, <!-- MATH
+ $\phi\wedge \psi$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ \phi\wedge \psi$">, <!-- MATH
+ $\phi\vee \psi$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \phi\vee \psi$">,
+<!-- MATH
+ ${\cal X} \> \phi$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ {\cal X} \&gt; \phi $"> and
+<!-- MATH
+ $\phi \>\; {\cal U} \>\; \psi$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \phi \&gt;\; {\cal U} \&gt;\; \psi $">.
+The meaning of formulas is defined with respect
+to runs of infinite length 
+<!-- MATH
+ $r \equiv c_0c_1c_2\ldots$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$ r \equiv c_0c_1c_2\ldots$">. We let <IMG
+ WIDTH="19" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$ r_i$"> denote
+the suffix of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="$ r$"> starting in configuration <IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ c_i$">.
+Then satisfaction <!-- MATH
+ $r \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ r \mid\!= \phi $">
+of a formula <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \phi$"> by a run <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="$ r$"> is
+defined as:
+
+<P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= p$
+ -->
+<IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ r \mid\!= p$"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $\mbox{\sf point }(c_0) : p$
+ -->
+<I>point </I><IMG
+ WIDTH="54" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ (c_0) : p$"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= \neg \phi$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$ r \mid\!= \neg \phi $"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT">not <!-- MATH
+ $r \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ r \mid\!= \phi $"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= \phi\wedge \psi$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ r \mid\!= \phi\wedge \psi $"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $r \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ r \mid\!= \phi $"> and <!-- MATH
+ $r \mid\!= \psi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$ r \mid\!= \psi $"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= \phi\vee \psi$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$ r \mid\!= \phi\vee \psi $"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $r \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ r \mid\!= \phi $"> or <!-- MATH
+ $r \mid\!= \psi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$ r \mid\!= \psi $"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= {\cal X} \> \phi$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.png"
+ ALT="$ r \mid\!= {\cal X} \&gt; \phi $"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $r_1 \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ r_1 \mid\!= \phi $"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $r \mid\!= \phi \>\; {\cal U} \>\; \psi$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.png"
+ ALT="$ r \mid\!= \phi \&gt;\; {\cal U} \&gt;\; \psi $"></TD>
+<TD ALIGN="CENTER">iff</TD>
+<TD ALIGN="LEFT">there is an <IMG
+ WIDTH="41" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$ i\geq 0$">
+such that</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER">&nbsp;</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $r_i \mid\!= \psi$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.png"
+ ALT="$ r_i \mid\!= \psi $"> and <!-- MATH
+ $r_j \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ r_j \mid\!= \phi $"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER">&nbsp;</TD>
+<TD ALIGN="LEFT">for all <IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$ 0\leq j&lt;i$"></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+Henceforth
+let <!-- MATH
+ ${\sf false}$
+ -->
+<IMG
+ WIDTH="36" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$ {\sf false}$"> abbreviate <!-- MATH
+ $p \wedge \neg p$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.png"
+ ALT="$ p \wedge \neg p$"> for some atomic predicate <IMG
+ WIDTH="14" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ p$">,
+<!-- MATH
+ ${\sf true}$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="$ {\sf true}$"> abbreviate <!-- MATH
+ $\neg {\sf false}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img70.png"
+ ALT="$ \neg {\sf false}$">,
+<!-- MATH
+ $\phi \Rightarrow \psi$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.png"
+ ALT="$ \phi \Rightarrow \psi$"> abbreviate <!-- MATH
+ $\neg \phi \vee \psi$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$ \neg \phi \vee \psi$">,
+and <!-- MATH
+ $\mathsf{next}\;\phi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.png"
+ ALT="$ \mathsf{next}\;\phi$"> abbreviate <!-- MATH
+ ${\cal X} \> \phi$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ {\cal X} \&gt; \phi $">
+and <!-- MATH
+ $\phi\;\mathsf{until}\;\psi$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.png"
+ ALT="$ \phi\;\mathsf{until}\;\psi$"> abbreviate <!-- MATH
+ $\phi \>\; {\cal U} \>\; \psi$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \phi \&gt;\; {\cal U} \&gt;\; \psi $">.
+Further define
+<!-- MATH
+ $\mathsf{eventually}\;\phi \;\stackrel {\Delta}{=}\;
+{\sf true} \>\; {\cal U} \>\; \phi $
+ -->
+<IMG
+ WIDTH="180" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.png"
+ ALT="$ \mathsf{eventually}\;\phi \;\stackrel {\Delta}{=}\;
+{\sf true} \&gt;\; {\cal U} \&gt;\; \phi $"> and
+<!-- MATH
+ $\mathsf{always}\;\phi \;\stackrel {\Delta}{=}\;
+\neg \left( \mathsf{eventually}\;\neg \phi \right)$
+ -->
+<IMG
+ WIDTH="209" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.png"
+ ALT="$ \mathsf{always}\;\phi \;\stackrel {\Delta}{=}\;
+\neg \left( \mathsf{eventually}\;\neg \phi \right)$">.
+The weak until operator <!-- MATH
+ $\phi\;\mathsf{weakuntil}\;\psi$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \phi\;\mathsf{weakuntil}\;\psi$">
+abbreviates <!-- MATH
+ ${\phi}\;\mathsf{until}\;{\psi} \;\vee \; \mathsf{always}\;{\phi}$
+ -->
+<IMG
+ WIDTH="148" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.png"
+ ALT="$ {\phi}\;\mathsf{until}\;{\psi} \;\vee \; \mathsf{always}\;{\phi}$">.
+Finally let <!-- MATH
+ $\mathsf{never}\;\phi \;\stackrel {\Delta}{=}\;
+\mathsf{always}\;\neg \phi$
+ -->
+<IMG
+ WIDTH="152" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.png"
+ ALT="$ \mathsf{never}\;\phi \;\stackrel {\Delta}{=}\;
+\mathsf{always}\;\neg \phi$">.
+
+<P>
+Given a PDS <!-- MATH
+ $\mathit{pds}$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$ \mathit{pds}$">
+let the notation
+<!-- MATH
+ $m \vdash \phi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$ m \vdash \phi
+$">
+express the judgement that all
+runs starting in the entry program point of
+the method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> satisfy <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \phi$">.
+More formally:
+<P>
+<DIV><B>Definition  4</B> (Model Checking a Method Call)  &nbsp; 
+Given a PDS <!-- MATH
+ $\mathit{pds}$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$ \mathit{pds}$"> with the single control location
+<IMG
+ WIDTH="14" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ p$"> and a method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">, 
+the judgement
+<!-- MATH
+ $m \vdash \phi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$ m \vdash \phi
+$">
+is valid
+iff
+for every run <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="$ r$"> of the PDS <!-- MATH
+ $\mathit{pds'}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$ \mathit{pds'}$">
+from the initial configuration
+<!-- MATH
+ $\left< p, v\cdot \mathit{m\_\mbox{\texttt{loop}}} \right>$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.png"
+ ALT="$ \left&lt; p, v\cdot \mathit{m\_\mbox{\texttt{loop}}} \right&gt;$">,
+<!-- MATH
+ $r \mid\!= \phi$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ r \mid\!= \phi $"> holds,
+where <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ v$"> is the entry program point of 
+method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> (i.e. <!-- MATH
+ $v : \mbox{\sf entry } m$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="$ v :$">&nbsp; &nbsp;<I>entry </I><IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">), and
+<!-- MATH
+ $\mathit{pds'}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$ \mathit{pds'}$"> is the PDS <!-- MATH
+ $\mathit{pds}$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$ \mathit{pds}$">
+extended with the fresh stack symbol <!-- MATH
+ $\mathit{m\_\mbox{\texttt{loop}}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.png"
+ ALT="$ \mathit{m\_\mbox{\texttt{loop}}}$">
+and the single rewrite rule
+<!-- MATH
+ $\ensuremath{{\left< p, \mathit{m\_\texttt{loop}} \right>}\xrightarrow{{\scriptsize }}{\left< p, \mathit{m\_\texttt{loop}} \right>}}$
+ -->
+<IMG
+ WIDTH="193" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.png"
+ ALT="$ \ensuremath{{\left&lt; p, \mathit{m\_\texttt{loop}} \right&gt;}\xrightarrow{{\scriptsize }}{\left&lt; p, \mathit{m\_\texttt{loop}} \right&gt;}}$">
+to achieve infinite runs.</DIV><P></P>
+
+<P>
+The definition of a judgement <!-- MATH
+ $m\vdash \phi$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$ m \vdash \phi
+$"> is
+motivated by the Moped tool which implements
+an algorithm for checking an
+initial configuration against an LTL formula.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html91"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html89"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html83"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html92"
+  HREF="node7.html">Specification Patterns</A>
+<B> Up:</B> <A NAME="tex2html90"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html84"
+  HREF="node5.html">Pushdown Systems</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Lars-Ake Fredlund
+2002-09-23
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":75,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-593.min.js"}</script></BODY>
+</HTML>

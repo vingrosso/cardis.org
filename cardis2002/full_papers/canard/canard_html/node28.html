@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>An Example of Representation.</TITLE>
+<META NAME="description" CONTENT="An Example of Representation.">
+<META NAME="keywords" CONTENT="CG02">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="CG02.css">
+
+<LINK REL="next" HREF="node29.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node27.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<BR>
+<B> Next:</B> <A NAME="tex2html361"
+  HREF="node29.html">Description.</A>
+<B> Up:</B> <A NAME="tex2html359"
+  HREF="node27.html">Third Solution.</A>
+<B> Previous:</B> <A NAME="tex2html353"
+  HREF="node27.html">Third Solution.</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H4><A NAME="SECTION00042410000000000000">
+An Example of Representation.</A>
+</H4>
+
+<P>
+The mechanism named ``Superimposed coding'' [<A
+ HREF="node33.html#k73">11</A>] allows to
+store a set of data of variable size into a bit-string of fixed
+size. It is then possible, with a simple test, to estimate the
+probability that an element is in the set of data (which depends
+on the size of the result bit-string and on the number of data).
+This probability is equal to 0 if the output of the test is
+``no''.
+<BR>
+More precisely, the result is an <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$m$">-bit string named <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$B$">. We note
+<!-- MATH
+ $B=b_{m-1}\ldots b_{1}b_{0}$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$B=b_{m-1}\ldots b_{1}b_{0}$"> where each <!-- MATH
+ $b_{i}\in\{0,1\}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$b_{i}\in\{0,1\}$">.
+Initially, <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$B$"> is set to <IMG
+ WIDTH="52" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.png"
+ ALT="$00\ldots 0$">. We have then <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.png"
+ ALT="$k$"> elements
+<!-- MATH
+ $y_{1},\ldots,y_{k}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$y_{1},\ldots,y_{k}$"> of various size and we note the set of data
+<!-- MATH
+ $Y=\{y_{1},\ldots,y_{k}\}$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$Y=\{y_{1},\ldots,y_{k}\}$">. Moreover, let us define <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$q$"> hash
+functions <!-- MATH
+ $h_{1},\ldots,h_{q}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$h_{1},\ldots,h_{q}$"> where each <!-- MATH
+ $h_{i}:
+\{0,1\}^{*}\longrightarrow\{0,1\}^{c}$
+ -->
+<IMG
+ WIDTH="158" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$h_{i}:
+\{0,1\}^{*}\longrightarrow\{0,1\}^{c}$"> with <IMG
+ WIDTH="54" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="$m=2^c$">.
+<BR>
+For <IMG
+ WIDTH="58" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$j=1..k$"> we compute <!-- MATH
+ $h_{1}(y_{j}),\ldots,h_{q}(y_{j})$
+ -->
+<IMG
+ WIDTH="126" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$h_{1}(y_{j}),\ldots,h_{q}(y_{j})$"> and for
+every <IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$l=1..q$"> we put to 1 the bit <IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$b_{i}$"> where <!-- MATH
+ $i=h_{l}(y_{j})$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$i=h_{l}(y_{j})$">.
+<BR>
+To know if the element <IMG
+ WIDTH="22" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$y_{R}$"> is in the set of data
+<!-- MATH
+ $Y=\{y_{1},\ldots,y_{k}\}$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$Y=\{y_{1},\ldots,y_{k}\}$">, we compute for every <IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$l=1..q$">
+<!-- MATH
+ $Y_{l}=h_{l}(y_{R})$
+ -->
+<IMG
+ WIDTH="84" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$Y_{l}=h_{l}(y_{R})$"> and if there is an element
+<!-- MATH
+ $l_{0}\in\{1,\ldots,q\}$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$l_{0}\in\{1,\ldots,q\}$"> such as <!-- MATH
+ $b_{Y_{l_{0}}}=0$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$b_{Y_{l_{0}}}=0$"> then
+<IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$y_{R}\notin Y$">. If not, then <IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$y_{R}\in Y$"> with an error
+probability of about <!-- MATH
+ $\Big( 1-e^{\frac{-kq}{m}}\Big)^{q}$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\Big( 1-e^{\frac{-kq}{m}}\Big)^{q}$">.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<BR>
+<B> Next:</B> <A NAME="tex2html361"
+  HREF="node29.html">Description.</A>
+<B> Up:</B> <A NAME="tex2html359"
+  HREF="node27.html">Third Solution.</A>
+<B> Previous:</B> <A NAME="tex2html353"
+  HREF="node27.html">Third Solution.</A>
+<!--End of Navigation Panel-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":75,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></BODY>
+</HTML>

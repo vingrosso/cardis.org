@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Introduction</TITLE>
+<META NAME="description" CONTENT="Introduction">
+<META NAME="keywords" CONTENT="aes_on_crypto2000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="aes_on_crypto2000.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="aes_on_crypto2000.html">
+<LINK REL="up" HREF="aes_on_crypto2000.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html38"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html36"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html30"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html39"
+  HREF="node2.html">Applications</A>
+<B> Up:</B> <A NAME="tex2html37"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html31"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00010000000000000000">
+Introduction</A>
+</H1>
+
+The Advanced Encryption Standard (AES) specifies a FIPS-approved (cf. [<A
+ HREF="node21.html#FIPS">FIPS</A>]) 
+cryptographic algorithm that is used to safely protect electronic data.  
+The AES algorithm is a symmetric block cipher that is able to encrypt (encipher) and 
+decrypt (decipher) electronic data. The AES algorithm is capable of using cryptographic keys of 
+128, 192, and 256 bits to encrypt and decrypt data blocks of 128 bits.
+The new AES (also known as Rijndael, cf. [<A
+ HREF="node21.html#DR2">DR2</A>]) is an algorithm designed to use only single byte operations. 
+Therefore, it is an algorithm very suitable for 8-bit <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mu$">-processors with only a few kB RAM as commonly used in 
+todays´ smart cards. However, Rijndael is also well suited for 32-bit <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mu$">-processors with more RAM and clearly 
+for dedicated hardware implementations, cf. [<A
+ HREF="node21.html#Wo">Wo</A>,<A
+ HREF="node21.html#WOL">WOL</A>,<A
+ HREF="node21.html#SMTM">SMTM</A>]. An optimized implementation of the AES algorithm on an 8051 based 
+<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mu$">-controller with a 128-bit key takes less than 1ms @ 15MHz and requires 48 bytes of directly addressable 
+internal RAM to encrypt a 128 bit data block and a little bit more time to decrypt it. Even if this is 
+enough for a large variety of applications, there are some others where the bit rate achieved with this 
+implementation may not be enough (for instance in a contactless environment) or, there is a demand for 
+a high physical attack resistancy.
+On the other hand, dedicated public-key coprocessors are fast arithmetic coprocessors that usually can 
+handle non-modular and especially modular arithmetic on prime fields <!-- MATH
+ $\mathbb{F}_p$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \mathbb{F}_p$"> and especially on fields of 
+characteristic two <!-- MATH
+ $\mathbb{F}_2^d$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb{F}_2^d$">, cf. [NR]. These coprocessors are designed to be very efficient for RSA and 
+ECC algorithms, but they are clearly not intended to accelerate the computation of symmetric key algorithms 
+like DES or AES.
+However, some of the operations usually implemented in a modular arithmetic coprocessor, 
+specifically in those intended for elliptic curve cryptography, are still useful to 
+implement the AES because some transformations of the AES are performed on a field <!-- MATH
+ $\mathbb{F}_2^d$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb{F}_2^d$">. 
+By performing these transformations within the coprocessor, we can reduce the execution 
+time of the encryption and decryption algorithms, reduce the usage of internal RAM memory 
+and protect the algorithm against various side-channel attacks [<A
+ HREF="node21.html#A">A</A>,<A
+ HREF="node21.html#AK1">AK1</A>,<A
+ HREF="node21.html#AK2">AK2</A>,<A
+ HREF="node21.html#CJRR">CJRR</A>,<A
+ HREF="node21.html#CKN">CKN</A>,<A
+ HREF="node21.html#DR1">DR1</A>,<A
+ HREF="node21.html#DPV">DPV</A>,<A
+ HREF="node21.html#Gu1">Gu1</A>,<A
+ HREF="node21.html#Gu2">Gu2</A>,<A
+ HREF="node21.html#KK">KK</A>,<A
+ HREF="node21.html#Koca">Koca</A>], 
+such like timing attacks [<A
+ HREF="node21.html#KQ">KQ</A>,<A
+ HREF="node21.html#Koch">Koch</A>], 
+power attacks [<A
+ HREF="node21.html#AG">AG</A>,<A
+ HREF="node21.html#BS99">BS99</A>,<A
+ HREF="node21.html#CCD">CCD</A>,<A
+ HREF="node21.html#KJJ">KJJ</A>,<A
+ HREF="node21.html#Me">Me</A>], 
+electromagnetic radiation attacks [<A
+ HREF="node21.html#SQ">SQ</A>] or 
+even fault attacks [<A
+ HREF="node21.html#ABFHS">ABFHS</A>,<A
+ HREF="node21.html#Bellcore">BDL</A>,<A
+ HREF="node21.html#BDHJNT">BDHJNT</A>,<A
+ HREF="node21.html#BS97">BS97</A>,<A
+ HREF="node21.html#BS02">BS02</A>,<A
+ HREF="node21.html#BMM">BMM</A>,<A
+ HREF="node21.html#JLQ">JLQ</A>,<A
+ HREF="node21.html#JPY">JPY</A>,<A
+ HREF="node21.html#JQBD">JQBD</A>,<A
+ HREF="node21.html#JQYY">JQYY</A>,<A
+ HREF="node21.html#KR">KR</A>,<A
+ HREF="node21.html#KWMK">KWMK</A>,<A
+ HREF="node21.html#Ma">Ma</A>,<A
+ HREF="node21.html#Pai">Pai</A>,<A
+ HREF="node21.html#SA">SA</A>,<A
+ HREF="node21.html#YJ">YJ</A>,<A
+ HREF="node21.html#YKLM1">YKLM1</A>,<A
+ HREF="node21.html#YKLM2">YKLM2</A>,<A
+ HREF="node21.html#ZM">ZM</A>].
+
+Although many implementations of Rijndael have been brought into the literature, 
+since this algorithm has won the AES contest, 
+none of these implementations so far used a public-key crypto-coprocessor. 
+Therefore, we cannot compare our implementation with any other, 
+and we recommend to look at cf. [<A
+ HREF="node21.html#Li">Li</A>] to get an overview of alternative implementations on other platforms.
+
+In the course of this paper we first give some hints of the utility of our implementation 
+in many smart card applications. In the next chapter we describe the minimum requirements 
+for the needed coprocessor and give an example of its required architecture. Hereafter, 
+we briefly describe the AES itself. The following chapter is the most important one, 
+as it describes our proposed implementation technique used for the AES. 
+Finally, some security considerations are discussed around the implementation presented here and 
+some estimation figures on the performance of the implementation are also given.
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html38"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html36"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html30"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html39"
+  HREF="node2.html">Applications</A>
+<B> Up:</B> <A NAME="tex2html37"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html31"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Roger Fischlin
+2002-09-25
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":105,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></BODY>
+</HTML>

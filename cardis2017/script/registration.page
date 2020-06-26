@@ -1,0 +1,15 @@
+<h1>Registration</h1>
+
+<p class="text-center bg-info cfp">Registration is now <b>opened</b>!</p>
+
+
+<p class="text-center"><a href="https://secure.usi.ch/cardis2017/reg.php"> Proceed to registration </a></p>
+
+<h3>Registration Fees</h3>
+
+<table class="table">
+    <tr><td>                    </td><th>Until 18 Oct. 2017 </th><th>Until 10 Nov. 2016</th></tr>
+    <tr><th>Regular Registration</th><td>380 CHF </td><td>480 CHF </td></tr>
+    <tr><th>Student Registration</th><td>280 CHF </td><td>380 CHF </td></tr>
+</table>
+

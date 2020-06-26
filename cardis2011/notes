@@ -1,0 +1,23 @@
+
+
+sed -i 's/\[% INCLUDE header.tpl %]/<!--#include file="header.html" -->/g' *.html
+sed -i 's/\[% INCLUDE footer.tpl %]/<!--#include file="footer.html" -->/g' *.html
+sed -i 's/\[% INCLUDE sidebar.tpl %]/<!--#include file="sidebar.html" -->/g' *.html
+
+
+grep '?p=' * | cut -f3 -d"=" | cut -f1 -d'"' | uniq
+
+LINKS=("accepted" "cfp" "committee" "contact" "home" "hotels" "invited" "map" "program" "register" "registration" "submission" "travel" "venue")
+
+
+PAGES=("accepted.html" "committee.html" "contact.html" "header.html" "invited.html" "program.html" "sidebar.html" "travel.html" "cfp.html" "config.html" "footer.html" "home.html" "map.html" "submission.html" "venue.html")
+#registration.html
+
+for i in $PAGES ; do 
+    for l in $LINKS; do 
+	sed -i "s/?p=$l/$l.html/g" $i
+    done
+done
+
+    
+

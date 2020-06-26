@@ -1,0 +1,52 @@
+<h1>schedule</h1>
+
+<h2>Proceedings are now available</h2>
+<p> Directly from <a href="https://link.springer.com/book/10.1007%2F978-3-319-54669-8"> Springer </a> </p>
+
+
+
+<table class="table agenda">
+    <tbody>
+        <tr><th colspan="2" class="new-day">Monday 7th</th></tr>
+        <tr><th>11:00 am - 2:00 pm</th><td>Registration</td></tr>
+        <tr><th>12:00 pm - 2:00 pm</th><td>Lunch</td></tr>
+        <tr><th>2:00 pm - 2:15 pm</th><td>Opening Remarks</td></tr>
+        <tr><th>2:15 pm - 3:15 pm<br><span class="session-chair">(Session Chair: Aur&eacute;lien Francillon)</span></th><td><span class="unbold">Invited Talk:</span> <a href="./invited_speakers.html#eric-vetillard">Three Views on IoT Security</a><br><span class="authors">Eric V&eacute;tillard</span><span class="slide">[<a href="./assets/data/Cardis-ProvenRun-Vetillard-161107.pdf" type="application/pdf">slides</a>]</span></td></tr>
+        <tr><th>3:15 pm - 3:45 pm</th><td><span class="unbold">Coffee Break</span></td></tr>
+        <tr class="no-border-row"><th rowspan="3">3:45 pm - 5:15 pm<br>Session 1<br><strong>Side Channel Analysis</strong><br><span class="session-chair">(Session Chair: Fran&ccedil;ois-Xavier Standaert)</span></th><td><span class="title">Kernel Discriminant Analysis for Information Extraction in the Presence of Masking</span><br><span class="authors">Eleonora Cagli, C&eacute;cile Dumas and Emmanuel Prouff</span></td></tr>
+        <tr class="no-border-row"><td><span class="title">Defeating Embedded Cryptographic Protocols by combining Second-Order with Brute Force</span><br><span class="authors">Benoit Feix, Andjy Ricart, Benjamin Timon and Lucille Tordella</span></td></tr>
+        <tr><td><span class="title">Side-Channel Analysis of the TUAK Algorithm used for Authentication and Key Agreement in 3G/4G Networks</span><br><span class="authors">Houssem Maghrebi and Julien Bringer</span></td></tr>
+        <tr><th>5:15 pm - 7:30 pm</th><td></td></tr>
+        <tr><th>7:30 pm - 8:30 pm</th><td>Welcome Reception</td></tr>
+
+        <tr><th colspan="2" class="new-day">Tuesday 8th</th></tr>
+        <tr class="no-border-row"><th rowspan="3">9:00 am - 10:30 am<br>Session 2<br><strong>Hardware</strong><br><span class="session-chair">(Session Chair: Beg&uuml;l Bilgin)</span></th><td><span class="title">Reverse engineering Flash EEPROM memories using Scanning Electron Microscopy</span><br><span class="authors">Franck Courbon, Sergei Skorobogatov and Christopher Woods</span></td></tr>
+        <tr class="no-border-row"><td><span class="title">SpecTre: A Tiny Side-Channel Resistant Speck Core for FPGAs</span><br><span class="authors">Cong Chen, Mehmet Sinan Inci, Mostafa Taha and Thomas Eisenbarth</span></td></tr>
+        <tr><td><span class="title">Concealing Secrets in Embedded Processors Designs</span><br><span class="authors">Hannes Gross, Manuel Jelinek, Stefan Mangard, Thomas Unterluggauer and Mario Werner</span></td></tr>
+        <tr><th>10:30 am - 11:00 am</th><td><span class="unbold">Coffee Break</span></td></tr>
+        <tr><th>11:00 am - 12:00 pm<br><span class="session-chair">(Session Chair: Kerstin Lemke-Rust)</span></th><td><span class="unbold">Invited Talk:</span> <a href="./invited_speakers.html#ventzi-nikov">Security outside the black-box model: Challenges and Countermeasures</a><span class="authors">, Ventzi Nikov</span><span class="slide">[<a href="./assets/data/Security_outside_the_black-box_model.pdf" type="application/pdf">slides</a>]</span></td></tr>
+        <tr><th>12:00 pm - 1:30 pm</th><td>Lunch</td></tr>
+        <tr class="no-border-row"><th rowspan="2">1:30 pm - 2:30 pm<br>Session 3<br><strong>Java Card</strong><br><span class="session-chair">(Session Chair: Guillaume Bouffard)</span></th><td><span class="title">The Hell Forgery, Self Modifying Codes Shoot again</span><br><span class="authors">Abdelhak Mesbah, Leo Reynaud, Jean-Louis Lanet and Mohamed Mezghiche</span></td></tr>
+        <tr><td><span class="title">Logical Attacks on Secured Containers of the Java Card Platform</span><br><span class="authors">Sergei Volokitin and Erik Poll</span></td></tr>
+        <tr><th>2:30 pm - 3:00 pm</th><td><span class="unbold">Coffee Break</span></td></tr>
+        <tr><th>3:00 pm - 4:00 pm<br><span class="session-chair">(Session Chair: Michael Tunstall)</span></th><td><span class="unbold">Invited Talk:</span> <a href="./invited_speakers.html#david-oswald">Breaking automotive remote keyless entry systems, or: Why your car is not a safe box.</a><span class="authors">, David Oswald</span><span class="slide">[<a href="./assets/data/161108-cardis-keynote.pdf" type="application/pdf">slides</a>]</span></td></tr>
+        <tr class="no-border-row"><th rowspan="2">4:00 am - 5:00 am<br>Session 4<br><strong>Scalar Multiplication</strong><br><span class="session-chair">(Session Chair: Pierre-Yvan Liardet)</span></th><td><span class="title">Single-Trace Side-Channel Attacks on Scalar Multiplications with Precomputations</span><br><span class="authors">Kimmo J&auml;rvinen and Josep Balasch</span></td></tr>
+        <tr><td><span class="title">A Compact and Exception-Free Ladder for All Short Weierstrass Elliptic Curves</span><br><span class="authors">Ruggero Susella and Sofia Montrasio</span></td></tr>
+        <tr><th>5:00 pm - 5:20 pm</th><td></td></tr>
+        <tr><th>5:20 pm - 7:00 pm</th><td>Historic Visit of Cannes and Le Suquet</td></tr>
+        <tr><th>7:30 pm - 10:00 pm</th><td>Conference Dinner at <a href="https://www.google.com/maps/d/viewer?mid=18XC0j10G9eqWi_Uk73LTXOWztUU&hl=fr&usp=sharing">Le Caveau 30</a></td></tr>
+
+        <tr><th colspan="2" class="new-day">Wednesday 9th</th></tr>
+        <tr class="no-border-row"><th rowspan="3">9:00 am - 10:30 pm<br>Session 5<br><strong>Masking</strong><br><span class="session-chair">(Session Chair: Emmanuel Prouff)</span></th><td><span class="title">Inner Product Masking for Bitslice Ciphers and Security Order Amplification for Linear Leakages</span><br><span class="authors">Weijia Wang, Fran&ccedil;ois-Xavier Standaert, Yu Yu, Sihang Pu, Liu Junrong, Zheng Guo and Dawu Gu</span></td></tr>
+        <tr class="no-border-row"><td><span class="title">Squeezing Polynomial Masking in Tower Fields</span><br><span class="authors">Fabrizio De Santis, Tobias Bauer and Georg Sigl</span></td></tr>
+        <tr><td><span class="title">PRNGs for Masking Applications and Their Mapping to Evolvable Hardware</span><br><span class="authors">Stjepan Picek, Bohan Yang, Vladimir Rozic, Jo Vliegen, Jori Winderickx, Thomas De Cnudde and Nele Mentens</span></td></tr>
+        <tr><th>10:30 am - 11:00 am</th><td><span class="unbold">Coffee Break</span></td></tr>
+        <tr class="no-border-row"><th rowspan="2">11:00 am - 12:00 pm<br>Session 6<br><strong>Cache Attacks &amp; Fault Attacks</strong><br><span class="session-chair">(Session Chair: Benedikt Gierlichs)</span></th><td><span class="title">Automated Detection of Instruction Cache Leaks in RSA Software Implementations</span><br><span class="authors">Andreas Zankl, Johann Heyszl and Georg Sigl</span></td></tr>
+        <tr><td><span class="title">An Analysis of the Learning Parity with Noise Assumptions Against Fault Attacks</span><br><span class="authors">Francesco Berti and Fran&ccedil;ois-Xavier Standaert</span></td></tr>
+        <tr><th>12:00 pm - 2:00 pm</th><td>Closing Remarks &amp; Lunch</td></tr>
+    </tbody>
+</table>
+
+<h3>LightCrypto</h3>
+
+<p>Wednesday afternoon and Thursday is dedicated to the co-located event <a href="https://www.cosic.esat.kuleuven.be/events/lightcrypto/programme/">LightCrypto</a>. You can register <a href="https://www.cosic.esat.kuleuven.be/events/lightcrypto/registration/">here</a>.</p>

@@ -1,0 +1,75 @@
+/*
+;; print.css --- 
+;; Marc Joye
+;; Last Modified On: Thu Sep 11 21:06:09 2014 (-0700)
+*/
+
+* {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+  font-size:13px; background-color: #fff; color: black;}
+#menulist, #leftcolumn, #footer {display: none;}
+.spacer {margin-top: 28px;}
+.affil{padding-left: 8px;color: #444; font-size: 12px; font-style: italic;}
+strong {font-weight: bold;}
+em {font-style:normal;}
+a {text-decoration:none;}
+h1 {
+  padding: 6px 0 6px 0; margin-bottom: 30px;
+  border:dashed #060621; border-width:1px 0; background:#e8e8f2;
+  text-align: center; font-size: 18px;}
+h2 {width: 270px;; border: solid #3b3b72; border-width: 0 0 1px 1px;
+  padding: 1px 0 2px 19px; text-align: left; margin: 30px 0 15px 0; 
+  font-size: 14px; font-weight: bold; color: #0d0d33; line-height: 19px;}
+h3 {text-align: left; margin: 20px 0 5px 10px; padding: 0; 
+  font-size: 13px; font-weight: bold; color: #1b1b4b; line-height: 16px;}
+h4 {text-align: center; margin-bottom: 23px; padding: 0;
+  font-size: 13px; font-weight: bold; font-style: italic; line-height: 15px;}
+table {padding-left: 15px;border-style: none;}
+table.fullwidth {width: 100%;}
+ul li {padding-bottom: 4px;}
+.nobullet ul {padding-left: 15px; list-style-type:none;}
+p {padding: 0 5px;}
+.screenonly {display: none;}
+#program {width:95%;}
+#program th {border:dotted #3b3b72; border-width:1px;
+  text-align:center; padding:8px 8px 0 2px; 
+  color:#1b1b4b; font-size:14px; font-weight:bold;}
+#program .day {background:#3b3b72; color:#ebefd6; padding:10px 10px 10px 1.5em; 
+  font-weight:bold;font-size:15px; text-align:left;line-height:24px;}
+#program .stime {padding-right:6em;text-align:right; 
+  vertical-align:top;width:20%; 
+  font-weight:normal;font-size:13px;}
+.spacer {height: 20px; font-size: 0; line-height: 0;}
+#program .schair {text-align:right;font-size: xx-small; 
+  font-weight: normal;}
+#program a {text-decoration:none;font-weight:bold;}
+#diapo {text-align: center; margin-bottom: 30px;}
+.acklogos {padding-top: 1em; text-align: center;}
+.acklogos img {border: none; text-decoration: none;}
+#registrationfees td,th {
+  padding: .3em; border: 1px solid #666;}
+#registrationfees { margin:2em; 
+  border-collapse: collapse;
+  /* fix for IE6 and below */ font-size: 1em;}
+#registrationfees th {
+  color: #111;
+  text-align:left;
+  margin: 0; padding-right: .5em; padding-left: .5em;
+  background: #ccc;}
+#registrationfees th.nobg {border-top: 0; border-left: 0; background: none;}
+.cont_map {margin-top: 30px; text-align: center;}
+
+.table_invited {
+  width:95%; padding:0px; margin:1em 0 1em 0;
+  border-collapse: collapse;
+  border-top:1px dotted #999;}
+.table_invited th {
+  width:11em;padding:4px 2px 2px 4px;
+  text-align:left; vertical-align:top;color:#666;
+  background-color: #f1f1f1;
+  border-left:2px solid #1b1b4b;}
+.table_invited td {
+  padding:4px 2px 2px 4px;
+  border-bottom:1px dotted #999; border-left:4px double #ccc;
+}
+.table_noborder td {border: none;}

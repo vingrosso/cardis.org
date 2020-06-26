@@ -1,0 +1,249 @@
+---------------------------------------------------------
+CARDIS
+First Smart Card Research and Advanced Applications Conference
+
+Lille - France
+October  24-26, 1994
+---------------------------------------------------------
+
+PROGRAM COMMITTEE
+
+Martin Abadi, Ross Anderson, Benjamin Arazi, Todd Arnold 
+Jacques Berleur, William Caelli, David Chaum, Vincent 
+Cordonnier, Mark Cummings, Amos Fiat, Andr'e Gamache, Marc 
+Girault, Louis Guillou, Joseph Hope, John Kennedy, 
+Philippe Maes, Roger Needham, Jean-Jacques Quisquater, 
+Laurent Sourgen, Doug Tygar, Michel Ugon, Klaus Vedder, 
+Robert Warnar
+
+CONFERENCE PROGRAM  --- CARDIS '94: ---        
+---------------------------------------------------------
+
+Monday, October 24, 1994
+
+10:00-13:30 Registration, welcome coffee and lunch
+
+---------------------------------------------------------
+
+13:30-13:45 Introduction to CARDIS '94
+            (V. Cordonnier, J.-J. Quisquater)
+
+13:45-14:30  Session 1: Invited paper about smart cards and society
+
+14:30-16:00  Session 2: Security
+
+   Making smartcard systems robust
+    Ross Anderson (UCL, Cambridge)
+
+   The RADAR concept using neural networks
+      T. Alexandre (RD2P-LIFL, Lille)
+
+   A security language for the card: The S-shell
+      J.-M. Place and P. Trane (RD2P, Lille)
+
+---------------------------------------------------------
+16:00-16:30  Coffee break
+---------------------------------------------------------
+
+16:30-18:00  Session 3: Panel
+
+   Future operating systems for smart cards?  
+
+---------------------------------------------------------
+Tuesday, October 25, 1994
+08:30-09:00  Welcome coffee
+---------------------------------------------------------
+
+09:00-09:45  Session 4: Survey
+
+   Architectures for smart cards
+      J.-J. Quisquater (UCL, Louvain-la-Neuve)
+
+09:45-10:45  Session 5: Conditional access for multimedia services
+
+   OSCAR: Open and Secure Control of Access and Rights for 
+   broadcast and switched networks
+      G. Mar'echal (Philips, Brussels)
+
+   Equicrypt, an equitable access to multimedia services
+      B. Macq, J.-Y. Mert`es and J.-J. Quisquater (UCL, Louvain-la-Neuve)
+
+---------------------------------------------------------
+10:45-11:15  Coffee break
+---------------------------------------------------------
+
+11:15-12:45  Session 6: Models of security
+
+   Probabilistic authentication analysis  
+      J. Domingo-Ferrer (URV, Tarragona)
+
+   An authorization model for personal databases  
+      C. Radu, M. Vandenwauver, R. Govaerts and J. Vandewalle (KUL, Leuven)
+
+   Towards testability in smart card operating system design
+      P. H. Hartel (U. of Amsterdam) and E. K. de Jong Frz (QC consultancy)
+
+---------------------------------------------------------
+12:45-14:15  Lunch
+---------------------------------------------------------
+
+14:15-15:00  Session 7: Invited paper about electronic cash
+
+15:00-16:30  Session 8: Electronic cash
+
+   A fast off-line electronic currency protocol for smart cards 
+      Lei Tang and J. D. Tygar (CMU, Pittsburgh)
+
+   Off-line cash tranfer by smart cards
+      S. Brands (CWI, Amsterdam)
+
+   SCALPS, Smart Card Applied to Low Payment System
+      J.-F. Dhem, J.-J. Quisquater and D. Veithen (UCL, Louvain-la-Neuve)
+
+---------------------------------------------------------
+16:30-17:00  Coffee break
+---------------------------------------------------------
+
+17:00-18:00  Session 9: Panel
+
+   Research, progress and normalization: Is it compatible?  
+
+---------------------------------------------------------
+20:00-...  Banquet
+---------------------------------------------------------
+
+---------------------------------------------------------
+Wednesday, October 26, 1994
+08:30-09:00  Welcome coffee
+---------------------------------------------------------
+
+09:00-10:30  Session 11: Servers for smart cards
+
+   A universal server for smart cards
+      P. Durant, J. Berube, G. Lavoie, A. Gamache, P. Arduoin, 
+      M.-J. Papillon and J.-P. Fortin (UL, Quebec)
+
+   Wordwide smart card services
+      J.-J. Vandewalle (R2DP, Lille) and A. Gamache (UL, Quebec)
+
+   A smartcard fault-tolerant authentication server
+      L. Blain and Y. Deswarte (LAAS, Toulouse)
+
+---------------------------------------------------------
+10:30-11:00  Coffee break
+---------------------------------------------------------
+
+11:00-12:15  Session 12: Panel
+
+   From smart cards to nomadic objects
+       Moderator: Vincent Cordonnier
+
+12:15-12:30  Final remarks and closing
+
+---------------------------------------------------------
+12:30-...  Lunch
+---------------------------------------------------------
+
+The city of LILLE is about 150 miles away from PARIS. It can be reached:
+ - From Paris by either motorway (two hours) or train (one hour). 
+ - From most european countries by train, motorway or plane.
+The conference will take place at the University of 
+Sciences and Technology of Lille. Accomodation can be 
+provided either on the campus or in the center of the city. 
+The organization committee will provide maps and help for 
+hotel reservation and travels.
+
+
+ACCOMODATION
+
+We have a 50 bedrooms pre-reservation in the ASCOTEL * * 
+hotel located on the campus, a few meters away 
+from the conference building. The university has an 
+agreement with the hotel for special prices:
+
+Single                    215 FF
+Double                    250 FF
+Triple                    300 FF
+Breakfeast (buffet)        38 FF
+Meals                      85 FF
+
+
+CARDIS - ASCOTEL 
+Boulevard Paul Langevin 
+F-59650 VILLENEUVE D'ASCQ 
+FRANCE
+TEL 33 20 43 82 82     FAX  33 20 05 39 93
+
+---------------------------------------------------------
+
+HOTEL RESERVATION FORM - CARDIS
+(To be mailed directly to the hotel)
+
+NAME ............................................
+
+DATE OF ARRIVAL .................................
+
+DATE OF DEPARTURE................................
+
+ROOM RESERVATION      SIMPLE          DOUBLE           TRIPLE
+
+PAYMENT BY     CASH       CHECK        CREDIT CARD
+
+(The VISA credit card is the only one accepted
+ by the hotel)
+
+Reservation: You must pay the first night to
+ confirm your reservation
+
+
+---------------------------------------------------------
+
+
+CONFERENCE REGISTRATION
+The registration form must be returned to:
+
+Vincent Cordonnier - CARDIS
+RD2P - Hopital Calmette
+CHRU de Lille
+F-59037      LILLE CEDEX
+FRANCE
+Email : car...@rd2p.lifl.fr
+
+REGISTRATION FEES
+Participants : 1000 FF or 220 US$  including:
+                Participation to the sessions
+                Proceedings
+                Tuesday night banquet
+                Coffee breaks.
+Students or young researchers: 500 FF or 110 US$
+                Same services excepted the banquet.
+
+Payment can only be done by cash or check (The conference 
+is not allowed to accept credit cards, even smart cards!)
+
+REGISTRATION  FORM - CARDIS
+(To be mailed directly to V. Cordonnier)
+
+SURNAME 
+..........................................................
+
+FIRST NAME 
+..........................................................
+
+COMPANY ..................................................
+
+ADDRESS 
+..........................................................
+..........................................................
+
+POSTAL 
+CODE..........................CITY........................
+
+COUNTRY ..................................................
+
+TEL 
+..................................FAX.....................
+
+EMAIL ....................................................
+
+Registration fee must be joined to this form

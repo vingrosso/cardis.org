@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Specification Patterns</TITLE>
+<META NAME="description" CONTENT="Specification Patterns">
+<META NAME="keywords" CONTENT="paper">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="paper.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html101"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html99"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html93"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html102"
+  HREF="node8.html">A Tool for Model</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html94"
+  HREF="node6.html">Specification Language</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00033000000000000000"></A>
+<A NAME="sect:specs"></A>
+<BR>
+Specification Patterns
+</H2>
+
+<P>
+As in the Bandera project&nbsp;[<A
+ HREF="node20.html#corbett00bandera">6</A>]
+specification patterns are used to facilitate formulating
+correctness properties.
+These specification patterns concern
+temporal properties of method invocations,
+and are either <EM>temporal patterns</EM> 
+or <EM>judgement patterns</EM> concerning the invocation of a particular
+method. 
+Below a set of patterns that we have defined,
+and which are commonly used, 
+are given.
+
+<P>
+To express that <EM>within the call of a method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">
+the property <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ \phi$"> holds</EM>
+the judgment pattern
+<!-- MATH
+ \begin{displaymath}
+\mathsf{Within}\;m\;\phi \;\stackrel {\Delta}{=}\; m \vdash \phi
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="155" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$\displaystyle \mathsf{Within}\;m\;\phi \;\stackrel {\Delta}{=}\; m \vdash \phi
+$">
+</DIV><P></P>
+is used.
+The property that <EM>a call to <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$"> never triggers method <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"></EM>
+can be specified as:
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{l}
+\multicolumn{1}{l}{m_1\;\mathsf{never}\;\mathsf{triggers}\;m_2}\\
+\quad \stackrel {\Delta}{=}\;
+\mathsf{Within}\;m_1\;(\neg (\mathsf{eventually}\;\mbox{\sf loc}_{\>} m_2))
+\\
+\quad \equiv\;
+\mathsf{Within}\;m_1\;(\mathsf{never}\;\mbox{\sf loc}_{\>} m_2)\\
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="411" HEIGHT="78" BORDER="0"
+ SRC="img90.png"
+ ALT="\begin{displaymath}
+\begin{array}{l}
+\multicolumn{1}{l}{m_1\;\mathsf{never}\;\ma...
+...;m_1\;(\mathsf{never}\;\mbox{\sf loc}_{\&gt;} m_2)\\
+\end{array}\end{displaymath}">
+</DIV><P></P>
+Next define the temporal patterns (formulas)
+(i)
+<!-- MATH
+ $m_2\;\mathsf{after}\;m_1$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$ m_2\;\mathsf{after}\;m_1$">,
+i.e., <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"> can only be called after a call to <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$">;
+(ii) <!-- MATH
+ $m_2\;\mathsf{through}\;m_1$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.png"
+ ALT="$ m_2\;\mathsf{through}\;m_1$">,
+i.e., <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"> can only be called from <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$">;
+(iii) <!-- MATH
+ $m_2\;\mathsf{from}\;m_1$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$ m_2\;\mathsf{from}\;m_1$">,
+i.e., <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"> can only be called directly from <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$">;
+and
+(iv) <!-- MATH
+ $m_1\;\mathsf{excludes}\;m_1$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.png"
+ ALT="$ m_1\;\mathsf{excludes}\;m_1$">, i.e.,
+when <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$"> is called this excludes the possibility that
+<IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"> will later be called;
+(v) <!-- MATH
+ $p\;\mathsf{cannotCall}\;m$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ p\;\mathsf{cannotCall}\;m$">, i.e., 
+the method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> cannot be directly
+called from any method in package <IMG
+ WIDTH="14" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ p$">.
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{l}
+\multicolumn{1}{l}{m_2\;\mathsf{after}\;m_1} \\
+\quad \;\stackrel {\Delta}{=}\;
+\left(\mathsf{never}\;\mbox{\sf loc}_{\>} m_2\right) \;\mathsf{weakuntil}\;{\mbox{\sf loc}_{\>} m_1}
+\\[6pt]
+\par\multicolumn{1}{l}{m_1\;\mathsf{excludes}\;m_2}\\
+\quad \;\stackrel {\Delta}{=}\; 
+\left(\mathsf{eventually}\;\mbox{\sf loc}_{\>} m_1\right) \;\Rightarrow \;
+\mathsf{never}\;\mbox{\sf loc}_{\>} m_2
+\\[6pt]
+\par\multicolumn{1}{l}{m_2\;\mathsf{from}\;m_1}\\
+\quad \;\stackrel {\Delta}{=}
+\begin{array}{l}
+\mathsf{always}\;
+\left(
+\neg \left(\mbox{\sf loc}_{\>} m_1 \vee \mbox{\sf loc}_{\>} m_2\right)
+\Rightarrow 
+\mathsf{next}\;\neg \mbox{\sf loc}_{\>} m_2
+\right) \\
+\wedge \;
+\neg \mbox{\sf loc}_{\>} m_2
+\end{array}
+\\[10pt]
+\par\multicolumn{1}{l}{m_2\;\mathsf{through}\;m_1} \\
+\quad \;\stackrel {\Delta}{=}
+\begin{array}{l}
+\neg \mbox{\sf loc}_{\>} m_2\;\mathsf{weakuntil}\;\mbox{\sf loc}_{\>} m_1 \\
+\wedge 
+\left(
+\begin{array}{l}
+\mathsf{always}\;
+\mathsf{return}\;m_1
+\Rightarrow \\
+\quad
+\mathsf{next}\;
+\left(
+\neg \mbox{\sf loc}_{\>} m_2\;\mathsf{weakuntil}\;\mbox{\sf loc}_{\>} m_1
+\right)
+\end{array}
+\right)
+\\
+\end{array}
+\\[18pt]
+\par\multicolumn{1}{l}{p\;\mathsf{cannotCall}\;m}\\
+\quad \;\stackrel {\Delta}{=}\; 
+\mathsf{always}\left(\mbox{\sf package } p \Rightarrow \mathsf{next}\;\neg \mbox{\sf loc}_{\>} m\right)
+\\
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="451" HEIGHT="314" BORDER="0"
+ SRC="img96.png"
+ ALT="\begin{displaymath}
+\begin{array}{l}
+\multicolumn{1}{l}{m_2\;\mathsf{after}\;m_1...
+...athsf{next}\;\neg \mbox{\sf loc}_{\&gt;} m\right)
+\\
+\end{array}\end{displaymath}">
+</DIV><P></P>
+The intuitive idea of the formulation of
+<!-- MATH
+ $m_2\;\mathsf{from}\;m_1$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$ m_2\;\mathsf{from}\;m_1$">
+is to express that 
+the current program point can be in method <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$">
+only because of a direct call from <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$">,
+or because it was already in <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$">,
+and initially the program point is not in <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$">.
+
+<P>
+The above patterns can be combined with the <!-- MATH
+ $\mathsf{Within}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.png"
+ ALT="$ \mathsf{Within}$"> pattern.
+For example, 
+<!-- MATH
+ \begin{displaymath}
+\mathsf{Within}\;m_1\;\left(m_3\;\mathsf{after}\;m_2\right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="178" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.png"
+ ALT="$\displaystyle \mathsf{Within}\;m_1\;\left(m_3\;\mathsf{after}\;m_2\right)
+$">
+</DIV><P></P>
+expresses that during a call to <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$"> the method
+<IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$ m_3$"> will be called only after calling <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$">.
+
+<P>
+An alternative technique for expressing correctness
+properties of behaviours of programs of stack-based languages
+is to use stack inspection techniques&nbsp;[<A
+ HREF="node20.html#jensen99verification">13</A>].
+Essentially these techniques express constraints on 
+the set of all possible runtime stacks. Note however that
+for instance the <!-- MATH
+ $\mathsf{after}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img100.png"
+ ALT="$ \mathsf{after}$"> property above
+cannot directly be coded as a stack inspection property 
+since the calls to <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ m_1$"> and <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ m_2$"> need not be concurrent.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html101"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html99"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html93"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html102"
+  HREF="node8.html">A Tool for Model</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html94"
+  HREF="node6.html">Specification Language</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Lars-Ake Fredlund
+2002-09-23
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":74,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></BODY>
+</HTML>

@@ -1,0 +1,138 @@
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><title>USENIX - CARDIS '02: Fifth Smart Card Research and Advanced Application Conference</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="/graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+
+<div><center><!-- Banner -->
+<table BGCOLOR="#FFFFFF" BORDER="0" WIDTH="100%" CELLSPACING="0"
+CELLPADDING="0">
+<tr><td ALIGN="CENTER" VALIGN="TOP"><table border="0" cellpadding="0" cellspacing="0" width="600">
+<tr><td><a href="/legacy/events/cardis02/"><img src="/legacy/events/cardis02/cardis02.gif" ALT="CARDIS '02, Fifth Smart Card Research and Advanced Application Conference, November 20-22, 2002, Hyatt Ste. Claire, San Jose, California" WIDTH="600" HEIGHT="85" BORDER="0"></a></td></tr>
+<tr><td><img src="/legacy/graphics/dot_clear.gif" ALT="" WIDTH="600" HEIGHT="5" BORDER="0"></td></tr>
+</table></td></tr></table>
+<table BGCOLOR="#FFFFFF" BORDER="0" WIDTH="100%" CELLSPACING="0"
+CELLPADDING="0"><tr><td ALIGN="CENTER" VALIGN="TOP"><table border="0" cellpadding="0" cellspacing="0" width="600">
+
+<tr><!-- row 1 --> <td><img name="home" src="/legacy/events/cardis02/art/on/home.gif" width="92" height="17" border="0" alt="CARDIS Home"></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/registration/" onMouseOver="registration.src='/events/cardis02/art/over/registration.gif'" onMouseOut="registration.src='/events/cardis02/art/default/registration.gif'"><img name="registration" src="/legacy/events/cardis02/art/default/registration.gif" width="64" height="17" border="0" alt="Register"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/tech.html" onMouseOver="tech.src='/events/cardis02/art/over/tech.gif'" onMouseOut="tech.src='/events/cardis02/art/default/tech.gif'"><img name="tech" src="/legacy/events/cardis02/art/default/tech.gif" width="117" height="17" border="0" alt="Tech Sessions"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/activities.html" onMouseOver="activities.src='/events/cardis02/art/over/activities.gif'" onMouseOut="activities.src='/events/cardis02/art/default/activities.gif'"><img name="activities" src="/legacy/events/cardis02/art/default/activities.gif" width="97" height="17" border="0" alt="BoFs/Activities"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/ataglance.html" onMouseOver="ataglance.src='/events/cardis02/art/over/ataglance.gif'" onMouseOut="ataglance.src='/events/cardis02/art/default/ataglance.gif'"><img name="ataglance" src="/legacy/events/cardis02/art/default/ataglance.gif" width="79" height="17" border="0" alt="At a Glance"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/hotel.html" onMouseOver="hotel.src='/events/cardis02/art/over/hotel.gif'" onMouseOut="hotel.src='/events/cardis02/art/default/hotel.gif'"><img name="hotel" src="/legacy/events/cardis02/art/default/hotel.gif" width="46" height="17" border="0" alt="Hotel"></a></td>
+</tr>
+</table>
+</td></tr></table>
+</center></div><!-- End of Banner -->
+<img src="/legacy/graphics/dot_clear.gif" WIDTH="1" HEIGHT="10" ALT="">
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr>
+<td COLSPAN="1" VALIGN="TOP">
+
+<!-- START OF PAGE CONTENTS-->
+
+<tr>
+
+<!--Main Text-->
+<td COLSPAN="1" VALIGN="TOP" WIDTH="380">
+<!--Letter from Chair-->
+
+<font SIZE="-1" FACE="Arial,Helvetica,sans-serif" COLOR="#000000">
+<b>Overview
+</b></font>
+<br>
+<font SIZE="-1" FACE="Arial,Helvetica,sans-serif">
+Smart card research is of growing importance as the need for information
+security increases rapidly, especially in response to new, urgent demands. Since
+1994, CARDIS has been the premier international research conference dedicated to
+smart cards and their applications.
+<p>
+CARDIS '02, the joint IFIP/USENIX International Conference on Smart Card
+Research and Advanced Applications, will bring together researchers and
+practitioners in the development and deployment of smart card systems and
+technologies.
+<p>
+The two day conference features <a href="tech.html#keynote">keynote speaker Vincent Cordonnier</a>, <i>LIFL</i>;  
+<a href="tech.html">14 refereed papers</a>; panel discussions; <a href="tech.html#wips">Work-In-Progress reports</a> as well as ample
+opportunities to informally interact with fellow attendees and speakers.
+<p>
+Unlike events devoted to commercial and application aspects of smart cards, the
+CARDIS conferences bring together researchers who are active in all aspects of
+the design, validation, and application of smart cards. The breadth of smart
+card research stimulates a synergy among disparate research communities, making
+CARDIS an ideal opportunity to present the latest research advances.
+<p>
+<b>Importance of Smart Card Research</b><br>
+The portability, processing power, and tamper resistance of smart cards offers a
+platform for secure conditional access to information and applications. Smart
+cards significantly extend the scope of distributed systems by providing a
+trusted platform for cryptographically secured computation and storage.
+Notwithstanding their long history, relative to modern computing, the
+applicability of smart cards in distributed systems remains an untapped
+resource, limited mainly by our imagination and understanding. Here lie vast
+uncovered research areas that will have a huge impact on the eventual success of
+the technology. The research challenges span many domains, including hardware
+design, cryptographic applications, distributed system architecture, and formal
+modeling.
+
+
+
+
+</td></tr></table>
+
+
+</td></tr></table>
+
+
+
+<!--END OF PAGE CONTENTS-->
+
+<p>
+</td></tr></table>
+</center>
+</div>
+
+<hr>
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr><td VALIGN="TOP">
+<font size=2><img src="/legacy/graphics/questmark.gif" width=12 height=16
+alt="?" hspace=2 align="left">Need help? <a
+href="/legacy/about/contacts.html">Use our Contacts page.</a></font>
+<br clear="left">
+<img src="/legacy/graphics/dot_clear.gif" width=1 height=5 alt=""><br>
+<address>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  25 Nov. 2002 aw</font><br>
+</address>
+
+
+</td><td VALIGN="TOP" ALIGN="RIGHT">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="/legacy/events/cardis02/"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/events/event_calendar.html"><font size=1>Events calendar</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</center>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":81,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-593.min.js"}</script></body>
+</html>
+

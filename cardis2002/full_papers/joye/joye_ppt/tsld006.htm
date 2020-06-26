@@ -1,0 +1,56 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for Macintosh PowerPoint 98">
+ <TITLE>Pencil-and-Paper Method</TITLE> 
+</HEAD>
+
+<BODY     >
+
+ <H1>Pencil-and-Paper Method</H1> 
+ <P><UL></P>
+<P> ____________________________________
+<BR>Input:     a =  ( 0, am-1 , …, a0 )  
+<BR>		       b =  ( bn-1 , …, b0 )
+<BR> 		      A =  ( 0, am-1 , …, am-n+1 )
+<BR>Output:  q = a div b   and   r = a mod b
+<BR>_____________________________________
+<BR>b _ CPL2n (b)      
+<BR>for j = 1  to (m – n + 1)   do
+<BR>		a _ SHLm+1(a , 1)
+<BR>		_  _ carry
+<BR>		A _ ADDn (A , b)
+<BR>		_  _ _ _ carry
+<BR>		if (_ _)   then      b _ CPL2n (b) 
+<BR>				   A _ ADDn (A , b)
+<BR>				   b _ CPL2n (b) 
+<BR>			    else    LSB(a) = 1
+<BR>end for
+<BR>b _ CPL2n (b)</UL></P>
+<P><UL></P>
+<P>/* b = ‘’- b ’’ */</UL></P>
+<P><UL></P>
+<P>/* Shift */</UL></P>
+<P><UL></P>
+<P>/* Subtract */</UL></P>
+<P><UL></P>
+<P>/* Correction*/</UL></P>
+<P><UL></P>
+<P>/* quotient bit*/</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld005.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld007.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld006.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

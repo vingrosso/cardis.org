@@ -1,0 +1,39 @@
+<h1>Accepted Papers</h1>
+
+
+
+<ul class="list-unstyled accepted-papers">
+
+<span class="accepted-papers-title">Towards Sound and Optimal Leakage Detection Procedure</span> <ul class="accepted-papers-authors">A. Adam Ding, Liwei Zhang, Francois Durvaux, Francois-Xavier Standaert and Yunsi Fei.</ul> <br>
+ 
+<span class="accepted-papers-title">Leakage Bounds for Gaussian Side Channels</span> <ul class="accepted-papers-authors">Thomas Unterluggauer, Thomas Korak, Stefan Mangard, Robert Schilling, Luca Benini, Frank Gurkaynak and Michael Muehlberghuber. </ul><br>
+
+<span class="accepted-papers-title">An EM Fault Injection Susceptibility Criterion and its Application to the Localization of Hotspots</span> <ul class="accepted-papers-authors">Maxime Madau, Michel Agoyan and Philippe Maurine. </ul> <br>
+
+<span class="accepted-papers-title">Connecting and Improving Direct Sum Masking and Inner Product Masking</span> <ul class="accepted-papers-authors">Romain Poussier, Qian Guo, Francois-Xavier Standaert, Claude Carlet and Sylvain Guilley. </ul> <br>
+
+<span class="accepted-papers-title">Trace Augmentation: What Can Be Done Even Before Preprocessing in a Profiled SCA?</span> <ul class="accepted-papers-authors">Sihang Pu, Yu Yu, Weijia Wang, Junrong Liu, Zheng Guo and Dawu Gu.</ul>  <br>
+
+<span class="accepted-papers-title">A First-Order Chosen Plaintext DPA Attack on the Third Round of DES</span> <ul class="accepted-papers-authors">Oscar Reparaz and Benedikt Gierlichs. </ul> <br>
+
+<span class="accepted-papers-title">A Strict Key Enumeration Algorithm for Dependent Score Lists of Side-Channel Attacks</span> <ul class="accepted-papers-authors">Yang Li, Shuang Wang, Zhibin Wang and Jian Wang.</ul>  <br>
+
+<span class="accepted-papers-title"> May The Force Be With You: Force-Based Relay Attack Detection</span>
+<ul class="accepted-papers-authors">Iakovos Gurulian, Gerhard Hancke, Konstantinos Markantonakis and Raja Naeem Akram.</ul>  <br>
+
+
+<span class="accepted-papers-title">A Novel Use of Kernel Discriminant Analysis as a Higher-Order Side-Channel Distinguisher</span> <ul class="accepted-papers-authors">Xinping Zhou, Carolyn Whitnall, Elisabeth Oswald, Degang Sun and Wang Zhu.</ul> <br>
+
+<span class="accepted-papers-title"> Fault Analysis of the ChaCha and Salsa Families of Stream Ciphers</span>  <ul class="accepted-papers-authors">Arthur Beckers, Benedikt Gierlichs and Ingrid Verbauwhede.</ul> <br>
+
+<span class="accepted-papers-title"> Opening Pandora's Box: Effective Techniques for Reverse Engineering IoT Devices </span>  <ul class="accepted-papers-authors"> Omer Shwartz, Michael Bohadana, Yael Mathov, Yuval Elovici and Yossi Oren</ul> <br>
+
+<span class="accepted-papers-title"> Optimal First-Order Boolean Masking for Embedded IoT Devices </span>  <ul class="accepted-papers-authors"> Alex Biryukov, Daniel Dinu and Aleksei Udovenko </ul> <br>
+
+<span class="accepted-papers-title"> Instruction Duplication: Leaky and Not Too Fault-Tolerant! </span>  <ul class="accepted-papers-authors"> Lucian Cojocar, Kostas Papagiannopoulos and Niek Timmers </ul> <br>
+
+<span class="accepted-papers-title"> Applying Horizontal Clustering Side-channel Attacks on Embedded ECC Implementations </span>  <ul class="accepted-papers-authors"> Erick Nascimento and Lukasz Chmielewski </ul> <br>
+
+</ul>
+
+

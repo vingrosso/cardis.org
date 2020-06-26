@@ -1,0 +1,312 @@
+<HTML><HEAD><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><TITLE>USENIX - CARDIS '02 - Call for Papers</TITLE>
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="/graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<BODY BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<DIV><CENTER>
+<TABLE BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<TR><TD ALIGN="CENTER" VALIGN="TOP">
+<!-- Banner -->
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><TR><TD>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="/legacy/graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="/legacy/graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="/legacy/graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/"><img src="/legacy/graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/about"><img src="/legacy/graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/events"><img src="/legacy/graphics/on/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/membership"><img src="/legacy/graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/publications"><img src="/legacy/graphics/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="/legacy/students"><img src="/legacy/graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="/legacy/graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="/legacy/graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+</table>
+</TD></TR></TABLE>
+<!-- End of Banner -->
+<!--Page is split 2/146/2/448/2-->
+<TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr>
+
+<!--Left Border-->
+<td width="2" valign="top" bgcolor="#CCCCCC"><img src="/legacy/graphics/dot_clear.gif" width="2" height="1" alt=""></td>
+
+<!--Links Column-->
+<td width="146" valign="top" bgcolor="#FFFFFF">
+<table width="146" border=0 cellspacing=0 cellpadding=8><tr><td>
+<!-- START OF PAGE CONTENTS -->
+<img src="/legacy/graphics/dot_clear.gif" width="1" height="8" alt="">
+<img src="/legacy/graphics/TOCreturn2.gif" HEIGHT="36" WIDTH="80" ALT="Contents" BORDER="0">
+<P>
+<FONT SIZE="-2" FACE="verdana, arial, helvetica, sans-serif">[<A href="/legacy/events/cardis02">Back to CARDIS home</A>]
+	<p><a href="#dates">Important Dates</a>
+    <p><a href="#overview">Overview</a>
+    <p><a href="#aims">Aims and Goals</a>
+    <p><a href="#cfp">Call for Papers</a>
+    <p><a href="#topics">Topics</a>
+    <p><a href="#papers">Refereed Papers</a></p>
+    <p><a href="#awards">Best Paper Awards</a></p>
+	<p><a href="#submit">How to Submit</a></p>
+    <p><a href="#organizers">Conference Organizers</a>
+    <p><a href="#reg">Registration Materials</a>
+    <p><a href="submit.html">Web Submission Form</a>
+    </font><p>
+<a href="cardis02_cfp.pdf"><IMG src="/legacy/graphics/pdficon.gif" ALIGN="LEFT" WIDTH="28" HEIGHT="31" BORDER=0 HSPACE="10"></a>
+<A href="cardis02_cfp.pdf"><FONT SIZE="-2" FACE="verdana, arial, helvetica, sans-serif"><B>Call for Papers<br>in PDF Format</B></FONT></A>
+<br><br><br><br>
+
+
+
+<P>
+
+</FONT>
+</td></tr></table></td>
+
+<!--Divider-->
+<td width="2" valign="top" bgcolor="#CCCCCC"><img src="/legacy/graphics/dot_clear.gif" width="2" height="1" alt=""></td>
+
+
+<!--Main Text-->
+<td width="448" valign="top">
+<table width="100%" border=0 cellspacing=0 cellpadding=10><tr><td>
+
+<FONT SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><B>CARDIS '02 Call for papers</B></FONT>
+<P>
+<FONT SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">
+<B>Fifth Smart 
+Card Research and Advanced Application Conference</B><br>
+November 20-22, 2002<br> 
+Hyatt Ste. Claire, 
+San Jose, California, USA
+<p>
+<B>Sponsors</B><br>
+<A href="http://www.ecs.soton.ac.uk/%7Ephh/ifip-wg88/" TARGET="other">IFIP Working Group 8.8 (Smart Cards)</A><br>
+<A href="/legacy/">USENIX, the Advanced Computing Systems Association</A>
+<P>
+<A NAME="dates"><B>Important
+Dates</B></A><br>
+Submissions due: <b>June 24, 2002</b><br>
+Notification of acceptance: <b>August 12, 2002</b><br>
+Camera-ready final papers due: <b>September 23, 2002</b><br>
+<P>
+<A NAME="overview"><B>Overview</B></A><br>
+Smart card research is of increasing importance as the need for information
+security increases rapidly, especially in response to new, urgent demands. 
+Since 1994, CARDIS has been the premier international research conference
+dedicated to smart cards and their applications.
+<P>
+CARDIS '02, the joint IFIP/USENIX International Conference on Smart Card
+Research and Advanced Applications, constitutes the Fifth IFIP CARDIS conference
+and the Second USENIX conference on Smart Card Technology.   Like its
+predecessors, CARDIS '02 will bring together researchers and practitioners in
+the development and deployment of smart card systems and technologies.
+<P>
+<A NAME="aims"><B>Aims and Goals</B></A><br>
+
+The portability, processing power, and tamper resistance of smart cards offers a
+platform for secure conditional access to information and applications.  Smart
+cards significantly extend the scope of distributed systems by providing a
+trusted platform for cryptographically secured computation and storage. 
+Notwithstanding their long history, relative to modern computing, the
+applicability of smart cards in distributed systems remains an untapped
+resource, limited mainly by our imagination and understanding.  Here lie vast
+uncovered research areas that will have a huge impact on the eventual success of
+the technology.  The research challenges span many domains, including hardware
+design, cryptographic applications, distributed system architecture, and formal
+modeling.
+<P>
+Unlike events devoted to commercial and application aspects of smart cards, the
+CARDIS conferences bring together researchers who are active in all aspects of
+the design, validation, and application of smart cards.  The breadth of smart
+card research stimulates a synergy among disparate research communities, making
+CARDIS an ideal opportunity to present the latest research advances.
+<P>
+<A NAME="cfp"><B>Call for Papers</B></A><br>
+
+The program committee seeks papers describing the design, application, and
+validation of smart card technologies.  Submissions across a broad range of
+smart card development phases are encouraged, from exploratory research and
+proof-of-concept studies to practical application and deployment of smart card
+technology.
+<P>
+<A NAME="topics"><B>Topics</B></A><br>
+The following topics are of particular interest to the program committee:
+<UL>
+<LI>Application loading
+<LI>Smart card operating systems
+<LI>Virtual machines
+<LI>Integrated development environments
+<LI>High-speed, small-footprint encryption
+<LI>Cryptographic accelerators
+<LI>On-card data sharing schemes
+<LI>Smart cards in the Internet
+<LI>Automatic mask generation
+<LI>Emerging opportunities for standardization
+<LI>Smart tokens and other competing technologies
+<LI>Alternative form factors for smart card chips
+<LI>Smart card application program interfaces
+<LI>Trends in smart card hardware
+<LI>Research in tamper-resistance
+<LI>Hardware and software certification
+<LI>Security validation and benchmarks
+<LI>Biometrics involving smart cards
+</UL>
+<P>
+<A NAME="papers"><B>Refereed Papers</B></A><br>
+Papers that have been formally reviewed and accepted will be presented during
+the conference and published in the conference proceedings. The proceedings will
+be distributed to attendees and, following the conference, will be available
+online to USENIX members and for purchase.
+<P>
+<A NAME="awards"><B>Best Paper Awards</B></A><br>
+Awards will be given at the conference for the best paper and the best paper
+that is primarily the work of a student.
+<P>
+<A NAME="submit"><B>How and Where To Submit Refereed Papers</B></A><br>
+Papers should represent novel scientific contributions related to the topics
+listed above.  Both the work described in the paper and the paper itself must be
+substantially complete at the time of the submission. Full papers are
+encouraged, and should be about 8 to 14 typeset pages using an 11 pt font or
+larger.  Submissions must be received by June 24, 2002.
+<P>
+Papers will be accepted electronically, via a Web submission form, and must be
+in PDF format (e.g., processed by Adobe's Acrobat Distiller). Please make sure
+your submission can be opened using Adobe Acrobat 4.0.  Please use this <A href="submit.html">Web form 
+for submissions</A>.
+<P>
+All submissions will be acknowledged electronically. If you have not received an
+acknowledgment within 48 hours of submitting your paper electronically, please
+contact the program chair at 
+<A href="mailto:cardis02chair@usenix.org">cardis02chair@usenix.org</A>.
+<P>
+For details on the submission process, authors are encouraged to consult the
+detailed <A href="guidelines.html">author guidelines</A>.
+<P>
+All submissions will be judged on originality, contribution to the field, and
+correctness. Accepted papers may be assigned a member of the program committee
+to act as its shepherd through the preparation of the final paper.  The shepherd
+will act as a conduit for feedback from the committee to the authors. Authors
+will be notified of acceptance by August 12, 2002.  Camera-ready final paper due
+date is September 23, 2002.
+<P>
+The program committee requires that papers not be submitted simultaneously to
+another conference or publication and that submitted papers not be previously or
+subsequently published elsewhere.  When appropriate, authors should arrange for
+a release for publication from their employer prior to submission. Papers
+accompanied by non-disclosure agreement forms are unacceptable and will be
+returned to the author(s) unread.  Submitted manuscripts will be read by the
+program committee and other selected members of the technical community for the
+purposes of technical review, but otherwise will be held in strict confidence.
+<P>
+Specific questions about submissions may be sent via email to
+<A href="mailto:cardis02chair@usenix.org">cardis02chair@usenix.org</A>.
+<P>
+<A NAME="organizers"><B>Conference
+Organizers</B></A><BR>
+<B>Program Chair</B><br>
+Peter Honeyman, <I>CITI, University of Michigan</I>
+<p>
+<B>Program Committee</B><br>
+Isabelle Attali, <I>INRIA Sophia Antipolis</I><BR>
+Boris Balacheff, <I>Hewlett Packard Labs, Bristol</I><BR>
+Yves Deswarte, <I>LAAS-CNRS, Toulouse</I><BR>
+Josep Domingo-Ferrer, <I>Universitat Rovira i Virgili, Tarragona</I><BR>
+Pieter Hartel, <I>Department of Computer Science, University of Twente</I><BR>
+Dirk Husemann, <I>IBM Research, Zurich</I><BR>
+Sebastien Jean, <I>LIFL, Lille</I><BR>
+Thomas Jensen, <I>IRISA/CNRS, Rennes</I><BR>
+Roger Kilian-Kehr, <I>T-Systems Nova GmbH, Darmstadt</I><BR>
+Marc Joye, <I>Gemplus, Gemenos</I><BR>
+Xavier Leroy, <I>INRIA, Rocquencourt, and Trusted Logic, Versailles</I><BR>
+Bernd Meyer, <I>Siemens AG, M&uuml;nchen</I><BR>
+Mike Montgomery, <I>SchlumbergerSema, Austin</I><BR>
+Joachim Posegga, <I>SAP Corporate Research, Karlsruhe</I><BR>
+Ton van der Putte, <I>Atos Origin, Utrecht</I><BR>
+Jean-Jacques Quisquater, <I>UCL, Louvain-la-Neuve</I><BR>
+R&uuml;diger Weis, <I>CryptoLabs, Amsterdam</I>
+<P>
+<B>Institutional Organizers</B><BR>
+
+The International Federation for Information Processing is a non-governmental,
+non-profit umbrella organization for national societies working in the field of
+information processing.  It was established in 1960 under the auspices of UNESCO
+as an aftermath of the first World Computer Congress held in Paris in 1959. 
+Today, IFIP has several types of Members and maintains friendly connections to
+specialized agencies of the UN system and non-governmental organizations. 
+Technical work, which is the heart of IFIP's activity, is managed by a series of
+Technical Committees and their Working Groups.
+<P>
+USENIX is the Advanced Computing Systems Association.  Its international
+membership includes engineers, scientists, system administrators, and
+technicians.  USENIX conferences are recognized for delivering pragmatically
+oriented, technically excellent programs in a highly interactive, vendor-neutral
+forum.
+<P>
+<A NAME="reg"><B>Registration
+Materials</B></A><br>
+Complete program and registration information will be available in September 2002
+here on the conference Web site.  The information will be in both html and a
+printable PDF file.  If you would like to receive the program booklet in print,
+please email your request, including your postal address, to
+<A href="mailto:conference@usenix.org">conference@usenix.org</A>.
+<p>
+
+
+</FONT>
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr></table></td>
+
+<!--Right Border-->
+<td width="2" valign="top" bgcolor="#CCCCCC"><img src="/legacy/graphics/dot_clear.gif" width="2" height="1" alt=""></td>
+
+</tr>
+<tr><td colspan="5" bgcolor="#CCCCCC" width="600" height="2"><img src="/legacy/graphics/dot_clear.gif" width="1" height="2" alt=""></td></tr>
+<tr><td colspan="5" width="600" height="5"><img src="/legacy/graphics/dot_clear.gif" width="1" height="5" alt=""></td></tr>
+</table>
+
+<TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<TR><TD VALIGN="TOP">
+<font size=2><img src="/legacy/graphics/questmark.gif" width=12 height=16
+alt="?" hspace=2 align="left">Need help? <a
+href="/legacy/about/contacts.html">Use our Contacts page.</a></font>
+<br clear="left">
+<img src="/legacy/graphics/dot_clear.gif" width=1 height=5 alt=""><br>
+<ADDRESS>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<FONT SIZE="2">Last changed:  11 Sept. 2002 jel</FONT><BR>
+</ADDRESS>
+</TD><TD VALIGN="TOP" ALIGN="RIGHT">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td>
+<a href="/legacy/events/cardis02"><font size=1>CARDIS '02 Index</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/events"><font size=1>Event Index</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+</CENTER>
+</DIV>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":69,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></BODY>
+</HTML>

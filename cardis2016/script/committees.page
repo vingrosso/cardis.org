@@ -1,0 +1,46 @@
+<h1>Committee</h1>
+
+<h3>General Chair</h3>
+<ul>
+    <li><span class="committee-name">Aur&eacute;lien Francillon</span>, <span class="affiliation">EURECOM</span></li>
+</ul>
+
+<h3>Program Chair</h3>
+<ul>
+    <li><span class="committee-name">Kerstin Lemke-Rust</span>, <span class="affiliation">Bonn-Rhein-Sieg University of Applied Sciences</span></li>
+    <li><span class="committee-name">Mike Tunstall</span>, <span class="affiliation">Cryptography Research</span></li>
+</ul>
+
+<h3>Program Committee</h3>
+<ul>
+    <li><span class="committee-name">Guillaume Barbu</span>, <span class="affiliation">Oberthur Technologies</span>, France</li>
+    <li><span class="committee-name">Lejla Batina</span>, <span class="affiliation">Radboud University Nijmegen</span>, Netherlands</li>
+    <li><span class="committee-name">Guido Bertoni</span>, <span class="affiliation">STM</span>, Italy</li>
+    <li><span class="committee-name">Elke De Mulder</span>, <span class="affiliation">Cryptography Research France</span>, France</li>
+    <li><span class="committee-name">Hermann Drexler</span>, <span class="affiliation">Giesecke&amp;Devrient</span>, Germany</li>
+    <li><span class="committee-name">Thomas Eisenbarth</span>, <span class="affiliation">WPI</span>, USA</li>
+    <li><span class="committee-name">Wieland Fischer</span>, <span class="affiliation">Infineon Technologies</span>, Germany</li>
+    <li><span class="committee-name">Benedikt Gierlichs</span>, <span class="affiliation">KU Leuven</span>, Belgium</li>
+    <li><span class="committee-name">Christophe Giraud</span>, <span class="affiliation">Oberthur Technologies</span>, France</li>
+    <li><span class="committee-name">Cezary Glowacz</span>, <span class="affiliation">T-Systems</span>, Germany</li>
+    <li><span class="committee-name">Sylvain Guilley</span>, <span class="affiliation">Telecom-ParisTech &amp; Secure-IC</span>, France</li>
+    <li><span class="committee-name">Tim G&uuml;neysu</span>, <span class="affiliation">University of Bremen</span>, Germany</li>
+    <li><span class="committee-name">Johann Heyszl</span>, <span class="affiliation">Fraunhofer AISEC</span>, Germany</li>
+    <li><span class="committee-name">Naofumi Homma</span>, <span class="affiliation">Tohoku University</span>, Japan</li>
+    <li><span class="committee-name">Yuichi Komano</span>, <span class="affiliation">Toshiba Corporation</span>, Japan</li>
+    <li><span class="committee-name">Jean-Louis Lanet</span>, <span class="affiliation">University of Limoges</span>, France</li>
+    <li><span class="committee-name">Roel Maes</span>, <span class="affiliation">Intrinsic-ID</span>, Netherlands</li>
+    <li><span class="committee-name">Stefan Mangard</span>, <span class="affiliation">TU Graz</span>, Austria</li>
+    <li><span class="committee-name">Keith Mayes</span>, <span class="affiliation">Royal Holloway</span>, UK</li>
+    <li><span class="committee-name">Marcel Medwed</span>, <span class="affiliation">NXP Semiconductors</span>, Netherlands</li>
+    <li><span class="committee-name">Amir Moradi</span>, <span class="affiliation">Ruhr University Bochum</span>, Germany</li>
+    <li><span class="committee-name">Svetla Nikova</span>, <span class="affiliation">KU Leuven</span>, Belgium</li>
+    <li><span class="committee-name">Pedro Peris-Lopez</span>, <span class="affiliation">University of Madrid</span>, Spain</li>
+    <li><span class="committee-name">Axel Poschmann</span>, <span class="affiliation">NXP Semiconductors</span>, Germany</li>
+    <li><span class="committee-name">Emmanuel Prouff</span>, <span class="affiliation">Safran Identity and Security</span>, France</li>
+    <li><span class="committee-name">Francesco Regazzoni</span>, <span class="affiliation">ALaRI - USI (Switzerland)</span>, Switzerland</li>
+    <li><span class="committee-name">Patrick Schaumont</span>, <span class="affiliation">Virginia Tech</span>, USA</li>
+    <li><span class="committee-name">Fran&ccedil;ois-Xavier Standaert</span>, <span class="affiliation">UCL Crypto Group</span>, Belgium</li>
+    <li><span class="committee-name">Takeshi Sugawara</span>, <span class="affiliation">Mitsubishi Electric Corporation</span>, Japan</li>
+    <li><span class="committee-name">Carolyn Whitnall</span>, <span class="affiliation">University of Bristol</span>, UK</li>
+</ul>

@@ -1,0 +1,1188 @@
+<html><head><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+
+
+<META NAME="description" CONTENT="Secure Method Invocation in JASON
+">
+<META NAME="keywords" CONTENT="javacard-smi">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" href="javacard-smi.css">
+
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 29-40 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+
+<!--Navigation Panel-->
+<!--<IMG WIDTH="81" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next_inactive"
+ src="file:/usr/share/latex2html/icons/nx_grp_g.png"> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ src="file:/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ src="file:/usr/share/latex2html/icons/prev_g.png">   
+<BR>
+<BR><BR>-->
+<!--End of Navigation Panel-->
+
+<P>
+
+<P>
+
+<P>
+
+<P>
+<H1 ALIGN=CENTER>Secure Method Invocation in J<SMALL>ASON</SMALL>
+</H1>
+<P ALIGN=CENTER><STRONG>Richard Brinkman 
+<BR><EM>Department of Computer Science, University of Twente</EM> 
+<BR><EM>P.O. Box 217, 7500 AE  Enschede, the Netherlands</EM> 
+<BR><EM>brinkman@cs.utwente.nl</EM> 
+<BR>
+<BR>Jaap-Henk Hoepman 
+<BR><EM>Department of Computer Science, University of Nijmegen</EM> 
+<BR><EM>P.O. Box 9010, 6500 GL  Nijmegen, the Netherlands</EM> 
+<BR><EM>jhh@cs.kun.nl</EM> 
+<BR></STRONG></P>
+<P ALIGN=LEFT></P>
+
+<P>
+
+<P>
+
+<P>
+
+<H3>Abstract:</H3>
+<DIV>
+In this paper we describe the Secure Method Invocation (SMI) framework 
+implemented for J<SMALL>ASON</SMALL>, our Javacard As Secure Objects Networks platform.
+J<SMALL>ASON</SMALL> realises the <I>secure object store</I> paradigm, that
+reconciles the card-as-storage-element and card-as-processing-element views. In
+this paradigm, smart cards are viewed as secure containers for objects, whose
+methods can be called straightforwardly and securely using SMI.
+J<SMALL>ASON</SMALL> is currently being developed as a middleware layer that
+securely interconnects an arbitrary number of smart cards, terminals and
+back-office systems over the Internet.
+</DIV>
+<P>
+
+<P>
+
+<H1><A NAME="SECTION00010000000000000000">
+Introduction</A>
+</H1>
+
+<P>
+JavaCard<A NAME="tex2html1"
+  href="footnode.html#foot275"><SUP>1</SUP></A>&nbsp;[<A
+ href="index.html#Che00">Che00</A>]
+technology makes it possible to develop software for a smart card using a high
+level language: J<SMALL>AVA</SMALL>. This technology is platform independent, it can handle
+multiple applications (each running securely within its own sandbox) on one
+smart card, post-issuance applications can be added to it and it is compatible
+with international standards like ISO7816&nbsp;[<A
+ href="index.html#ISO7816">ISO7816</A>]. 
+
+<P>
+In fact, the JavaCard platform brought high level, Object Oriented Programming
+(OOP) to the smart card developer.  Unfortunately, the OOP paradigm is only
+applied to the software within the smart card itself: invoking methods
+implemented by objects on the smart card still requires the developer to send
+commands to the smart card using Application Protocol Data Units
+(APDU's)&nbsp;[<A
+ href="index.html#ISO7816">ISO7816</A>], which have to be processed and transformed into method
+calls `by hand'.
+
+<P>
+It would be much more natural to view an object stored on a JavaCard as a
+remote object, accessible through a remote method invocation mechanism. In
+fact, if we look at a smart card application at a higher level of abstraction,
+we basically see a large collection of interconnected objects. Some of
+these objects are stored in back offices, others in terminals or PC's and many
+more stored securely on millions of smart cards. This network is highly
+dynamic: smart cards are usually offline, and only connect to the network when
+they are inserted into a terminal (or when they connect to a terminal over a 
+wireless interface in the case of contactless cards).  
+Much more importantly, this network needs to be highly secure.  Access to
+certain objects should be restricted, and the confidentiality and authenticity
+of the communication between the objects has to be guaranteed.  
+
+<P>
+Hartel [<A
+ href="index.html#HarJ95">HJF95</A>] pose that a smart card should be seen as a processing
+element rather than a storage element (as is traditionally done). In our
+opinion these views are not contradictory at all, but rather supplement each
+other nicely in the <I>secure object store</I> paradigm.  In this paradigm,
+smart cards are viewed as secure containers for objects, whose methods can be
+called straightforwardly and securely using Secure Method Invocation (SMI).
+We are currently developing the Javacards As Secure Objects Network
+(J<SMALL>ASON</SMALL>) platform as a middleware layer (on these smart cards, terminals,
+PC's and back office systems) to support this paradigm. By simplifying the
+communication with a smart card, and by providing extensive support to secure
+this communication, J<SMALL>ASON</SMALL> aims to
+greatly simplify the development of smart card applications. 
+
+<P>
+In this paper we will describe the J<SMALL>ASON</SMALL> Secure Method Invocation (SMI)
+scheme. In this scheme, a J<SMALL>ASON</SMALL> definition file (JDF) (resembling a
+J<SMALL>AVA</SMALL> interface with some additional keywords) is used to specify the
+access conditions on methods of an object. It also specifies how the
+parameters of a method call and the result should be protected when transmitted
+between caller and callee. The JDF is compiled into a stub (used by the
+caller to set up a connection with the object and to call its methods) and a 
+skeleton (used by the callee to accept incoming method invocation
+requests and to handle the security requirements). The big advantage is that
+the smart card application developer only needs to specify the security
+requirements, but does not have to implement the security protocols
+himself. This is done automatically, given the requirements.
+
+<P>
+The remainder of this paper is organised as follows. We first present related
+research in the next section. Then, the main requirements for
+the J<SMALL>ASON</SMALL> platform are presented in Sect.&nbsp;<A href="index.html#sec-req">2</A>. The design 
+(in terms of the application programmers view on J<SMALL>ASON</SMALL>) is
+given in Sect.&nbsp;<A href="index.html#sec-design">3</A>. Section&nbsp;<A href="index.html#sec-architecture">4</A> discusses the
+architecture and the way the J<SMALL>ASON</SMALL> SMI is actually implemented,
+while Sect.&nbsp;<A href="index.html#sec-example">5</A> presents
+a small example of using J<SMALL>ASON</SMALL> to implement a basic electronic purse. 
+Finally, conclusions and issues for further research appear in
+Sect.&nbsp;<A href="index.html#sec-concl">6</A> 
+
+<P>
+
+<H2><A NAME="SECTION00011000000000000000">
+State of the art</A>
+</H2>
+
+<P>
+Itoi [<A
+ href="index.html#ItoFH00">IFH00</A>] add security to the Internet infrastructure for
+smart cards developed by Guthery [<A
+ href="index.html#Gut00">Gut00</A>,<A
+ href="index.html#GBPR00">GBPR00</A>] and Rees
+[<A
+ href="index.html#ReeH00">RH00</A>], 
+adding the Simple Password Exponential Key Exchange (SPEKE) protocol and using
+the DNS as a location independent naming scheme for the smart cards involved.
+These aspects will be taken into account in the networking and naming part of
+the J<SMALL>ASON</SMALL> platform.
+
+<P>
+Hagimont and Vandewalle&nbsp;[<A
+ href="index.html#HagV00">DH00</A>] apply a different approach to enforcing
+access control on (remote) objects. Their JCC<SMALL>AP</SMALL> system uses capabilities
+to specify which methods of an object can be accessed by the owner of that
+capability. Capabilities are implemented through Java interfaces, and provide a
+limited view on the full interface of an associated object. This makes their
+system dynamic (in the sense that capabilities can be added and removed from
+the system independent of the actual implementation of the object, and that
+capabilities can be delegated between objects. On the other hand, they do not
+consider the general case of caller and callee residing on different systems
+separated by a network (as well as the terminal/card line interface). Moreover,
+the very important matter of protecting the data transfered with an actual
+method call is not considered in their work.
+
+<P>
+The latest JavaCard specification (2.2) includes a lightweight version of Sun's
+Remote Method Invocation (RMI)&nbsp;[<A
+ href="index.html#SUN99">Sun99</A>]. It provides a mechanism for a
+client application running on the terminal to invoke a method on a remote
+object stored on the card just like an invocation within the same virtual
+machine. The parameters of a remote method should be primitive (byte, boolean,
+short, int) or a single-dimension array of a primitive type (byte[], boolean[],
+short[], int[]). Unlike standard Java RMI, object parameters (whether remote or
+not) are not allowed. The method result is of primitive type, a
+single-dimension array of primitive type, a remote interface object or
+void. All parameters and return values are transmitted by value, except for the
+remote object. The remote object is transmitted by reference. We have
+investigated several approaches to implementing our J<SMALL>ASON</SMALL>
+Secure Method Invocation (SMI) system using RMI, but none are quite
+satisfactory. We discuss this in Sect.&nbsp;<A href="index.html#ssec-rmi">4.4</A>. 
+
+<P>
+Keht [<A
+ href="index.html#KehRV00">KRV00</A>] describe the JiniCard architecture, which allows
+seamless integration of smart card services in a spontaneous network
+environment. The approach taken is to keep all functionality required to
+interact with a certain smart card remotely on the network, and to download this
+functionality into the card reader based on the ATR (Answer To Reset) of the
+particular card inserted into it. They also discuss the service-as-object
+metaphor, but as far as security is concerned, they consider SSL sessions
+between card and terminal <I>objects</I> over which RMI calls are being sent.
+We, on the other hand, introduce a much finer security granularity at the
+method level.
+
+<P>
+There are also a number of related industry initiatives that deserve to be
+mentioned here.
+
+<P>
+The Global Platform Specification<A NAME="tex2html2"
+  href="footnode.html#foot276"><SUP>2</SUP></A>(formerly V<SMALL>ISA</SMALL>'s Open Platform specification) is
+concerned with the secure and platform independent installing and deletion of 
+applications on multi-application smart cards.
+
+<P>
+The Open Card Framework<A NAME="tex2html3"
+  href="footnode.html#foot277"><SUP>3</SUP></A> 
+(and the similarly motivated PC/SC
+Workgroup<A NAME="tex2html4"
+  href="footnode.html#foot278"><SUP>4</SUP></A>)
+aims to allow
+software developers to build smart card-aware products without having to
+worry about platform, card terminal, or smart card-specific interfaces. 
+It supplies
+an API for handling the communication between a PC application and a smart card
+reader. Since OCF is developed by the major smart card companies, it supports
+all kinds of smart cards and card readers. The application does not even have to
+know which smart card reader is being used during a communication session with a
+card. OCF does not specify the card side. The choice of a particular type of
+smart card is free and may change without changing the PC application. 
+
+<P>
+
+<H1><A NAME="SECTION00020000000000000000"></A>
+<A NAME="sec-req"></A><BR>
+Platform requirements
+</H1>
+
+<P>
+With the J<SMALL>ASON</SMALL> SMI system we want to achieve:
+
+<UL>
+<LI>Separation of concerns: specifying security requirements (in the
+  interface definition of a J<SMALL>AVA</SMALL>
+  applet using our keyword approach), and their actual implementation (provided
+  <I>once</I> through the J<SMALL>ASON</SMALL> SMI system).
+</LI>
+<LI>Generic secured access to objects and their methods, independent of their
+  location and whether they are on a compute server or a smart card.
+</LI>
+<LI>Providing generic, interoperable, tools to secure method invocations,
+  which can be shared among objects (decreasing the code size) and which can be
+  verified once (increasing robustness and avoiding repeated verification of
+  similar per-applet security measures). 
+</LI>
+<LI>Decreasing the complexity of writing secure (smart card) applications.
+</LI>
+</UL>
+
+<P>
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="sec-design"></A><BR>
+Design
+</H1>
+
+<P>
+The J<SMALL>ASON</SMALL> platform implements the secure object store paradigm using 
+the following layers.
+<DL>
+<DT><STRONG>Network layer</STRONG></DT>
+<DD>Implements the direct connection between clients, servers,
+  terminals and smart cards, using the Internet Protocol. Between
+  terminal and smart card IP packets are transferred as APDU's. In particular,
+  a smart card (when inserted in a terminal) has an IP address, and the
+  terminal acts as a gateway relaying all incoming IP packets to the
+  appropriate smart card (it may contain more than one smart card)&nbsp;[<A
+ href="index.html#GBPR00">GBPR00</A>].
+</DD>
+<DT><STRONG>remote method invocation layer</STRONG></DT>
+<DD>Serialises method parameters into 
+  bytestreams and vice versa, and executes the call on the remote method
+</DD>
+<DT><STRONG>secure method invocation layer</STRONG></DT>
+<DD>Provides access control and data
+  confidentiality and authenticity.
+</DD>
+</DL>
+In this paper we will focus on the design of the secure method invocation
+layer, and describe it as seen from the application programmer's point of view.
+We will discuss the close interdependencies with the RMI layer. The SMI layer
+only requires of the underlying layers that it delivers messages at least to
+the intended recipient.
+
+<P>
+
+<H2><A NAME="SECTION00031000000000000000">
+Main components</A>
+</H2>
+
+<P>
+The Secure Method Invocation (SMI) layer allows a <I>caller</I> object
+to securely call a method implemented by a <I>callee</I> object.
+Both caller and callee are assumed to be stored and run in a protected
+environment (a <I>sandbox</I>) that disables access to all objects and data
+within the sandbox except through published interfaces.
+
+<DIV ALIGN="CENTER"><A NAME="fig-overview"></A><A NAME="103"></A>
+<TABLE>
+<IMG src="fig-design.gif">
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+Caller and callee components.</CAPTION>
+<TR><TD></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+The J<SMALL>ASON</SMALL> SMI layer provides the following services:
+
+<UL>
+<LI>identification and authentication of caller and callee, 
+</LI>
+<LI>role based access control at the method level, and
+</LI>
+<LI>confidentiality and authenticity of method parameters and results.
+</LI>
+</UL>
+In future versions other services will be added like:
+
+<UL>
+<LI>logging
+</LI>
+<LI>transaction support
+</LI>
+<LI>non-repudiation
+</LI>
+</UL>
+To call a method of an object, the caller first has to connect to the
+callee in a particular role. This establishes a <I>security context</I> between
+caller and callee, that (among others) contains the session keys used to
+protect the communication.
+Once connected, the caller can call all methods
+declared by the object accessible to this role. For J<SMALL>ASON</SMALL>, roles are
+equivalent to keys. In other words, ownership of a particular key associated to
+a role, proves that an object can connect in that role.
+
+<P>
+To establish a connection, the caller needs a <I>stub</I> corresponding to
+the object to connect to. Similarly, the callee needs a <I>skeleton</I> that
+receives incoming connections, performs access control decisions and protects
+the method parameters and results. 
+The role keys used to authenticate the caller to the callee are stored in a
+separate <I>keystore</I> object belonging to the same sandbox. This design is
+sketched in Fig.&nbsp;<A href="index.html#fig-overview">1</A>.
+
+<P>
+The stub and skeleton necessary to securely call the methods of an object are
+generated automatically from a so called J<SMALL>ASON</SMALL> definition file. This
+file specifies the security requirements for the callee object. The contents
+and structure of this file are described next. Note that the issue of
+key management falls beyond the scope of this paper. We are currently
+investigating the proper tools to support key management within the J<SMALL>ASON</SMALL>
+framework. As far as the J<SMALL>ASON</SMALL>
+SMI platform is concerned, the keystore contains valid and proper keys.
+
+<P>
+
+<H2><A NAME="SECTION00032000000000000000"></A>
+<A NAME="ssec-jason-definition"></A><BR>
+The J<SMALL>ASON</SMALL> definition file
+</H2>
+
+<P>
+The J<SMALL>ASON</SMALL> SMI system has a strict separation between the card
+application and its security. An application developer has two tasks.
+
+<UL>
+<LI>Write a card object without bothering about security or APDU exchange,
+  instead focusing on the information processing logic of the application.
+</LI>
+<LI>Write a J<SMALL>ASON</SMALL> definition file describing the security
+  requirements. 
+</LI>
+</UL>
+Therefore, the security requirements for an object are written in a separate 
+J<SMALL>ASON</SMALL> definition file that resembles the syntax of a J<SMALL>AVA</SMALL>
+interface description.
+
+<DIV ALIGN="CENTER"><A NAME="fig-purse"></A><A NAME="280"></A>
+<TABLE>
+<PRE>
+package com.ebank;
+
+public interface Purse 
+{	
+  roles BANK, MERCHANT, OWNER;
+
+  accessible to ALL
+  authentic short getBalance();	
+  
+  accessible to BANK 
+  authentic short increaseBalance( confidential authentic short amount);
+	
+  accessible to MERCHANT 
+  authentic short decreaseBalance( authentic short amount);
+}
+</PRE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+J<SMALL>ASON</SMALL> definition file for a simple purse.</CAPTION>
+<TR><TD></TD></TR>
+</TABLE>
+</DIV>
+
+
+<P>
+A sample J<SMALL>ASON</SMALL> definition file appears in Fig.&nbsp;<A href="index.html#fig-purse">2</A>
+(describing the interface of a simple electronic purse application, that will
+be studied further in Sect.&nbsp;<A href="index.html#sec-example">5</A>).
+The J<SMALL>ASON</SMALL> pre-compiler
+will process the definition file and generates three files.
+
+<UL>
+<LI>A plain J<SMALL>AVA</SMALL> interface file. All keywords not known in J<SMALL>AVA</SMALL>
+  are removed.  This is the interface implemented by both the implementation of
+  the callee object and the client stub. 
+</LI>
+<LI>A client/caller stub, whose methods are called to execute the corresponding
+  remote methods, and that performs authentication and marshalling (including
+  protection) of data. 
+</LI>
+<LI>A callee skeleton performing access control decisions, unmarshalling
+  of parameters (verifying signatures and decrypting parameters where necessary)
+  for incoming invocation requests, and executing the actual method.
+</LI>
+</UL>
+
+<P>
+In J<SMALL>AVA</SMALL> the keywords <TT>private</TT>, <TT>protected</TT> and
+<TT>public</TT> are used to limit access to methods and fields to certain
+classes. An object can only access it's own private
+members, protected members of it's superclasses or classes in the same package
+and all public members. These keywords work fine if used inside a single virtual
+machine. However, when using a distributed system a more fine grained solution is
+necessary. 
+
+<P>
+In the J<SMALL>ASON</SMALL> SMI system, access control is role based. Moreover, the
+communication between caller and callee has to be protected as well. To specify
+these requirements, the J<SMALL>AVA</SMALL> interface description is extended with 
+the following keywords.
+
+<UL>
+<LI><TT>roles</TT> <I>role-list</I>, listing the different roles in which
+  a caller can connect to this object.
+  The roles in this list correspond to keys stored in the keystore.
+</LI>
+<LI><TT>accessible to</TT> <I>role-list</I>, specifying which roles can
+  call the indicated method.
+</LI>
+<LI><TT>confidential</TT> and/or <TT>authentic</TT>, specifying that a 
+  parameter or a method result should be confidential and/or authenticated. 
+</LI>
+</UL>
+Here a <I>role</I> is an identifier (usually in all caps because it is a
+constant), and a <I>role-list</I> is a comma-separated list of roles. 
+Let us discuss the last three keywords in a little more detail.
+
+<P>
+
+<H4><A NAME="SECTION00032010000000000000">
+<TT>accessible to</TT> <I>role-list</I></A>
+</H4>
+
+<P>
+Access to a method can be limited by using the <TT>accessible</TT>
+keyword. Access is only to be granted if the caller can be identified (using
+the corresponding keys in the keystore) as a role in <I>role-list</I>. The
+predefined role <TT>ALL</TT> indicates that access is allowed for all roles
+defined for this object (through the <TT>roles</TT> keyword).  The predefined
+role <TT>ANYBODY</TT> specifies a role that can be assumed by anybody (a
+role whose identity is not verified). For security reasons only methods are
+accessible from off-the-card applications. Variables should be accessed through
+corresponding set and get methods.
+
+<P>
+
+<H4><A NAME="SECTION00032020000000000000">
+<TT>confidential</TT></A>
+</H4>
+
+<P>
+Parameters and return values can be specified as <TT>confidential</TT>,
+meaning that the data involved should be sent encrypted between caller and
+callee.  This guarantees that nobody else can eavesdrop the value. In the
+negotiation phase (see below) a (symmetric) session key is exchanged and an
+encryption algorithm chosen.
+
+<P>
+
+<H4><A NAME="SECTION00032030000000000000">
+<TT>authentic</TT></A>
+</H4>
+Parameters and return values can also be specified as <TT>authentic</TT>. This
+gives the following guarantees.
+<DL>
+<DT><STRONG>authenticity</STRONG></DT>
+<DD>Only the caller can construct valid parameters<A NAME="tex2html7"
+  href="footnode.html#foot172"><SUP>5</SUP></A>, 
+  and only the callee can construct valid responses.
+  The parameter received by the callee was sent by the caller,
+  and the result received by the caller was sent by the callee. In particular,
+  this gives the caller the guarantee that the intended side effects of the
+  method call did in fact occur at the callee (like decreasing the balance of a
+  purse).
+</DD>
+<DT><STRONG>integrity</STRONG></DT>
+<DD>The parameter (or the result) received was not altered while in transit. 
+</DD>
+<DT><STRONG>freshness</STRONG></DT>
+<DD>The parameter received was passed by the caller for the <I>current</I> call
+  of the method (and not for any previous call). The result received was sent
+  by the callee for the current call of the method (giving the guarantee that
+  the method was actually executed at this time, see above). 
+</DD>
+</DL>
+In practice this means that the data involved should be signed, and that
+a form of replay protection is added as well. 
+
+<P>
+
+<H2><A NAME="SECTION00033000000000000000"></A>
+<A NAME="ssec-using"></A><BR>
+Using SMI
+</H2>
+
+<P>
+To call a method using the SMI framework, the caller has to perform the
+following two steps (see also Fig.&nbsp;<A href="index.html#fig-connecting">3</A> for an example connecting
+to the purse object whose interface was given previously).
+
+<DIV ALIGN="CENTER"><A NAME="fig-connecting"></A><A NAME="183"></A>
+<TABLE>
+<PRE>
+try {
+  Purse purse = (Purse) SMINaming.connect("smi://smartcard/Purse",
+      Purse.MERCHANT, purseKeyStore) ;
+  try {
+    purse.decreaseBalance(10);
+    System.out.println("You have paid");
+  }
+  catch (UserException ue) {
+      System.out.println("Transaction failed. You have not paid.");
+  }
+}
+catch (RemoteException re) {
+  System.out.println("Failed to connect to service.");
+}
+</PRE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+Caller connecting to a callee</CAPTION>
+<TR><TD></TD></TR>
+</TABLE>
+</DIV>
+
+<UL>
+<LI>The first step is to connect to the callee and to establish a security
+  context. The caller passes the name and location of the desired service,
+  the desired role in which to connect, and a
+  reference to the key store to SMINaming.connect(). When successful, this
+  returns a reference to the required stub.
+</LI>
+<LI>Subsequently, the methods of the remote object can be called securely as
+  if they were local methods of the stub returned by the previous step.
+</LI>
+</UL>
+If a connection is established, the stub also contains the current security 
+context for that connection. Among other things, this security context
+contains a session key used to secure subsequent method invocations. Also, it
+contains further identification information on the callee object. This identity
+can be retrieved by the stub's
+<TT>getSessionIdentifier()</TT> method. 
+
+<P>
+Note that even for a single call to a method, a connection has to be set
+up. This may be wasteful for certain applications where transaction speed is
+very important (public transport). We are investigating the possibility of
+calling a single method without connecting to the object first (in fact merging
+the connection and the calling into one step).
+
+<P>
+
+<H1><A NAME="SECTION00040000000000000000"></A>
+<A NAME="sec-architecture"></A><BR>
+Architecture
+</H1>
+
+<P>
+In this section we describe how the J<SMALL>ASON</SMALL> SMI platform is actually
+implemented, and how the security requirements are actually met using several
+cryptographic protocols. In particular we show how a secure connection is
+setup, how the ownership of roles is verified, and how the security context is
+established. Secondly, we show how a method is called securely using the
+information and session keys in the current security context. But first we will
+discuss the keys stored in the keystore in a little more detail.
+
+<P>
+
+<H2><A NAME="SECTION00041000000000000000">
+On keys</A>
+</H2>
+
+<P>
+The keys in the keystore correspond one-to-one to the roles declared in the
+J<SMALL>ASON</SMALL> definition file. 
+The keystore also contains keys for
+key-management. This is discussed in a forthcoming paper.
+
+<P>
+J<SMALL>ASON</SMALL> supports the use of different types of keys in the keystore,
+depending on the security requirements of the application (or indeed individual
+objects on particular smart cards). Currently, the following types of keys are
+supported.
+
+<UL>
+<LI>RSA, with 512, 1024 and 2048 bit keys.
+</LI>
+<LI>DES and 3DES.
+</LI>
+<LI>AES, with 128, 192 and 256 bit KEYS. 
+</LI>
+</UL>
+Moreover, J<SMALL>ASON</SMALL> supports diversified keys&nbsp;[<A
+ href="index.html#AndB96">AB96</A>] where the
+key k<sub>i</sub>
+ stored by callee  (used by the callee to authenticate the 
+caller or vice versa) is derived from the master key k<sub>M</sub>
+ stored by the caller.
+The key is derived using the formula 
+
+<P></P><DIV ALIGN="CENTER">
+k<sub>i</sub>=encrypt(k<sub>M</sub>,i)
+</DIV><P></P>
+Note that in this case k<sub>i</sub>
+ performs the role of a public key (from
+which the corresponding private key cannot be derived), but with additional
+property that it proves to the <I>caller</I> the identity  of the callee.
+
+<P>
+Depending on the type of key stored in the keystore, the appropriate
+authentication protocol is run. Note that the caller keystore contains the keys
+necessary to prove its role (private keys), while the callee keystore
+contains the keys necessary to verify a role (public keys). If an entry in
+the caller keystore is <TT>null</TT> or invalid, the caller cannot assume the
+corresponding role. If an entry in the callee keystore is <TT>null</TT> or
+invalid, the role cannot be verified and all connections for that role will be
+refused. 
+
+<P>
+Finally, the keystore contains, for each role key, information about the type
+of cipher that should be used to protect the session once the caller has been
+authenticated and accepted. 
+
+<P>
+
+<H2><A NAME="SECTION00042000000000000000">
+Connecting to an object</A>
+</H2>
+
+<P>
+Connecting to an object exchanges and verifies the identity and role of the
+caller and the callee. Furthermore, a security context is established
+(containing a shared secret key) that is used to protect all calls to methods
+of the object. To connect to an object and establish a session the following
+steps are taken (assuming RSA style authentication). 
+
+<UL>
+<LI>The caller sends a message containing 
+  
+<UL>
+<LI>the role (as an index in the keystore) as which it wants to connect,
+</LI>
+<LI>the type of key it will use to authenticate the role (RSA in this
+    example), 
+</LI>
+<LI>a list of all ciphers it will accept to protect the session, and
+</LI>
+<LI>a nonce.
+  
+</LI>
+</UL>
+</LI>
+<LI>The callee looks up the role and the type of keys it can accept. If it
+  can accept the suggested authentication method, it will select one of the 
+  ciphers to protect the session from the list it received (provided it supports
+  it). It then sends the following message
+  
+<UL>
+<LI>the selected cipher to protect the session, 
+</LI>
+<LI>a random master secret encrypted with the public RSA key found for the
+    role in the keystore, and
+</LI>
+<LI>a nonce, 
+  
+</LI>
+</UL>
+</LI>
+<LI>The caller validates the proposed cipher, decrypts the master secret with
+  its private key in the keystore.
+</LI>
+<LI>Both caller and callee generate the session key (using hashes) from the 
+  master secret and both the caller and the callee nonces.
+</LI>
+<LI>Caller and callee exchange further identifying information encrypted and
+  MAC-ed using the session key, and record that in the security context.
+</LI>
+</UL>
+Both caller and callee record the session key in the security context for this
+connection. Note that if a connection is established as <TT>ANYBODY</TT>, no
+verification of that role can be performed. In that case, the master secret
+must be exchanged using a Diffie-Helman type key exchange. Future method
+invocations are will be secured using this session key.
+
+<P>
+The session context also contains two counters, one to count the number of
+messages sent in this session, and one to count the number of messages
+received. Both are reset to 0 at the start of a session, and incremented for
+each message sent or received. These numbers are used to protect against
+replay, as explained below.
+
+<P>
+
+<H2><A NAME="SECTION00043000000000000000"></A>
+<A NAME="ssec-invocation"></A><BR>
+Method invocation
+</H2>
+
+<P>
+Informally speaking, after session setup the stub and the skeleton are
+connected by a (secure) byte stream. The byte stream is routed by the
+communications layer to the correct skeleton.
+In fact, when a stub's method is invoked, it does the following:
+
+<UL>
+<LI>reconnect to the remote JVM containing the remote object,
+</LI>
+<LI>marshal(write and transmit) the parameters to the remote JVM,
+</LI>
+<LI>wait for the result of the method invocation,
+</LI>
+<LI>unmarshal (read) the return value or exception returned, and
+</LI>
+<LI>return the value to the caller.
+</LI>
+</UL>
+The stub hides the serialisation of parameters and the network-level
+communication in order to present a simple invocation mechanism to the
+caller.
+
+<P>
+In the remote JVM, each remote object has a corresponding skeleton. The
+skeleton is responsible for dispatching the call to the actual remote object
+implementation. When a skeleton receives an incoming method invocation it does
+the following:
+
+<UL>
+<LI>unmarshal (read) the parameters for the remote method,
+</LI>
+<LI>invoke the method on the actual remote object implementation, and
+</LI>
+<LI>marshal (write and transmit) the result (return value) to
+  the caller.
+</LI>
+</UL>
+
+<DIV ALIGN="CENTER"><A NAME="fig-bytestream"></A><A NAME="228"></A>
+<TABLE>
+<IMG src="fig-bytestream.gif">
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+Byte stream structure from caller to callee.</CAPTION>
+<TR><TD></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+The byte stream sent from stub to skeleton contains the following elements.
+
+<UL>
+<LI>The name (or rather the index) of the method to call, together with a MAC
+  computed using the session key and the current value of the sent messages
+  counter. Even if RMI is used as the transport mechanism, this information is
+  necessary to prevent remote method invocations being redirected to the wrong
+  method.
+</LI>
+<LI>Each confidential parameter is encrypted.
+</LI>
+<LI>For each authentic parameter, a MAC computed using the session key and
+  the current value of the sent messages counter is appended to the parameter. 
+</LI>
+</UL>
+For efficiency reasons parameters are shuffled so that the
+<TT>confidential</TT> and <TT>authentic</TT> parameters are placed in
+contiguous blocks within the byte stream (see Fig.&nbsp;<A href="index.html#fig-bytestream">4</A>).
+All confidential parameters
+are encrypted as a single block. Similarly, the MAC for all authentic
+parameters is computed in a single block, appending the sent messages counter
+only once.
+
+<P>
+The return stream from skeleton to stub to communicate results has the
+following structure.
+
+<UL>
+<LI>If the return type is confidential, the return value is encrypted with
+  the session key.
+</LI>
+<LI>If the return type is authentic, the sent messages count is appended to
+  the byte stream, and both the count and the value are
+  used to compute a MAC with the session key. The result is appended to the
+  byte stream.
+</LI>
+</UL>
+
+<P>
+
+<H2><A NAME="SECTION00044000000000000000"></A>
+<A NAME="ssec-rmi"></A><BR>
+Inter object communication
+</H2>
+
+<P>
+Because the caller and callee are physically separated by a network, the call
+to a remote method must be transferred to the remote object over the
+network before it can be executed there. The most natural approach would be to
+use Java's Remote Method Invocation mechanism to achieve this. At the caller
+side, the SMI stub first converts the parameters to a protected bytestream, as
+explained in Sect.&nbsp;<A href="index.html#ssec-invocation">4.3</A>. The RMI layer than transmits this
+bytestream to the callee, and invokes the corresponding method of the callee
+SMI skeleton. There, the access permissions are checked and the bytestream is
+unpacked before the original callee method is invoked. 
+
+<P>
+However, this scenario is complicated by the fact that JavaCard (as of version
+2.2) uses a different RMI system, if only because a JavaCard is not connected
+to a network directly, but instead communicates with the outside world through
+a terminal using an APDU stream. This would imply that the terminal has to
+convert an incoming RMI request to a JavaCard specific JC-RMI request (and
+similarly for the responses). This does not appear to be straightforward,
+because the RMI wire protocols are different. The only option is to create -
+for each skeleton on the callee smart card - a separate skeleton (and stub)
+for the terminal, that receives the incoming RMI request and simply calls the
+remote method on the smart card using JC-RMI. This means the terminal
+potentially needs access to a huge number of skeletons and stubs, simply to
+pass bytestreams verbatim!
+
+<P>
+Moreover, we note that RMI's support for marshalling and unmarshalling of
+method parameters and results becomes totally superfluous in this approach,
+because the SMI layer already converts the parameters to a bytestream in the
+first place.
+
+<P>
+To solve the first problem RMI and JC-RMI need to be brought more in line,
+such that their wire protocols become sufficiently compatible to allow
+translations between them using a generic translation mechanism running
+in the terminal. To solve the second problem, the RMI system should 
+provide versatile hooks to allow the outgoing bytestream to be protected in the
+fine grained manner required by J<SMALL>ASON</SMALL>. Or, SMI should be incorporated
+into the RMI layer.
+
+<P>
+
+<H1><A NAME="SECTION00050000000000000000"></A>
+<A NAME="sec-example"></A><BR>
+Example
+</H1>
+
+<P>
+Fig.&nbsp;<A href="index.html#fig-purse">2</A> in section&nbsp;<A href="index.html#ssec-jason-definition">3.2</A> shows the security
+requirements of a simple purse application. It corresponds to the actual
+implementation given in Fig&nbsp;<A href="index.html#fig-purse-implementation">5</A>. Clearly the
+implementation is quite straightforward. Also, the strictness of the
+separation between implementation and its security is apparent. The
+implementation does not 
+contain a single line of code concerning security. All the security is
+contained in the generated stub and skeleton. The skeleton calls the
+implementation and adds security to it. Note that each method is defined with
+the default J<SMALL>AVA</SMALL> visibility, to allow the skeleton to access them, but
+not giving access to subclasses outside the package. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig-purse-implementation"></A><A NAME="255"></A>
+<TABLE>
+<PRE>
+package com.ebank;
+
+class PurseImpl implements Purse {	
+  public static final byte OVERFLOW = (byte) 1;
+  public static final byte UNDERFLOW = (byte) 2;
+  private short balance = 0;
+  private static final short MAX = (short) 500;
+  
+  short getBalance() { 
+    return balance; 
+  }
+  
+  short increaseBalance(short amount) throws UserException {
+    if (balance + amount < MAX) {
+      balance += amount;
+      return amount;
+    } else 
+      UserException.throwIt(OVERFLOW);
+  }
+	
+  short decreaseBalance(short amount) {
+    if (balance - amount > 0) {
+      balance -= amount;
+      return amount;
+    } else
+      UserException.throwIt(UNDERFLOW);
+  }
+}
+</PRE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+Implementation of a simple purse.</CAPTION>
+<TR><TD></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00060000000000000000"></A>
+<A NAME="sec-concl"></A><BR>
+Conclusions &amp; Further Research
+</H1>
+
+<P>
+We are currently implementing the J<SMALL>ASON</SMALL> SMI framework on a JavaCard 2.2
+platform. The final implementation will be available under the GNU General
+Public License (GPL) through
+<A href="http://www.cs.kun.nl/~jhh/jason.html">http://www.cs.kun.nl/~jhh/jason.html</A> within a few months.
+
+<P>
+We intend to extend J<SMALL>ASON</SMALL>'s SMI functionality with logging and auditing
+functions, as well as transaction (and rollback) support. Related to the
+logging and auditing issue, is the fact that the current implementation does
+not provide non-repudiation. The ramifications for implementing non-repudiation
+are the subject of further investigations. Also, one could argue that the
+<TT>authentic</TT> keyword is overloaded (in the sense that it gives too many
+guarantees, especially freshness, at the cost of a more complex and resource
+consuming protection mechanism). Using J<SMALL>ASON</SMALL> to develop several
+real-world smart card applications will tell whether a more fine grained set of
+security specification keywords is required.
+
+<P>
+Finally, to make the J<SMALL>ASON</SMALL> vision of a smart card application
+consisting of millions of distributed objects a reality, object broker
+functionality has to be added that is consistent with the high security
+requirements of typical smart card applications, and the highly dynamical
+nature of the smart card network. 
+
+<P>
+
+<H1><A NAME="SECTION00070000000000000000">
+Acknowledgements</A>
+</H1>
+
+<P>
+We thank the anonymous referees for the valuable comments and suggestions, and
+especially for bringing to our attention that the JavaCard 2.2 standard
+contains support for RMI.
+
+<P>
+
+<H2><A NAME="SECTION00080000000000000000">
+Bibliography</A>
+</H2><DL COMPACT><DD><P></P><DT><A NAME="AndB96">AB96</A>
+<DD>
+A<SMALL>NDERSON, </SMALL>R.&nbsp;J., <SMALL>AND </SMALL>B<SMALL>EZUIDENHOUDT, </SMALL>S.&nbsp;J.
+<BR>On the reliability of electronic payment systems.
+<BR><EM>IEEE Trans. on Softw. Eng. IEEE Transactions on
+  Software Engineering <B>22</B></EM>, 5 (1996), 294-301.
+
+<P></P><DT><A NAME="Che00">Che00</A>
+<DD>
+C<SMALL>HEN, </SMALL>C.
+<BR><EM>Java Card (tm) for Smart Cards: Architecture and Programmer's
+  Guide</EM>.
+<BR>The Java Series. Addison-Wesley, 2000.
+
+<P></P><DT><A NAME="HagV00">DH00</A>
+<DD>
+D.&nbsp;H<SMALL>AGIMONT, </SMALL>J.-J.&nbsp;V.
+<BR>Jccap: capability-based access control for java card.
+<BR>In <EM>4th CARDIS Smart Card Research and Advanced
+  Application Conference</EM> (Bristol, UK, 2000), pp.&nbsp;365-388.
+
+<P></P><DT><A NAME="Gut00">Gut00</A>
+<DD>
+G<SMALL>UTHERY, </SMALL>S.
+<BR>How to turn a GSM SIM into a web server.
+<BR>In <EM>4th CARDIS Smart Card Research and Advanced
+  Application Conference</EM> (Bristol, UK, 2000), pp.&nbsp;209-224.
+
+<P></P><DT><A NAME="GBPR00">GBPR00</A>
+<DD>
+G<SMALL>UTHERY, </SMALL>S., B<SMALL>AUDOIN, </SMALL>Y., P<SMALL>OSSEGA, </SMALL>J., <SMALL>AND </SMALL>R<SMALL>EES, </SMALL>J.
+<BR>Ip and arp over iso 7816-3.
+<BR>Internet Draft guthery-ip7816-00, 2000.
+
+<P></P><DT><A NAME="HarJ95">HJF95</A>
+<DD>
+H<SMALL>ARTEL, </SMALL>P.&nbsp;H., <SMALL>AND </SMALL>J<SMALL>ONG&nbsp;</SMALL>F<SMALL>RZ, </SMALL>E.&nbsp;K.&nbsp;<SMALL>DE</SMALL>.
+<BR>Smart cards and card operating systems.
+<BR>Tech. rep., Dept. of EE and CS, University of Southampton, UK, 1995.
+
+<P></P><DT><A NAME="ISO7816">ISO7816</A>
+<DD>
+I<SMALL>NTERNATIONAL </SMALL>O<SMALL>RGANISATION FOR </SMALL>S<SMALL>TANDARDISATION (</SMALL>ISO), JTC 1/SC 17.
+<BR>ISO/IEC 7816 Identification cards - Integrated circuit(s)
+  cards with contacts.
+
+<P></P><DT><A NAME="ItoFH00">IFH00</A>
+<DD>
+I<SMALL>TOI, </SMALL>N., F<SMALL>UKUZAWA, </SMALL>T., <SMALL>AND </SMALL>H<SMALL>ONEYMAN, </SMALL>P.
+<BR>Secure internet smartcards.
+<BR>In <EM>1st JAVACARD Int. Workshop on Java on Smart
+  Cards</EM> (Cannes, France, 2000), I.&nbsp;Attali and T.&nbsp;Jensen (Eds.),
+  LNCS Lect. Not. Comp. Sci.  2041, Springer-Verlag,
+  pp.&nbsp;73-89.
+
+<P></P><DT><A NAME="KehRV00">KRV00</A>
+<DD>
+K<SMALL>EHR, </SMALL>R., R<SMALL>OHS, </SMALL>M., <SMALL>AND </SMALL>V<SMALL>OGT, </SMALL>H.
+<BR>Issues in smartcard middleware.
+<BR>In <EM>1st JAVACARD Int. Workshop on Java on Smart
+  Cards</EM> (Cannes, France, 2000), I.&nbsp;Attali and T.&nbsp;Jensen (Eds.),
+  LNCS Lect. Not. Comp. Sci.  2041, Springer-Verlag,
+  pp.&nbsp;90-97.
+
+<P></P><DT><A NAME="ReeH00">RH00</A>
+<DD>
+R<SMALL>EES, </SMALL>J., <SMALL>AND </SMALL>H<SMALL>ONEYMAN, </SMALL>P.
+<BR>Webcard: A java card web server.
+<BR>In <EM>4th CARDIS Smart Card Research and Advanced
+  Application Conference</EM> (Bristol, UK, 2000), pp.&nbsp;197-208.
+
+<P></P><DT><A NAME="SUN99">Sun99</A>
+<DD>
+S<SMALL>UN</SMALL>.
+<BR>Java remote method invocation specification.
+<BR>Tech. rep., Sun Microsystems, Inc., 1999.
+<BR>Revision 1.7.
+</DL>
+
+<P>
+
+<H1><A NAME="SECTION00090000000000000000">
+About this document ...</A>
+</H1>
+ <STRONG>Secure Method Invocation in J<SMALL>ASON</SMALL>
+<!-- MATH
+ $Id: javacard-smi.tex,v 1.9 2002/09/19 07:01:44 hoepman Exp$
+ -->
+</STRONG><P>
+This document was generated using the
+<A href="http://www.latex2html.org/"><STRONG>LaTeX</STRONG>2<tt>HTML</tt></A> translator Version 2002 (1.62)
+<P>
+Copyright &#169; 1993, 1994, 1995, 1996,
+<A href="http://cbl.leeds.ac.uk/nikos/personal.html">Nikos Drakos</A>, 
+Computer Based Learning Unit, University of Leeds.
+<BR>Copyright &#169; 1997, 1998, 1999,
+<A href="http://www.maths.mq.edu.au/~ross/">Ross Moore</A>, 
+Mathematics Department, Macquarie University, Sydney.
+<P>
+The translation was initiated by  on 2002-09-23<HR>
+<!--Navigation Panel-->
+<!--<IMG WIDTH="81" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next_inactive"
+ src="file:/usr/share/latex2html/icons/nx_grp_g.png"> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ src="file:/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ src="file:/usr/share/latex2html/icons/prev_g.png">   
+<BR>-->
+<!--End of Navigation Panel-->
+<ADDRESS>
+
+2002-09-23
+</ADDRESS>
+
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":99,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-593.min.js"}</script></body>
+</html>

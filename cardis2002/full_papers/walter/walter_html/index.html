@@ -1,0 +1,3343 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+
+<META NAME="description" CONTENT="Implementing Group Signature Schemes With Smart Cards">
+<META NAME="keywords" CONTENT="CG02">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" href="https://www.usenix.org/legacy/events/cardis02/full_papers/walter/walter_html/CG02.css">
+
+<LINK REL="next" href="https://www.usenix.org/legacy/events/cardis02/full_papers/walter/walter_html/node1.html">
+
+
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Cardis02_files/filelist.xml">
+<link rel=Edit-Time-Data href="https://www.usenix.org/legacy/events/cardis02/full_papers/walter/walter_html/Cardis02_files/editdata.mso">
+<link rel=OLE-Object-Data href="Cardis02_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>CARDIS 2002</o:Subject>
+  <o:Author>C. D. Walter</o:Author>
+  <o:LastAuthor>Walter</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>9</o:TotalTime>
+  <o:LastPrinted>2002-09-23T11:58:00Z</o:LastPrinted>
+  <o:Created>2002-09-23T16:08:00Z</o:Created>
+  <o:LastSaved>2002-09-23T16:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>6418</o:Words>
+  <o:Characters>36588</o:Characters>
+  <o:Company>Comodo Research Lab, Bradford, UK</o:Company>
+  <o:Lines>304</o:Lines>
+  <o:Paragraphs>85</o:Paragraphs>
+  <o:CharactersWithSpaces>42921</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:35.3pt;
+	mso-footer-margin:35.3pt;
+	mso-columns:2 even .25in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:68427114;
+	mso-list-template-ids:302579436;}
+@list l0:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.35in;
+	mso-level-number-position:right;
+	margin-left:.35in;
+	text-indent:0in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:240259465;
+	mso-list-template-ids:67698717;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:240410392;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1498489616 748706532 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:right;
+	margin-left:.3in;
+	text-indent:-.05in;}
+@list l3
+	{mso-list-id:259412834;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-83355526 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:283998547;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2089521586 -849696116 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:408963844;
+	mso-list-template-ids:-83355526;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6
+	{mso-list-id:695080732;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1150353512 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:737555182;
+	mso-list-template-ids:-671315232;}
+@list l7:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:right;
+	margin-left:.25in;
+	text-indent:0in;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l7:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l7:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l8
+	{mso-list-id:738139241;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1457008318 -51452896 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l8:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;}
+@list l9
+	{mso-list-id:764883545;
+	mso-list-template-ids:-1196372850;}
+@list l9:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:right;
+	margin-left:.3in;
+	text-indent:-.1in;}
+@list l9:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l9:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l9:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l10
+	{mso-list-id:850412764;
+	mso-list-type:hybrid;
+	mso-list-template-ids:105010360 1498160724 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l10:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:56.25pt;
+	mso-level-number-position:left;
+	margin-left:56.25pt;
+	text-indent:-.5in;}
+@list l11
+	{mso-list-id:861555009;
+	mso-list-template-ids:-2032778906;}
+@list l11:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:right;
+	margin-left:.25in;
+	text-indent:-.1in;}
+@list l11:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l11:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l11:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l12
+	{mso-list-id:915823817;
+	mso-list-template-ids:656430942;}
+@list l12:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:right;
+	text-indent:-.15in;}
+@list l12:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l12:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l12:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l13
+	{mso-list-id:961617025;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1385698448 1671065740 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l13:level1
+	{mso-level-text:"\[%1\]";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l14
+	{mso-list-id:1340037047;
+	mso-list-template-ids:1385698448;}
+@list l14:level1
+	{mso-level-text:"\[%1\]";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l14:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l14:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l14:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l15
+	{mso-list-id:1608734206;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1837060530 614114360 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l15:level1
+	{mso-level-text:"\[%1\]";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l16
+	{mso-list-id:1669554248;
+	mso-list-template-ids:-2089521586;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l16:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l16:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l16:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l16:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l16:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l16:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l16:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l16:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l17
+	{mso-list-id:2010021375;
+	mso-list-type:hybrid;
+	mso-list-template-ids:427864146 748706532 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l17:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:right;
+	margin-left:.25in;
+	text-indent:-.05in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body lang=EN-US style='tab-interval:.25in' BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 59-68 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+
+
+
+
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:14.0pt'>Breaking the Liardet-Smart
+Randomized Exponentiation Algorithm<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:12.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:0in;text-align:center'><span lang=EN-GB>Colin D.
+Walter<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center'><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB>Comodo Research Laboratory<o:p></o:p></span></i></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB>10 Hey Street, Bradford, BD7 1DQ, UK<o:p></o:p></span></i></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Arial'>colin.walter@comodo.net<span
+style='mso-spacerun:yes'>       </span>www.comodo.net<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Abstract.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>In smartcard encryption and signature applications, randomised
+algorithms are used to increase tamper resistance against attacks based on side
+channel leakage.<span style='mso-spacerun:yes'>  </span>Recently several such
+algorithms have appeared which are suitable for RSA exponentiation and/or ECC
+point multiplication.<span style='mso-spacerun:yes'>  </span>We show that under
+certain apparently reasonable hypotheses about the countermeasures in place and
+the attacker’s monitoring equipment, repeated use of the same secret key with the
+algorithm of Liardet and Smart is insecure against any side channel which leaks
+enough data to differentiate between the adds and doubles in a single scalar
+multiplication.<span style='mso-spacerun:yes'>  </span>Thus the scalar needs to
+be blinded in the standard way, or some other suitable counter-measures
+employed, if the algorithm is to be used safely in such a context.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Key words:</span></b><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>m</i>-ary
+exponentiation, Liardet-Smart randomized algorithm, ECC, addition chains,
+sliding windows, addition-subtraction chains, power analysis, SPA, SEMA,
+blinding, smartcard.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>1<span style='mso-tab-count:1'>    </span>Introduction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Major progress in the theory and practice of side
+channel attacks [5, 6] on embedded cryptographic systems threatens to enable
+the capture of secret keys from <i style='mso-bidi-font-style:normal'>single</i>
+applications of cryptographic functions [10, 11, 14].<span
+style='mso-spacerun:yes'>  </span>This is particularly true for the more
+computationally intensive functions such as exponentiation, which is a major
+process in many crypto-systems such as RSA, ECC and Diffie-Hellman.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Timing attacks on modular multiplication can usually
+be avoided easily by removing data-dependent conditional statements [16], but,
+with timing variations removed, attacks which make use of data-dependent
+variation in power and electro-magnetic radiation become easier.<span
+style='mso-spacerun:yes'>  </span>Initial attacks of this type required
+averaging over a number of exponentiations [8].<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>One counter-measure is to modify the exponent from <i
+style='mso-bidi-font-style:normal'>e</i> to <i style='mso-bidi-font-style:normal'>e+rg</i>
+where <i style='mso-bidi-font-style:normal'>r</i> is a random number, typically
+32-bits, and <i style='mso-bidi-font-style:normal'>g</i> is the order of the
+(multiplicative) group in which the exponentiation is performed [5].<span
+style='mso-spacerun:yes'>  </span>This results in a different exponentiation
+being performed every time.<span style='mso-spacerun:yes'>  </span>However, if
+squares and multiplications can be distinguished during a single
+exponentiation, then use of the standard binary exponentiation algorithm immediately
+leads to exposure of the secret key.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>For elliptic curve cryptography (ECC), the most
+efficient schemes for point addition and point doubling involve different
+numbers of operations in the field over which the curve is defined, and these
+numbers vary depending on the representation used for the curve.<span
+style='mso-spacerun:yes'>  </span>A counter-measure which reduces the
+likelihood of distinguishing between these point operations involves equalising
+the number and type of the component field operations [12] or making the point
+addition look exactly the same as two point doublings [1].<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>However, squares and multiplications in the field
+behave differently [13] and so there is no reason to believe that such recoding
+will necessarily hide fully the distinction between point additions and point
+doublings: for example, in [12], field squares appear for point additions, but
+field cubes when the same formula is used for point doublings.<span
+style='mso-spacerun:yes'>  </span>Side channels can distinguish these if the
+Hamming weight of arguments can be deduced.<span style='mso-spacerun:yes'> 
+</span>So exponentiation algorithms are chosen in which there is still an
+ambiguity in the correspondence between multiplications (i.e. point additions
+in ECC terms) and properties of the secret key (such as bit or digit values).<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>M</i>-ary
+exponentiation [4] for <i style='mso-bidi-font-style:normal'>m</i> &gt; 2
+provides one solution because each addition represents an unknown choice from a
+set of several non-zero digits.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>If the same unblinded key value is re-used for many exponentiations,
+there is a danger that the repeated use of the same operand can be determined [14].<span
+style='mso-spacerun:yes'>  </span>This would enable individual digits of the
+exponent base <i style='mso-bidi-font-style:normal'>m</i> to be identified and
+hence the key recovered.<span style='mso-spacerun:yes'>  </span>Unfortunately,
+particularly for ECC as opposed to RSA,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>applying the above exponent blinding technique is
+expensive when the secret key is typically only 192 bits.<span
+style='mso-spacerun:yes'>  </span>It adds about 17% to the cost of point
+multiplication.<span style='mso-spacerun:yes'>  </span>Hence randomised
+exponentiation algorithms may be a preferred option for ECC.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>There are currently several algorithms which randomise
+the operations associated with specific inputs so that the exponentiation
+scheme is different on successive runs with the same data [7, 9, 17, 2, 3].<span
+style='mso-spacerun:yes'>  </span>That of Liardet and Smart [7] uses a sliding
+window of random, variable width.<span style='mso-spacerun:yes'>  </span>If the
+attacker’s equipment is insufficient to obtain information from a single EC
+point multiplication, then it seems that averaging over different
+multiplications with the same key would dilute any data dependency in the side
+channel leakage.<span style='mso-spacerun:yes'>  </span>However, we will show
+here that if individual point multiplications do leak information about what
+operation is being performed, then the secret key can be obtained
+straightforwardly.<span style='mso-spacerun:yes'>  </span>Indeed, one might
+even be better off with <i style='mso-bidi-font-style:normal'>m</i>-ary multiplication.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We begin by recalling the algorithm and looking at various
+parameters which might be chosen to improve efficiency or security.<span
+style='mso-spacerun:yes'>  </span>Next, the assumptions about the attacker’s
+equipment and cryptosystem counter-measures are outlined.<span
+style='mso-spacerun:yes'>  </span>These are initially quite tight to make the
+presentation of the attack easier.<span style='mso-spacerun:yes'>  </span>The
+attack starts with extracting a least significant digit, and then uses this
+repeatedly to reconstruct one possible representation for the secret key.<span
+style='mso-spacerun:yes'>  </span>An essential part of the discussion is an
+assessment of the probability that the attack can be completed successfully. Before
+concluding with some counter-measures and alternatives, we explain how the
+attack can still be performed in a more realistic environment where the side
+channel leakage is much poorer.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>2<span style='mso-tab-count:1'>    </span>The
+Algorithm<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>This section contains a brief outline of the
+(exponentiation) algorithm of Liardet and Smart.<span
+style='mso-spacerun:yes'>  </span>Because it generates an addition-subtraction
+chain rather than simply an addition chain, inverses have to be computed when
+it is applied.<span style='mso-spacerun:yes'>  </span>This means that
+applications to RSA cryptography are unlikely because of the expense of
+computing inverses.<span style='mso-spacerun:yes'>  </span>However, in elliptic
+curve cryptography (ECC), inverses are essentially for free.<span
+style='mso-spacerun:yes'>  </span>Hence, we will assume the algorithm is
+applied to an additive group, such as that formed by the points on an elliptic
+curve, and use appropriate terminology.<span style='mso-spacerun:yes'>  </span>Processing
+of the secret key <i style='mso-bidi-font-style:normal'>k</i> therefore
+produces a sequence of instructions which result in additions (<i
+style='mso-bidi-font-style:normal'>A</i>) and doublings (<i style='mso-bidi-font-style:
+normal'>D</i>) of group elements.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Suppose we wish to compute the element <i
+style='mso-bidi-font-style:normal'>Q = kP</i> for a given positive integer <i
+style='mso-bidi-font-style:normal'>k</i> (the secret key) and a given member <i
+style='mso-bidi-font-style:normal'>P</i> of some group <i style='mso-bidi-font-style:
+normal'>E</i>.<span style='mso-spacerun:yes'>  </span>As in <i
+style='mso-bidi-font-style:normal'>m</i>-ary exponentiation, Liardet and Smart
+pre-compute the odd multiples <i style='mso-bidi-font-style:normal'>iP</i> of <i
+style='mso-bidi-font-style:normal'>P</i> for integers <i style='mso-bidi-font-style:
+normal'>i</i> </span><span lang=EN-GB style='font-size:10.0pt;font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>Î</span></span><span lang=EN-GB
+style='font-size:10.0pt'> (–½<i style='mso-bidi-font-style:normal'>m</i>, ½<i
+style='mso-bidi-font-style:normal'>m</i>] where <i style='mso-bidi-font-style:
+normal'>m</i> = 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>, and
+then employ the standard sliding windows technique but with a window which has
+a random width showing up to <i style='mso-bidi-font-style:normal'>R</i> bits.<span
+style='mso-spacerun:yes'>  </span>In other words, <i style='mso-bidi-font-style:
+normal'>k</i> is recoded to obtain digits <i style='mso-bidi-font-style:normal'>k<sub>i</sub></i>
+(0 &#8804;<i style='mso-bidi-font-style:normal'> i </i></span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>n</i>)
+which are determined using a randomly-chosen variable base <i style='mso-bidi-font-style:
+normal'>m<sub>i</sub></i> which divides <i style='mso-bidi-font-style:normal'>m</i>.<span
+style='mso-spacerun:yes'>  </span>The digits are chosen in the order <i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub>, <i style='mso-bidi-font-style:
+normal'>k</i><sub>1</sub>, ...,<i style='mso-bidi-font-style:normal'> k<sub>n</sub></i>
+and the digit representation <i style='mso-bidi-font-style:normal'>k<sub>n</sub>k<sub>n</sub></i></span><i
+style='mso-bidi-font-style:normal'><sub><span lang=EN-GB>–</span></sub></i><sub><span
+lang=EN-GB style='font-size:10.0pt'>1</span></sub><span lang=EN-GB
+style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub> satisfies<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:0in;text-align:center'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>k</span></i><span lang=EN-GB
+style='font-size:10.0pt'> = ((...((<i style='mso-bidi-font-style:normal'>k<sub>n</sub></i>)<i
+style='mso-bidi-font-style:normal'>m<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>+<i style='mso-bidi-font-style:normal'>k<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>)<i style='mso-bidi-font-style:normal'>m<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>2</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>+...)<i style='mso-bidi-font-style:normal'>m</i><sub>1</sub>+<i
+style='mso-bidi-font-style:normal'>k</i><sub>1</sub>)<i style='mso-bidi-font-style:
+normal'>m</i><sub>0</sub>+<i style='mso-bidi-font-style:normal'>k</i><sub>0</sub>
+<span style='mso-spacerun:yes'>     </span>(1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The group element multiplication processes these
+digits <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>from most to least significant following the related
+scheme defined by<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center'><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>kP</span></i><span
+lang=EN-GB style='font-size:10.0pt'> = <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>(<i
+style='mso-bidi-font-style:normal'>m</i><sub>1</sub>(...<i style='mso-bidi-font-style:
+normal'>m<sub>n</sub></i></span><sub><span lang=EN-GB>–</span></sub><sub><span
+lang=EN-GB style='font-size:10.0pt'>2</span></sub><span lang=EN-GB
+style='font-size:10.0pt'>(<i style='mso-bidi-font-style:normal'>m<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>(<i style='mso-bidi-font-style:normal'>k<sub>n</sub>P</i>)+<i
+style='mso-bidi-font-style:normal'>k<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>P</span></i><span
+lang=EN-GB style='font-size:10.0pt'>)+...)+<i style='mso-bidi-font-style:normal'>k</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>P</i>)+<i style='mso-bidi-font-style:normal'>k</i><sub>0</sub><i
+style='mso-bidi-font-style:normal'>P</i> <span
+style='mso-spacerun:yes'>     </span>(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>2.1<span style='mso-tab-count:
+1'>  </span>Code for the Key Recoding<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>More explicitly, if </span><span lang=EN-GB
+style='font-size:9.0pt;font-family:Arial'>minmod</span><span lang=EN-GB
+style='font-size:10.0pt'> is the function which returns a residue of minimal
+absolute value, the algorithm for choosing the digits is this:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt;text-transform:uppercase'>Randomised Signed </span><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>m</span></i><span
+lang=EN-GB style='font-size:10.0pt;text-transform:uppercase'>-ary Window
+Decomposition</span><span lang=EN-GB style='font-size:10.0pt'> [7]: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>i &#8592; 0 ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>While k &gt; 0 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>{<span style='mso-tab-count:
+1'>       </span>If (k mod 2) = 0 then <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>{<span style='mso-tab-count:
+1'>       </span>m<sub>i</sub> &#8592; 2 ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:.25in'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>k<sub>i</sub> <span
+style='mso-spacerun:yes'> </span>&#8592; 0 ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>{<span style='mso-tab-count:
+1'>       </span></span><span lang=EN-GB style='font-size:10.0pt'>Randomly
+choose base</span><span lang=EN-GB style='font-size:10.0pt;font-family:Arial'> </span><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>m<sub>i</sub> </span><span
+lang=EN-GB style='font-size:9.0pt;font-family:Symbol;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;mso-char-type:
+symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>Î</span></span><span lang=EN-GB
+style='font-size:9.0pt;font-family:Arial'> {2<sup>1</sup>,2<sup>2</sup>,..., 2<sup>R</sup>}
+;</span><span lang=EN-GB style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>k<sub>i</sub> &#8592; k
+minmod m<i style='mso-bidi-font-style:normal'><sub>i</sub></i> ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>} ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>k &#8592; (k–k<sub>i</sub>)/m<sub>i</sub>
+;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>i &#8592; i+1 ; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+lang=EN-GB style='font-size:9.0pt;font-family:Arial'>} ;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Here, both 1 and <sub><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:6.75pt;
+ height:14.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=9 height=19
+src="Cardis02_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1094306071">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>could be allowed as
+digits for base 1, but that involves the added complication of a random bit to
+decide which to select, and also (to avoid non-termination) restricting the
+choice to only 1 when <i style='mso-bidi-font-style:normal'>k</i> reaches 1.<span
+style='mso-spacerun:yes'>  </span>Our attack would work also in these
+circumstances with few changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>2.2<span style='mso-tab-count:
+1'>  </span>Efficiency Considerations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>There are still some parameters to be chosen in the
+algorithm.<span style='mso-spacerun:yes'>  </span>Varying these affects
+efficiency, but there are also security implications.<span
+style='mso-spacerun:yes'>  </span>As we see later, certain choices will
+increase the difficulty of mounting the attack, forcing, in particular, more
+samples to be required.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The value for <i style='mso-bidi-font-style:normal'>R</i>
+has the greatest effect on efficiency.<span style='mso-spacerun:yes'>  </span>In
+elliptic curve applications, subtraction may have the same cost as addition.<span
+style='mso-spacerun:yes'>  </span>Then it will be unnecessary to store the
+negative pre-computed multiples of the input point.<span
+style='mso-spacerun:yes'>  </span>So only space for 2<i style='mso-bidi-font-style:
+normal'><sup>R</sup></i></span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'>2 multiples is likely to be required.<span
+style='mso-spacerun:yes'>  </span>Increasing <i style='mso-bidi-font-style:
+normal'>R</i> improves speed, but with diminishing returns for the space
+required for pre-computed values.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>No suggestions are made in [7] about how to choose the
+<i style='mso-bidi-font-style:normal'>m<sub>i</sub></i> randomly.<span
+style='mso-spacerun:yes'>  </span>A uniform distribution is not very efficient,
+and indeed perhaps the least secure under this attack.<span
+style='mso-spacerun:yes'>  </span>It is most efficient to make the maximum
+possible use of the pre-computed values by choosing the maximum base size 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i> always.<span
+style='mso-spacerun:yes'>  </span>But, to maintain generality for later,
+suppose <i style='mso-bidi-font-style:normal'>m<sub>i </sub></i>= 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i> is chosen with probability <i
+style='mso-bidi-font-style:normal'>p<sub>j</sub></i> when <i style='mso-bidi-font-style:
+normal'>k</i> is odd and <i style='mso-bidi-font-style:normal'>p</i><sub>0</sub>
+= 1 is the probability of selecting base 2 when<i style='mso-bidi-font-style:
+normal'> k</i> is even.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Choosing <i style='mso-bidi-font-style:normal'>p<sub>R</sub></i>
+= 1 means that <i style='mso-bidi-font-style:normal'>m<sub>i</sub></i> = 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i> whenever <i
+style='mso-bidi-font-style:normal'>k</i> is odd.<span
+style='mso-spacerun:yes'>  </span>This yields the usual <i style='mso-bidi-font-style:
+normal'>m</i>-ary sliding window method with fixed <i style='mso-bidi-font-style:
+normal'>m </i>= 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>.<span
+style='mso-spacerun:yes'>  </span>Taking <i style='mso-bidi-font-style:normal'>R</i>
+= 1 yields the usual binary “square-and-multiply” algorithm. <span
+style='mso-spacerun:yes'> </span>However, such choices would remove any
+non-determinism from the sequence of point operations.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Observe that biasing in the choice of <i
+style='mso-bidi-font-style:normal'>m<sub>i</sub></i> does not change the
+uniformity in the distribution of residues <i style='mso-bidi-font-style:normal'>k</i>
+<b style='mso-bidi-font-weight:normal'>mod</b> <i style='mso-bidi-font-style:
+normal'>m<sub>i</sub></i> inherited from <i style='mso-bidi-font-style:normal'>k</i>,
+assuming <i style='mso-bidi-font-style:normal'>k</i> is randomly chosen.<span
+style='mso-spacerun:yes'>  </span>This means that every new key value <i
+style='mso-bidi-font-style:normal'>k</i> generated during the recoding retains
+the same random properties: in particular, residues modulo 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i> will be uniform for every
+key encountered.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>3<span style='mso-tab-count:1'>    </span>The Attack<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.1<span style='mso-tab-count:
+1'>  </span>Introduction &amp; Initial Hypotheses<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The purpose of randomised exponentiation algorithms is
+to frustrate side channel analysis by an attacker.<span
+style='mso-spacerun:yes'>  </span>In particular, they are counter-measures
+against using knowledge of the exponentiation process to extract the secret key
+<i style='mso-bidi-font-style:normal'>k</i>.<span style='mso-spacerun:yes'> 
+</span>Several different levels of leakage are possible, depending on the
+resources of the attacker.<span style='mso-spacerun:yes'>  </span>A poor
+signal-to-noise ratio (SNR) means that many samples have to be taken, and
+averaging the side channel leakage is one way of improving the SNR.<span
+style='mso-spacerun:yes'>  </span>So a critical parameter is whether or not the
+attacker’s equipment is good enough for him to extract sufficient meaningful
+data from the side channel trace of a single scalar multiplication.<span
+style='mso-spacerun:yes'>  </span>If it is, then the standard key blinding
+described earlier suddenly fails to provide the data hiding protection afforded
+by averaging away local data dependencies.<span style='mso-spacerun:yes'> 
+</span>Improved equipment and laboratory techniques mean that this barrier
+might soon be breached without excessive expenditure [10, 11].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The categories of leakage which could be considered
+include the following:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-text-indent-alt:
+-.05in;mso-list:l17 level1 lfo7;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>individual point operations can be observed
+on power, EM or other side channel traces;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-text-indent-alt:
+-.05in;mso-list:l17 level1 lfo7;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>ii)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>point doublings and point additions can be
+distinguished from each other;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-text-indent-alt:
+-.05in;mso-list:l17 level1 lfo7;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span>iii)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>re-use of operands can be observed; <span
+style='mso-spacerun:yes'> </span>and<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-text-indent-alt:
+-.05in;mso-list:l17 level1 lfo7;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span>iv)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>operand addresses can be deduced.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Point (i) may hold simply because program instructions
+and data need to be fetched at the start of each point operation, and these
+cause different effects on the side channels than field operations.<span
+style='mso-spacerun:yes'>  </span>Point (ii) may then hold as a result of
+different patterns of field operations for point additions than for point
+multiplications.<span style='mso-spacerun:yes'>  </span>Properties (iii) and
+(iv) might hold as a result of being able to deduce Hamming weights of data and
+address words travelling along the bus.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Randomisation prevents the obvious averaging of the
+traces of many point multiplications which was used in initial power analysis
+attacks on the binary “square-and-multiply” algorithm. <span
+style='mso-spacerun:yes'> </span>Here every point multiplic-ation determines a
+different sequence of doublings and additions.<span style='mso-spacerun:yes'> 
+</span>With matched code for additions and doublings, averaging may hide the
+difference between the two operations because they are no longer separated in
+time, but in current implementations such averaging will certainly reveal the
+start and end of the individual point operations which make up the scalar
+multiplication.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The attack described here requires the SNR to be good
+enough to extract some useful data from single multiplications on the curve.<span
+style='mso-spacerun:yes'>  </span>Specifically, initially we assume that<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-indent:-.25in;
+mso-list:l4 level1 lfo15;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-GB style='font-size:10.0pt'>Adds
+and doublings can always be identified correctly and distinguished from each
+other using traces obtained from side channel leakage for a single point
+multiplication, and <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l4 level1 lfo15;
+tab-stops:list .25in'><![if !supportLists]><span lang=EN-GB style='font-size:
+10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-GB style='font-size:10.0pt'>A
+number of traces are available corresponding to the same secret key value
+applied to different scalar multiplications.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Both of these hypotheses will be relaxed later to some
+extent, providing a more realistic scenario.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.2<span style='mso-tab-count:
+1'>  </span>Overview of the Attack &amp; Notation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The outline of the attack is as follows.<span
+style='mso-spacerun:yes'>  </span>For simplicity, by the first hypothesis, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;mso-list:l6 level1 lfo3'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-GB style='font-size:10.0pt'>Every
+trace can be viewed as a word over the alphabet {<i style='mso-bidi-font-style:
+normal'>A</i>,<i style='mso-bidi-font-style:normal'>D</i>}.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Every occurrence of an <i style='mso-bidi-font-style:
+normal'>A</i> (add) in the trace splits the word into a prefix and a suffix
+which correspond to two integers <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i>
+and <i style='mso-bidi-font-style:normal'>k<sub>s</sub></i> that are precisely
+defined in terms of <i style='mso-bidi-font-style:normal'>k</i> and the
+position of <i style='mso-bidi-font-style:normal'>A</i> in the trace.<span
+style='mso-spacerun:yes'>  </span>All traces determine the same values to
+within ±1.<span style='mso-spacerun:yes'>  </span>By looking at the patterns to
+the left of a given <i style='mso-bidi-font-style:normal'>A</i>, one obtains
+the residue of <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i> modulo a
+small power of 2, and hence a few bits of <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span>Repeating this for the position of each <i
+style='mso-bidi-font-style:normal'>A</i> enables all the bits of <i
+style='mso-bidi-font-style:normal'>k</i> to be recovered.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Definition.</span></b><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'> <span
+style='mso-spacerun:yes'> </span>The</span></i><span lang=EN-GB
+style='font-size:10.0pt'> <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>position</i></b> <i style='mso-bidi-font-style:
+normal'>of a specific instance of character A or D in a trace word is the
+number of Ds which are to the right of the selected character.<o:p></o:p></i></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We will exploit a close relationship between positions
+in which <i style='mso-bidi-font-style:normal'>A</i> appears in traces and bits
+which are 1 in the corresponding position of the binary representation of <i
+style='mso-bidi-font-style:normal'>k</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>In order to be able to give examples, we fix the
+character order of words over {<i style='mso-bidi-font-style:normal'>A</i>,<i
+style='mso-bidi-font-style:normal'>D</i>} to correspond to a left-to-right processing
+order.<span style='mso-spacerun:yes'>  </span>Thus, the digit sequence 1<sub>2</sub>0<sub>2</sub><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:6.75pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="Cardis02_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=9 height=19
+src="Cardis02_files/image002.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1094306072">
+ </o:OLEObject>
+</xml><![endif]--><sub>4</sub>0<sub>4</sub>, with most significant bit on the
+left, is processed from most to least significant bit, i.e. from left to right,
+and so would result in the word <i style='mso-bidi-font-style:normal'>DADDDADD</i>.<span
+style='mso-spacerun:yes'>  </span>There are <i style='mso-bidi-font-style:normal'>A</i>s
+in positions 2 and 5, and <i style='mso-bidi-font-style:normal'>D</i>s in
+positions 0 to 5.<span style='mso-spacerun:yes'>  </span>In fact, every <i
+style='mso-bidi-font-style:normal'>A</i> is paired with a preceding <i
+style='mso-bidi-font-style:normal'>D</i> with the same position, and so one
+could view the <i style='mso-bidi-font-style:normal'>DA</i> combination as a
+single character.<span style='mso-spacerun:yes'>  </span>Then the position
+would correspond directly to a character index, counting from 0 at the right
+hand end, as in a binary representation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The initial <i style='mso-bidi-font-style:normal'>DA</i>
+corresponds to the digit 1<sub>2</sub> and might be omitted if efficient
+initialisation takes place instead.<span style='mso-spacerun:yes'>  </span>Assuming
+this is the case, we will delete any initial <i style='mso-bidi-font-style:
+normal'>D</i>s but leave the initial <i style='mso-bidi-font-style:normal'>A</i>
+as an unambiguous reminder that there is an initial digit to take into account.<span
+style='mso-spacerun:yes'>  </span>Thus words always commence with <i
+style='mso-bidi-font-style:normal'>A</i>.<span style='mso-spacerun:yes'> 
+</span>In the above example, <i style='mso-bidi-font-style:normal'>ADDDADD</i>
+will be the word corresponding to the given digit sequence.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.3<span style='mso-tab-count:
+1'>  </span>Properties of Key Digits<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We now look at the sequence of digits generated by the
+Liardet-Smart algorithm.<span style='mso-spacerun:yes'>  </span>The notation
+used here is the same as for a fixed base, and many standard properties have
+analogues.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 1.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Suppose</span></i><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>k<sub>n</sub>k<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub> <i style='mso-bidi-font-style:
+normal'>is a digit represent-ation of k generated by the Liardet-Smart algorithm,
+with sequence</i> <i style='mso-bidi-font-style:normal'>m<sub>n</sub></i>, <i
+style='mso-bidi-font-style:normal'>m<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>, ..., <i style='mso-bidi-font-style:normal'>m</i><sub>1</sub>,
+<i style='mso-bidi-font-style:normal'>m</i><sub>0</sub> <i style='mso-bidi-font-style:
+normal'>of bases</i>.<i style='mso-bidi-font-style:normal'><span
+style='mso-spacerun:yes'>  </span>For some</i> <i style='mso-bidi-font-style:
+normal'>i</i>, <i style='mso-bidi-font-style:normal'>let</i> <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> <i style='mso-bidi-font-style:normal'>denote the integer
+corresponding to the prefix</i> <i style='mso-bidi-font-style:normal'>k<sub>n</sub>k<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k<sub>i</sub></i>
+<i style='mso-bidi-font-style:normal'>and let</i> <i style='mso-bidi-font-style:
+normal'>k<sub>s</sub></i><sup>(<i style='mso-bidi-font-style:normal'>i</i>)</sup>
+<i style='mso-bidi-font-style:normal'>denote the integer corresponding to the
+suffix</i> <i style='mso-bidi-font-style:normal'>k<sub>i</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>Then</i>
+<i style='mso-bidi-font-style:normal'>k</i> = <i style='mso-bidi-font-style:
+normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:normal'>i</i>)</sup><i
+style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>+<i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> <i style='mso-bidi-font-style:
+normal'>where</i> <i style='mso-bidi-font-style:normal'>m</i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> = <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:39pt;height:20.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=52 height=27
+src="Cardis02_files/image004.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1094306073">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:
+normal'>and</i> |<i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>| &lt; <i style='mso-bidi-font-style:
+normal'>m</i><sup>(<i style='mso-bidi-font-style:normal'>i</i>)</sup>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>This lemma is obvious from the definition of the digit
+sequence given by equation (1) except, perhaps, for the last part.<span
+style='mso-spacerun:yes'>  </span>That part follows easily by induction.<span
+style='mso-spacerun:yes'>  </span>Digit <i style='mso-bidi-font-style:normal'>k<sub>i</sub></i>
+is chosen with |<i style='mso-bidi-font-style:normal'>k<sub>i</sub></i>| </span><span
+lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'> ½<i
+style='mso-bidi-font-style:normal'>m<sub>i</sub></i> </span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>m<sub>i</sub></i></span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>1.<span
+style='mso-spacerun:yes'>  </span>This property for <i style='mso-bidi-font-style:
+normal'>i</i> = 0 starts the induction.<span style='mso-spacerun:yes'>  </span>Then
+the induction step is<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB
+style='font-size:10.0pt'>|<i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>+1)</sup>| <span
+style='mso-spacerun:yes'> </span>= <span style='mso-spacerun:yes'> </span>|<i
+style='mso-bidi-font-style:normal'>k<sub>i</sub>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>+<i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>| <span
+style='mso-spacerun:yes'> </span>&lt; <span style='mso-spacerun:yes'> </span>|(<i
+style='mso-bidi-font-style:normal'>k<sub>i</sub></i>+1)<i style='mso-bidi-font-style:
+normal'>m</i><sup>(<i style='mso-bidi-font-style:normal'>i</i>)</sup>| <span
+style='mso-spacerun:yes'> </span></span><span lang=EN-GB>&#8804; </span><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>m<sub>i</sub>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> <span style='mso-spacerun:yes'> </span>= <span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>m</i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>+1)</sup>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We will continue to use the notation <i
+style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> for <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:39pt;height:20.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=52 height=27
+src="Cardis02_files/image004.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1094306074">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>and <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> and <i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> for the key values associated respect-ively
+with the prefix <i style='mso-bidi-font-style:normal'>k<sub>n</sub>k<sub>n</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k<sub>i</sub></i>
+and the suffix <i style='mso-bidi-font-style:normal'>k<sub>i</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'>...<i style='mso-bidi-font-style:normal'>k</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub> of the digit sequence.<span
+style='mso-spacerun:yes'>  </span>The next lemma uses the equality and bound of
+Lemma 1 to identify two possible values for <i style='mso-bidi-font-style:normal'>k<sub>s</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>, corresponding to it being a
+positive or negative residue of <i style='mso-bidi-font-style:normal'>k</i>
+modulo <i style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 2. </span></b><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>With
+the previous notation, either </span></i><span lang=EN-GB style='font-size:
+10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.3in;text-align:justify;text-indent:-.3in;
+mso-text-indent-alt:-.05in;mso-list:l2 level1 lfo17;tab-stops:list .3in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>k<sub>s</sub></span></i><sup><span
+lang=EN-GB style='font-size:10.0pt'>(<i style='mso-bidi-font-style:normal'>i</i>)</span></sup><span
+lang=EN-GB style='font-size:10.0pt'> = <i style='mso-bidi-font-style:normal'>k</i>
+mod <i style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> <span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>and </i><span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> = <i style='mso-bidi-font-style:
+normal'>k</i> div <i style='mso-bidi-font-style:normal'>m</i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>, <span
+style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>or</i> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.3in;text-align:justify;text-indent:-.3in;
+mso-text-indent-alt:-.05in;mso-list:l2 level1 lfo17;tab-stops:list .3in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>k<sub>s</sub></span></i><sup><span
+lang=EN-GB style='font-size:10.0pt'>(<i style='mso-bidi-font-style:normal'>i</i>)</span></sup><span
+lang=EN-GB style='font-size:10.0pt'> = (<i style='mso-bidi-font-style:normal'>k</i>
+mod <i style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>)</span><span lang=EN-GB>–</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>m</span></i><sup><span
+lang=EN-GB style='font-size:10.0pt'>(<i style='mso-bidi-font-style:normal'>i</i>)</span></sup><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>and</i>
+<i style='mso-bidi-font-style:normal'><span style='mso-spacerun:yes'> </span>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> = (<i style='mso-bidi-font-style:
+normal'>k</i> div <i style='mso-bidi-font-style:normal'>m</i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>)+1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>where</span></i><span
+lang=EN-GB style='font-size:10.0pt'> mod<b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'> </i></b><i style='mso-bidi-font-style:normal'>returns
+the least non-negative residue</i>, <i style='mso-bidi-font-style:normal'>and</i>
+div <i style='mso-bidi-font-style:normal'>is integer division given by rounding
+down the real quotient</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>This shows that, whatever choices are made for the
+base elements, a given digit suffix can determine only one of two possible
+values when the product of the corresponding base elements is fixed.<span
+style='mso-spacerun:yes'>  </span>We would like at least the occurrence of the
+one which will make the corresponding prefix odd because it leads to an
+addition (<i style='mso-bidi-font-style:normal'>A</i>) which can be used to
+identify a corresponding point in the trace.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 3.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>For all powers</span></i><span
+lang=EN-GB style='font-size:10.0pt'> 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i>
+</span><span lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'>
+<i style='mso-bidi-font-style:normal'>k</i>, <i style='mso-bidi-font-style:
+normal'>there is a choice of base elements</i> <i style='mso-bidi-font-style:
+normal'>m<sub>i'</sub></i> <i style='mso-bidi-font-style:normal'>and an integer</i>
+<i style='mso-bidi-font-style:normal'>i</i> <i style='mso-bidi-font-style:normal'>such
+that</i> 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> = <i
+style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>.<span style='mso-spacerun:yes'>  </span><i
+style='mso-bidi-font-style:normal'>On average, for at least </i>1</span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>2</span><i
+style='mso-bidi-font-style:normal'><sup><span lang=EN-GB>–</span></sup></i><i
+style='mso-bidi-font-style:normal'><sup><span lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>of
+all values of</i> <i style='mso-bidi-font-style:normal'>j</i>, <i
+style='mso-bidi-font-style:normal'>there are choices which make</i> <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> <i style='mso-bidi-font-style:normal'>odd</i>, <i
+style='mso-bidi-font-style:normal'>and, for at least half of all values of j</i>,
+<i style='mso-bidi-font-style:normal'>there are choices which make</i> <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> <i style='mso-bidi-font-style:normal'>even</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Proof.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>The existence of the choice of basis elements is clear: taking <i
+style='mso-bidi-font-style:normal'>m<sub>i'</sub></i> = 2 for all <i
+style='mso-bidi-font-style:normal'>i'</i> allows one to satisfy the equality
+for <i style='mso-bidi-font-style:normal'>m</i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup> with <i style='mso-bidi-font-style:normal'>i = j</i>.<span
+style='mso-spacerun:yes'>  </span>For that choice, <i style='mso-bidi-font-style:
+normal'>k<sub>i</sub></i> is the usual index <i style='mso-bidi-font-style:
+normal'>i</i> bit of <i style='mso-bidi-font-style:normal'>k</i>, and takes
+either parity with equal probability.<span style='mso-spacerun:yes'>  </span>It
+is the lowest bit of <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup>, and so <i style='mso-bidi-font-style:
+normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:normal'>i</i>)</sup>
+is the desired parity with probability ½.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Other choices of base elements exist, and they may
+result in <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> being odd even when the bit of
+interest in <i style='mso-bidi-font-style:normal'>k</i> is even.<span
+style='mso-spacerun:yes'>  </span>This increases the average number of cases
+for which oddness occurs.<span style='mso-spacerun:yes'>  </span>Instead of
+choosing <i style='mso-bidi-font-style:normal'>m<sub>j</sub></i></span><sub><span
+lang=EN-GB>–</span></sub><sub><span lang=EN-GB style='font-size:10.0pt'>1</span></sub><span
+lang=EN-GB style='font-size:10.0pt'> = 2, we try choosing <i style='mso-bidi-font-style:
+normal'>m<sub>j</sub></i></span><sub><span lang=EN-GB>–</span></sub><i
+style='mso-bidi-font-style:normal'><sub><span lang=EN-GB style='font-size:10.0pt'>i'</span></sub></i><span
+lang=EN-GB style='font-size:10.0pt'> = 2<i style='mso-bidi-font-style:normal'><sup>i'</sup></i>
+for any <i style='mso-bidi-font-style:normal'>i'</i> with 1 </span><span
+lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'> <i
+style='mso-bidi-font-style:normal'>i'</i> </span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>R</i>.<span
+style='mso-spacerun:yes'>  </span>The ability to select them depends on a
+corresponding bit of <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>j</i></sup></span><i style='mso-bidi-font-style:
+normal'><sup><span lang=EN-GB>–</span></sup></i><i style='mso-bidi-font-style:
+normal'><sup><span lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><sup><span
+lang=EN-GB style='font-size:10.0pt'>)</span></sup><span lang=EN-GB
+style='font-size:10.0pt'> being 1 (otherwise base 2 must be chosen).<span
+style='mso-spacerun:yes'>  </span>These bits are independent and so the
+alternative bases can be chosen with probability ½.<span
+style='mso-spacerun:yes'>  </span>Each will give odd parity to the next <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i> if chosen.<span
+style='mso-spacerun:yes'>  </span>Hence the prefix key corresponding to 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i> can be made odd with
+probability at least 1</span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'>2</span><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB>–</span></sup></i><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'>.<span style='mso-spacerun:yes'>  </span></span><span
+lang=EN-GB>&#9632;</span><span lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Of course, this argument just gives a lower bound on
+how many <i style='mso-bidi-font-style:normal'>j</i>s will give rise to two key
+prefix and two suffix values.<span style='mso-spacerun:yes'>  </span>It doesn’t
+guarantee that when both values are possible they will both appear with non-negligible
+frequencies.<span style='mso-spacerun:yes'>  </span>The actual relative
+frequencies appear to depend on the lowest <i style='mso-bidi-font-style:normal'>R</i>
+bits of the <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i>
+corresponding to <i style='mso-bidi-font-style:normal'>m</i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>')</sup> = 2<i style='mso-bidi-font-style:
+normal'><sup>j</sup></i></span><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB>–</span></sup></i><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'>.<span style='mso-spacerun:yes'>  </span>However, in
+the next section, a lower bound on the ratio will be produced as necessary for
+each choice of these bits.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.4<span style='mso-tab-count:
+1'>  </span>Recovering One Digit of <i style='mso-bidi-font-style:normal'>k<o:p></o:p></i></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>In this section we show how to recover the least
+significant digit <i style='mso-bidi-font-style:normal'>k</i><sub>0</sub> and
+associated base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub> in one
+representation of <i style='mso-bidi-font-style:normal'>k</i> and how to
+identify the subset of traces which correspond to the associated prefix key <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i> such that <i
+style='mso-bidi-font-style:normal'>k</i> = <i style='mso-bidi-font-style:normal'>k<sub>p</sub>m</i><sub>0</sub>+<i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub>.<span
+style='mso-spacerun:yes'>  </span>Exactly the same process yields other digits
+of <i style='mso-bidi-font-style:normal'>k</i> independently.<span
+style='mso-spacerun:yes'>  </span>Those digits can then be assembled together
+to give <i style='mso-bidi-font-style:normal'>k</i> in the manner described in
+the next section.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>If <i style='mso-bidi-font-style:normal'>Tr</i> is the
+full set of all sample traces, then we denote by <i style='mso-bidi-font-style:
+normal'>Tr<sub>i</sub></i> the set of traces obtained by taking each member of <i
+style='mso-bidi-font-style:normal'>Tr</i> and deleting the suffix to the right
+of, but not including, the <i style='mso-bidi-font-style:normal'>D</i> of
+position <i style='mso-bidi-font-style:normal'>i</i>.<span
+style='mso-spacerun:yes'>  </span>Thus <i style='mso-bidi-font-style:normal'>Tr</i><sub>0</sub>
+= <i style='mso-bidi-font-style:normal'>Tr</i>.<span style='mso-spacerun:yes'> 
+</span><i style='mso-bidi-font-style:normal'>Tr<sub>i</sub></i> is partitioned
+into two complementary subsets: <i style='mso-bidi-font-style:normal'>Tr<sub>i</sub><sup>A</sup></i>
+which consists of those traces which terminate with <i style='mso-bidi-font-style:
+normal'>A</i>, and <i style='mso-bidi-font-style:normal'>Tr<sub>i</sub><sup>D</sup></i>
+which consists of those traces which terminate with <i style='mso-bidi-font-style:
+normal'>D</i>.<span style='mso-spacerun:yes'>  </span>We need to identify one
+of these subsets for each digit choice so that its neighbour to the left can be
+selected correctly.<span style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:
+normal'>Tr<sub>i</sub><sup>A</sup></i> always represents the odd choice for <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i style='mso-bidi-font-style:
+normal'>i</i>)</sup>, but some traces in <i style='mso-bidi-font-style:normal'>Tr<sub>i</sub><sup>D</sup></i>
+may contain only some of the operations for the rightmost prefix digit, and so
+not represent any <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i><sup>(<i
+style='mso-bidi-font-style:normal'>i</i>)</sup> properly.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The derivation here does make specific use of the fact
+that in this implementation <sub><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+ type="#_x0000_t75" style='width:6.75pt;height:12.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image006.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=9 height=17
+src="Cardis02_files/image007.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1094306075">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>is not allowed as a
+digit for base 2.<span style='mso-spacerun:yes'>  </span>Similar arguments
+apply when <sub><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:6.75pt;height:12.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image006.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=9 height=17
+src="Cardis02_files/image007.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1094306076">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>is allowed, but there
+is a duality which leaves a complicating ambiguity between the two values of ±<i
+style='mso-bidi-font-style:normal'>k<sub>s</sub></i> throughout the
+reconstruction process.<span style='mso-spacerun:yes'>  </span>This is only
+resolved when the complete value of <i style='mso-bidi-font-style:normal'>k</i>
+is reconstructed and under the assumption that the true sign of <i
+style='mso-bidi-font-style:normal'>k</i> is known.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 4.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Select any trace for key</span></i><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>Then</i>
+<i style='mso-bidi-font-style:normal'>k</i> <i style='mso-bidi-font-style:normal'>is
+exactly divisible by</i> 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i>
+<i style='mso-bidi-font-style:normal'>where i is the uniquely defined integer
+such that AD<sup>i</sup> is a suffix of the trace</i>.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Proof.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>Clearly, if <i style='mso-bidi-font-style:normal'>k</i> is divisible by
+2<i style='mso-bidi-font-style:normal'><sup>i</sup></i> then base 2 must be
+chosen for the lowest <i style='mso-bidi-font-style:normal'>i</i> digits, which
+are then all zeros.<span style='mso-spacerun:yes'>  </span>This leads to a
+character sequence <i style='mso-bidi-font-style:normal'>D<sup>i</sup></i> of <i
+style='mso-bidi-font-style:normal'>i</i> consecutive <i style='mso-bidi-font-style:
+normal'>D</i>s as a suffix in every trace.<span style='mso-spacerun:yes'> 
+</span>If <i style='mso-bidi-font-style:normal'>k</i> is not divisible by 2<i
+style='mso-bidi-font-style:normal'><sup>i+</sup></i><sup>1</sup> then, whatever
+the next choice of base, the digit will be non-zero and hence cause <i
+style='mso-bidi-font-style:normal'>A</i> to be appended to the sequence,
+yielding the suffix <i style='mso-bidi-font-style:normal'>AD<sup>i</sup></i>.<span
+style='mso-spacerun:yes'>  </span></span><span lang=EN-GB>&#9632;</span><span
+lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>This result enables these <i style='mso-bidi-font-style:
+normal'>i</i> occurrences of <i style='mso-bidi-font-style:normal'>D</i> to be
+identified with<i style='mso-bidi-font-style:normal'> i</i> least significant
+digits 0, each of base 2.<span style='mso-spacerun:yes'>  </span>Moreover, all
+traces confirm this conclusion.<span style='mso-spacerun:yes'>  </span>So,
+removing the digits one at a time,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 5.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>If every trace in Tr has
+final character D then we may take</span></i><span lang=EN-GB style='font-size:
+10.0pt'> <i style='mso-bidi-font-style:normal'>k</i><sub>0</sub> = 0, <i
+style='mso-bidi-font-style:normal'>m</i><sub>0</sub> = 2 <i style='mso-bidi-font-style:
+normal'>and the traces of</i> <i style='mso-bidi-font-style:normal'>Tr</i><sub>1</sub>
+<i style='mso-bidi-font-style:normal'>all represent the associated k<sub>p</sub></i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>If <i style='mso-bidi-font-style:normal'>k</i> is odd,
+no digit has been deduced yet, and further work must be done.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 6.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Suppose</span></i><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 1 mod 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i> <i
+style='mso-bidi-font-style:normal'>where</i> <i style='mso-bidi-font-style:
+normal'>i</i> </span><span lang=EN-GB>&#8804;</span><span lang=EN-GB
+style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>R</i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>Then<span
+style='mso-spacerun:yes'>  </span>k</i> &#8801; 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i>+1 mod 2<i style='mso-bidi-font-style:normal'><sup>i+</sup></i><sup>1</sup>
+<i style='mso-bidi-font-style:normal'>if</i> <i style='mso-bidi-font-style:
+normal'>Tr</i> <i style='mso-bidi-font-style:normal'>contains a trace with
+suffix</i> <i style='mso-bidi-font-style:normal'>AD<sup>i</sup>A</i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>If</i> <i
+style='mso-bidi-font-style:normal'>k</i> &#8801; 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i>+1 mod 2<i style='mso-bidi-font-style:normal'><sup>i+</sup></i><sup>1</sup><i
+style='mso-bidi-font-style:normal'> then the probability that Tr contains no
+trace with suffix AD<sup>i</sup>A is</i> (1</span><span lang=EN-GB>–</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'> p<sub>i</sub></span></i><span
+lang=EN-GB style='font-size:10.0pt'>')<sup>|<i style='mso-bidi-font-style:normal'>Tr</i>|</sup>
+<i style='mso-bidi-font-style:normal'>where</i> <i style='mso-bidi-font-style:
+normal'>p<sub>i</sub></i>' = <i style='mso-bidi-font-style:normal'>p</i><sub>1</sub>+<i
+style='mso-bidi-font-style:normal'>p</i><sub>2</sub>+...+<i style='mso-bidi-font-style:
+normal'>p<sub>i</sub></i>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Proof.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>If <i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>i+</sup></i><sup>1</sup> then a base of
+<i style='mso-bidi-font-style:normal'>m</i><sub>0</sub> = 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i><sup>+1</sup> or larger will lead to suffix <i
+style='mso-bidi-font-style:normal'>D<sup>i+</sup></i><sup>1</sup><i
+style='mso-bidi-font-style:normal'>A</i>.<span style='mso-spacerun:yes'> 
+</span>However, a smaller base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+= 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> will lead to suffix <i
+style='mso-bidi-font-style:normal'>D<sup>j</sup>A</i> with digit <i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub> = 1 and the forced
+selection of base 2 at least <i style='mso-bidi-font-style:normal'>i</i>+1</span><span
+lang=EN-GB>–</span><i style='mso-bidi-font-style:normal'><span lang=EN-GB
+style='font-size:10.0pt'>j</span></i><span lang=EN-GB style='font-size:10.0pt'>
+times.<span style='mso-spacerun:yes'>  </span>This again leads to suffix <i
+style='mso-bidi-font-style:normal'>D<sup>i</sup></i><sup>+1</sup><i
+style='mso-bidi-font-style:normal'>A</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Now suppose <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i>+1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup>.<span
+style='mso-spacerun:yes'>  </span>A base of <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+= 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup> or
+larger again leads to suffix <i style='mso-bidi-font-style:normal'>D<sup>i+</sup></i><sup>1</sup><i
+style='mso-bidi-font-style:normal'>A</i>.<span style='mso-spacerun:yes'> 
+</span>However, the choice of base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+= 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i> means lowest digit <i
+style='mso-bidi-font-style:normal'>k</i><sub>0</sub> = 1 and next digit
+determined by <i style='mso-bidi-font-style:normal'>k</i> div 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i>, which is odd.<span
+style='mso-spacerun:yes'>  </span>Hence the suffix is <i style='mso-bidi-font-style:
+normal'>AD<sup>i</sup>A</i> for that choice.<span style='mso-spacerun:yes'> 
+</span>Similarly, a base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+= 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> with <i
+style='mso-bidi-font-style:normal'>j</i> &lt; <i style='mso-bidi-font-style:
+normal'>i</i>, will lead to suffix <i style='mso-bidi-font-style:normal'>D<sup>j</sup>A</i>,
+digit <i style='mso-bidi-font-style:normal'>k</i><sub>0</sub> = 1 and <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i> &#8801; 2<i
+style='mso-bidi-font-style:normal'><sup>i–j</sup></i> mod 2<i style='mso-bidi-font-style:
+normal'><sup>i–j</sup></i><sup>+1</sup>.<span style='mso-spacerun:yes'> 
+</span>So this choice is followed by the forced selection of base 2 exactly <i
+style='mso-bidi-font-style:normal'>i</i></span><span lang=EN-GB>–</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>j</span></i><span
+lang=EN-GB style='font-size:10.0pt'> times with associated digit 0. The
+subsequent digit is then odd, resulting in the overall suffix <i
+style='mso-bidi-font-style:normal'>AD<sup>i</sup>A</i>.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Thus, suffix <i style='mso-bidi-font-style:normal'>AD<sup>i</sup>A</i>
+guarantees<i style='mso-bidi-font-style:normal'> k</i> &#8801; 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i>+1 mod 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i><sup>+1</sup> and it occurs precisely when the least significant
+base choice is 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> with <i
+style='mso-bidi-font-style:normal'>j</i> &#8804; <i style='mso-bidi-font-style:
+normal'>i</i>.<span style='mso-spacerun:yes'>  </span>These choices occur for a
+given trace with probability <i style='mso-bidi-font-style:normal'>p<sub>i</sub></i>'
+= <i style='mso-bidi-font-style:normal'>p</i><sub>1</sub>+<i style='mso-bidi-font-style:
+normal'>p</i><sub>2</sub>+...+<i style='mso-bidi-font-style:normal'>p<sub>i</sub></i>.<span
+style='mso-spacerun:yes'>  </span>Hence suffix <i style='mso-bidi-font-style:
+normal'>AD<sup>i</sup>A</i> will not happen for any trace in <i
+style='mso-bidi-font-style:normal'>Tr</i> with probability <span
+style='mso-spacerun:yes'> </span>(1</span><span lang=EN-GB>–</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'>p<sub>i</sub></span></i><span
+lang=EN-GB style='font-size:10.0pt'>')<sup>|<i style='mso-bidi-font-style:normal'>Tr</i>|</sup>.
+</span><span lang=EN-GB>&#9632;</span><span lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 7.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Suppose</span></i><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 1 mod 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>If</i> <i
+style='mso-bidi-font-style:normal'>Tr</i> <i style='mso-bidi-font-style:normal'>contains
+a trace with suffix AD<sup>i</sup>A then k</i> &#8801; 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i>+1 mod 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup>,
+<i style='mso-bidi-font-style:normal'>we may take</i> <i style='mso-bidi-font-style:
+normal'>k</i><sub>0</sub> = 1 <i style='mso-bidi-font-style:normal'>and</i> <i
+style='mso-bidi-font-style:normal'>m</i><sub>0</sub> = 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i>, <i style='mso-bidi-font-style:normal'>and the traces
+of Tr<sub>i</sub><sup>A</sup></i> <i style='mso-bidi-font-style:normal'>all
+represent the associated</i> <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>This lemma deals with the recognisable instances of <i
+style='mso-bidi-font-style:normal'>k</i> &#8801; 2<i style='mso-bidi-font-style:
+normal'><sup>i</sup></i>+1 mod 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup>.<span
+style='mso-spacerun:yes'>  </span>When base 2<i style='mso-bidi-font-style:
+normal'><sup>j</sup></i> is chosen for any <i style='mso-bidi-font-style:normal'>j</i>
+&#8804; <i style='mso-bidi-font-style:normal'>i</i>, the suffix is <i
+style='mso-bidi-font-style:normal'>AD<sup>i</sup>A</i> for these cases.<span
+style='mso-spacerun:yes'>  </span>As this occurs in <i style='mso-bidi-font-style:
+normal'>p<sub>i</sub>'</i> of cases, so we expect <i style='mso-bidi-font-style:
+normal'>Tr<sub>i</sub><sup>A</sup></i> to contain approximately <i
+style='mso-bidi-font-style:normal'>p<sub>i</sub>'</i>|<i style='mso-bidi-font-style:
+normal'>Tr</i>| elements. <span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We will assume <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 1 mod 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup>
+if there is no suffix <i style='mso-bidi-font-style:normal'>AD<sup>i</sup>A</i>
+but we know <i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i>.<span
+style='mso-spacerun:yes'>  </span>By Lemma 6, this introduces a small
+probability of error which can be decreased by taking a larger sample if
+necessary, or by further analysis, such as through a more exhaustive analysis
+of suffixes and their expected frequencies than there is space for here.<span
+style='mso-spacerun:yes'>  </span>Note, however, that if <i style='mso-bidi-font-style:
+normal'>p<sub>i</sub>'</i> = 0 then this choice of <i style='mso-bidi-font-style:
+normal'>m</i><sub>0</sub> will not resolve which residue mod 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i><sup>+1</sup> is correct.<span
+style='mso-spacerun:yes'>  </span>Hence an increase in security might be
+obtained by having <i style='mso-bidi-font-style:normal'>p</i><sub>1</sub> = <i
+style='mso-bidi-font-style:normal'>p</i><sub>2</sub> = ... = <i
+style='mso-bidi-font-style:normal'>p<sub>i</sub></i> = 0 where <i
+style='mso-bidi-font-style:normal'>i</i> is as large as possible.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Theorem 1.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Assume each base</span></i><span
+lang=EN-GB style='font-size:10.0pt'> 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i>
+<i style='mso-bidi-font-style:normal'>is selected with probability p<sub>i</sub></i>
+<i style='mso-bidi-font-style:normal'>for odd key values</i>, <i
+style='mso-bidi-font-style:normal'>and digit </i><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:6.75pt;height:12.75pt'
+ o:ole="">
+ <v:imagedata src="Cardis02_files/image006.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=9 height=17
+src="Cardis02_files/image007.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1094306077">
+ </o:OLEObject>
+</xml><![endif]--><i style='mso-bidi-font-style:normal'><span
+style='mso-spacerun:yes'> </span>is only used for bases greater than </i>2. <i
+style='mso-bidi-font-style:normal'><span style='mso-spacerun:yes'> </span>Let p<sub>i</sub></i>'
+= <i style='mso-bidi-font-style:normal'>p</i><sub>1</sub>+<i style='mso-bidi-font-style:
+normal'>p</i><sub>2</sub>+...+<i style='mso-bidi-font-style:normal'>p<sub>i</sub></i>
+<i style='mso-bidi-font-style:normal'>and</i> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:15pt;height:15.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image008.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=21
+src="Cardis02_files/image009.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1094306079">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>= 1</span><span
+lang=EN-GB>–</span><i style='mso-bidi-font-style:normal'><span lang=EN-GB
+style='font-size:10.0pt'>p<sub>i</sub></span></i><span lang=EN-GB
+style='font-size:10.0pt'>'.<span style='mso-spacerun:yes'>  </span><i
+style='mso-bidi-font-style:normal'>Suppose</i> <i style='mso-bidi-font-style:
+normal'>k</i> <i style='mso-bidi-font-style:normal'>is a random odd integer
+that has generated trace set</i> <i style='mso-bidi-font-style:normal'>Tr and</i>
+<i style='mso-bidi-font-style:normal'>j</i> (1 </span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>j </i></span><span
+lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'> <i
+style='mso-bidi-font-style:normal'>R</i>+1) <i style='mso-bidi-font-style:normal'>is
+such that Tr contains no trace with suffix AD<sup>i</sup>A for any i &lt; j</i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>Then</i>
+<i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i style='mso-bidi-font-style:
+normal'><sup>j</sup></i> <i style='mso-bidi-font-style:normal'>with probability
+</i><sub><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:72.75pt;height:18.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image010.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=97 height=25
+src="Cardis02_files/image011.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1094306080">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Proof.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>We prove this by induction on <i style='mso-bidi-font-style:normal'>j</i>.<span
+style='mso-spacerun:yes'>  </span>For <i style='mso-bidi-font-style:normal'>j</i>
+= 1 the statement claims nothing, and so holds.<span style='mso-spacerun:yes'> 
+</span>For the induction step, assume the statement holds for some <i
+style='mso-bidi-font-style:normal'>j </i></span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>R</i>.<span
+style='mso-spacerun:yes'>  </span>Suppose also that <i style='mso-bidi-font-style:
+normal'>Tr</i> contains no trace with suffix <i style='mso-bidi-font-style:
+normal'>AD<sup>i</sup>A</i> for any <i style='mso-bidi-font-style:normal'>i </i></span><span
+lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'> <i
+style='mso-bidi-font-style:normal'>j</i>.<span style='mso-spacerun:yes'> 
+</span>By the induction hypothesis, <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 1 mod 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> with
+probability <sub><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:72.75pt;height:18.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image012.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=97 height=25
+src="Cardis02_files/image011.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1094306081">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Since <i style='mso-bidi-font-style:normal'>k</i> is
+random, the two possibilities for <i style='mso-bidi-font-style:normal'>k</i> mod
+2<i style='mso-bidi-font-style:normal'><sup>j</sup></i><sup>+1</sup> are
+equally likely.<span style='mso-spacerun:yes'>  </span>So, by Lemma 6, no
+occurrence of suffix <i style='mso-bidi-font-style:normal'>AD<sup>j</sup>A</i>
+means <i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i><sup>+1</sup> with
+probability <sub><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:54pt;height:20.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=72 height=27
+src="Cardis02_files/image014.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1094306082">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>This factor just
+needs multiplying into the product to obtain the claim for<i style='mso-bidi-font-style:
+normal'> j</i>+1 in place of <i style='mso-bidi-font-style:normal'>j</i>. </span><span
+lang=EN-GB>&#9632;</span><span lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Theorem 2.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>With assumptions and notation
+as in Theorem</span></i><span lang=EN-GB style='font-size:10.0pt'> 1, <i
+style='mso-bidi-font-style:normal'>suppose</i> <i style='mso-bidi-font-style:
+normal'>k is odd and j is minimal such that </i>1 </span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>j</i>
+</span><span lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'>
+<i style='mso-bidi-font-style:normal'>R</i>+1 <i style='mso-bidi-font-style:
+normal'>and</i> <i style='mso-bidi-font-style:normal'>Tr</i> <i
+style='mso-bidi-font-style:normal'>contains a trace with suffix AD<sup>j</sup>A</i>.<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>Then</i>
+<i style='mso-bidi-font-style:normal'>k</i> &#8801; 2<i style='mso-bidi-font-style:
+normal'><sup>j</sup></i>+1 <b style='mso-bidi-font-weight:normal'>mod</b> 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i><sup>+1</sup> <i
+style='mso-bidi-font-style:normal'>with probability<o:p></o:p></i></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB
+style='font-size:10.0pt'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1036"
+ type="#_x0000_t75" style='width:74.25pt;height:18.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=99 height=25
+src="Cardis02_files/image016.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1094306083">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>If j </span><span lang=EN-GB>&#8804;</span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'> R
+we may take k</span></i><sub><span lang=EN-GB style='font-size:10.0pt'>0</span></sub><span
+lang=EN-GB style='font-size:10.0pt'> = 1 <i style='mso-bidi-font-style:normal'>and
+m</i><sub>0</sub> = 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> <i
+style='mso-bidi-font-style:normal'>and then the set of traces for the
+associated</i> <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i> <i
+style='mso-bidi-font-style:normal'>is</i> <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Proof.<span
+style='mso-spacerun:yes'>  </span></span></b><span lang=EN-GB style='font-size:
+10.0pt'>Theorem 1 shows that, for the given definition of <i style='mso-bidi-font-style:
+normal'>j</i>, <i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i> with probability <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:74.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="Cardis02_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=99 height=25
+src="Cardis02_files/image016.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1094306084">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>If <i
+style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i style='mso-bidi-font-style:
+normal'><sup>j</sup></i><sup>+1</sup> then, as in the proof of Lemma 6, all
+traces must terminate with suffix <i style='mso-bidi-font-style:normal'>D<sup>j</sup></i><sup>+1</sup><i
+style='mso-bidi-font-style:normal'>A</i>, which is not the case.<span
+style='mso-spacerun:yes'>  </span>Hence <i style='mso-bidi-font-style:normal'>k</i>
+&#8801; 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i>+1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i><sup>+1</sup> with the
+stated probability.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>For the base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+= 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i>, <i style='mso-bidi-font-style:
+normal'>k</i> &#8801; 1 mod <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>
+and so the associated digit is <i style='mso-bidi-font-style:normal'>k</i><sub>0</sub>
+= 1.<span style='mso-spacerun:yes'>  </span>However, <i style='mso-bidi-font-style:
+normal'>k<sub>p</sub></i> = <i style='mso-bidi-font-style:normal'>k</i> div 2<i
+style='mso-bidi-font-style:normal'><sup>j</sup></i> is odd, which forces the
+next digit to be non-zero.<span style='mso-spacerun:yes'>  </span>Hence <i
+style='mso-bidi-font-style:normal'>A</i> is the next operation leftwards after
+the suffix <i style='mso-bidi-font-style:normal'>D<sup>j</sup>A</i> which
+corresponds to <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub>.<span
+style='mso-spacerun:yes'>  </span>Thus, the relevant traces for the next digit
+are those of <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>.<span
+style='mso-spacerun:yes'>  </span></span><span lang=EN-GB>&#9632;</span><span
+lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The values of <i style='mso-bidi-font-style:normal'>k</i>
+for which no least significant digit has yet been assigned are those satisfying
+<i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i style='mso-bidi-font-style:
+normal'><sup>R</sup></i><sup>+1</sup>.<span style='mso-spacerun:yes'>  </span>Picking
+maximal base <i style='mso-bidi-font-style:normal'>m</i><sub>0</sub> = 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i> gives <i style='mso-bidi-font-style:
+normal'>k</i><sub>0</sub> = 1 and makes <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i>
+even.<span style='mso-spacerun:yes'>  </span>The associated set of prefix
+traces should be <i style='mso-bidi-font-style:normal'>Tr<sub>R</sub><sup>D</sup></i>.<span
+style='mso-spacerun:yes'>  </span>A possible difficulty with this definition is
+that for some traces removing the suffix <i style='mso-bidi-font-style:normal'>D<sup>R</sup>A</i>
+may split subsequences which correspond to one digit.<span
+style='mso-spacerun:yes'>  </span>However, every choice of base 2<i
+style='mso-bidi-font-style:normal'><sup>i</sup></i> corresponds to a suffix <i
+style='mso-bidi-font-style:normal'>D<sup>i</sup>A</i> where<i style='mso-bidi-font-style:
+normal'> i</i> </span><span lang=EN-GB>&#8804;</span><span lang=EN-GB
+style='font-size:10.0pt'> <i style='mso-bidi-font-style:normal'>R</i>, and must
+be followed by a number of instances of base 2 with digit 0 which makes the
+total modular division by at least 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i><sup>+1</sup>.<span
+style='mso-spacerun:yes'>  </span>Hence the suffix <i style='mso-bidi-font-style:
+normal'>D<sup>R</sup>A</i> corresponds to the operations for a whole number of
+digits.<span style='mso-spacerun:yes'>  </span>Therefore <i style='mso-bidi-font-style:
+normal'>Tr<sub>R</sub><sup>D</sup></i> does indeed contain traces which
+represent only operations for sequences of complete digits, and so those traces
+all represent the same key value.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Theorem 3.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>With the same assumptions and
+notation as in Theorem</span></i><span lang=EN-GB style='font-size:10.0pt'> 1, <i
+style='mso-bidi-font-style:normal'>suppose every trace in Tr has suffix</i> <i
+style='mso-bidi-font-style:normal'>D<sup>R</sup></i><sup>+1</sup><i
+style='mso-bidi-font-style:normal'>A</i>.<span style='mso-spacerun:yes'> 
+</span><i style='mso-bidi-font-style:normal'>Then, with probability</i> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:75pt;height:18.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=100 height=25
+src="Cardis02_files/image018.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1094306085">
+ </o:OLEObject>
+</xml><![endif]-->, <i style='mso-bidi-font-style:normal'>k</i> &#8801; 1 mod 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i><sup>+1</sup> <i
+style='mso-bidi-font-style:normal'>and we may pick m</i><sub>0</sub> = 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i>. <i style='mso-bidi-font-style:
+normal'><span style='mso-spacerun:yes'> </span>For this choice k</i><sub>0</sub>
+= 1, <i style='mso-bidi-font-style:normal'>k<sub>p</sub></i> <i
+style='mso-bidi-font-style:normal'>is the common key for</i> <i
+style='mso-bidi-font-style:normal'>Tr<sub>R</sub><sup>D</sup></i>, <i
+style='mso-bidi-font-style:normal'>k<sub>p</sub></i> <i style='mso-bidi-font-style:
+normal'>is even</i>, <i style='mso-bidi-font-style:normal'>and</i> <i
+style='mso-bidi-font-style:normal'>Tr<sub>R</sub><sup>D</sup></i> = <i
+style='mso-bidi-font-style:normal'>Tr<sub>R</sub></i> <i style='mso-bidi-font-style:
+normal'>has the same cardinality as Tr</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.5<span style='mso-tab-count:
+1'>  </span>Combining Digits to Recover<i style='mso-bidi-font-style:normal'> k<o:p></o:p></i></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>For every position<i style='mso-bidi-font-style:normal'>
+j</i> at which there is an occurrence of <i style='mso-bidi-font-style:normal'>A</i>
+in some trace of <i style='mso-bidi-font-style:normal'>Tr</i>, the procedures
+of the previous sub-section can be applied to <i style='mso-bidi-font-style:
+normal'>Tr<sub>j</sub><sup>A</sup></i> to obtain a base and digit at that point.<span
+style='mso-spacerun:yes'>  </span>These digits are used when determining a
+digit sequence for <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span>Starting at <i style='mso-bidi-font-style:
+normal'>j</i> = 0, the digits are selected iteratively.<span
+style='mso-spacerun:yes'>  </span>As well as a digit and base, each trace set <i
+style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i> gives rise to
+another trace set defined at some position <i style='mso-bidi-font-style:normal'>j'</i>
+&gt; <i style='mso-bidi-font-style:normal'>j</i>.<span
+style='mso-spacerun:yes'>  </span>We will show that: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-indent:-.25in;
+mso-list:l6 level1 lfo3'><![if !supportLists]><span lang=EN-GB
+style='font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-GB style='font-size:10.0pt'>For
+this definition of <i style='mso-bidi-font-style:normal'>j'</i>, the next digit
+is determined by whichever is appropriate of <i style='mso-bidi-font-style:
+normal'>Tr<sub>j'</sub><sup>A</sup></i> or (<i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>)<i
+style='mso-bidi-font-style:normal'><sub>R</sub><sup>D</sup></i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Here we need to check on the definition of the trace
+subsets.<span style='mso-spacerun:yes'>  </span>If applied iteratively, the
+procedures above would actually determine smaller and smaller subsets: each
+time we apparently take a subset of the traces from the previous step.<span
+style='mso-spacerun:yes'>  </span>However, because only two key values (one odd,
+one even) are associated with any position, every prefix which represents the
+operations of a complete number of digits must correspond to the odd key if it
+terminates with <i style='mso-bidi-font-style:normal'>A</i> and the even key if
+it terminates with <i style='mso-bidi-font-style:normal'>D</i>.<span
+style='mso-spacerun:yes'>  </span>Of course, every trace prefix terminating
+with <i style='mso-bidi-font-style:normal'>A</i> must consist of the operations
+for a whole number of digits since <i style='mso-bidi-font-style:normal'>A</i>
+cannot appear in the middle of the sequence of operations for a single digit.<span
+style='mso-spacerun:yes'>  </span>So every trace in <i style='mso-bidi-font-style:
+normal'>Tr<sub>j'</sub><sup>A</sup></i> is generated from a key value which is
+common to them all.<span style='mso-spacerun:yes'>  </span>Hence, the full set <i
+style='mso-bidi-font-style:normal'>Tr<sub>j'</sub><sup>A</sup></i> can be used
+to determine the next digit, not just the subset of <i style='mso-bidi-font-style:
+normal'>Tr<sub>j</sub><sup>A</sup></i> determined by the procedures above.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>In the case of the prefix trace set <i
+style='mso-bidi-font-style:normal'>Tr<sub>j</sub></i><sub>+<i style='mso-bidi-font-style:
+normal'>R</i></sub><i style='mso-bidi-font-style:normal'><sup>D</sup></i>, it
+is not clear which traces are generated by a complete key.<span
+style='mso-spacerun:yes'>  </span>In some cases, the final <i style='mso-bidi-font-style:
+normal'>D</i> may not be the final operation of the digit sequence from which
+it was derived.<span style='mso-spacerun:yes'>  </span>Hence, the subset (<i
+style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>)<i
+style='mso-bidi-font-style:normal'><sub>R</sub><sup>D</sup></i> must be used,
+not <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub></i><sub>+<i
+style='mso-bidi-font-style:normal'>R</i></sub><i style='mso-bidi-font-style:
+normal'><sup>D</sup></i>.<span style='mso-spacerun:yes'>  </span>However, the
+construction observed that every such trace had suffix <i style='mso-bidi-font-style:
+normal'>D<sup>R</sup></i><sup>+1</sup><i style='mso-bidi-font-style:normal'>A</i>.<span
+style='mso-spacerun:yes'>  </span>So (<i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>)<i
+style='mso-bidi-font-style:normal'><sub>R</sub><sup>D</sup></i> has the same
+cardinality as <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>.
+<span style='mso-spacerun:yes'> </span>Hence the trace subsets bulletted above
+are indeed the correct ones to use for the key digits, and they do not
+progressively decrease in size.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The process of digit determination only begins to fail
+once a leading instance of <i style='mso-bidi-font-style:normal'>A</i> is
+encountered: Theorem 2 guarantees progress up to that point.<span
+style='mso-spacerun:yes'>  </span>Traces are not all the same length.<span
+style='mso-spacerun:yes'>  </span>Some will use a large base for the most
+significant digit.<span style='mso-spacerun:yes'>  </span>Their initial <i
+style='mso-bidi-font-style:normal'>D</i>s are deleted, giving them fewer
+instances of <i style='mso-bidi-font-style:normal'>D</i> overall, making their
+traces shorter.<span style='mso-spacerun:yes'>  </span>These traces are simply
+discarded when fully processed.<span style='mso-spacerun:yes'>  </span>The
+procedures above still apply to the subset.<span style='mso-spacerun:yes'> 
+</span>Again, following Theorem 2, further digits can still be defined until
+the trace set becomes empty.<span style='mso-spacerun:yes'>  </span>However,
+once the first (i.e. shortest) traces run out, the remaining key is
+representable by a single digit, so it is bounded in absolute value by 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i></span><sup><span
+lang=EN-GB>–</span></sup><sup><span lang=EN-GB style='font-size:10.0pt'>1</span></sup><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>1.<span
+style='mso-spacerun:yes'>  </span>Each increment of the position in the trace
+set reduces the representable key by a factor of 2.<span
+style='mso-spacerun:yes'>  </span>Eventually, assuming there are enough traces,
+the initial <i style='mso-bidi-font-style:normal'>A</i> of the longest trace
+has a digit bounded by 1, and so must be 1.<span style='mso-spacerun:yes'> 
+</span>Hence <i style='mso-bidi-font-style:normal'>k</i> is completely
+determined.<span style='mso-spacerun:yes'>  </span>“Enough” traces would be
+present if, for example, base 2 were chosen for the most significant digit.<span
+style='mso-spacerun:yes'>  </span>Insufficient traces just increases the number
+of possible values of <i style='mso-bidi-font-style:normal'>k</i> which may
+need testing by a small factor (under 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i><sup>–1</sup>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>3.6<span style='mso-tab-count:
+1'>  </span>The Probability of Error<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>We have been careful to obtain the probability of
+error in each digit in order i) to see if it is feasible to recover the key and
+ii) to see how the probabilities <i style='mso-bidi-font-style:normal'>p<sub>i</sub></i>
+might be adjusted in the algorithm definition to provide improved security.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The procedures of §3.4 define the probabilities in
+terms of the size of the trace set being employed at that time.<span
+style='mso-spacerun:yes'>  </span>Generally, it is equal to the cardinality of
+a set of the form <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>.<span
+style='mso-spacerun:yes'>  </span>This is equal to |<i style='mso-bidi-font-style:
+normal'>Tr</i>| times the number of <i style='mso-bidi-font-style:normal'>DA</i>s
+in position <i style='mso-bidi-font-style:normal'>j</i> divided by the number
+of <i style='mso-bidi-font-style:normal'>DA</i>s or <i style='mso-bidi-font-style:
+normal'>D</i>s in that position.<span style='mso-spacerun:yes'>  </span>This
+can be approximated by |<i style='mso-bidi-font-style:normal'>Tr</i>| times the
+overall probability <i style='mso-bidi-font-style:normal'>p<sub>A</sub></i> of <i
+style='mso-bidi-font-style:normal'>DA </i>divided by the overall probability <i
+style='mso-bidi-font-style:normal'>p<sub>D</sub></i> of <i style='mso-bidi-font-style:
+normal'>DA</i> or <i style='mso-bidi-font-style:normal'>D</i>.<span
+style='mso-spacerun:yes'>  </span>Since the choice of base <i style='mso-bidi-font-style:
+normal'>m</i> = 2<i style='mso-bidi-font-style:normal'><sup>i</sup></i>
+produces <i style='mso-bidi-font-style:normal'>i</i></span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'>1 occurrences of <i style='mso-bidi-font-style:
+normal'>D</i> followed by one of <i style='mso-bidi-font-style:normal'>DA</i> when
+<i style='mso-bidi-font-style:normal'>i</i> &gt; 0, |<i style='mso-bidi-font-style:
+normal'>Tr<sub>j</sub><sup>A</sup></i>| &#8776; <i style='mso-bidi-font-style:
+normal'>&#960;</i> |<i style='mso-bidi-font-style:normal'>Tr</i>| where <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>&#960;</span></i><span
+lang=EN-GB style='font-size:10.0pt'> = <sub><!--[if gte vml 1]><v:shape id="_x0000_i1039"
+ type="#_x0000_t75" style='width:15pt;height:21pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=28
+src="Cardis02_files/image020.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1094306086">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>= <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:66.75pt;height:21pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=89 height=28
+src="Cardis02_files/image022.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1094306087">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>For a uniform distribution this works out at <i
+style='mso-bidi-font-style:normal'>&#960;</i> = <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:18pt;height:17.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=23
+src="Cardis02_files/image024.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1094306088">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>where typically we
+might expect <i style='mso-bidi-font-style:normal'>R</i> = 3; and for 2<i
+style='mso-bidi-font-style:normal'><sup>R</sup></i>-ary sliding windows it
+works out at <i style='mso-bidi-font-style:normal'>&#960;</i> = <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1042" type="#_x0000_t75" style='width:17.25pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="Cardis02_files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=23
+src="Cardis02_files/image026.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1094306089">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>In fact, the formula under-estimates the average size
+of <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>A</sup></i>.<span
+style='mso-spacerun:yes'>  </span>Some positions do not have any occurrences of
+<i style='mso-bidi-font-style:normal'>A</i>, and we do not use the associated
+trace subsets.<span style='mso-spacerun:yes'>  </span>This increases the
+average for those positions which do have occurrences of <i style='mso-bidi-font-style:
+normal'>A</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Next, the distribution of base choices in the
+reconstructed key differs from that generated by the re-coding process.<span
+style='mso-spacerun:yes'>  </span>Suppose <i style='mso-bidi-font-style:normal'>k</i>
+is odd for the set of traces at some point during the reconstruction.<span
+style='mso-spacerun:yes'>  </span>In Theorem 2, the distribution of odd
+residues <i style='mso-bidi-font-style:normal'>k</i> mod 2<i style='mso-bidi-font-style:
+normal'><sup>R</sup></i><sup>+1</sup> is uniform.<span
+style='mso-spacerun:yes'>  </span>So, neglecting the assumed small numbers of
+incorrectly assigned cases resulting from some of the possible suffixes not
+occurring, base 2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> will be
+selected for the reconstructed key with probability 2</span><sup><span
+lang=EN-GB>–</span></sup><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>j</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'> for 0 &lt; <i style='mso-bidi-font-style:normal'>j</i>
+</span><span lang=EN-GB>&#8804;</span><span lang=EN-GB style='font-size:10.0pt'>
+<i style='mso-bidi-font-style:normal'>R</i> and produce an odd next key.<span
+style='mso-spacerun:yes'>  </span>Further, base 2<i style='mso-bidi-font-style:
+normal'><sup>R</sup></i> will turn up in the remaining 2</span><sup><span
+lang=EN-GB>–</span></sup><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'> cases of odd keys but produce an even next key.<span
+style='mso-spacerun:yes'>  </span>In half of all cases, an even key will lead
+to an even key.<span style='mso-spacerun:yes'>  </span>Consequently, out of
+every 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>+2 digit choices
+in the reconstruction, on average 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>
+will be odd and 2 will be even.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>By Theorems 2 and 3, the probability of the
+reconstructed key being correct is a product of factors of the form <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1043" type="#_x0000_t75" style='width:57pt;height:18.75pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image027.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=76 height=25
+src="Cardis02_files/image028.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1094306090">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>These factors can be
+approximated by <sub><!--[if gte vml 1]><v:shape id="_x0000_i1044" type="#_x0000_t75"
+ style='width:59.25pt;height:18pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=79 height=24
+src="Cardis02_files/image030.gif" v:shapes="_x0000_i1044"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1094306091">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>Since choosing base
+2<i style='mso-bidi-font-style:normal'><sup>j</sup></i> leads to <i
+style='mso-bidi-font-style:normal'>j</i> such factors, there is essentially one
+such factor for every bit of <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span>The exceptions are where an even key causes
+base 2 and digit 0.<span style='mso-spacerun:yes'>  </span>Then there is no
+doubt about the correctness of the digit 0.<span style='mso-spacerun:yes'> 
+</span>This last case occurs for 2(2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>+2)</span><sup><span
+lang=EN-GB>–</span></sup><sup><span lang=EN-GB style='font-size:10.0pt'>1</span></sup><span
+lang=EN-GB style='font-size:10.0pt'>log<sub>2</sub><i style='mso-bidi-font-style:
+normal'>k</i> bits of the initial key <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span>Otherwise, for odd keys, the relative
+frequency of different bases means that the factor <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:59.25pt;height:18pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=79 height=24
+src="Cardis02_files/image030.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1094306092">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>will appear on average
+for 2<i style='mso-bidi-font-style:normal'><sup>R</sup></i></span><sup><span
+lang=EN-GB>–</span></sup><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>i</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'>(2<i style='mso-bidi-font-style:normal'><sup>R</sup></i>+2)</span><sup><span
+lang=EN-GB>–</span></sup><sup><span lang=EN-GB style='font-size:10.0pt'>1</span></sup><span
+lang=EN-GB style='font-size:10.0pt'>log<sub>2</sub><i style='mso-bidi-font-style:
+normal'>k</i> bits if 0 &lt;<i style='mso-bidi-font-style:normal'> i</i> &lt; <i
+style='mso-bidi-font-style:normal'>R</i> and for 2(2<i style='mso-bidi-font-style:
+normal'><sup>R</sup></i>+2)</span><sup><span lang=EN-GB>–</span></sup><sup><span
+lang=EN-GB style='font-size:10.0pt'>1</span></sup><span lang=EN-GB
+style='font-size:10.0pt'>log<sub>2</sub><i style='mso-bidi-font-style:normal'>k</i>
+bits if<i style='mso-bidi-font-style:normal'> i</i> = <i style='mso-bidi-font-style:
+normal'>R</i>.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Because <i style='mso-bidi-font-style:normal'>p<sub>R</sub></i>'
+= <i style='mso-bidi-font-style:normal'>p</i><sub>1</sub>+<i style='mso-bidi-font-style:
+normal'>p</i><sub>2</sub>+...+<i style='mso-bidi-font-style:normal'>p<sub>R</sub></i>
+= 1, the factor for <i style='mso-bidi-font-style:normal'>i</i> = <i
+style='mso-bidi-font-style:normal'>R</i> is 1, and so can be ignored. <span
+style='mso-spacerun:yes'> </span>Hence,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 8.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>The key k can be recovered
+with a probability approximately</span></i><span lang=EN-GB style='font-size:
+10.0pt'> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB
+style='font-size:10.0pt'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1046"
+ type="#_x0000_t75" style='width:92.25pt;height:20.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image032.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=123 height=27
+src="Cardis02_files/image033.gif" v:shapes="_x0000_i1046"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1094306093">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>where n</span></i><span
+lang=EN-GB style='font-size:10.0pt'> = (1+2<sup>1</sup></span><sup><span
+lang=EN-GB>–</span></sup><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'>)</span><sup><span lang=EN-GB>–</span></sup><sup><span
+lang=EN-GB style='font-size:10.0pt'>1</span></sup><span lang=EN-GB
+style='font-size:10.0pt'>log<sub>2</sub><i style='mso-bidi-font-style:normal'>k</i>
+<i style='mso-bidi-font-style:normal'>and &#960; is as defined above</i>.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The property <sub><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:15.75pt;height:15pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image034.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=21 height=20
+src="Cardis02_files/image035.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1094306094">
+ </o:OLEObject>
+</xml><![endif]-->&#8804; 1–<i style='mso-bidi-font-style:normal'>p</i><sub>1</sub>
+provides a lower bound for this product. <span
+style='mso-spacerun:yes'> </span>Consequently,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Lemma 9.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>For a uniform distribution of
+base</span></i><span lang=EN-GB style='font-size:10.0pt'>, <i style='mso-bidi-font-style:
+normal'>the key k</i> <i style='mso-bidi-font-style:normal'>can be recovered
+with a probability at least<o:p></o:p></i></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB
+style='font-size:10.0pt'>(1+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1048"
+ type="#_x0000_t75" style='width:24pt;height:17.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image036.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=23
+src="Cardis02_files/image037.gif" v:shapes="_x0000_i1048"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1094306095">
+ </o:OLEObject>
+</xml><![endif]--><i style='mso-bidi-font-style:normal'><sup>&#960;</sup></i><sup>|<i
+style='mso-bidi-font-style:normal'>Tr</i>|</sup>)</span><sup><span lang=EN-GB>–</span></sup><i
+style='mso-bidi-font-style:normal'><sup><span lang=EN-GB style='font-size:10.0pt'>n</span></sup></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:10.0pt'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>where</span></i><span
+lang=EN-GB style='font-size:10.0pt'> <span style='mso-spacerun:yes'> </span><i
+style='mso-bidi-font-style:normal'>n </i>= (1–2<sup>1</sup></span><sup><span
+lang=EN-GB>–</span></sup><i style='mso-bidi-font-style:normal'><sup><span
+lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span lang=EN-GB
+style='font-size:10.0pt'>)(1+2<sup>1</sup></span><sup><span lang=EN-GB>–</span></sup><i
+style='mso-bidi-font-style:normal'><sup><span lang=EN-GB style='font-size:10.0pt'>R</span></sup></i><span
+lang=EN-GB style='font-size:10.0pt'>)</span><sup><span lang=EN-GB>–</span></sup><sup><span
+lang=EN-GB style='font-size:10.0pt'>1</span></sup><span lang=EN-GB
+style='font-size:10.0pt'>log<sub>2</sub><i style='mso-bidi-font-style:normal'>k</i>
+<span style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>and</i>
+<span style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:normal'>&#960;</i>
+= <sub><!--[if gte vml 1]><v:shape id="_x0000_i1049" type="#_x0000_t75"
+ style='width:18pt;height:17.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=23
+src="Cardis02_files/image024.gif" v:shapes="_x0000_i1049"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1094306096">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>For specific choices, it is possible to evaluate the
+product in Lemma 8 exactly.<span style='mso-spacerun:yes'>  </span>A typical
+choice would be to have a key with 192 bits, <i style='mso-bidi-font-style:
+normal'>R</i> = 3 (which requires storing two pre-computed multiples, namely <i
+style='mso-bidi-font-style:normal'>P</i> and 3<i style='mso-bidi-font-style:
+normal'>P</i>), and a uniform choice of base, i.e. <i style='mso-bidi-font-style:
+normal'>p</i><sub>1</sub> = <i style='mso-bidi-font-style:normal'>p</i><sub>2</sub>
+= <i style='mso-bidi-font-style:normal'>p</i><sub>3</sub> = &#8531;.<span
+style='mso-spacerun:yes'>  </span>Then <i style='mso-bidi-font-style:normal'>&#960;</i>
+= &#8531; and the product in Lemma 8 is just under 2<sup>–31</sup> for |<i
+style='mso-bidi-font-style:normal'>Tr</i>| = 9.<span style='mso-spacerun:yes'> 
+</span>So, if a key can be reconstructed and checked for correctness in unit
+time,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt'>Theorem 4.<span
+style='mso-spacerun:yes'>  </span></span></b><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB style='font-size:10.0pt'>If doubles and adds can be
+distinguished on individual traces, and traces are captured from</span></i><span
+lang=EN-GB style='font-size:10.0pt'> 9 <i style='mso-bidi-font-style:normal'>applications
+of the same unblinded </i>192-<i style='mso-bidi-font-style:normal'>bit key</i>,
+<i style='mso-bidi-font-style:normal'>then the Liardet-Smart algorithm with
+uniform selection of base</i> </span><span lang=EN-GB>&#8804;</span><span
+lang=EN-GB style='font-size:10.0pt'> 2<sup>3</sup> <i style='mso-bidi-font-style:
+normal'>can be broken with a computational effort of about</i> <i
+style='mso-bidi-font-style:normal'>O</i>(2<sup>31</sup>).<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>With
+twice as many traces, the computational effort falls to under</i> <i
+style='mso-bidi-font-style:normal'>O</i>(2<sup>10</sup>). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Of course, the full force of all the patterns
+available and their relative frequencies has not yet been applied.<span
+style='mso-spacerun:yes'>  </span>Hence the danger is probably substantially
+under-estimated.<span style='mso-spacerun:yes'>  </span>Once a possible key has
+been recovered, there is considerable unused data in the traces that has not
+yet been used and can be investigated for checking purposes.<span
+style='mso-spacerun:yes'>  </span>In the uniform case, about <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:18pt;height:17.25pt' o:ole="">
+ <v:imagedata src="Cardis02_files/image038.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=23
+src="Cardis02_files/image039.gif" v:shapes="_x0000_i1050"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1094306097">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>of the data is so far unused
+– that in the complementary sets <i style='mso-bidi-font-style:normal'>Tr<sub>j</sub><sup>D</sup></i>.<span
+style='mso-spacerun:yes'>  </span>This contains information about digits whose
+bases were not aligned with those of the reconstructed representation of <i
+style='mso-bidi-font-style:normal'>k</i>.<span style='mso-spacerun:yes'> 
+</span>Choosing a different base from that of the reconstruction process
+described above will provide confirmation about the correctness of each bit of <i
+style='mso-bidi-font-style:normal'>k</i>.<span style='mso-spacerun:yes'> 
+</span>Indeed, each trace has to be consistent with some choice of bases, and
+the rightmost inconsistency in a trace will usually be very close to the
+rightmost bit in error.<span style='mso-spacerun:yes'>  </span>There is
+insufficient space here to improve the probabilities which are a consequence of
+this approach, but the computational feasibility of the attack is already assured.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>If the attacker is unable to distinguish clearly
+between adds and doubles, then the unused data vastly increases his ability to
+make corrections.<span style='mso-spacerun:yes'>  </span>Moreover, as each
+digit is obtained through a purely local extraction of data from traces, it is
+easy to automate an exhaustive process to check for the overall best digit
+solutions using all traces, and hence prioritise the order for considering the
+most likely values for <i style='mso-bidi-font-style:normal'>k</i>.<span
+style='mso-spacerun:yes'>  </span>However, for the data that has been used, any
+indistinctness between <i style='mso-bidi-font-style:normal'>A</i> and <i
+style='mso-bidi-font-style:normal'>D</i> is unimportant.<span
+style='mso-spacerun:yes'>  </span>In this attack, it is only necessary to
+establish whether or not an <i style='mso-bidi-font-style:normal'>A</i> has
+appeared at each position.<span style='mso-spacerun:yes'>  </span>The relative
+frequency of <i style='mso-bidi-font-style:normal'>A</i>s means that the
+certainty of this can be determined with high degree just by increasing the
+number of traces sufficiently.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>4<span style='mso-tab-count:1'>    </span>Counter-Measures<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Our formulae for bounding the accuracy repeatedly used
+the probabilities of smaller bases much more than larger bases, and the
+accuracy improves when these probabilities are increased at the expense of the
+probabilities of larger bases.<span style='mso-spacerun:yes'>  </span>This is
+consistent with the <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>greater ambiguity afforded by digits of larger bases.<span
+style='mso-spacerun:yes'>  </span>Thus we recommend not using a uniform choice
+for the base, but employing a strong bias towards large bases, such as was
+illustrated in §2.2.<span style='mso-spacerun:yes'>  </span>In the extreme, the
+standard, non-randomised, <i style='mso-bidi-font-style:normal'>m</i>-ary
+exponentiation technique is obtained, and this is not susceptible to the
+attack.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The cost of key masking is not entirely trivial in the
+context of ECC.<span style='mso-spacerun:yes'>  </span>Adding a 32-bit random
+multiple of the group order to the key increases the point multiplication cost
+by some 17% for 192-bit keys, although it is a much smaller fraction of the
+total encryption cost.<span style='mso-spacerun:yes'>  </span>Adding a smaller
+random multiple is probably ineffective if it results in a number of
+repetitions of the same key value within the lifetime of the key.<span
+style='mso-spacerun:yes'>  </span>The highly repetitive nature of the traces
+resulting from the same prefix keys turning up again and again means that a
+duplicated key could be assumed if, and only if, traces matched closely enough.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>The “double-and-add-always” method of computation
+provides a good measure of protection, but is expensive.<span
+style='mso-spacerun:yes'>  </span>The attacker then has to determine whether or
+not the result of the addition is used before he can mount the attack.<span
+style='mso-spacerun:yes'>  </span>This is much more difficult than
+distinguishing the two operations.<span style='mso-spacerun:yes'>  </span>Hence
+traces will be susceptible to much more frequent errors, and a much greater
+number of traces will have to be recovered.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>There are alternative randomised algorithms for which
+this type of attack does not apply, and others that display similar weaknesses.<span
+style='mso-spacerun:yes'>  </span>That of Oswald and Aigner [9] can be attacked
+in a similar way.<span style='mso-spacerun:yes'>  </span><span
+style='text-transform:uppercase'>Mist </span>[15, 17] does not exhibit the same
+repetition of key values during key processing, and so may be a safer choice.<span
+style='mso-spacerun:yes'>  </span>A new algorithm by Itoh <i style='mso-bidi-font-style:
+normal'>et al</i>. [18] may also be worthy of consideration.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>5<span style='mso-tab-count:1'>    </span>Conclusion<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>It might have been hoped that the Liardet-Smart
+algorithm would avoid the cost of any additional counter-measures such as key
+blinding when the same secret key is repeatedly re-used, but this now appears
+not to be so.<span style='mso-spacerun:yes'>  </span>Specifically, the key
+needs to be masked, or the pattern of adds and doubles has to be well hidden
+for individual point multiplications.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'>Of course, there are many circumstances in which the
+algorithm is clearly of value, such as ECDSA, for which a different random key
+is used every time.<span style='mso-spacerun:yes'>  </span>Then, for suitable
+parameter choices, the space of keys generating a given pattern of adds and
+doubles is infeasibly large, and so cannot be attacked successfully without additional
+data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-GB>References<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[1]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. H. Gebotys &amp; R. J. Gebotys, <i
+style='mso-bidi-font-style:normal'>Secure Elliptic Curve Implementations: An
+Analysis of Resistance to Power Attacks in a DSP Processor</i>, Cryptographic
+Hardware and Embedded Systems </span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'> CHES 2002, B. Kaliski, Ç. Koç &amp; C. Paar (editors),
+Lecture Notes in Computer Science, <b style='mso-bidi-font-weight:normal'>2523</b>,
+Springer-Verlag, 2002,<i style='mso-bidi-font-style:normal'> to appear</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[2]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>J. C. Ha &amp; S. J. Moon, <i
+style='mso-bidi-font-style:normal'>Randomized Signed-Scalar Multiplication of
+ECC to Resist Power Attacks</i>, Cryptographic Hardware and Embedded Systems </span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'> CHES 2002, B. Kaliski,
+Ç. Koç &amp; C. Paar (editors), Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>2523</b>, Springer-Verlag, 2002, <i
+style='mso-bidi-font-style:normal'>to appear</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[3]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>K. Itoh, J. Yajima, M. Takenaka &amp; N. Torii,
+<i style='mso-bidi-font-style:normal'>DPA Countermeasures by Improving the
+Window Method</i>, Cryptographic Hardware and Embedded Systems </span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'> CHES 2002, B. Kaliski,
+Ç. Koç &amp; C. Paar (editors), Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>2523</b>, Springer-Verlag, 2002,<i
+style='mso-bidi-font-style:normal'> to appear</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[4]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>D. E. Knuth, <i style='mso-bidi-font-style:
+normal'>The Art of Computer Programming</i>, vol. 2, “Seminumerical Algorithms”,
+2nd Edition, Addison-Wesley, 1981, 441</span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'>466.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[5]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>P. Kocher, <i style='mso-bidi-font-style:
+normal'>Timing Attack on Implementations of Diffie-Hellman, RSA, DSS, and other
+systems</i>, Advances in Cryptology </span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'> <span style='text-transform:uppercase'>Crypto</span>
+’96, N. Koblitz (editor), Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>1109</b>, Springer-Verlag, 1996, 104</span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>113.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[6]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>P. Kocher, J. Jaffe &amp; B. Jun, <i
+style='mso-bidi-font-style:normal'>Differential Power Analysis</i>, Advances in
+Cryptology </span><span lang=EN-GB>–</span><span lang=EN-GB style='font-size:
+10.0pt'> <span style='text-transform:uppercase'>Crypto</span> ’99, M. Wiener
+(editor), Lecture Notes in Computer Science, <b style='mso-bidi-font-weight:
+normal'>1666</b>, Springer-Verlag, 1999, 388</span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'>397.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[7]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>P.-Y. Liardet &amp; N. P. Smart, <i
+style='mso-bidi-font-style:normal'>Preventing SPA/DPA in ECC Systems using the
+Jacobi Form</i>, Cryptographic Hardware and Embedded Systems </span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'> CHES 2001, Ç. Koç,
+D. Naccache &amp; C. Paar (editors), Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>2162</b>, Springer-Verlag, 2001, 391</span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>401.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[8]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>T. S. Messerges, E. A. Dabbish &amp; R. H. Sloan,
+<i style='mso-bidi-font-style:normal'>Power Analysis Attacks of Modular
+Exponentiation in Smartcards</i>, Cryptographic Hardware and Embedded Systems
+(Proc CHES 99), C. Paar &amp; Ç. Koç (editors), Lecture Notes in Computer
+Science, <b style='mso-bidi-font-weight:normal'>1717</b>, Springer-Verlag,
+1999, 144</span><span lang=EN-GB>–</span><span lang=EN-GB style='font-size:
+10.0pt'>157.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[9]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>E. Oswald &amp; M. Aigner, <i
+style='mso-bidi-font-style:normal'>Randomized Addition-Subtraction Chains as a
+Countermeasure against Power Attacks</i>, Cryptographic Hardware and Embedded
+Systems </span><span lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>
+CHES 2001, Ç. Koç, D. Naccache &amp; C. Paar (editors), Lecture Notes in
+Computer Science, <b style='mso-bidi-font-weight:normal'>2162</b>,
+Springer-Verlag, 2001, 39</span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'>50.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[10]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>J.-J. Quisquater &amp; D. Samyde, <i
+style='mso-bidi-font-style:normal'>ElectroMagnetic Analysis (EMA): Measures and
+Counter-Measures for Smart Cards</i>, Smart Card Programming and Security
+(E-smart 2001), Lecture Notes in Computer Science, <b style='mso-bidi-font-weight:
+normal'>2140</b>, Springer-Verlag, 2001, 200</span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'>210.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[11]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>J.-J. Quisquater &amp; D. Samyde, <i
+style='mso-bidi-font-style:normal'>Eddy current for Magnetic Analysis with
+Active Sensor</i>, Smart Card Programming and Security (E-smart 2002), Lecture
+Notes in Computer Science, Springer-Verlag, 2002,<i style='mso-bidi-font-style:
+normal'> to appear</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[12]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>M. Joye &amp; J.-J. Quisquater, <i
+style='mso-bidi-font-style:normal'>Hessian Elliptic Curves and Side Channel
+Attacks</i>, Cryptographic Hardware and Embedded Systems </span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'> CHES 2001, Ç. Koç,
+D. Naccache &amp; C. Paar (editors), Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>2162</b>, Springer-Verlag, 2001, 402</span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>410.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[13]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. D. Walter &amp; S. Thompson,<i
+style='mso-bidi-font-style:normal'> Distinguishing Exponent Digits by Observing
+Modular Subtractions</i>, Topics in Cryptology </span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'> CT-RSA 2001, D. Naccache (editor), Lecture
+Notes in Computer Science, <b style='mso-bidi-font-weight:normal'>2020</b>,
+Springer-Verlag, 2001, 192</span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'>207.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:2.25pt'><span
+lang=EN-GB style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[14]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. D. Walter, <i style='mso-bidi-font-style:
+normal'>Sliding Windows succumbs to Big Mac Attack</i>, Cryptographic Hardware
+and Embedded Systems </span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'> CHES 2001, Ç. Koç, D. Naccache &amp; C. Paar
+(editors), Lecture Notes in Computer Science, <b style='mso-bidi-font-weight:
+normal'>2162</b>, Springer-Verlag, 2001, 286</span><span lang=EN-GB>–</span><span
+lang=EN-GB style='font-size:10.0pt'>299.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[15]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. D. Walter,<i style='mso-bidi-font-style:
+normal'> Improvements in, and relating to, Cryptographic Methods and Apparatus</i>,
+UK Patent Application 0126317.7, Comodo Research Laboratory, 2001.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[16]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. D. Walter, <i style='mso-bidi-font-style:
+normal'>Precise Bounds for Montgomery Modular Multiplication and Some
+Potentially Insecure RSA Moduli</i>, Proceedings of CT-RSA 2002, Lecture Notes
+in Computer Science, <b style='mso-bidi-font-weight:normal'>2271</b>,
+Springer-Verlag, 2002, 30</span><span lang=EN-GB>–</span><span lang=EN-GB
+style='font-size:10.0pt'>39.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-GB style='font-size:10.0pt'><span style='mso-list:Ignore'>[17]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt'>C. D. Walter, <i style='mso-bidi-font-style:
+normal'>M<span style='text-transform:uppercase'>ist</span>: An Efficient,
+Randomized Exponentiation Algorithm for Resisting Power Analysis</i>,
+Proceedings of CT-RSA 2002, Lecture Notes in Computer Science, <b
+style='mso-bidi-font-weight:normal'>2271</b>, Springer-Verlag, 2002, 53</span><span
+lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>66.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo5;tab-stops:list .25in'><![if !supportLists]><span
+style='font-size:10.0pt;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>[18]<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-weight:bold'>K. Itoh, J.
+Yajima, M. Takenaka &amp; N. Torii,<b> </b></span><i><span lang=EN-GB
+style='font-size:10.0pt'>DPA Countermeasures by Improving the Window Method</span></i><span
+lang=EN-GB style='font-size:10.0pt'>, Cryptographic Hardware and Embedded
+Systems </span><span lang=EN-GB>–</span><span lang=EN-GB style='font-size:10.0pt'>
+CHES 2002, B. Kaliski, Ç. Koç &amp; C. Paar (editors), Lecture Notes in
+Computer Science, <b style='mso-bidi-font-weight:normal'>2523</b>,
+Springer-Verlag, 2002,<i style='mso-bidi-font-style:normal'> to appear</i>.</span><span
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":132,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
+

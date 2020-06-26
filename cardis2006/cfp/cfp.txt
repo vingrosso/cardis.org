@@ -1,0 +1,159 @@
+----------------------------------------------------------------------
+***   CFP CARDIS 2006 + CFP CARDIS 2006 + CFP CARDIS 2006 + CFP    ***
+----------------------------------------------------------------------
+
+CARDIS'06 - Tarragona, CAT, Spain                    April 19-21, 2006
+
+The 7th Smart Card Research and Advanced Application IFIP Conference, 
+organized by IFIP Working Groups WG 8.8 and WG 11.2, will be held in 
+Tarragona, Catalonia, Spain, April 19-21, 2006.
+Since 1994, CARDIS is the foremost international conference dedicated 
+to Smart Card research and application. Every two years the scientific 
+community congregates to present new ideas and to discuss recent 
+developments. Also 2006, thirty eight years after Jürgen Dethloff and 
+Helmut Grötrupp filed their idea of incorporating an integrated 
+circuit in an identification card, CARDIS'06 will bring together 
+leading researchers and practitioners in the development and 
+deployment of state of the art Smart Card technologies.
+The fast evolutionary process in the field of Information Security 
+requires an adequate means to represent the human in the process of 
+human-machine interaction. Smart Cards, or, by extension, smart 
+devices with their processing power and their direct correlation to 
+the user are considered to be the first choice. In rather young and 
+new realms, such as Pervasive Computing, smart cards and devices face 
+new challenges. Today, the capabilities of smart cards and devices 
+with their highly advanced specialized security features reach far 
+beyond. They are the basis for many secure systems and play a decisive 
+role in ID management. Established computer science areas, like 
+hardware design, operating systems, modeling systems, cryptography or 
+distributed systems have adapted to this fast growing technology and 
+yield new application ranges and investigate emerging challenges for 
+these domains. 
+Unlike events devoted to commercial and application aspects of Smart 
+Cards, CARDIS conferences gather researchers and technologists who are 
+focused in all aspects of the design, development, deployment, 
+validation and application of Smart Cards or smart personal devices.
+
+------------------
+ Conference Scope
+------------------
+
+The program committee seeks papers describing the design, development, 
+application, and validation of Smart Card technologies. Submissions 
+across a broad range of Smart Card development phases are encouraged, 
+from exploratory research and proof-of-concept studies to practical 
+application and deployment of Smart Card technology.
+
+Topics of interest include, but are not limited to:
+
+* Smart Device, Person Representation and Ambient Intelligence
+* Smart Device, Identity, Privacy and Trust
+* Smart Card (Smart Device) and Applications in the Internet, WLAN, 
+   DRM, ...
+* Smart Card and Smart Device software (OS, VM, API)
+* High-level data model and management (On-card data sharing schemes)
+* (Distributed) Application development and deployment
+* From Smart Card to Smart Device (hardware, form factor, display)
+* Biometrics and Smart Cards
+* High-speed, small-footprint encryption
+* Cryptographic protocols for Smart Cards (and Smart Devices)
+* Attacks and countermeasures in hardware and software
+* Hardware, software and service (application) validation and 
+   certification
+* Formal Modeling
+* Security of RFID systems
+* Interplay of TPMs and Smartcards
+
+-----------------
+ Important Dates
+-----------------
+
+Abstract submission       9 October 2005
+Full Paper submission    16 October 2005
+Notification to authors  30 November 2005
+Camera-ready             15 January 2006
+Conference               19-21 April 2006
+
+-----------------------------------
+ Instructions for Paper Submission
+-----------------------------------
+
+Submitted papers should represent novel contributions related to 
+the topics listed above. They must be original, unpublished, and 
+not submitted to another conference or journal for consideration 
+of publication. Papers must be written in English; they should not 
+exceed 16 pages in total. When appropriate, authors should arrange 
+for a release for publication from their employer prior to 
+submission.
+Papers accompanied by non-disclosure agreement forms will not be 
+accepted. Accepted papers will be presented at the conference and 
+published in the proceedings, which will appear in Springer's 
+Lecture Notes in Computer Science and will be available at the 
+conference. At least one author of each accepted paper is required 
+to register with the conference and present the paper. Abstracts 
+and papers must be submitted in electronic form using the conference 
+tool setup for this conference (see submission section on 
+www.cardis.org). To submit a paper, you must first register with 
+the tool. After a successful registration you will be able to enter 
+the abstract of your paper and categorize it according to the 
+discussed area of research. Abstract information should be provided 
+until October 9, 2005. Paper submission can be delayed but must be 
+completed until October 16, 2005. If you experience any problems 
+submitting your paper you may also use submission@cardis.org. Only 
+accepted formats are PDF and PostScript files which have to strictly 
+follow the templates or style files indicated by the publisher 
+(see submission section on www.cardis.org). Please preview the 
+manuscript in a viewer to ensure its integrity before submitting. 
+Make sure you visually check uncommon fonts, symbols, equations, etc.
+
+-------------------
+ Best Paper Awards
+-------------------
+
+Awards will be handed over at the conference for the best paper 
+and the best student paper.
+
+--------------------------
+ Conference General Chair
+--------------------------
+
+* Josep Domingo-Ferrer, Universitat Rovira i Virgili, ES
+
+-------------------------
+ Program Committee Chair
+-------------------------
+
+* Joachim Posegga, University of Hamburg, DE
+
+-------------------
+ Program Committee 
+-------------------
+
+* Boris Balacheff, Hewlett-Packard Labs, UK
+* Bertrand du Castel, Axalto, USA
+* Josep Domingo-Ferrer, Universitat Rovira i Virgili, ES
+* Dieter Gollmann, TU Hamburg-Harburg, DE
+* Louis Guillou, France Télécom, FR
+* Pieter Hartel, University of Twente, NL
+* Peter Honeyman, University of Michigan, USA
+* Dirk Husemann, IBM Research, CH
+* Eduard de Jong, Sun Microsystems, USA
+* Jean-Louis Lanet, INRIA-DirDRI, FR
+* Javier Lopez, University of Malaga, ES
+* Bernd Meyer, Siemens AG, Munich, DE
+* Mike Montgomery, Axalto, USA
+* Pierre Paradinas, CNAM, FR
+* Jean-Jacques Quisquater, Université Catholique de Louvain, BE
+* Francesc Sebé, Universitat Rovira i Virgili, ES
+* François-Xavier Standaert, Université Catholique de Louvain, BE
+* Jean-Jacques Vandewalle, Gemplus Labs, FR
+
+--------------------
+ Advisory Committee
+--------------------
+
+* José A. Delgado-Penín, IEEE Spanish Section Chair
+
+----------------------------------------------------------------------
+***   CFP CARDIS 2006 + CFP CARDIS 2006 + CFP CARDIS 2006 + CFP    ***
+----------------------------------------------------------------------

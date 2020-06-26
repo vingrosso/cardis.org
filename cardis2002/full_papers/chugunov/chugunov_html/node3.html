@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Method Call Graphs</TITLE>
+<META NAME="description" CONTENT="Method Call Graphs">
+<META NAME="keywords" CONTENT="paper">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="paper.css">
+
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html57"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html55"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html51"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html58"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Up:</B> <A NAME="tex2html56"
+  HREF="node2.html">Constructing Method Call Graphs</A>
+<B> Previous:</B> <A NAME="tex2html52"
+  HREF="node2.html">Constructing Method Call Graphs</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00020100000000000000"></A>
+<A NAME="ApplGrRunSectLab"></A>
+<BR>
+Method Call Graphs
+</H3>
+
+<P>
+The methods <IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ M$"> are partitioned into classes <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ C$">, which 
+are themselves partitioned into packages <IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ P$">.
+We assume the usual Java naming conventions with fully qualified names,
+i.e., a class has a name <!-- MATH
+ $\mathit{Package.identifier}$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \mathit{Package.identifier}$">
+and a method has a name <!-- MATH
+ $\mathit{Class.identifier}$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mathit{Class.identifier}$">.
+
+<P>
+<P>
+<DIV><A NAME="ProgGraphDefLab"><B>Definition  1</B></A> (Method Graph, adapted from&nbsp;[<A
+ HREF="node20.html#jensen99verification">13</A>])  &nbsp; 
+A <EM>method graph</EM> is a tuple 
+<!-- MATH
+ \begin{displaymath}
+m \;\stackrel {\Delta}{=}\; \left(V_m,  \rightarrow_{m} , \lambda_m, \mu_m \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="176" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$\displaystyle m \;\stackrel {\Delta}{=}\; \left(V_m, \rightarrow_{m} , \lambda_m, \mu_m \right)$">
+</DIV><P></P>
+such that:
+<DL COMPACT>
+<DT>(i)</DT>
+<DD><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ V_m$"> are the <EM>program points</EM> of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">,
+</DD>
+<DT>(ii)</DT>
+<DD><!-- MATH
+ $\rightarrow_{m}  \subseteq V_m \times V_m$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \rightarrow_{m} \subseteq V_m \times V_m$"> are the <EM>transfer edges</EM> of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">, 
+and
+</DD>
+<DT>(iii)</DT>
+<DD><!-- MATH
+ $\lambda_m : V_m \rightarrow T$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \lambda_m : V_m \rightarrow T$"> designates to each program point of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$">
+a <EM>program point type</EM> from the set 
+<!-- MATH
+ $T \;\stackrel {\Delta}{=}\; \{\mbox{\sf entry}, \mbox{\sf seq}, \mbox{\sf call}, \mbox{\sf return}\}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ T \;\stackrel {\Delta}{=}\; \{$"><I>entry</I><IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$ ,$">&nbsp; &nbsp;<I>seq</I><IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$ ,$">&nbsp; &nbsp;<I>call</I><IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$ ,$">&nbsp; &nbsp;<I>return</I><IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \}$">. 
+</DD>
+<DT>(iv)</DT>
+<DD><!-- MATH
+ $\mu_m: V_m \rightarrow \wp(M)$
+ -->
+<IMG
+ WIDTH="127" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \mu_m: V_m \rightarrow \wp(M)$"> designates to each program point of 
+type <!-- MATH
+ $\mbox{\sf call}$
+ -->
+<I>call</I> of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> a non-empty set of methods. 
+</DD>
+</DL></DIV><P></P>
+
+<P>
+We assume the program point sets <IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ V_m$"> to be pairwise disjoint. 
+The program points of the program is the set 
+<!-- MATH
+ $V \;\stackrel {\Delta}{=}\; \bigcup_{m \in M} V_m$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ V \;\stackrel {\Delta}{=}\; \bigcup_{m \in M} V_m$">.
+
+<P>
+The program point type indicates whether
+(<TT>entry</TT>)
+a node is the entry point of a method, 
+(<TT>seq</TT>)
+a node
+in which no method call or return takes place,
+(<TT>call</TT>) a node from which a method call takes place,
+or (<TT>return</TT>) a node in which the execution of the method
+finishes and control flow returns to the calling method.
+
+<P>
+For convenience, we introduce the  predicates
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+v : t &\stackrel {\Delta}{=}& \lambda_m(v) = t$ for $t\in T\\
+v : \mbox{\sf loc}_{\>} m &\stackrel {\Delta}{=}& v \in V_m\\
+v : \mbox{\sf entry } m &\stackrel {\Delta}{=}& v : \mbox{\sf entry} \;\wedge \; v : \mbox{\sf loc}_{\>} m\\
+v : \mbox{\sf return } m &\stackrel {\Delta}{=}& v : \mbox{\sf return} \;\wedge \; v : \mbox{\sf loc}_{\>} m\\
+v : \mbox{\sf class } c &\stackrel {\Delta}{=}& \exists m. \;v : \mbox{\sf loc}_{\>} m \;\wedge \; m \in c\\
+v : \mbox{\sf package } p &\stackrel {\Delta}{=}& \exists c. \;v : \mbox{\sf class } c \;\wedge \; c \in p\\
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="426" HEIGHT="160" BORDER="0"
+ SRC="img16.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+v : t &amp;\stackrel {\Delta}{=}&amp; \lambda_m(v...
+.... \;v : \mbox{\sf class } c \;\wedge \; c \in p\\
+\end{array}\end{displaymath}">
+</DIV><P></P>
+
+<P>
+We further define a predicate <!-- MATH
+ $v : \mathsf{api}$
+ -->
+<IMG
+ WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ v : \mathsf{api}$">,
+which holds if the program point <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ v$"> occurs in a method in a
+JavaCard API package
+(for standard JavaCard 
+this corresponds to one of
+<TT>java.lang</TT>,
+<TT>javacard.framework</TT>,
+<TT>javacard.security</TT> or
+<TT>javacardx.crypto</TT>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html57"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html55"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html51"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html58"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Up:</B> <A NAME="tex2html56"
+  HREF="node2.html">Constructing Method Call Graphs</A>
+<B> Previous:</B> <A NAME="tex2html52"
+  HREF="node2.html">Constructing Method Call Graphs</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Lars-Ake Fredlund
+2002-09-23
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":79,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-593.min.js"}</script></BODY>
+</HTML>

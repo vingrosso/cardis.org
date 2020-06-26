@@ -1,0 +1,282 @@
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script><title>USENIX - CARDIS '02 - Author Guidelines</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<div> <!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="CENTER" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../graphics/on/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../graphics/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+</table>
+</td></tr></table></td></tr></table>
+</div><!-- End of Banner -->
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr>
+
+<!--Left Border-->
+<td width="2" valign="top" bgcolor="#CCCCCC"><img src="../../../graphics/dot_clear.gif" width="2" height="1" alt=""></td>
+
+<!--Links Column-->
+<td width="596" valign="top" bgcolor="#FFFFFF">
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+<!-- START OF PAGE CONTENTS -->
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Author Guidelines</b></font>
+<p>
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">
+Please read these guidelines carefully. They were written to help you provide
+your submission with its best possible chance to be accepted. As you know, the
+Program Committee can't accept every paper submitted to the conference, and this
+document was put together to help improve your odds of getting your paper
+accepted.
+<p>
+The program committee seeks papers describing application and
+ system software that extends the reach of the use of smart
+ cards in systems for authentication, electronic commerce, and
+ secure personal data storage. Submissions across a broad range
+ of smart card development phases are encouraged, from
+  exploratory research and proof-of-concept studies to practical
+ application and deployment of smart card technology.
+
+
+<p>
+<hr>
+
+<b align=left>CONFERENCE DATES:</b>
+<p>
+CARDIS '02, the Fifth Smart 
+Card Research and Advanced Application Conference will be held
+November 20-22 in San Jose, California, USA. 
+<p>
+Dates for paper submissions: 
+<ul>
+<LI>Paper submissions due:         June 24, 2002
+<LI>Notification to authors:       August 12, 2002
+<LI>Camera-ready final papers due: September 23, 2002
+</ul>
+<hr>
+
+<b align=left>THE CALL FOR PAPERS:</b>
+<p>
+For your convenience, here is a summary of the important information
+in the Call For Papers:
+
+<UL>
+<p>
+<LI>Authors must submit a full paper that should consist of a traditional
+abstract that summarizes the content/ideas of the entire paper, followed by the
+full paper. It should include references to related work, figures, tables, and
+graphs that are central to understanding the paper. 
+</p>
+
+
+<LI>THE NEXT STEP IS VERY IMPORTANT.  PLEASE READ CAREFULLY.
+
+
+<p>
+One copy of a full paper, in PDF format,
+must be submitted electronically using the <A href="submit.html">Web submission form</A>.
+</p>
+
+<li>The web form will also require the authors to provide the following
+information:
+<p>
+<ul>
+<LI>The title and authors of the manuscript.
+<LI>The name of one author who will serve as a contact, with regular and
+   electronic mail addresses, daytime and evening telephone numbers,
+   and a fax number.
+<LI>An indication of which, if any, of the authors are full-time
+   students.
+</ul>
+
+<p>
+<LI>All submissions will be acknowledged. 
+</p>
+
+<p>
+<LI>The paper should be about 8 to 14 typeset pages using an 11 pt font or
+larger.
+</p>
+
+<p>
+<LI>Prizes will be awarded for Best Paper and Best Student Paper.
+</p>
+
+</UL>
+
+
+<hr>
+
+<b align=left>WHAT KINDS OF PAPERS DOES USENIX PUBLISH?</b>
+
+<p>
+The most important thought to keep in mind when deciding whether to submit a
+paper is "What will the audience or readers learn from my paper?" We don't
+expect every paper to report on a major breakthrough, but we do look for
+something new, potentially useful, and not entirely obvious. Think about how
+different your work is from previously published papers; it may be good work but
+if there is nothing new to learn, it isn't worth reading (or writing) a paper
+about it. Think about how other people might find your work useful; can they
+apply what you are teaching them to their own systems? And, does your work
+really improve upon the previous state of the art? Or does it show how other
+people have been confused? "Negative results" that contradict the conventional
+wisdom are often as important as positive results. 
+<p>
+Trying to decide if something is non-obvious isn't easy (patent lawyers make
+lots of money arguing about this), and sometimes the best ideas seem obvious in
+hindsight. However, if several people have done the same thing, and you are
+simply the first person to have considered writing a paper about it, perhaps it
+is too obvious. 
+<p>
+The Program Committee will also be trying to decide if papers will lead to a
+good 25-minute presentation. Some papers are just too complex to be presented
+this way (perhaps you should focus on just one aspect); other papers just don't
+have enough to talk about for that long. On the other hand, a few rare papers
+are accepted mostly because the committee expects them to produce an interesting
+talk, but that might not otherwise merit publication. 
+<p>
+Again, when you are writing your paper, keep in mind "what do I intend to teach
+the reader?" That means keeping the paper focused on one or a few main points.
+Don't try to cram too many big issues into the paper, and don't fill it up with
+irrelevant details. But do include enough background for the reader to
+understand why your problem is important, how your work relates to previous work
+in the field, and how it might fit into a practical system. Also, provide enough
+detail for the reader to put your performance measurements in context. It is
+vitally important to provide a good bibliography, both so that you give proper
+credit to previous work, and so that a reader can know where to turn to find
+additional background information. The Program Committee will not look kindly on
+a paper if the author doesn't appear to be familiar with the current literature.
+
+<p>
+<HR>
+
+<b align=left>MORE INFORMATION IS AVAILABLE</b>
+<p>
+Lots of papers and books have been written about how to write a
+good paper.  We'd like to suggest that you read a paper called 
+<a href="https://www.usenix.org/legacy/events/samples/submit/advice.html">An
+Evaluation of the Ninth SOSP Submissions; or, How (and How Not) to
+Write a Good Systems Paper</a>.  This was written by Roy Levin and
+David D. Redell, the program committee co-chairs for SOSP-9, and
+first appeared in <i>ACM SIGOPS Operating Systems Review</i>,  Vol. 17,
+No. 3 (July, 1983), pages 35-40.
+</p>
+<p>
+Although SOSP and CARDIS have different foci, Levin and Redell
+give good advice for authors of any kind of systems paper.
+The authors have graciously agreed to make this paper available
+online.
+</p>
+
+<p>
+If you have any other questions, feel free to send mail to the
+Program Chair at <a
+href="mailto:cardis02chair@usenix.org">cardis02chair@usenix.org</a>.
+</p>
+
+<HR>
+<p>
+<b align=left>HOW SHOULD I GET MY MANUSCRIPT TO YOU?</b>
+</p>
+The Program Committee would prefer to receive submissions via the 
+Web form. While we understand that there are
+people who may not yet have access to the Web, using the Web for a majority of
+submissions will not only help in automating the truly tedious administrative
+work in paper submission, but it will also help in avoiding paper printing and
+submission costs all around. If you cannot submit your paper via the Web for any
+reason whatsoever, please contact the Program Chair (<A
+href="mailto:cardis02chair@usenix.org">cardis02chair@usenix.org</A>)
+for alternative means of submission. 
+<p>
+We have found in the past that PDF files (readable by Acroread or Acrobat) are
+often the best means of submitting papers.
+<p>
+If the paper you submit via the web form is missing figures, tables or other
+illustrations that are present in your original paper, please indicate this with
+a prominent note and contact the Program Chairs for submitting these
+illustrations.
+<p>
+Finally, if you have any other questions, at any time during the entire
+submissions process, especially if you have a paper idea but have concerns about
+it not being "right" for this conference, PLEASE send mail to the Program Chair
+at <A href="mailto:cardis02chair@usenix.org">cardis02chair@usenix.org</A>. 
+<p>
+<B>Good Luck,<br>
+The Program Committee</B>
+</font>
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr></table></td>
+
+<!--Right Border-->
+<td width="2" valign="top" bgcolor="#CCCCCC"><img src="../../../graphics/dot_clear.gif" width="2" height="1" alt=""></td>
+
+</tr>
+<tr><td colspan="3" bgcolor="#CCCCCC" width="600" height="2"><img src="../../../graphics/dot_clear.gif" width="1" height="2" alt=""></td></tr>
+<tr><td colspan="3" width="600" height="5"><img src="../../../graphics/dot_clear.gif" width="1" height="5" alt=""></td></tr>
+</table>
+
+</center>
+</div>
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr><td VALIGN="TOP">
+<font size=2><img src="../../../graphics/questmark.gif" width=12 height=16
+alt="?" hspace=2 align="left">Need help? <a
+href="https://www.usenix.org/legacy/about/contacts.html">Use our Contacts page.</a></font>
+<br clear="left">
+<img src="../../../graphics/dot_clear.gif" width=1 height=5 alt=""><br>
+<address>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  4 Mar. 2002 jr</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td>
+<a href="index.html"><font size=1>CARDIS Call for Papers</font></a><br>
+</td></tr><tr><td>
+<a href="https://www.usenix.org/legacy/events/cardis02"><font size=1>CARDIS '02 home</font></a><br>
+</td></tr><tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</center>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":80,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
+

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The public-key coprocessor based AES implementation</TITLE>
+<META NAME="description" CONTENT="The public-key coprocessor based AES implementation">
+<META NAME="keywords" CONTENT="aes_on_crypto2000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="aes_on_crypto2000.css">
+
+<LINK REL="next" HREF="node18.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="aes_on_crypto2000.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html163"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html161"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html155"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html164"
+  HREF="node14.html">The MixColumn transformation</A>
+<B> Up:</B> <A NAME="tex2html162"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html156"
+  HREF="node12.html">The operation xtime</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00040000000000000000">
+The public-key coprocessor based AES implementation</A>
+</H1>
+
+The formerly mentioned type of public-key coprocessor is actually useful to improve the performance 
+of the following transformations of the AES cipher:
+
+<UL>
+<LI><!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT>, 
+</LI>
+<LI>inverse <!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT>, 
+</LI>
+<LI>KeyExpansion and 
+</LI>
+<LI><!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT>.
+</LI>
+</UL>
+
+Other transformations like the <!-- MATH
+ $\text{\tt ByteSub}$
+ -->
+<TT>ByteSub</TT> and <!-- MATH
+ $\text{\tt ShiftRow}$
+ -->
+<TT>ShiftRow</TT> are performed inside the standard CPU and 
+therefore remain unchanged. 
+The reason of not using the coprocessor to accelerate these two last transformations is the following. 
+The fastest way of performing the <!-- MATH
+ $\text{\tt ByteSub}$
+ -->
+<TT>ByteSub</TT> transformation is by the use of a look-up table 
+(the so called S-Box) containing 256 8-bit values. 
+Because both of them, table indices and table contents are 8-bit values, 
+the 8-bit CPU is the most suitable unit to perform this table access. 
+Nevertheless, we advice the reader to carefully consult our section 5 on the physical security of the AES.
+
+On the other hand, the <!-- MATH
+ $\text{\tt ShiftRow}$
+ -->
+<TT>ShiftRow</TT> transformation can be embedded into the <!-- MATH
+ $\text{\tt ByteSub}$
+ -->
+<TT>ByteSub</TT> transformation 
+in such a way that there is no performance loss. 
+The next figure describes the execution parts executed in the CPU and the other ones executed 
+within the coprocessor:
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:AES_transformations"></A><A NAME="179"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+Execution of the AES transformations .</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+  <!-- MATH
+ $\includegraphics[width=1.0\linewidth]{AES_transformations}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="416" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="\includegraphics[width=1.0\linewidth]{AES_transformations}">
+  </DIV></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html165"
+  HREF="node14.html">The <!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT> transformation</A>
+<LI><A NAME="tex2html166"
+  HREF="node15.html">The inverse <!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT> transformation</A>
+<LI><A NAME="tex2html167"
+  HREF="node16.html">The Key Expansion</A>
+<LI><A NAME="tex2html168"
+  HREF="node17.html">The <!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT> transformation</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html163"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html161"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html155"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html164"
+  HREF="node14.html">The MixColumn transformation</A>
+<B> Up:</B> <A NAME="tex2html162"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html156"
+  HREF="node12.html">The operation xtime</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Roger Fischlin
+2002-09-25
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":107,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></BODY>
+</HTML>

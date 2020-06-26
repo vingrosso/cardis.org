@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthUserFile /var/www/html/cardis2016/assets/data/proceedings/.htpasswd
+AuthName "Password will be given during CARDIS conference" 
+require valid-user

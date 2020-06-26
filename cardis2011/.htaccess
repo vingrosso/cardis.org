@@ -1,0 +1,13 @@
+Options +IncludesNoExec
+AddOutputFilter INCLUDES .html
+DirectoryIndex index.shtml index.html index.htm
+
+<Files ".htaccess">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<FilesMatch "./notes">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,458 @@
+/* Conference Tool CSS File */
+
+body {
+	background: #ffffff;
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 10pt;
+}
+
+td {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 10pt;
+}
+
+h1 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,option {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+.standard {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.positive10 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	color: #009000;
+}
+
+.negative10 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	color: #AA0000;
+}
+
+.bold8 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.bold10 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.positivebold10 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #009000;
+}
+
+.negativebold10 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #990000;
+}
+
+.bold12 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.bold14 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.lightbold10 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 10pt;
+	font-weight: bold;
+	color: #eeeeee;
+}
+
+.lightbold12 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 12pt;
+	font-weight: bold;
+	color: #eeeeee;
+}
+
+.lightbold20 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 20pt;
+	font-weight: bold;
+	color: #eeeeee;
+}
+
+.lightbold36 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 36pt;
+	font-weight: bold;
+	color: #eeeeee;
+}
+
+.normal10 {
+	font-family: arial, helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+.light10 {
+	font-family: arial, helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 10pt;
+	color: #999999;
+}
+
+.normal8 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 8pt;
+}
+
+.light8 {
+	font-family: arial, helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 8pt;
+	color: #999999;
+}
+
+.label10 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 10pt;
+	font-weight: normal;
+	color: #333366;
+}
+
+.boldlabel10 {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #666699;
+}
+
+.label12 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	color: #666699;
+}
+
+.boldlabel12 {
+	font-family: arial, helvetica, sans-serif; 
+	font-weight: bold;
+	font-size: 12pt;
+	color: #666699;
+}
+
+.normal12 {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 12pt;
+}
+
+.lightbg {
+	background-color: #eeeeee;
+}
+
+.mediumbg {
+	background-color: #cccccc;
+}
+
+.darkbg {
+	background-color: #666666;
+}
+.positivebg {
+	background-color: #669966;
+}
+.negativebg {
+	background-color: #996666;
+}
+.otherbg {
+	background-color: #999966;
+}
+
+.cmda {
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.listheader {
+	background-color: #cccccc;
+}
+
+.listheader_label {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.oddrow {
+	background-color: #bbccee;
+}
+.evenrow {
+	background-color: #ccddff;
+}
+
+.oddrow_del {
+	background-color: #ffdddd;
+}
+.evenrow_del {
+	background-color: #ffeeee;
+}
+
+.tbldialog {
+	background-color: #ccddff;
+}
+
+.td_dlg_text {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.td_dlg_label {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.td_dlg_input {
+}
+
+.td_dlg_buttons {
+	background-color: #666699;
+}
+
+.td_dlg_title {
+	background-color: #bbccee;
+}
+
+.form_table {
+}
+
+.form_label {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #eeeeee;
+}
+
+.form_radio {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+}	
+
+.form_checkbox {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+}	
+
+.form_hint {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+}	
+
+.form_td_label {
+	background-color: #666666;
+}
+
+.form_td_field {
+	background-color: #cccccc;
+}
+
+.form_td_label_error {
+	background-color: #996666;
+}
+
+.form_td_field_error {
+	background-color: #ffcccc;
+}
+
+.form_td_separator {
+	background-color: #666699;
+}
+
+.form_td_subseparator_left {
+	background-color: #505050;
+}
+
+.form_td_subseparator_right {
+	background-color: #999999;
+}
+
+.form_td_entry {
+	background-color: #999999;
+}
+
+.form_subseparator_label {
+	color: #eeeeee;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.form_td_buttons {
+	background-color: #999999;
+}
+
+.form_separator_label {
+	color: #eeeeee;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.cthead_info_val {
+	color: #eeeeee;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.cthead_info_label {
+	color: #eeeeee;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.cthead_td_info {
+	background-color: #666699;
+}
+
+.cthead_cmds {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.cthead_td_cmds {
+	background-color: #ccddff;
+}
+
+.cthead_a {
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.ctfoot {
+    color: #505050;
+	font-size: 8pt;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: arial, helvetica, sans-serif;
+}
+
+/* boxes -------------------------------------------- */
+
+.errorboxTitleTD {
+	background-color: #993333;
+}
+.errorboxTitle {
+	color: #ffffcc;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: arial, helvetica, sans-serif;
+}
+.infoboxTitleTD {
+	background-color: #339933;
+}
+.infoboxTitle {
+	color: #ffffcc;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: arial, helvetica, sans-serif;
+}
+.boxmsgTD {
+	background-color: #ffff99;
+}
+.boxmsg {
+	color: #000000;
+	font-size: 10pt;
+	font-family: arial, helvetica, sans-serif;
+}
+
+/* --- infoviews --------------------------------*/
+
+.infoview_table {
+}
+
+.infoview_invert {
+	background-color: #666666;
+}
+
+.infoview_sep {
+	background-color: #666699;
+}
+.infoview_tr {
+	background-color: #cccccc;
+}
+
+/* --- reviewing --------------------------------*/
+
+.review1 {
+	background-color: #ff6666;
+}
+
+.review2 {
+	background-color: #ffcc66;
+}
+
+.review3 {
+	background-color: #ffff66;
+}
+
+.review4 {
+	background-color: #ccff66;
+}
+
+.review5 {
+	background-color: #66ff66;
+}
+
+/* --- imprint -----------------------------------*/
+
+.imprint {
+	background-color: #E8EEFF;
+}
+
+/* --- schedule table -------------------------- */
+
+.scheduletbl {
+  width:80%;
+  border-top:1px #aaaaaa solid;
+  border-right:1px #aaaaaa solid;
+}
+
+.scheduletbl th {
+  border-left:1px #aaaaaa solid;
+  border-bottom:1px #aaaaaa solid;
+  font-weight:bold;
+  font-family : sans-serif;
+  text-align:left;
+  background:#efefef;
+}
+
+.scheduletbl td {
+  border-left:1px #aaaaaa solid;
+  border-bottom:1px #aaaaaa solid;
+}

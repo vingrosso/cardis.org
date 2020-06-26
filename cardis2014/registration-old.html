@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><title>CARDIS 2014</title>
+  
+  <meta name="description" content="CARDIS, Smart Card Research and Advanced Application Conference" />
+  <meta name="keywords" content="CARDIS, Smart Card Research and Advanced Application Conference" />
+  <link media="screen" href="./shared/screen.css" type="text/css" rel="stylesheet" />
+  <link media="print" href="./shared/print.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false" />
+  <script type="text/javascript">
+    function initialize() {
+      var latlng = new google.maps.LatLng(48.866053,2.356456);
+      var settings = {
+	zoom: 16,
+	center: latlng,
+	mapTypeControl: true,
+	mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+	navigationControl: true,
+	navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+    var conferencePos = new google.maps.LatLng(48.866053,2.356456);
+    var conferenceMarker = new google.maps.Marker({
+      position: conferencePos,
+      map: map,
+      title:"Conference venue"
+  });
+    }
+  </script></head><body onload="initialize()">
+<!-- main content -->
+<div id="main">
+<h1>CARDIS&nbsp;2014: Registration</h1>
+
+<h2>Registration form</h2>
+
+<p>Registration is done by filling in
+  this <a href="shared/Formulaire.pdf" target="_blank">form</a><img src="shared/pdf-file.gif" />
+  and sending it
+  to <a style="text-decoration: none;" href="mailto:celine.carle@cnam-iledefrance.fr;pierre.paradinas@cnam.fr?subject=Registration%20to%20CARDIS%202014"><span style="text-decoration: underline;">celine.carle@cnam-iledefrance.fr</span> <span style="color: black;">and</span> <span style="text-decoration: underline;">pierre.paradinas@<!--nospam-->cnam.fr</span></a> with the required information.</p>
+
+<h3>Conference fee</h3>
+<p>The registration fee for CARDIS&nbsp;2014 is as follows.  This
+  includes admission to all technical sessions, proceedings,
+  lunches, social event, conference dinner, and coffee breaks.</p>
+
+  <center>
+  <table id="registrationfees" cellspacing="0">
+    <tbody><tr>
+      <th class="nobg"><br />
+</th>
+      <th><span style="text-decoration: line-through;">Early bird</span> (by October 5)</th>
+      <th>After October 5</th>
+    </tr>
+
+    <tr>
+      <td style="text-decoration: line-through;" class="fc">Student registration</td>
+      <td style="text-decoration: line-through;">200€</td>
+      <td style="text-decoration: line-through;">300€</td>
+    </tr>
+    <tr>
+      <td class="fc">Regular registration</td>
+      <td>300€</td>
+      <td>400€</td>
+    </tr>
+  </tbody></table>
+  </center>
+
+
+<h3>Payment</h3>
+<p>Only payment by</p>
+<ul>
+  <li>Credit card (VISA or MASTERCARD) or</li>
+  <li>Fund tranfer to organization</li>
+</ul>
+<p>is accepted.</p>
+
+<p>An invoice will be sent by email or provided to you during the conference.</p>
+
+<h3>Cancellation policy</h3> 
+<p>No reimbursement will be possible.</p>
+
+
+<h2>Hotel reservation</h2>
+<p>No rooms were pre-booked for CARDIS&nbsp;2014. There are plenty of
+  hotels in Paris, depending on your budget.  We recommend you to use your favorite
+  application or website to find a hotel that best suits your needs.</p>
+  <p>The conference venue is: <b>2 Rue Conté, 75003 Paris</b></p>
+<div class="screenonly" id="map_canvas" style="width: 300px; height: 300px;" /><br />
+</div>
+<!-- end of main content -->
+
+<!-- footer -->
+<div id="footer"> Copyright ©&nbsp;CARDIS&nbsp;2014. All rights
+reserved.
+</div>
+<!-- end footer -->
+
+<!-- navigation menu -->
+<div id="leftcolumn">
+<div id="menulist">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="cfp.html">Call for Papers</a></li>
+  <li><a href="committees.html">Committees</a></li>
+  <li><a class="off" href="https://www.easychair.org/conferences/?conf=cardis2014">Submissions</a></li>
+  <li><a href="program.html">Program</a></li>
+  <li><a href="venue.html">Venue</a></li>
+  <li><a class="sel" href="registration.html">Registration</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+ <div id="partners">
+    <img src="./shared/CNAM.png" alt="CNAM" title="CNAM" /><br clear="all" />
+    <img src="./shared/LNCS.png" alt="Springer's LNCS" title="Springer's LNCS" />
+  </div>
+</div>
+<!-- end of navigation menu -->
+
+</body></html>

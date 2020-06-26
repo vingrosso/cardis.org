@@ -1,0 +1,205 @@
+
+<h1>schedule</h1>
+
+<table class="table agenda">
+    <tbody>
+        <tr><th colspan="2" class="new-day">Monday 13th</th></tr>
+        
+        <tr>
+            <th>11:00 am - 2:00 pm</th>
+            <td>Registration</td>
+        </tr>
+        <tr>
+            <th>12:00 pm - 2:00 pm</th>
+            <td>Standing Lunch</td>
+        </tr>
+        <tr><th>2:00 pm - 2:15 pm</th>
+            <td>Opening Remarks</td>
+        </tr>
+        <tr>
+            <th>2:15 pm - 3:15 pm<br>
+                <span class="session-chair"></span>
+            </th>
+            <td>
+                <span class="unbold">Invited Talk I</span> - <a href="./assets/data/Slides/I1 Pierre Girard Security for IoT .pdf"> Security for IoT </a> <span class="authors">Pierre Girard</span> 
+            </td>
+        </tr>
+        <tr>
+            <th>3:15 pm - 3:45 pm</th>
+            <td><span class="unbold">Coffee Break</span></td>
+        </tr>
+        
+        <tr class="no-border-row">
+            <th rowspan="2">3:45 pm - 4:45 pm<br>Session I<br><strong>IoT Threats &amp; Counter Measures</strong><br><span class="session-chair"> Session Chair: Guillaume Barbu </span> </th>
+            <td>
+                <span class="title">  Opening Pandora's Box: Effective Techniques for Reverse Engineering IoT Devices</span><br>
+                <span class="authors">  Omer Shwartz, Michael Bohadana, Yael Mathov, Yuval Elovici and Yossi Oren</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S1.2 Optimal First-Order Boolean Masking for Embedded IoT Devices.pdf"> Optimal First-Order Boolean Masking for Embedded IoT Devices</a></span><br>
+                <span class="authors">  Alex Biryukov, Daniel Dinu and Aleksei Udovenko</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>6:30 pm - 7:30 pm</th>
+            <td><span class="bold">Welcome Apero</span></td>
+        </tr>
+ 
+        <tr><th colspan="2" class="new-day">Tuesday 14th</th></tr>
+        
+        <tr>
+            <th>9:00 am - 10:00 am<br></th>
+            <td>
+                <span class="unbold">Invited Talk II</span> - <a href="./assets/data/Slides/I2 Matthieu Rivain White-Box Cryptography.pdf"> White Box Cryptography </a><span class="authors">Matthieu Rivain </span> 
+            </td>
+        </tr>
+        <tr>
+            <th>10:00 am - 10:30 am</th>
+            <td><span class="unbold">Coffee Break</span></td>
+        </tr>
+        
+        <tr class="no-border-row">
+            <th rowspan="3">10:30 am - 12 pm<br>Session II<br><strong>Side Channel Attacks and Methods (I)</strong><br> <span class="session-chair">Session Chair: François-Xavier Standaert</span> </th>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S2.1 A first-order chosen plaintext DPA attack on the third round of DES.pdf"> A First-Order Chosen Plaintext DPA Attack on the Third Round of DES</a></span><br>
+                <span class="authors">Oscar Reparaz and Benedikt Gierlichs</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title">  A Strict Key Enumeration Algorithm for Dependent Score Lists of Side-Channel Attacks</span><br>
+                <span class="authors"> Yang Li, Shuang Wang, Zhibin Wang and Jian Wang</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S2.3 A Novel Use of Kernel Discriminant Analysis as a Higher-Order Side-Channel Distinguisher.pdf"> A Novel Use of Kernel Discriminant Analysis as a Higher-Order Side-Channel Distinguisher</a></span><br>
+                <span class="authors"> Xin ping Zhou, Carolyn Whitnall, Elisabeth Oswald, Degang Sun and Wang Zhu</span>
+            </td>
+        </tr>
+            
+        
+        <tr>
+            <th>12:00 pm - 2:00 pm</th>
+            <td>Lunch</td>
+        </tr>
+        
+        <tr class="no-border-row">
+            <th rowspan="2">2:00 pm - 3:00 pm<br>Session III<br><strong>Leakage Detection Tools &amp; Methods</strong><br><span class="session-chair">Session Chair: Yuichi Komano</span></th>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S3.1 Leakage Bounds for Gaussian Side Channels.pdf"> Leakage Bounds for Gaussian Side Channels</a></span><br>
+                <span class="authors">Thomas Unterluggauer, Thomas
+Korak, Stefan Mangard, Robert Schilling, Luca Benini, Frank Gurkaynak
+and Michael Muehlberghuber</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S3.2 Towards Sound and Optimal Leakage Detection Procedure.pdf">  Towards Sound and Optimal Leakage Detection Procedure</a></span><br>
+                <span class="authors">A. Adam Ding,
+Liwei Zhang, Francois Durvaux, Francois-Xavier Standaert and Yunsi Fei</span>
+            </td>
+        </tr>
+        <tr>
+            <th>3:00 pm - 3:30 pm</th>
+            <td><span class="unbold">Coffee Break</span></td>
+        </tr>
+        
+        
+        
+        
+        <tr class="no-border-row">
+            <th rowspan="3">3:30 pm - 5:00 pm<br>Session IV<br><strong>Counter Measures: Conception &amp; Analysis</strong><br><span class="session-chair">Session Chair: Benedikt Gierlichs</span></th>
+            <td>
+                <span class="title"> Connecting and Improving Direct Sum Masking and Inner Product Masking</span><br>
+                <span class="authors">Romain Poussier, Qian Guo, Francois-Xavier Standaert, Claude Carlet and Sylvain Guilley</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S4.2 May The Force Be With You Force-Based Relay Attack Detection.pdf">  May The Force Be With You: Force-Based Relay Attack Detection</a></span><br>
+                <span class="authors">Iakovos
+Gurulian, Gerhard Hancke, Konstantinos Markantonakis and Raja Naeem Akram</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S4.3 Instruction Duplication Leaky and Not Too Fault-Tolerant.pdf">  Instruction Duplication: Leaky and Not Too Fault-Tolerant!</a></span><br>
+                <span class="authors">Lucian Cojocar, Kostas Papagiannopoulos and Niek Timmers</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>5:45 pm - 10:30 pm</th>
+            <td><b>Social Event</b></td>
+        </tr>
+        
+        <tr><th colspan="2" class="new-day">Wednesday 15th</th></tr>
+        
+       
+        <tr>
+            <th>9:00 am - 10:00 am<br><span class="session-chair"></span></th>
+            <td>
+                <span class="unbold">Invited Talk III</span> - <a href="./assets/data/Slides/I3 Thomas Pöppelmann Post Quantum Cryptography.pdf">  Post Quantum Cryptography </a><span class="authors">Thomas Pöppelmann </span> 
+            </td>
+        </tr>
+        <tr>
+            <th>10:00 am - 10:30 am</th>
+            <td><span class="unbold">Coffee Break</span></td>
+        </tr>
+        
+        
+        
+        <tr class="no-border-row">
+            <th rowspan="2">10:30 am - 11:30 am<br>Session V<br><strong>Fault Attacks</strong><br><span class="session-chair">Session Chair: Jean-Bernard Fischer</span></th>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S5.1 An EM Fault Injection Susceptibility Criterion and its application to the localization of hotspots.pdf">  An EM Fault Injection Susceptibility Criterion and its Application to the Localization of Hotspots</a></span><br>
+                <span class="authors">Maxime Madau, Michel Agoyan and Philippe
+Maurine</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S5.2 Fault Analysis of the ChaCha and Salsa Families of Stream Ciphers.pdf">  Fault Analysis of the ChaCha and Salsa Families of Stream Ciphers</a></span><br>
+                <span class="authors">Arthur Beckers, Benedikt Gierlichs and Ingrid Verbauwhede</span>
+            </td>
+        </tr>
+        
+        <tr class="no-border-row">
+            <th rowspan="2">11:30 am - 12:30 am<br>Session VI<br><strong>Side Channel Attacks and Methods (II)</strong><br><span class="session-chair">Session Chair: Pierre-Yvan Liardet</span></th>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S6.1 Applying Horizontal Clustering Side-channel Attacks on Embedded ECC Implementations.pdf">  Applying Horizontal Clustering Side-channel Attacks on Embedded ECC Implementations </a></span><br>
+                <span class="authors">Erick Nascimento and Lukasz Chmielewski</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span class="title"> <a href="./assets/data/Slides/S6.2 Trace Augmentation What Can Be Done Even Before Preprocessing in a Profiled SCA.pdf"> Trace Augmentation: What Can Be Done Even Before Preprocessing in a Profiled SCA?</a></span><br>
+                <span class="authors">Sihang Pu, Yu Yu, Weijia Wang, Junrong Liu, Zheng Guo and Dawu Gu</span>
+            </td>
+        </tr>
+        
+     
+         
+         <tr>
+            <th>12:30 pm - 2:00 pm</th>
+            <td><span class="unbold">Closing Remarks &amp; Lunch</span></td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+
+

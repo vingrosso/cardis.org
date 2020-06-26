@@ -1,0 +1,2142 @@
+<html><head><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+
+<META NAME="description" CONTENT="MICROCAST">
+<META NAME="keywords" CONTENT="index">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" href="domingocardis2002final.css">
+
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 125-134 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+
+ 
+
+
+<P>
+<H1 ALIGN="CENTER"><B>MICROCAST: Smart Card Based (Micro)pay-per-view for
+Multicast Services</B></H1>
+<P ALIGN="CENTER"><STRONG>Josep Domingo-Ferrer, Antoni Mart&#305;nez-Ballesté and Francesc Sebé
+<BR><EM>Universitat Rovira i Virgili</EM>
+<BR><EM>Dept. of Computer Engineering and Maths</EM>
+<BR><EM>Av. Pa&#305;sos Catalans 26,
+E-43007 Tarragona, Catalonia</EM>
+<BR>e-mail <TT>{jdomingo,anmartin,fsebe}@etse.urv.es</TT>
+</STRONG></P>
+
+<P>
+
+<H2><A NAME="SECTION00001000000000000000">
+Abstract</A>
+</H2>
+
+<P>
+<EM>With the increased availability of broadband fixed and mobile
+communications, multicast content delivery can be expected
+to become a very important market. Especially for wireless
+multicast delivery, it is important that payment collection
+be fine-grain: the customer should pay only for the content
+that she actually consumes. This can be achieved by using
+pay-per-view based on micropayments.
+This paper proposes the first method for enabling pay-as-you-watch
+services in a multicast content delivery
+environment. On the customer's side,
+micropayment generation is implemented in a smart card which can
+be plugged into the customer's receiving device
+(computer, digital video receiver, PDA,  mobile phone, etc.).
+Micropayment collection and verification are distributed among
+multicast routers, which avoids bottlenecks inherent to
+many-to-one payment transmission.
+</EM>
+<P>
+<EM><B>Keywords:</B> Multicast delivery, Pay-per-view, Pay-as-you-watch,
+Micropayments, Smart cards in the Internet.</EM>
+
+<P>
+
+<H1><A NAME="SECTION00010000000000000000"></A>
+<A NAME="int"></A><BR>
+Introduction
+</H1>
+Communication technologies have been evolving in 
+many important aspects over the last few years.
+On one hand, broadband communications such as city-wide WLANs, 
+ADSL, cable networks and UMTS
+are becoming widespread. On the other hand, audio and 
+video compression codecs such
+as DivX, Realmedia, etc. improve the use of the
+available bandwidth. Finally, the appearance
+of mobile phones with high-resolution color display and 
+Internet-enabled PDA's will bring
+brand new multimedia services to everybody, everywhere. 
+There are great opportunities to create a huge 
+market for multimedia content delivery, featuring news broadcasting,
+videoconferencing, movie channels, on-line gambling, etc.
+Consequently, it seems natural
+to use mobile communications and portable devices,
+along with traditional desktop PC's, as new privileged outlets 
+for digital content delivery in pay-per-view mode. 
+Smart card based micropayments stand out as one of the 
+most promising solutions  
+to obtain a fine-grain fee collection service:
+the customer uses her smart card to perform micropayments as content
+is being received.
+
+<P>
+Most multimedia delivery services operate
+in multicast mode to send content over the Internet.
+By using multicast, one single data stream can reach hundreds, thousands and
+even millions of target media players.
+
+<P>
+
+<H2><A NAME="SECTION00011000000000000000">
+Contribution and plan of this paper</A>
+</H2>
+
+<P>
+This paper describes a method for enabling pay-per-view 
+services in a multicast content delivery 
+environment. On the customer's side,
+micropayment generation is implemented in a smartcard which can 
+be plugged into the customer's receiving device
+(computer, digital video receiver, PDA,  mobile phone, etc.).
+Micropayment collection and verification are distributed among 
+multicast routers, which avoids bottlenecks inherent to
+many-to-one payment transmission.
+
+<P>
+Section&nbsp;<A href="index.html#sec2">2</A> gives some background on multicast communication;
+the use of pay-per-view and micropayments in multicast is also 
+approached.
+Section&nbsp;<A href="index.html#scenario">3</A> describes the architecture 
+of MICROCAST, a system for 
+pay-per-view multicast content delivery.
+The MICROCAST micropayment protocol suite is fully described in 
+Section&nbsp;<A href="index.html#protocol">4</A>.
+Finally, Section&nbsp;<A href="index.html#conclusions">5</A> contains some
+conclusions and suggestions for future work.
+
+<P>
+
+<H1><A NAME="SECTION00020000000000000000"></A>
+<A NAME="sec2"></A><BR>
+Multicast communication
+</H1>
+
+<P>
+Depending on the number of receivers, three types of communication
+can be distinguished:
+
+<UL>
+<LI>Unicast communication: one source and one receiver.
+</LI>
+<LI>Broadcast communication: one source node and <EM>all</EM> remaining
+nodes acting as receivers. As an example, consider 
+video broadcast in a LAN: the same data are streamed from the 
+source to the entire network by using the broadcast IP address.
+</LI>
+<LI>Multicast communication: one source and a group of receivers.
+As an example, consider a local digital cable TV network, where a particular
+piece of video content is to be distributed only to subscribers
+who are paying for it (rather than to the entire neighborhood).
+</LI>
+</UL>
+
+<P>
+
+<H2><A NAME="SECTION00021000000000000000">
+Multicast group management</A>
+</H2>
+
+<P>
+If a source is to communicate with <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$"> receivers, one could 
+naively think of
+using <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$"> unicast communications 
+(which results in the 
+source being an output bottleneck) or one broadcast channel 
+(which results in the entire network being flooded). Both 
+solutions are wasteful in terms of bandwidth.
+It should be noted that the Internet is nowadays already
+full of millions of IP packets only controlled by their
+time-to-live or by the TCP protocol.
+
+<P>
+A better option to avoid increasing
+network congestion 
+is for receivers to join a multicast group
+and have the content sent to them by using their
+multicast group IP address&nbsp;[<A
+ href="index.html#mcast1">5</A>,<A
+ href="index.html#mcast2">14</A>].
+A multicast group <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img2.png"
+ ALT="$G$"> is a set of receivers that are interested 
+in receiving a particular kind of information.
+
+<P>
+Efficient multicast design and implementation is currently an open issue.
+The multicast task is carried out by multicast routers, which
+join previously established multicast groups identified
+by a multicast IP address<A NAME="tex2html1"
+  href="index.html#foot40"><SUP>1</SUP></A>.
+These routers are capable of sending the data flow to multicast group <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img2.png"
+ ALT="$G$">.
+
+<P>
+The basic tasks to be performed in multicast communication are: 
+advertise the multicast session, manage group enrollment
+by the customers who want to receive the stream and, concurrently to
+group enrollment, build 
+the multicast routing tree. Several multicast protocols have
+been proposed in the literature, such as
+MOSPF[<A
+ href="index.html#mospf">6</A>], PIM-DM[<A
+ href="index.html#pimdm">3</A>], PIM-SM[<A
+ href="index.html#pimsm">2</A>].
+
+<P>
+
+<H2><A NAME="SECTION00022000000000000000">
+Pay-per-view and pay-as-you-watch</A>
+</H2>
+
+<P>
+The name ``pay-per-view'' is certainly misleading.
+In current digital TV platforms,
+a fixed monthly fee is paid to subscribe 
+to a basic package of channels and services. It is also 
+possible
+to view some special ``pay-per-view events''
+(<EM>e.g.</EM> movies, football matches) by paying <EM>in advance</EM>
+the price corresponding to the event. This form of pay-per-view
+means that the content is viewed <EM>after</EM> the customer
+has paid. There are at least two problems with the fee collection
+scheme just described. One problem 
+is that the customer pays for a basic offer that is usually expensive
+for her. The other problem is that, in pay-per-view events, the customer 
+pays for the whole piece of content: if she wants to stop watching
+anytime, she is losing a part of her money. 
+Pay-per-view as contents are being streamed from the server to
+the customer (<EM>pay-as-you-watch</EM>)
+seems an option that fits better the customer needs.
+Successive payments can be performed every minute, for example. 
+If a customer switches her player off, she only has
+paid for the minutes viewed so far. Of course, 
+these frequent payment will be small ones, so
+credit card transactions or electronic payment systems like SET are
+too expensive, too complicated or both&nbsp;[<A
+ href="index.html#opp">7</A>].
+
+<P>
+
+<H2><A NAME="SECTION00023000000000000000">
+Micropayments</A>
+</H2>
+
+<P>
+The operating costs of standard electronic payment systems 
+are unaffordable for small amounts and can be split into communication 
+and computation costs, the latter being
+caused by the use of complex cryptographic techniques such as digital 
+signatures. Micropayments are electronic payment
+methods specifically designed to keep operating costs very low. 
+In most micropayment systems in the literature,
+computational costs are dramatically reduced by replacing digital 
+signatures with hash functions[<A
+ href="index.html#sha">11</A>].
+For example, this is the case
+of PayWord and Micromint[<A
+ href="index.html#payw">9</A>], where
+the security of coin minting rests on one-way hash functions. 
+
+<P>
+The main barrier to using traditional micropayment
+schemes for fee collection in multicast environments is their
+lack of scalability: a large number of receiving subscribers  
+eventually overload the source with payment implosion.
+The MICROCAST protocol achieves scalability
+by distributing
+the effort of micropayment collection and verification among
+multicast routers. Unlike traditional micropayment schemes,
+MICROCAST does not concentrate on minimizing computation for 
+micropayment generation and verification. By requiring micropayments
+to be less frequent (say every few minutes) and 
+verification to be distributed, MICROCAST can still
+use short-exponent discrete exponentiations and provide
+the content source with a proof that every customer has paid.
+
+<P>
+More specifically, the scalability of
+our system is based on the following properties not fulfilled
+by conventional micropayment schemes (which are inherently unicast):
+<DL>
+<DT><STRONG>Aggregation</STRONG></DT>
+<DD>Payments collected by routers at one
+level of the multicast tree can be aggregated and
+forwarded to the next upper level towards the source.
+Each aggregation only requires one product and one addition.
+</DD>
+<DT><STRONG>Single-step verification</STRONG></DT>
+<DD>Verifying an aggregated
+payment can be done in a single step. There is no
+need to verify each individual payment included in
+the aggregation, which would imply non-scalability.
+Payment verification requires
+one short-exponent exponentiation, but this is no problem, since
+verification is performed only once per micropayment period
+by each tree node (regardless of the number of its child nodes).
+</DD>
+</DL>
+
+<P>
+<P><DIV><A NAME="note1"><B>Note  1</B></A> &nbsp; 
+<EM>As it can be seen in
+Section&nbsp;<A href="index.html#micropayment_procedure">4.4</A> below,
+using the discrete exponentiation as a one-way function
+is justified by its homomorphic properties,
+which allow
+payment aggregation and single-step verification and
+are not shared by the (faster) one-way hash functions.</EM></DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00024000000000000000">
+Rekeying</A>
+</H2>
+
+<P>
+Multicast routers form a group that receives a multicast data stream. 
+The router will possibly send the info to a hub
+that floods all its output connections, thus making the information 
+reach every node in the subLAN, including 
+nodes whose customers have not paid for the content. 
+Cryptography should be used to prevent cheaters from 
+being able to view the content by using packet sniffers. 
+Customers in the multicast group have
+a decoding key to be able to decode the content
+they receive. 
+
+<P>
+Hence, legitimate customers are those who pay every multicast period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">
+(a multicast period typically lasts a few minutes).
+When a customer does not pay, she will be considered non-legitimate;
+in this case,  
+a rekeying procedure will start which consists of 
+distributing a new decoding key to every remaining legitimate customer. 
+As a result, the removal of a group member will involve 
+as many unicast transmissions
+as legitimate customers remain in the group. 
+Fortunately, rekeying reaches a maximum cost of <IMG
+ WIDTH="62" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img4.png"
+ ALT="$O(\log n)$"> when using
+tree structure controls[<A
+ href="index.html#lob">12</A>,<A
+ href="index.html#secmult">1</A>].
+Even if rekeying is an important multicast issue, the reader of
+this paper only needs  
+to keep in mind that it is the procedure started when a customer
+in a multicast group is removed due to lack of valid payment or when a new
+customer joins the group.
+
+<P>
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="scenario"></A><BR>
+MICROCAST architecture
+</H1>
+
+<P>
+As it was pointed out in Section&nbsp;<A href="index.html#int">1</A>, MICROCAST is a 
+pay-as-you-watch system for multicast content delivery.
+A typical application for MICROCAST could the pay-as-you-watch video 
+distribution to thousands of customers. By using  
+her smart card plugged into her video receiver, a customer
+can join a multicast group 
+when she is interested in watching an event. After joining
+a group, the customer makes a micropayment every period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$"> 
+to keep watching the event. 
+
+<P>
+In a conventional micropayment system, 
+a bottleneck would arise at the video source
+as a result of micropayment collection,
+because thousands of coins arrive every
+period<A NAME="tex2html2"
+  href="index.html#foot371"><SUP>2</SUP></A>.
+RFC 3170[<A
+ href="index.html#rfc">8</A>] on multicast applications
+recommends that multicast protocols
+should be able to use the 
+multicast router link to provide 
+bidirectional communications instead of using unicast channels 
+to communicate receivers with the source.
+The MICROCAST architecture follows that design principle: multicast
+routers handle customers and coins, which results in a dramatical
+reduction of the amount of payment data sent to the content source.
+
+<P>
+The MICROCAST system 
+consists of a source, a set of multicast routers, the customer smart cards
+and receivers, a rekeying
+system and a bank (see Figure <A href="index.html#fig_esquema">1</A>). Each component
+is described next: 
+
+<UL>
+<LI><B>Source.</B> The source is the provider of the multicast content.
+Typical sources can be a movie channel, 
+a news service, a music station, a sports service, etc. 
+The source sells the content to thousands, even millions, of potential 
+customers. As content is being delivered,
+the source expects some kind of payment from customers or at least
+something that certifies whether each particular customer
+is currently paying.
+</LI>
+<LI><B>Multicast router.</B> The router in the multicast tree 
+also acts as a micropayment subcollector. It requests micropayment
+from its customers and, after a timeout, it collects and 
+verifies customer micropayments. 
+Then, the router forwards
+valid payments to his parent router in the multicast tree,
+in order for payment information to reach the source (or
+the main micropayment collector, depending on the business model).
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig_esquema"></A><A NAME="74"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+System architecture for MICROCAST</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<!-- MATH
+ $\scalebox{0.5}{\includegraphics{cardisfig1.ps}}$
+ -->
+<IMG
+ WIDTH="325" HEIGHT="259" ALIGN="BOTTOM" BORDER="0"
+ src="img5.png"
+ ALT="\scalebox{0.5}{\includegraphics{cardisfig1.ps}}">
+
+</DIV></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+</LI>
+<LI><B>Customer device.</B> The customer receiving device 
+(say a digital video receiver) is smart card enabled.
+Firstly, the smart card certifies through 
+some easy calculations (see Section&nbsp;<A href="index.html#protocol">4</A>) 
+that a payment is done by
+the customer. Thus, the role of the
+smart card is twofold: 1) authenticate payment
+origin; 2) help enforcing subscription certificate revocation
+when the customer is not backed 
+by enough money in her bank account.
+</LI>
+<LI><B>Rekeying system.</B> The rekeying system maintains a 
+structure of legitimate customers (those who pay) and
+generates and distributes a new decoding key whenever
+any router of the system informs that some customer has failed
+to pay. 
+</LI>
+<LI><B>Bank.</B> The bank's role is to act as certification authority
+for customers.  
+If a customer has enough funds in her account, the bank gives her
+a kind of public key (see Section&nbsp;<A href="index.html#protocol">4</A>).
+</LI>
+</UL>
+
+<P>
+
+<H1><A NAME="SECTION00040000000000000000"></A>
+<A NAME="protocol"></A><BR>
+The MICROCAST protocol suite
+</H1>
+
+<P>
+The MICROCAST protocol suite consists of protocols
+for bank setup, customer subscription, multicast session join,
+micropayment, customer removal,
+coin redemption and subscriber certificate revocation.
+
+<P>
+
+<H2><A NAME="SECTION00041000000000000000">
+Bank Setup</A>
+</H2>
+
+<P>
+As can be inferred from the previous section, 
+the bank is a trusted party. It
+has a public/private key pair which is used to
+issue customer subscription certificates.
+The bank setup protocol works as follows:
+
+<P>
+<P><DIV><A NAME="setup"><B>Protocol  1</B></A> (Bank setup)  &nbsp; 
+The bank does:
+
+<OL>
+<LI>Choose a random prime <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$"> such that 
+<!-- MATH
+ $2^{159} < q < 2^{160}$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img7.png"
+ ALT="$2^{159} &lt; q &lt; 2^{160}$">. All exponents
+in the remaining protocols will be modulo <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$">, so we
+take a relatively small <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$">, like it is done
+in the Digital Signature Standard (DSS,[<A
+ href="index.html#DSS">15</A>]).
+</LI>
+<LI>Choose two large RSA primes
+<IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img8.png"
+ ALT="$p_1$"> and <IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img9.png"
+ ALT="$p_2$">, such that <!-- MATH
+ $2^{511} < p_1,p_2 < 2^{512}$
+ -->
+<IMG
+ WIDTH="140" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img10.png"
+ ALT="$2^{511} &lt; p_1,p_2 &lt; 2^{512}$"> and 
+<IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$"> divides <IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img11.png"
+ ALT="$p_1-1$">.
+Compute an RSA modulus <IMG
+ WIDTH="65" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img12.png"
+ ALT="$n=p_1 p_2$"> [<A
+ href="index.html#Rive78">10</A>].
+</LI>
+<LI>Randomly choose an RSA public exponent <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img13.png"
+ ALT="$e$"> and
+compute the corresponding private exponent <IMG
+ WIDTH="12" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img14.png"
+ ALT="$d$">, so
+that <!-- MATH
+ $ed=1 \bmod \phi(n)$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img15.png"
+ ALT="$ed=1 \bmod \phi(n)$">
+</LI>
+<LI>Compute a generator <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img16.png"
+ ALT="$g$"> of a cyclic
+subgroup of <!-- MATH
+ ${\Bbb Z}^{*}_{n}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img17.png"
+ ALT="${\Bbb Z}^{*}_{n}$"> having order <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$">.
+See the DSS key generation algorithm&nbsp;[<A
+ href="index.html#DSS">15</A>] on how
+to find a generator of a subgroup with a specified order. 
+</LI>
+<LI>Publish <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$">, <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$">, <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img13.png"
+ ALT="$e$"> and <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img16.png"
+ ALT="$g$"> in a publicly available directory.
+</LI>
+</OL></DIV><P></P>
+
+<P>
+We next show that publication of <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$"> does not turn factoring
+<IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$"> into an easy problem. After Protocol&nbsp;<A href="index.html#setup">1</A>,
+an intruder knows <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$">, which is a divisor of <IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img11.png"
+ ALT="$p_1-1$">.
+Equivalently, <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img18.png"
+ ALT="$r$"> exists such that <IMG
+ WIDTH="83" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img19.png"
+ ALT="$q r + 1=p_1$">. 
+Note that the intruder does not know <IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img8.png"
+ ALT="$p_1$">. Therefore,
+the only strategy to find <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img18.png"
+ ALT="$r$"> is by brute search until
+an <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img18.png"
+ ALT="$r$"> is found such that <IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img20.png"
+ ALT="$q r +1$"> is a divisor of <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$">. 
+Now, according to Protocol&nbsp;<A href="index.html#setup">1</A>, <!-- MATH
+ $2^{159} < q < 2^{160}$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img7.png"
+ ALT="$2^{159} &lt; q &lt; 2^{160}$">
+and <!-- MATH
+ $2^{511} < p_1 < 2^{512}$
+ -->
+<IMG
+ WIDTH="117" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img21.png"
+ ALT="$2^{511} &lt; p_1 &lt; 2^{512}$">;
+therefore, the intruder only knows
+that <!-- MATH
+ $2^{351} < r < 2^{353}$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img22.png"
+ ALT="$2^{351} &lt; r &lt; 2^{353}$">, so brute search of <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img18.png"
+ ALT="$r$"> 
+is computationally infeasible.
+
+<P>
+
+<H2><A NAME="SECTION00042000000000000000">
+Customer subscription</A>
+</H2>
+
+<P>
+In order to be able to use the system, a customer
+needs a subscription certificate. Through this certificate,
+the bank certifies that the customer has a bank account
+which backs the customer's payments.
+Subscription certificates are only valid for a
+period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$"> (<EM>e.g.</EM> one day) and are
+generated using the protocol below. Short certificate
+validity periods allow implicit revocation to be used in the way 
+explained in&nbsp;[<A
+ href="index.html#sebe">4</A>]. The duration of 
+period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$"> is a trade-off between the cost of
+key generation and the risk of revoked keys being re-used
+as described in&nbsp;[<A
+ href="index.html#sebe">4</A>].
+
+<P>
+<P><DIV><B>Protocol  2</B> (Customer subscription)  &nbsp; 
+&nbsp;
+<BR><A NAME="subs"></A>
+<OL>
+<LI>Customer <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> is assigned a unique system identifier
+<IMG
+ WIDTH="31" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img25.png"
+ ALT="$Id_U$">.
+</LI>
+<LI>Customer <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$">'s Smart Card <IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img26.png"
+ ALT="$SC_U$"> holds a symmetric
+encryption key <IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img27.png"
+ ALT="$k_U$"> and generates a batch of public/private
+key pairs which are certified using the asynchronous certification
+technique based on certificate verification trees (CVTs)
+described in&nbsp;[<A
+ href="index.html#sebe">4</A>]. Specifically, each key pair in the batch
+corresponds to a different certificate validity period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$"> 
+(<EM>e.g.</EM> a key pair per day) and is
+computed as follows:
+
+<OL>
+<LI><IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img26.png"
+ ALT="$SC_U$"> generates a random private key <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img28.png"
+ ALT="$\alpha_U^T$"> such that
+<!-- MATH
+ $0 < \alpha_U^T < q$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img29.png"
+ ALT="$0 &lt; \alpha_U^T &lt; q$">.
+</LI>
+<LI>The corresponding public key is computed as <!-- MATH
+ $P_U^T=g^{\alpha_U^T} \bmod n$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ src="img30.png"
+ ALT="$P_U^T=g^{\alpha_U^T} \bmod n$">.
+</LI>
+<LI><IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img26.png"
+ ALT="$SC_U$"> encrypts <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img28.png"
+ ALT="$\alpha_U^T$"> using <IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img27.png"
+ ALT="$k_U$"> and
+sends <!-- MATH
+ $(P_U^T,E_{k_U}(\alpha_U^T))$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img31.png"
+ ALT="$(P_U^T,E_{k_U}(\alpha_U^T))$"> to the bank.
+</LI>
+</OL>
+</LI>
+<LI>For each public key received, the bank generates a certificate statement
+<IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img32.png"
+ ALT="$C_U^T$"> containing the following data:
+customer identifier <IMG
+ WIDTH="31" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img25.png"
+ ALT="$Id_U$">, public key <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img33.png"
+ ALT="$P_U^T$"> corresponding to period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">,
+certificate expiration date (end of period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">).
+</LI>
+<LI>Following&nbsp;[<A
+ href="index.html#sebe">4</A>], all newly generated certificates in the batch
+are added to the publicly available certificate
+verification tree in the next CVT update.
+The root of the updated CVT
+is RSA signed with the private key <IMG
+ WIDTH="12" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img14.png"
+ ALT="$d$"> of the bank.
+</LI>
+</OL></DIV><P></P>
+
+<P>
+The security of the private keys <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$"> 
+generated in Protocol&nbsp;<A href="index.html#subs">2</A>
+is based on the difficulty of computing discrete logarithms
+in the subgroup of size <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$"> generated by <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img16.png"
+ ALT="$g$">. This problem
+is similar to the modulo <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img6.png"
+ ALT="$q$"> discrete logarithm problem
+used in&nbsp;[<A
+ href="index.html#DSS">15</A>]. 
+
+<P>
+
+<H2><A NAME="SECTION00043000000000000000">
+Multicast session join</A>
+</H2>
+
+<P>
+Let us assume that, at micropayment period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">
+and at public key validity period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">,
+a set of customers wish to join
+a multicast session <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img35.png"
+ ALT="$S$"> (see Section&nbsp;<A href="index.html#scenario">3</A> for an explanation
+of what a micropayment period is). To keep the discussion simple and
+without loss of generality, we assume 
+that a session starts and ends within the same public key validity
+period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">. The following joining
+protocol is used:
+<P><DIV><B>Protocol  3</B> (Session join)  &nbsp; 
+&nbsp;
+<BR><A NAME="join"></A>
+<OL>
+<LI>For each customer <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> in the set of new customers do:
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> sends to the micropayment collector
+(typically the content source) her
+certificate <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img32.png"
+ ALT="$C_U^T$"> for the current public key validity period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">.
+The certificate is obtained by <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> from the <IMG
+ WIDTH="41" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img36.png"
+ ALT="$CVT$"> and the corresponding
+encrypted private key is obtained from the bank ([<A
+ href="index.html#sebe">4</A>]).
+<IMG
+ WIDTH="37" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img26.png"
+ ALT="$SC_U$"> decrypts <!-- MATH
+ $E_{k_U}(\alpha^T_U)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img37.png"
+ ALT="$E_{k_U}(\alpha^T_U)$"> and obtains <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$">. 
+</LI>
+<LI>The micropayment collector verifies the validity of <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img32.png"
+ ALT="$C_U^T$">. 
+</LI>
+<LI>If <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img32.png"
+ ALT="$C_U^T$"> is valid and authentic, the micropayment collector responds
+with a message containing the following data:
+session identifier <IMG
+ WIDTH="30" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img38.png"
+ ALT="$Id_S$">,
+session start date and time <!-- MATH
+ $(Date_S, Time_S)$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img39.png"
+ ALT="$(Date_S, Time_S)$">,
+and value <IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img40.png"
+ ALT="$Value_S$"> of each micropayment.
+</LI>
+</OL>
+</LI>
+<LI>The micropayment collector (or the
+content source) includes in the 
+multicast distribution tree all new customers <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> whose
+certificates <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img32.png"
+ ALT="$C_U^T$"> have been successfully validated.
+The tree reflects the location of routers
+and subscribers (customers).
+</LI>
+<LI>The micropayment collector sends to each
+router <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> in the tree the following information:
+
+<UL>
+<LI>For every new subscriber <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> that is a child of <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> in
+the tree, the current valid subscriber's public key <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img33.png"
+ ALT="$P_U^T$">.
+</LI>
+<LI>For every router <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$"> that is a child of <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> in the tree,
+the aggregated key of all descendant subscribers of <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$"> in the tree,
+computed as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+P^t_{R_i}:=P^{t-1}_{R_i}(\prod_{U\in desc(R_i,t)} P_U^T) \bmod n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="403" HEIGHT="48" BORDER="0"
+ src="img43.png"
+ ALT="\begin{displaymath}P^t_{R_i}:=P^{t-1}_{R_i}(\prod_{U\in desc(R_i,t)} P_U^T) \bmod n \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+where 
+<IMG
+ WIDTH="77" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img44.png"
+ ALT="$desc(R_i,t)$"> is the subset of new customers being 
+placed under <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$"> during
+micropayment period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">. (If the multicast session starts
+at micropayment period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">, we take <IMG
+ WIDTH="72" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ src="img45.png"
+ ALT="$P^{t-1}:=1$">). Note that
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+P^t_{R_i}=P^{t-1}_{R_i} g^{\sum\limits_{U\in desc(R_i,t)}\alpha_U^T} \bmod n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="392" HEIGHT="40" BORDER="0"
+ src="img46.png"
+ ALT="\begin{displaymath}P^t_{R_i}=P^{t-1}_{R_i} g^{\sum\limits_{U\in desc(R_i,t)}\alpha_U^T} \bmod n \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+</UL>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00044000000000000000"></A>
+<A NAME="micropayment_procedure"></A><BR>
+Micropayment protocols
+</H2>
+
+<P>
+Every time a period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$"> finishes, a customer must perform a 
+micropayment to keep receiving the content during the next period. 
+The micropayment collector 
+(<EM>i.e.</EM> the router in charge of a group
+of customers) asks all customers in his
+group to perform the next payment as follows:
+
+<P>
+<P><DIV><B>Protocol  4</B> (Micropayment request)  &nbsp; 
+The micropayment collector does:
+
+<OL>
+<LI>Compute 
+<!-- MATH
+ $x_t:=\mathcal{H}(Id_S,Date_S,Time_S,Value_S,t)$
+ -->
+<IMG
+ WIDTH="274" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img47.png"
+ ALT="$x_t:=\mathcal{H}(Id_S,Date_S,Time_S,Value_S,t)$">
+where <!-- MATH
+ $\mathcal{H}(\cdot)$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img48.png"
+ ALT="$\mathcal{H}(\cdot)$"> is a one-way hash function.
+</LI>
+<LI>Generate the micropayment request message for period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">
+as <!-- MATH
+ $\left(x_t,t\right)$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img49.png"
+ ALT="$\left(x_t,t\right)$"> and multicast it to all customers
+in the group. 
+</LI>
+</OL></DIV><P></P>
+
+<P>
+Customers in a group react to micropayment request by generating
+a coin using the protocol below:
+
+<P>
+<P><DIV><A NAME="gen"><B>Protocol  5</B></A> (Coin generation)  &nbsp; 
+The smart card of each customer <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> in a group does:
+
+<OL>
+<LI>Upon receiving the micropayment request for period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">, check 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x_t\stackrel{?}{=} \mathcal{H}(Id_S,Date_S,Time_S,Value_S,t)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="411" HEIGHT="28" BORDER="0"
+ src="img50.png"
+ ALT="\begin{displaymath}x_t\stackrel{?}{=} \mathcal{H}(Id_S,Date_S,Time_S,Value_S,t) \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>Generate a random <!-- MATH
+ $a_U^{t} \in \{1,\cdots,q-1\}$
+ -->
+<IMG
+ WIDTH="137" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img51.png"
+ ALT="$a_U^{t} \in \{1,\cdots,q-1\}$"> and compute
+<!-- MATH
+ $A_U^{t}:=g^{a_U^{t}} \bmod n$
+ -->
+<IMG
+ WIDTH="126" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ src="img52.png"
+ ALT="$A_U^{t}:=g^{a_U^{t}} \bmod n$">
+</LI>
+<LI>Compute <!-- MATH
+ $p_U^{t}:=\alpha_U^T + x_t \cdot a_U^t \bmod q$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img53.png"
+ ALT="$p_U^{t}:=\alpha_U^T + x_t \cdot a_U^t \bmod q$">
+</LI>
+<LI>The coin for the micropayment corresponding to period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$"> is the 
+tuple <!-- MATH
+ $coin_U^t:=\left(Id_U, A_U^t, p_U^t, x_t \right)$
+ -->
+<IMG
+ WIDTH="187" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img54.png"
+ ALT="$coin_U^t:=\left(Id_U, A_U^t, p_U^t, x_t \right)$">
+</LI>
+<LI>Send 
+<IMG
+ WIDTH="44" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img55.png"
+ ALT="$coin_U^t$"> up to the parent router.
+</LI>
+</OL></DIV><P></P>
+
+<P>
+Coins are generated by customers that correspond to the 
+multicast tree leaves.
+In the last
+step of Protocol&nbsp;<A href="index.html#gen">5</A>, coins are sent by customers 
+to parent routers.
+Such routers
+check the validity of the received coins and aggregate
+valid coins. Aggregation uses the homomorphic property of
+the discrete exponentiation (namely that <!-- MATH
+ $g^x \cdot g^y = g^{x+y}$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img56.png"
+ ALT="$g^x \cdot g^y = g^{x+y}$">),
+which is one strong argument in favor of using the discrete
+exponentiation as one-way function
+(see Note&nbsp;<A href="index.html#note1">1</A>).
+The aggregated coin is then forwarded by the verifying router 
+to his parent router and so on
+up to the tree root (micropayment collector).
+Thus, depending on its level, a router can receive two kinds of coin:
+
+<UL>
+<LI>A single coin from a customer leaf node directly connected
+to the router.
+</LI>
+<LI>An aggregated coin from a direct child router
+(see Protocol&nbsp;<A href="index.html#agg">6</A> below for a description of how coins
+are aggregated).
+</LI>
+</UL>
+
+<P>
+The protocol to aggregate coins by an intermediate router
+is as follows:
+
+<P>
+<P><DIV><B>Protocol  6</B> (Coin aggregation)  &nbsp; 
+&nbsp;
+<BR><A NAME="agg"></A>
+<OL>
+<LI>Initialize the new aggregated coin as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+coin_{R}^t=
+\left(list^t_R, A^t_R, p^t_R, x_t \right)
+:=\left(\{\},1,0,x_t \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="424" HEIGHT="30" BORDER="0"
+ src="img57.png"
+ ALT="\begin{displaymath}coin_{R}^t=
+\left(list^t_R, A^t_R, p^t_R, x_t \right)
+:=\left(\{\},1,0,x_t \right)\end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>For each single coin received from customer <IMG
+ WIDTH="20" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img58.png"
+ ALT="$U_i$">, that is,
+<!-- MATH
+ $coin_{U_i}^t=\left(Id_{U_i}, A_{U_i}^t, p_{U_i}^t, x_t \right)$
+ -->
+<IMG
+ WIDTH="200" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img59.png"
+ ALT="$coin_{U_i}^t=\left(Id_{U_i}, A_{U_i}^t, p_{U_i}^t, x_t \right)$">, do
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+coin_{R}^t:=\left(list^t_R \cup \{Id_{U_i}\}, \right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="365" HEIGHT="30" BORDER="0"
+ src="img60.png"
+ ALT="\begin{displaymath}coin_{R}^t:=\left(list^t_R \cup \{Id_{U_i}\}, \right. \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left. (A^t_R \cdot A_{U_i}^t) \bmod n,
+(p^t_R + p_{U_i}^t) \bmod q, x_t \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="417" HEIGHT="30" BORDER="0"
+ src="img61.png"
+ ALT="\begin{displaymath}\left. (A^t_R \cdot A_{U_i}^t) \bmod n,
+(p^t_R + p_{U_i}^t) \bmod q, x_t \right)\end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>For each aggregated coin received from router <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$">, that is,
+<!-- MATH
+ $coin_{R_i}^t=\left(list^t_{R_i}, A_{R_i}^t, p_{R_i}^t, x_t \right)$
+ -->
+<IMG
+ WIDTH="211" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img62.png"
+ ALT="$coin_{R_i}^t=\left(list^t_{R_i}, A_{R_i}^t, p_{R_i}^t, x_t \right)$">, do
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+coin_{R}^t:=\left(list^t_R \cup list^t_{R_i}, \right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="361" HEIGHT="30" BORDER="0"
+ src="img63.png"
+ ALT="\begin{displaymath}coin_{R}^t:=\left(list^t_R \cup list^t_{R_i}, \right. \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left. (A^t_R \cdot A_{R_i}^t)\bmod n,
+(p^t_R + p_{R_i}^t)\bmod q, x_t \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="418" HEIGHT="30" BORDER="0"
+ src="img64.png"
+ ALT="\begin{displaymath}\left. (A^t_R \cdot A_{R_i}^t)\bmod n,
+(p^t_R + p_{R_i}^t)\bmod q, x_t \right)\end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>Send the aggregated coin <IMG
+ WIDTH="44" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img65.png"
+ ALT="$coin_{R}^t$"> up to the parent router.
+</LI>
+</OL></DIV><P></P>
+
+<P>
+The protocol to check coin validity is:
+
+<P>
+<P><DIV><B>Protocol  7</B> (Coin validity check)  &nbsp; 
+&nbsp;
+<BR>
+<OL>
+<LI>If a single coin is received from customer <IMG
+ WIDTH="20" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img58.png"
+ ALT="$U_i$">,
+the following check is performed:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+P^T_{U_i} \cdot {(A_{U_i}^t)}^{x_t} \stackrel{?}{\equiv} g^{p_{U_i}^t} \pmod n
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="checksingle"></A><IMG
+ WIDTH="384" HEIGHT="32" BORDER="0"
+ src="img66.png"
+ ALT="\begin{displaymath}
+P^T_{U_i} \cdot {(A_{U_i}^t)}^{x_t} \stackrel{?}{\equiv} g^{p_{U_i}^t} \pmod n
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Note that Check (<A href="index.html#checksingle">1</A>) is consistent with the structure
+of coins constructed by Protocol&nbsp;<A href="index.html#gen">5</A>.
+</LI>
+<LI>If an aggregated coin is received from a child router <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$">,
+the following check is performed:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+P^t_{R_i} \cdot {(A_{R_i}^t)}^{x_t} \stackrel{?}{\equiv} g^{p_{R_i}^t} 
+\pmod n
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="checksecond"></A><IMG
+ WIDTH="385" HEIGHT="32" BORDER="0"
+ src="img67.png"
+ ALT="\begin{displaymath}
+P^t_{R_i} \cdot {(A_{R_i}^t)}^{x_t} \stackrel{?}{\equiv} g^{p_{R_i}^t}
+\pmod n
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<P><DIV><B>Lemma  1</B> &nbsp; 
+Assuming that the discrete logarithm problem as
+sketched in Protocol&nbsp;<A href="index.html#setup">1</A> and the RSA 
+problem are difficult, coin forgery by an intruder is infeasible.</DIV><P></P>
+
+<P>
+<B>Proof:</B> 
+To impersonate customer <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> and 
+mint a single coin belonging to <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$">
+at public key validity period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">,
+an intruder knows <IMG
+ WIDTH="64" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img68.png"
+ ALT="$P^T_U, x_t, g$"> and <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$"> and must find 
+<IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img69.png"
+ ALT="$A^t_U$"> and <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img70.png"
+ ALT="$p^t_U$"> such that Equation (<A href="index.html#checksingle">1</A>)
+is satisfied. There are two ways to proceed:
+
+<OL>
+<LI>Follow Protocol&nbsp;<A href="index.html#gen">5</A>. In that case, the intruder
+must know the legitimate customer's private key <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$">
+(which is protected by the difficulty of the
+discrete logarithm problem over the subgroup generated by <IMG
+ WIDTH="12" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img16.png"
+ ALT="$g$">).  
+</LI>
+<LI>Generate a random <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img70.png"
+ ALT="$p^t_U$"> and compute <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img69.png"
+ ALT="$A^t_U$"> as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+A^t_U := (g^{p_U^t} {P^T_U}^{-1} \bmod n)^{x_t^{-1} \bmod \phi(n)} \bmod n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="430" HEIGHT="28" BORDER="0"
+ src="img71.png"
+ ALT="\begin{displaymath}A^t_U := (g^{p_U^t} {P^T_U}^{-1} \bmod n)^{x_t^{-1} \bmod \phi(n)} \bmod n \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+Now, given <IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img72.png"
+ ALT="$x_t$">, computing <!-- MATH
+ $x_t^{-1} \bmod \phi(n)$
+ -->
+<IMG
+ WIDTH="101" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img73.png"
+ ALT="$x_t^{-1} \bmod \phi(n)$"> without
+knowing the factorization of <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$"> is the RSA problem.
+</LI>
+</OL>
+Forging an aggregate coin that satisfies Equation&nbsp;<A href="index.html#checksecond">2</A>
+is analogous. <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img74.png"
+ ALT="$\Box$"> 
+
+<P>
+<P><DIV><B>Lemma  2</B> &nbsp; 
+The security of a customer's private key does not decrease
+as the number of coins she mints increases.</DIV><P></P>
+
+<P>
+<B>Proof:</B> 
+Without loss of generality, compare the situation where one
+coin has been minted with the situation where two coins have
+been minted. Assume one coin has been generated during
+micropayment period <IMG
+ WIDTH="17" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img75.png"
+ ALT="$t_1$">
+and public key validity period <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img23.png"
+ ALT="$T$">. Then the following
+equation holds:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+p^{t_1}_U \equiv \alpha^T_U + x_{t_1} a^{t_1}_U \pmod{q}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="375" HEIGHT="29" BORDER="0"
+ src="img76.png"
+ ALT="\begin{displaymath}p^{t_1}_U \equiv \alpha^T_U + x_{t_1} a^{t_1}_U \pmod{q} \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+where, only <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img77.png"
+ ALT="$p^{t_1}_U$"> and <IMG
+ WIDTH="25" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img78.png"
+ ALT="$x_{t_1}$"> are known to possible
+intruders (such quantities are part of the coin). Thus,
+there is one equation and two unknowns <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$"> and 
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img79.png"
+ ALT="$a^{t_1}_U$">, so <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$"> cannot be determined.
+If a second coin is generated during micropayment period
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+p^{t_2}_U \equiv \alpha^T_U + x_{t_2} a^{t_2}_U \pmod{q}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="375" HEIGHT="29" BORDER="0"
+ src="img80.png"
+ ALT="\begin{displaymath}p^{t_2}_U \equiv \alpha^T_U + x_{t_2} a^{t_2}_U \pmod{q} \end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+the number of equations increases to two, but there are
+now three unknowns <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$">, <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img79.png"
+ ALT="$a^{t_1}_U$"> and <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img81.png"
+ ALT="$a^{t_2}_U$">.
+In general, it can be seen that generation of <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img82.png"
+ ALT="$m$"> coins
+results in <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img82.png"
+ ALT="$m$"> equations with <IMG
+ WIDTH="45" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ src="img83.png"
+ ALT="$m+1$"> unknowns, one of which
+is the customer's private key <IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img34.png"
+ ALT="$\alpha^T_U$">. <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img74.png"
+ ALT="$\Box$">.
+
+<P>
+
+<H2><A NAME="SECTION00045000000000000000">
+Customer removal</A>
+</H2>
+
+<P>
+<A NAME="removal"></A>
+<P>
+Customer removal from a group is caused by lack of valid payment.
+There may be two situations behind the lack of valid payment:
+1) a customer does not send any coin to her parent router;
+2) a customer sends an invalid coin to her parent router.
+Both situations are handled by the following protocol:
+
+<P>
+<P><DIV><B>Protocol  8</B> (Customer removal)  &nbsp; 
+&nbsp;
+<BR>
+<OL>
+<LI><EM>[Routers with child customers]</EM> 
+When a router <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> in the level previous to customers
+receives and forwards
+the micropayment request to its
+child customers,
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> starts a timer.
+Upon timer expiration, all child customers <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> of 
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> not having sent valid
+coins are supposed to have left the group.
+Only valid coins will be aggregated by <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> and sent up
+to its parent router. Child customers <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img24.png"
+ ALT="$U$"> having failed 
+to provide valid coins will have their public keys <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ src="img84.png"
+ ALT="$P^T_U$"> removed
+from <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$">'s memory.
+</LI>
+<LI><EM>[Routers with child routers]</EM>
+Each intermediate route <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> in the path to the root of the multicast
+tree aggregates  valid coins received from
+child routers <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$"> and forwards the aggregated
+coin to its parent router. In order to check the
+validity of coins using Equation (<A href="index.html#checksecond">2</A>), the
+intermediate router <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ src="img41.png"
+ ALT="$R$"> needs to update the public key
+of each child router <IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img42.png"
+ ALT="$R_i$"> as follows:  
+
+<OL>
+<LI>If <IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img85.png"
+ ALT="$list^t_{R_i}$"> in <IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img86.png"
+ ALT="$coin^t_{R_i}$"> is the
+same as <!-- MATH
+ $list^{t-1}_{R_i}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img87.png"
+ ALT="$list^{t-1}_{R_i}$"> in <!-- MATH
+ $coin^{t-1}_{R_i}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img88.png"
+ ALT="$coin^{t-1}_{R_i}$">, then
+<!-- MATH
+ $P^t_{R_i}:=P^{t-1}_{R_i}$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img89.png"
+ ALT="$P^t_{R_i}:=P^{t-1}_{R_i}$">.
+</LI>
+<LI>If <!-- MATH
+ $list^t_{R_i} \neq list^{t-1}_{R_i}$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img90.png"
+ ALT="$list^t_{R_i} \neq list^{t-1}_{R_i}$">, then obtain
+<!-- MATH
+ $P^t_{R_i}:=P^{t-1}_{R_i} \cdot (P^T_{U_i})^{-1} \bmod n$
+ -->
+<IMG
+ WIDTH="204" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img91.png"
+ ALT="$P^t_{R_i}:=P^{t-1}_{R_i} \cdot (P^T_{U_i})^{-1} \bmod n$"> for 
+all customers <IMG
+ WIDTH="20" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img58.png"
+ ALT="$U_i$"> who were in <!-- MATH
+ $list^{t-1}_{R_i}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img87.png"
+ ALT="$list^{t-1}_{R_i}$"> but are 
+not in <IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img85.png"
+ ALT="$list^t_{R_i}$">. 
+(Only removed customers are dealt with by this protocol, 
+new customers being handled by Protocol&nbsp;<A href="index.html#join">3</A>). 
+</LI>
+</OL>
+</LI>
+<LI><EM>[Root node]</EM> When the last aggregated coin reaches the root node
+(micropayment collector), the computations performed are the same
+described for intermediate nodes. In addition,
+the root node starts a multicast rekeying procedure
+if <!-- MATH
+ $list^t_{Root} \neq list^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img92.png"
+ ALT="$list^t_{Root} \neq list^{t-1}_{Root}$">, <EM>i.e.</EM>
+if customers need to be removed. 
+</LI>
+</OL></DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00046000000000000000">
+Coin redemption</A>
+</H2>
+
+<P>
+During a multicast session, the micropayment collector
+stores the final aggregated coin for each performed
+micropayment. This coin contains a list including
+the identifiers of all customers that performed a payment.
+When the number of collected coins is large enough,
+the micropayment collector contacts the bank
+in order to redeem them.
+
+<P>
+<P><DIV><B>Protocol  9</B> (Coin redemption)  &nbsp; 
+&nbsp;
+<BR><A NAME="redemp"></A>
+<OL>
+<LI>When the aggregated coin corresponding to period
+<IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$"> has to be redeemed, the micropayment collector
+sends to the bank the session identifier
+<IMG
+ WIDTH="30" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img38.png"
+ ALT="$Id_S$">, the session start date and time
+<!-- MATH
+ $(Date_S, Time_S)$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ src="img39.png"
+ ALT="$(Date_S, Time_S)$">, the value <IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ src="img40.png"
+ ALT="$Value_S$"> of individual coins
+in that session, the micropayment period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$">, and
+the final aggregated coin
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+coin_{Root}^t
+=\left(list_{Root}^t, A_{Root}^t, p_{Root}^t, x_t \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="405" HEIGHT="30" BORDER="0"
+ src="img93.png"
+ ALT="\begin{displaymath}coin_{Root}^t
+=\left(list_{Root}^t, A_{Root}^t, p_{Root}^t, x_t \right)\end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>The bank does:
+
+<OL>
+<LI>If this is the first coin redemption of the current
+multicast session then
+check that the public key of all customers in the list
+field is correctly certified and compute
+<!-- MATH
+ $P^t_{Root}:=(\prod\limits_{U_i \in list^t_{Root}}P^T_{U_i}) \bmod n$
+ -->
+<IMG
+ WIDTH="223" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ src="img94.png"
+ ALT="$P^t_{Root}:=(\prod\limits_{U_i \in list^t_{Root}}P^T_{U_i}) \bmod n$">.
+</LI>
+<LI>If this is not the first coin redemption of the session,
+then 
+
+<OL>
+<LI>If <IMG
+ WIDTH="56" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img95.png"
+ ALT="$list^t_{Root}$"> in <IMG
+ WIDTH="62" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img96.png"
+ ALT="$coin^t_{Root}$"> is the
+same as <!-- MATH
+ $list^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img97.png"
+ ALT="$list^{t-1}_{Root}$"> in <!-- MATH
+ $coin^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img98.png"
+ ALT="$coin^{t-1}_{Root}$">, then
+<!-- MATH
+ $P^t_{Root}:=P^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img99.png"
+ ALT="$P^t_{Root}:=P^{t-1}_{Root}$">.
+</LI>
+<LI>If <!-- MATH
+ $list^t_{Root} \neq list^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img92.png"
+ ALT="$list^t_{Root} \neq list^{t-1}_{Root}$">, then obtain
+<IMG
+ WIDTH="42" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ src="img100.png"
+ ALT="$P^t_{Root}$"> as the modulo <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img1.png"
+ ALT="$n$">
+product of <!-- MATH
+ $P^{t-1}_{Root}$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ src="img101.png"
+ ALT="$P^{t-1}_{Root}$"> times the public keys of the new
+customers times the multiplicative inverses of the 
+public keys of the removed customers. 
+</LI>
+</OL>
+</LI>
+<LI>Compute
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x_t:=\mathcal{H}(Id_S,Date_S,Time_S,Value_S,t)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="413" HEIGHT="28" BORDER="0"
+ src="img102.png"
+ ALT="\begin{displaymath}x_t:=\mathcal{H}(Id_S,Date_S,Time_S,Value_S,t)\end{displaymath}">
+</DIV><BR CLEAR="ALL">
+<P></P>
+</LI>
+<LI>Check
+<!-- MATH
+ $P^t_{Root} \cdot {(A_{Root}^t)}^{x_{t}}
+\stackrel{?}{\equiv} g^{p_{Root}^{t}} \pmod n$
+ -->
+<IMG
+ WIDTH="254" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ src="img103.png"
+ ALT="$P^t_{Root} \cdot {(A_{Root}^t)}^{x_{t}}
+\stackrel{?}{\equiv} g^{p_{Root}^{t}} \pmod n$">
+</LI>
+<LI>If all checks are correct, transfer the appropriate
+amounts from each customer account to the account of the
+micropayment collector
+(or directly to the account of the multicast content source,
+depending on the business model). In order to avoid  
+performing microtransfers from each customer, a better strategy
+is to cluster several successive micropayments 
+and perform a larger transfer from each customer.
+</LI>
+</OL>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00047000000000000000">
+Subscription certificate revocation</A>
+</H2>
+
+<P>
+It is possible for a customer to run out of funds before all
+of her certificates expire. In this situation, it would be possible
+for her to perform micropayments not backed by enough funds 
+in her bank account. 
+This situation is detected by the bank during coin
+redemption. In this case, the bank would  revoke all
+her subscription certificates for future time intervals.
+The implicit revocation mechanism described in&nbsp;[<A
+ href="index.html#sebe">4</A>]
+is used: the bank does not supply any more encrypted private
+keys to the customer's smart card for joining the session 
+in subsequent periods (Protocol&nbsp;<A href="index.html#join">3</A>). 
+
+<P>
+
+<H1><A NAME="SECTION00050000000000000000"></A>
+<A NAME="conclusions"></A><BR>
+Conclusions and future work
+</H1>
+
+<P>
+A micropayment protocol suite for multicast pay-per-view
+content delivery has been presented. The customer is represented
+by her smart card in all protocols in the suite. The proposed
+scheme has been simulated and works well as long as synchronization
+between customers is maintained.
+The main goal of the protocol is to 
+to distribute micropayment collection so as eliminate the 
+bottleneck associated to Mto1 applications.
+Future work will be directed 
+to scenarios where synchronization within a multicast group has
+been lost. A second line of work is to speed up coin
+generation by the customer smart card and coin validity check 
+by routers: this would require replacing the discrete exponentiation
+with a faster homomorphic one-way function. 
+
+<P>
+
+<H1><A NAME="SECTION00060000000000000000">
+Acknowledgments</A>
+</H1>
+
+<P>
+This work has been partly supported by the European
+Commission under project IST-2001-32012 
+``Co-Orthogonal Codes'' and by the Spanish 
+Ministry of Science and Technology and the European FEDER
+Fund under project TIC2001-0633-C03-01 ``STREAMOBILE''.
+
+<P>
+ 
+<H2><A NAME="SECTION00070000000000000000">
+Bibliography</A>
+</H2><DL COMPACT><DD>
+<P>
+<P></P><DT><A NAME="secmult">1</A>
+<DD> G. Caronni, K. Waldvogel, D. Sun and B. Plattner,
+``Efficient security for large and dynamic multicast 
+groups'', in <EM>IEEE 7th Workshop on Enabling Technologies: Infrastructure 
+for Collaborative Enterprises</EM> (WET ICE '98). Los Alamitos CA: 
+IEEE Computer Society, pp. 376-383, 1998.
+<P></P><DT><A NAME="pimsm">2</A>
+<DD> S. Deering, D. Estrin, D. Farinacci, V. Jacobson, C. Liu
+and L. Wei, 
+``The PIM architecture for wide-area multicast routing'', 
+<EM>IEEE/ACM Transactions on Networking</EM>, vol. 4, no. 2, pp. 153-162, 
+Apr. 1996.
+<P></P><DT><A NAME="pimdm">3</A>
+<DD> S. Deering, D. Estrin, D. Farinacci, V. Jacobson, 
+A. Helmy, D. Meyer and L. Wei, ``Protocol independent multicast 
+version 2 dense mode specification'', IETF Internet Draft, Nov. 1998.
+http://www.ietf.org
+<P></P><DT><A NAME="sebe">4</A>
+<DD>J. Domingo-Ferrer, M. Alba and F. Sebé, 
+``Asynchronous large-scale certification based on 
+certificate verification trees'', in 
+<EM>Communications and Multimedia Security'2001</EM>. Norwell MA: 
+Kluwer Academic Publishers, pp. 185-196, 2001.
+<P></P><DT><A NAME="mcast1">5</A>
+<DD> C. K. Miller, <EM>Multicast Newtorking and Applications</EM>. 
+Reading MA: Addison Wesley, 1999.
+<P></P><DT><A NAME="mospf">6</A>
+<DD> J. Moy, ``Multicast extensions to OSPF'', Internet 
+RFC 1584, March 1994. http://www.ietf.org
+<P></P><DT><A NAME="opp">7</A>
+<DD> R. Oppliger, <EM>Security Technologies for the World Wide Web</EM>. 
+Norwood MA: Artech House, 2000.
+<P></P><DT><A NAME="rfc">8</A>
+<DD> B. Quinn and K. Almeroth,
+``IP multicast applications: challenges and solutions'',
+Internet RFC 3170, Sept. 2001.  http://www.ietf.org.
+<P></P><DT><A NAME="payw">9</A>
+<DD> R. Rivest and A. Shamir, ``PayWord and Micromint: Two simple 
+micropayment schemes'', Technical Report, MIT LCS, Nov. 1995.
+<P></P><DT><A NAME="Rive78">10</A>
+<DD> R. L. Rivest, A. Shamir and L. Adleman,
+``A method for obtaining digital signatures and public-key cryptosystems'',
+<EM>Communications of the ACM</EM>, vol. 21,  pp. 120-126, Feb. 1978.
+<P></P><DT><A NAME="sha">11</A>
+<DD> B. Schneier, <EM>Applied Cryptography</EM>. New York: Wiley, 1996.
+<P></P><DT><A NAME="lob">12</A>
+<DD> J. Snoeyink, S. Suri and G. Varghese, 
+``A lower bound for multicast key 
+distribution'', in <EM>Proceedings of IEEE INFOCOM 2001</EM>. Piscataway NJ:
+IEEE Computer and Communications Society, pp. 422-431, 2001.
+<P></P><DT><A NAME="cript">13</A>
+<DD> D. R. Stinson, <EM>Cryptography. Theory and Practice</EM>,
+Boca Raton FL: CRC Press, 1995.
+<P></P><DT><A NAME="mcast2">14</A>
+<DD> R. Wittmann and M. Zitterbart,
+<EM>Multicast Communication, Protocols and Applications</EM>. 
+San Mateo CA: Morgan Kaufmann, 2001.
+<P></P><DT><A NAME="DSS">15</A>
+<DD> <EM>Digital Signature Standard</EM>, FIPS PUB 186,
+National Institute of Standards, Washington D. C., May 1994.
+</DL>
+<H1><A NAME="SECTION00080000000000000000">
+About this document ...</A>
+</H1>
+ <STRONG><B>MICROCAST: Smart Card Based (Micro)pay-per-view for
+Multicast Services</B></STRONG><P>
+This document was generated using the
+<A href="http://www-dsed.llnl.gov/files/programs/unix/latex2html/manual/"><STRONG>LaTeX</STRONG>2<tt>HTML</tt></A> translator Version 2K.1beta (1.50)
+<P>
+Copyright &#169; 1993, 1994, 1995, 1996,
+<A href="http://cbl.leeds.ac.uk/nikos/personal.html">Nikos Drakos</A>, 
+Computer Based Learning Unit, University of Leeds.
+<BR>Copyright &#169; 1997, 1998, 1999,
+<A href="http://www.maths.mq.edu.au/~ross/">Ross Moore</A>, 
+Mathematics Department, Macquarie University, Sydney.
+<P>
+The command line arguments were: <BR>
+ <STRONG>latex2html</STRONG> <TT>-html_version 3.2,unicode -t MICROCAST -split 0 -no_navigation index.tex</TT>
+<P>
+<HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot40">... address</A><A NAME="foot40"
+ href="index.html#tex2html1"><SUP>1</SUP></A>
+<DD>Multicast addresses are IP numbers 
+in the range between 224.0.0.0 and 239.255.255.255
+
+<DT><A NAME="foot371">...
+period</A><A NAME="foot371"
+ href="index.html#tex2html2"><SUP>2</SUP></A>
+<DD>A coin can be a 200-bit vector, and
+period <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ src="img3.png"
+ ALT="$t$"> is short enough  
+to keep payment fine grain, <EM>i.e.</EM>
+for content reception and payment to progress nearly concurrently.
+
+</DL><BR><HR>
+<ADDRESS>
+Antoni Martinez
+2002-09-19
+</ADDRESS>
+
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":114,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
+

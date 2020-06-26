@@ -1,0 +1,90 @@
+[
+	{
+		"name": "Home",
+		"page": "index"
+	},
+	{
+		"name": "Conference",
+		"content": [
+			{
+				"name": "Committee",
+				"page": "committees"
+			},
+			{
+				"name": "Organisation Committee",
+				"page": "orgcommittee"
+			},
+			{
+				"name": "Registration",
+				"page": "registration"
+			},
+			{
+				"name": "Venue",
+				"page": "venue"
+			},
+			{
+				"name": "Important Dates",
+				"page": "dates"
+			},
+			{
+				"name": "Former CARDIS Conferences",
+				"page": "former"
+			}
+		]
+	},
+	{
+		"name": "Calls",
+		"content": [
+			{
+				"name": "Call for Papers",
+				"page": "call_papers"
+			},
+			{
+				"name": "Call for Sponsorship",
+				"page": "sponsors"
+			},
+			{
+				"name": "Call for Participation",
+				"page": "call_participation"
+			}
+		]
+	},
+	{
+		"name": "Program",
+		"content": [
+			{
+				"name": "Schedule",
+				"page": "program"
+			},
+			{
+				"name": "Accepted Papers",
+				"page": "papers"
+			},
+			{
+				"name": "Invited Speakers",
+				"page": "invited_speakers"
+			}
+		]
+	},
+	{
+		"name": "General Information",
+		"content": [
+                        {
+                                "name": "Accomodation",
+                                "page": "accomodation"
+                        },
+                        {
+                                "name": "Travel",
+                                "page": "travel"
+                        },
+			{
+				"name": "Contact",
+				"page": "contact"
+			},
+			{
+				"name": "Visas",
+				"page": "visas"
+			}
+		]
+	}
+]

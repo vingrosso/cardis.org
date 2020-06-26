@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>A Tool for Model Checking Pushdown Systems</TITLE>
+<META NAME="description" CONTENT="A Tool for Model Checking Pushdown Systems">
+<META NAME="keywords" CONTENT="paper">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="paper.css">
+
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html109"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html107"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html103"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html110"
+  HREF="node9.html">Example</A>
+<B> Up:</B> <A NAME="tex2html108"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html104"
+  HREF="node7.html">Specification Patterns</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00034000000000000000"></A>
+<A NAME="sect:moped"></A>
+<BR>
+A Tool for Model Checking Pushdown Systems
+</H2>
+
+<P>
+The Moped tool&nbsp;[<A
+ HREF="node20.html#moped">8</A>] can
+check a pushdown system, from an initial configuration,
+against an LTL formula where the atomic predicates
+consists of
+a set of atomic symbols that 
+checks the identity of the top stack symbol
+or the control location (i.e., simply checks
+name equality).
+In case the LTL formula is falsified a
+reduced pushdown system constructed from
+the original one,
+that also falsifies the LTL formula,
+is presented as diagnostic information.
+
+<P>
+To represent the non-identity atomic
+predicates (e.g., <!-- MATH
+ $\mathsf{package}, \mathsf{entry}, \ldots$
+ -->
+<IMG
+ WIDTH="126" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.png"
+ ALT="$ \mathsf{package}, \mathsf{entry}, \ldots$">)
+as ``Moped LTL formulas'' a number of options
+are possible.
+Consider for instance the <!-- MATH
+ $\mathsf{package}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$ \mathsf{package}$"> atomic predicate.
+A direct representation of the predicate
+in Moped LTL would consist of a disjunction over
+all the program points in any class in the package.
+
+<P>
+An alternative representation
+strategy is to enrich the translation from
+a call graph to a pushdown system.
+Since Moped provides boolean variables
+we could represent the current package identity
+encoded in a set of boolean variables
+in the pushdown system.
+These variables would then 
+be updated for every rewrite rule
+that crosses package boundaries. Finally
+the representation of the <!-- MATH
+ $\mathsf{package}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$ \mathsf{package}$"> predicate
+itself would consist of a simple boolean condition.
+
+<P>
+We have instead opted to extend the Moped tool
+with atomic predicates that can
+match a control location, or the top stack symbol,
+against a regular expression.
+These predicates check the syntactic shape
+of the symbol being tested.
+
+<P>
+Consider the naming of
+program points of a 
+method <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> by the call graph construction.
+Its entry program point will be named <!-- MATH
+ $\mathit{m\_entry}$
+ -->
+<IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$ \mathit{m\_entry}$">,
+its (unique) return program point will be
+named <!-- MATH
+ $\mathit{m\_exit}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="$ \mathit{m\_exit}$">,
+and all other program points in <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ m$"> are of the form
+<!-- MATH
+ $\mathit{m\_n}$
+ -->
+<IMG
+ WIDTH="36" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img105.png"
+ ALT="$ \mathit{m\_n}$"> where <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img106.png"
+ ALT="$ n$"> is a natural number.
+
+<P>
+With these conventions in place the atomic predicates
+can be represented in ``regular expression Moped''
+as indicated below:
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\mbox{\sf loc}_{\>} m &\stackrel {\Delta}{=}& m\verb*@_.*@\\
+\mbox{\sf entry } m &\stackrel {\Delta}{=}& m\verb*@_entry@\\
+\mbox{\sf return } m &\stackrel {\Delta}{=}& m\verb*@_exit@\\
+\mbox{\sf class } c &\stackrel {\Delta}{=}& c\verb*@\..*_.*@\\
+\mbox{\sf package } p &\stackrel {\Delta}{=}& p\verb*@\..*\..*_.*@\\
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="387" HEIGHT="136" BORDER="0"
+ SRC="img107.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\mbox{\sf loc}_{\&gt;} m &amp;\stackrel {\Delta}...
+... p &amp;\stackrel {\Delta}{=}&amp; p\verb*@\..*\..*_.*@\\
+\end{array}\end{displaymath}">
+</DIV><P></P>
+In the encoding it is assumed that the dot symbol `<code>.</code>'
+has to be quoted using a backslash character
+inside a regular expression to represent itself, rather
+than representing any character.
+
+<P>
+So called wildcards can be used in a regular expression
+to achieve a limited form of quantification over
+program points. The static analysis tool, 
+for instance, gives the name 
+<!-- MATH
+ $\mathit{p.c.}\verb*@<init>@$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img108.png"
+ ALT="$ \mathit{p.c.}\verb*@&lt;init&gt;@$">
+to an object constructor method
+<!-- MATH
+ $\mathit{p.c}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$ \mathit{p.c}$">.
+Thus, whether the current program point
+is in any object constructor can be tested by
+the regular expression predicate
+<code>.*\..*\.&lt;init&gt;_.*</code>.
+As a further example, 
+the <!-- MATH
+ $\mathsf{api}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img110.png"
+ ALT="$ \mathsf{api}$"> predicate,
+which recognises control points inside an API function,
+can be defined
+<BR>`<code>(java\.lang|javacard\..*|javacardx\..*).*</code>'.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html109"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html107"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html103"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html110"
+  HREF="node9.html">Example</A>
+<B> Up:</B> <A NAME="tex2html108"
+  HREF="node4.html">Model Checking Method Call</A>
+<B> Previous:</B> <A NAME="tex2html104"
+  HREF="node7.html">Specification Patterns</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Lars-Ake Fredlund
+2002-09-23
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":83,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-593.min.js"}</script></BODY>
+</HTML>

@@ -1,0 +1,78 @@
+<h1>Accomodation</h1>
+
+<h3>Conference Hotels</h3>
+
+<p>The hotels below offer a special price for the CARDIS conference. The offer is valid from November 12th to 16th, 2017. Every participant has to book the room himself at the hotel of his preference. The participant must inform the hotel of his participation in "CARDIS 2017" (This information will be check by the conference organizers and hotel staff)</p>
+
+<br></br>
+<table>
+
+   <tr> 
+	 <td style="padding-right: 10px;">          <b>Hotel</b> </td>
+	 <td style="padding-right: 10px;">          <b>Website</b> </td>
+	 <td style="padding-right: 10px;">          <b>Prices/night (Single, Double single use, Double)</b> </td>
+   </tr>
+           
+   <tr>
+     <td style="padding-right: 10px;">          Hotel City Lugano </td>
+     <td style="padding-right: 10px;">         <a href="http://www.hotelcitylugano.ch/">www.hotelcitylugano.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 145.00, 	fr. 160.00, 	fr. 195.00  </td>     
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel De la Paix </td>
+     <td style="padding-right: 10px;">         <a href="http://www.delapaix.ch/">www.delapaix.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 145.00, 	fr. 150.00, 	fr. 200.00  </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Continental Parkhotel </td>
+     <td style="padding-right: 10px;">         <a href="http://www.continentalparkhotel.com/">www.continentalparkhotel.com</a> </td>
+     <td style="padding-right: 10px;">fr.  -- ,       fr.  -- ,     fr.  --     </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Delfino </td>
+     <td style="padding-right: 10px;">         <a href="http://www.delfinolugano.ch/">www.delfinolugano.ch</a> </td>
+     <td style="padding-right: 10px;">fr.  -- ,      fr. 120.00,	fr. 140.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Colorado </td>
+     <td style="padding-right: 10px;">         <a href="http://www.colorado.ch/">www.colorado.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 90.00,	    fr. 120.00, 	fr. 140.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Dischma </td>
+     <td style="padding-right: 10px;">         <a href="http://www.hotel-dischma.ch/">www.hotel-dischma.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 80.00,	    fr. 100.00, 	fr. 130.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Walter au Lac </td>
+     <td style="padding-right: 10px;">         <a href="http://www.walteraulac.ch/">www.walteraulac.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 133.00, 	fr. 163.00, 	fr. 193.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;"> Hotel Zurigo </td>
+     <td style="padding-right: 10px;">         <a href="http://www.hotelzurigo.ch/">www.hotelzurigo.ch</a> </td>
+     <td style="padding-right: 10px;">fr. 100.00,	fr. 120.00, 	fr. 160.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Ibis </td>
+     <td style="padding-right: 10px;">         <a href="http://www.ibishotel.com/">www.ibishotel.com</a> </td>
+     <td style="padding-right: 10px;">fr.  -- ,       fr. 116.00,	fr. 136.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Ibis Budget Lugano Paradiso </td>
+     <td style="padding-right: 10px;">         <a href="http://www.ibisbudget.com/">www.ibisbudget.com</a> </td>
+     <td style="padding-right: 10px;">fr.  -- , 		fr. 90.00,	fr. 101.00 </td>
+   </tr>
+   <tr>
+     <td style="padding-right: 10px;">          Hotel Pestalozzi Lugano </td>
+     <td style="padding-right: 10px;">         <a href="http://www.pestalozzi-lugano.ch/">www.pestalozzi-lugano.ch</a> </td>
+     <td style="padding-right: 10px;">fr.  --   ,     fr.  -- ,    fr.  --    </td>
+   </tr>
+           
+</table>
+
+
+
+<br></br>
+
+

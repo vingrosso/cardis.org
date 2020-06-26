@@ -1,0 +1,36 @@
+<h1>call for papers</h1>
+
+<p class="text-center bg-info cfp">Download the Call for Papers in <a type="application/pdf" href="./assets/data/CARDIS2016_cfp.pdf">pdf</a> or <a href="./assets/data/CARDIS2016_cfp.txt">txt</a>.</p>
+
+<h3>Scope</h3>
+<p>CARDIS has provided a forum for presenting exceptional research on smart cards and related technologies since 1994. Smart cards play an important role in our day-to-day lives, from bank cards to GSM SIMs, and security is vital to keep these systems functioning correctly. The CARDIS conferences gather researchers and technologists who focus on all aspects of the design, development, deployment, evaluation and application of smart cards and secure elements in secure platforms or systems. The technology used in smart cards, and hence the attack vectors, are expanding in to other areas, such as TPMs, HSMs, mobile phones and the Internet of Things. It is more important than ever that we understand how smart cards, and related systems, can be secured.</p>
+
+<p>The fifteenth Smart Card Research and Advanced Application Conference is organized by Eurecom and will be held in Cannes on the French Riviera on November 7-9, 2016.</p>
+
+<h3>Topics</h3>
+<p>The program committee is seeking original papers on all aspects of the security of smart cards and embedded systems. Submissions across a broad range of the development phases are encouraged, from exploratory research and proof-of-concept studies to practical applications and deployment of smart cards and related technologies. Topics of interest include, but are not limited to:</p>
+
+<ul>
+    <li>Hardware architectures for secure embedded systems</li>
+    <li>Physical attacks and countermeasures</li>
+    <li>Efficient cryptographic implementations for smart cards and embedded systems</li>
+    <li>True random number generators</li>
+    <li>Smart cards and their applications</li>
+    <li>Security of mobile devices and their applications</li>
+    <li>Security of RFID/NFC systems and sensor nodes</li>
+    <li>Security for access control, identification, mobile payment, transportation tokens.</li>
+    <li>Security for the Internet of Things</li>
+    <li>Identity, privacy and trust issues</li>
+    <li>Trusted computing (mobile TPMs, TrustZone, Trusted Execution Environments, ...)</li>
+    <li>Software for secure embedded systems (operating systems, virtual machines, ...)</li>
+    <li>Anti-cloning and anti-counterfeiting technologies</li>
+    <li>Hardware trojans implementation and detection</li>
+    <li>Reverse engineering of secure embedded systems</li>
+    <li>Evaluation and certification of secure embedded systems</li>
+</ul>
+
+<h3>Papers</h3>
+<p>Authors are invited to submit papers (PDF format) with novel contributions electronically using the submission form available on the following web site: 
+<a href="https://easychair.org/conferences/?conf=cardis2016">https://easychair.org/conferences/?conf=cardis2016</a>.</p>
+
+<p>Submitted papers must be original, unpublished, anonymous and not submitted to journals or other conferences/workshops that have proceedings. Submissions must be written in English and should be at most 15 pages in total. Papers not meeting these guidelines risk rejection without consideration. All submissions will be blind-refereed. Submission implies the willingness of at least one of the authors to register and present the paper. The proceedings will be published in the Springer Lecture Notes in Computer Science (LNCS) series. Accepted papers must follow the LNCS default author instructions at <a href="http://www.springer.de/comp/lncs/authors.html">http://www.springer.de/comp/lncs/authors.html</a>.</p>

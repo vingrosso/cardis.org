@@ -1,0 +1,164 @@
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script><title>USENIX - CARDIS '02 - Events at a Glance</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="/graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+</head>
+
+<a href="http://www.usenix.org"><img src="/graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+
+<div><center><!-- Banner -->
+<table BGCOLOR="#FFFFFF" BORDER="0" WIDTH="100%" CELLSPACING="0"
+CELLPADDING="0">
+<tr><td ALIGN="CENTER" VALIGN="TOP"><table border="0" cellpadding="0" cellspacing="0" width="600">
+<tr><td><a href="/legacy/events/cardis02/"><img src="/legacy/events/cardis02/cardis02.gif" ALT="CARDIS '02, Fifth Smart Card Research and Advanced Application Conference, November 20-22, 2002, Hyatt Ste. Claire, San Jose, California" WIDTH="600" HEIGHT="85" BORDER="0"></a></td></tr>
+<tr><td><img src="/legacy/graphics/dot_clear.gif" ALT="" WIDTH="600" HEIGHT="5" BORDER="0"></td></tr>
+</table></td></tr></table>
+<table BGCOLOR="#FFFFFF" BORDER="0" WIDTH="100%" CELLSPACING="0"
+CELLPADDING="0"><tr><td ALIGN="CENTER" VALIGN="TOP"><table border="0" cellpadding="0" cellspacing="0" width="600">
+
+<tr><!-- row 1 --> <td><a href="/legacy/events/cardis02/" onMouseOver="home.src='/events/cardis02/art/over/home.gif'" onMouseOut="home.src='/events/cardis02/art/default/home.gif'"><img name="home" src="/legacy/events/cardis02/art/default/home.gif" width="92" height="17" border="0" alt="CARDIS Home"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/registration/" onMouseOver="registration.src='/events/cardis02/art/over/registration.gif'" onMouseOut="registration.src='/events/cardis02/art/default/registration.gif'"><img name="registration" src="/legacy/events/cardis02/art/default/registration.gif" width="64" height="17" border="0" alt="Register"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/tech.html" onMouseOver="tech.src='/events/cardis02/art/over/tech.gif'" onMouseOut="tech.src='/events/cardis02/art/default/tech.gif'"><img name="tech" src="/legacy/events/cardis02/art/default/tech.gif" width="117" height="17" border="0" alt="Tech Sessions"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/activities.html" onMouseOver="activities.src='/events/cardis02/art/over/activities.gif'" onMouseOut="activities.src='/events/cardis02/art/default/activities.gif'"><img name="activities" src="/legacy/events/cardis02/art/default/activities.gif" width="97" height="17" border="0" alt="BoFs/Activities"></a></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><img name="ataglance" src="/legacy/events/cardis02/art/on/ataglance.gif" width="79" height="17" border="0" alt="At a Glance"></td>
+<td><img src="/legacy/events/cardis02/art/divider.gif" width="21" height="17" border="0" alt=" | "></td>
+<td><a href="/legacy/events/cardis02/hotel.html" onMouseOver="hotel.src='/events/cardis02/art/over/hotel.gif'" onMouseOut="hotel.src='/events/cardis02/art/default/hotel.gif'"><img name="hotel" src="/legacy/events/cardis02/art/default/hotel.gif" width="46" height="17" border="0" alt="Hotel"></a></td>
+</tr>
+</table>
+</td></tr></table>
+</center></div><!-- End of Banner -->
+<img src="/legacy/graphics/dot_clear.gif" WIDTH="1" HEIGHT="10" ALT="">
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr>
+<td COLSPAN="1" VALIGN="TOP">
+<!-- START OF PAGE CONTENTS-->
+
+
+
+
+<a href="/legacy/events/cardis02/registration/webforms.html"><img src="/legacy/events/cardis02/art/registernow.gif" BORDER="0" WIDTH="95" HEIGHT="13" ALT="Register Now!" ALIGN="LEFT"></a>
+<font SIZE="-1" FACE="Arial,Helvetica,sans-serif" COLOR="#000000">
+<b>At a Glance</b></font>
+
+<P>
+<table BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<tr>
+
+<td COLSPAN="2" ALIGN="LEFT" BGCOLOR="#003366">
+<font SIZE="-1" FACE="Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><b>Wednesday, November 20
+</b></font>
+</td>
+</tr>
+
+
+<tr><td VALIGN="TOP" colspan="2" align="center">
+
+<table>
+<tr><td>
+<font SIZE="-1" FACE="Arial, Helvetica, sans-serif">6:00 p.m. - 8:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;On-Site Registration</a></font></td></tr>
+
+</table>
+</td>
+
+</tr>
+
+<tr><td COLSPAN="1" ALIGN="LEFT" BGCOLOR="#003366">
+<font SIZE="-1" FACE="Arial, Helvetica, sans-serif" COLOR="#ffffff"><b>Thursday, November 21
+</b></font>
+</td>
+<td COLSPAN="1" ALIGN="LEFT" BGCOLOR="#003366">
+<font SIZE="-1" FACE="Arial, Helvetica, sans-serif" COLOR="#ffffff"><b>Friday, November 22
+</b></font>
+</td></tr>
+
+<tr><td COLSPAN="1" ALIGN="LEFT" BGCOLOR="#CCCCCC" VALIGN="TOP" WIDTH=300>
+<table BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="292">
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">7:30 a.m. - 5:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">On-Site Registration</font></td></tr>
+
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">9:00 a.m. - 9:30 a.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#open">Opening Remarks</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">9:30 a.m. - 10:30 a.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#keynote">Keynote</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">11:00 a.m. - 3:30 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#day1">Technical Sessions</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">4:00 p.m. - 5:30 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#wips">Work in Progress Reports</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">6:00 p.m. - 7:30 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="activities.html#social">Conference Reception</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">8:00 p.m. - 10:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#reset">RESET Meeting</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">8:00 p.m. - 11:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="activities.html#bofs">Birds of a Feather Sessions</a></font></td></tr>
+
+</table>
+</td>
+<td COLSPAN="1" ALIGN="LEFT" VALIGN="TOP" WIDTH=300>
+<table BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="292">
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">8:00 a.m. - 5:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">On-Site Registration</a></font></td></tr>
+
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">9:00 a.m. - 10:30 a.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#panel">Panel Session</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">11:00 a.m. - 5:30 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#day2">Technical Sessions</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">12:30 p.m. - 2:00 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="activities.html#social">Conference Luncheon</a></font></td></tr>
+
+<tr><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif">5:30 p.m. - 6:30 p.m.</font></td><td WIDTH="146" VALIGN="TOP"><font SIZE="-1" FACE="Arial, Helvetica, sans-serif"><a href="tech.html#close">Closing Session</a></font></td></tr>
+
+
+</table>
+</td></tr>
+</table>
+
+
+<!--END OF PAGE CONTENTS-->
+<p>
+</td></tr></table>
+</center>
+</div>
+
+<hr>
+<div>
+<center>
+<table BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0">
+<tr><td VALIGN="TOP">
+<font size=2><img src="/legacy/graphics/questmark.gif" width=12 height=16
+alt="?" hspace=2 align="left">Need help? <a
+href="/legacy/about/contacts.html">Use our Contacts page.</a></font>
+<br clear="left">
+<img src="/legacy/graphics/dot_clear.gif" width=1 height=5 alt=""><br>
+<address>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  8 Oct. 2002 jr</font><br>
+</address>
+
+
+</td><td VALIGN="TOP" ALIGN="RIGHT">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="/legacy/events/lisa02/"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/events/event_calendar.html"><font size=1>Events calendar</font></a><br>
+</td></tr><tr><td>
+<a href="/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</center>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":67,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
+

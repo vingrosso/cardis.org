@@ -1,0 +1,5 @@
+Options +IncludesNoExec
+AddOutputFilter INCLUDES .html
+DirectoryIndex index.shtml index.html index.htm
+
+Options All -Indexes

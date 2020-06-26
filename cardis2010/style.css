@@ -1,0 +1,103 @@
+body {	
+	background:#FFFFFF none repeat scroll 0 0;
+	font-family:Arial,Verdana,Sans-serif,Helvetica;
+	font-size:0.8em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.6em;
+	margin:10px 0 0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom:0.6em;
+	margin-top:1em;
+	color: #214584;
+}
+
+h1, h2, h3, h6 {
+	font-weight:normal;
+}
+
+h4, h5 {
+	font-weight:bold;
+}
+
+h1 {
+	font-size:1.8em;
+}
+
+h2 {
+	font-size:1.44em;
+}
+
+h3 {
+	font-size:1.22em;
+}
+
+h4 {
+	font-size:1.07em;
+}
+
+h5 {
+	font-size:1em;
+}
+
+h6 {
+	font-size:1em;
+}
+
+p, ul, ol, dl, li, dt, dd, blockquote {
+	padding: 0;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	margin-left: 1em;
+	border: 0;
+}
+
+#title {
+	text-align: right;
+	font-size: 20pt;
+	margin: 10px 10px 10px 10px;
+}
+
+#subtitle {
+	text-align: right;
+	font-size: 7pt;
+	margin: 0px 0px 0px 0px;	
+}
+
+#subheader {
+	background:#eeeeee url(bar1.png) repeat scroll 0 0;
+	clear:both;
+	color:#FFFFFF;
+	height:25px;
+	line-height:25px;
+	margin:0 0 15px;
+	padding:0 0 0 15px;
+}
+
+#left {
+	float: left;
+	width: 180px;
+}
+
+#left .menu {
+    float: left;
+	border:1px solid #CCCCCC;
+	width:155px;
+	margin: 0px 0px 30px 10px;
+}
+
+#right {
+	margin: 0 0 30px 180px;
+}
+
+.formatted {
+	font-family: "Courier New"
+                    Courier
+                    monospace;
+}

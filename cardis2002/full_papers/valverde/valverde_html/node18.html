@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Security Considerations</TITLE>
+<META NAME="description" CONTENT="Security Considerations">
+<META NAME="keywords" CONTENT="aes_on_crypto2000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="aes_on_crypto2000.css">
+
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node13.html">
+<LINK REL="up" HREF="aes_on_crypto2000.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html215"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html213"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html207"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html216"
+  HREF="node19.html">Performance Estimation</A>
+<B> Up:</B> <A NAME="tex2html214"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html208"
+  HREF="node17.html">The AddRoundKey transformation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00050000000000000000">
+Security Considerations</A>
+</H1>
+
+Although there is a large variety of possible physical attacks on the AES, cf.
+[<A
+ HREF="node21.html#AG">AG</A>,<A
+ HREF="node21.html#BS99">BS99</A>,<A
+ HREF="node21.html#BS02">BS02</A>,<A
+ HREF="node21.html#CJRR">CJRR</A>,<A
+ HREF="node21.html#DR1">DR1</A>,<A
+ HREF="node21.html#KQ">KQ</A>,<A
+ HREF="node21.html#KWMK">KWMK</A>,<A
+ HREF="node21.html#Me">Me</A>,<A
+ HREF="node21.html#YT">YT</A>], 
+the <!-- MATH
+ ${\tt xtime}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img73.png"
+ ALT="$ {\tt xtime}$"> operation is clearly the most critical one in the AES algorithm, 
+at least with respect to physical security or so called side-channel attacks. 
+Namely, this operation involves a multiplication that is subject to timing and fault attacks (see [KQ, BS02]). 
+We also stress that the recently developed fault based susceptibility due to [BS02] cannot be avoided 
+by the simple dedicated fault-tolerant AES hardware as proposed by [KWMK].  
+
+However, thanks to the implementation described here, the aforesaid timing attack on the <!-- MATH
+ ${\tt xtime}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img73.png"
+ ALT="$ {\tt xtime}$"> operation doesn´t work. 
+This is due to the fact that the timing behaviour of modern crypto coprocessors is independent of its operands, 
+which indeed avoids a timing attack vulnerability of our implementation. 
+
+Moreover, by performing the <!-- MATH
+ ${\tt xtime}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img73.png"
+ ALT="$ {\tt xtime}$"> operation on 16 bytes in parallel we make fault attacks very difficult to achieve, 
+because we can use a fault in the calculation to flip a bit, but the flipped bit 
+can be any one of the 128 bits of the state or temporary variable.
+Another critical part of the implementation described here might be the transfer of data through the so 
+called X-BUS, the bus that connects the CPU and the coprocessor. 
+This transfer of data is more significant when the AND and Rotate operations are not supported by the coprocessor and 
+therefore have to be performed within the standard CPU. 
+The bus contents could then be tampered via an electronic microscope, a focused ion beam, 
+or could be revealed through measuring the power consumption or even by an electromagnetic field analysis. 
+
+Fortunately, this X-BUS is by some <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mu$">-controller ICs vendors protected by hardware and/or software mechanisms. 
+Among the hardware countermeasures there are active shields or random bus scrambling techniques available 
+on some existing high security m-controller ICs. 
+Last generation of those high securit<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \mu$">-controller ICs are designed using a special dual rail security logic,
+cf. [<A
+ HREF="node21.html#MAK">MAK</A>,<A
+ HREF="node21.html#MACMT">MACMT</A>]. 
+This logic not only ensures that both, a ``0" and a ``1" have the same Hamming weight, 
+but also that changes between a logical ``0" and a logical ``1" are not distinguishable by an adversary.
+
+As software measures some masking and encryption techniques could be applied to the data before being transferred, 
+both in the CPU and in the coprocessor. 
+However, these measures may have a significant impact on the overall performance of the algorithm, 
+which makes the aforesaid hardware countermeasures the practically preferred choice.
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html215"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html213"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html207"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html216"
+  HREF="node19.html">Performance Estimation</A>
+<B> Up:</B> <A NAME="tex2html214"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html208"
+  HREF="node17.html">The AddRoundKey transformation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Roger Fischlin
+2002-09-25
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":151,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></BODY>
+</HTML>

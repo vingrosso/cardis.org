@@ -1,0 +1,2028 @@
+
+<html><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><title>Fifth Smart Card Research and Advanced Application Conference &#151; Technical Paper</title>
+</head>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+<!-- IE understands topmargin, leftmargin, rightmargin, NS understands marginheight -->
+<body BGCOLOR="#ffffff" TEXT="#000000"  link="#990000" alink="#666666" vlink="#666666" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" MARGINHEIGHT="0">
+<!-- Banner -->
+<table BGCOLOR="#ffffff" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<tr><td ALIGN="LEFT" VALIGN="TOP"><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="600"><tr><td>
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<!-- space at top -->
+<tr><td colspan="13"><img src="../../../../../graphics/dot_clear.gif" width="1" height="5" alt=""><br></td></tr>
+<tr><!-- row 1 -->
+<td colspan="13"><img src="../../../../../graphics/smalltop.gif" width="600" height="6" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 2 -->
+<td rowspan="2"><img src="../../../../../graphics/smallleft.gif" width="102" height="23" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/"><img src="../../../../../graphics/smallhome.gif" width="38" height="16" border="0" alt="Home"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/about"><img src="../../../../../graphics/smallabout.gif" width="90" height="16" border="0" alt="About USENIX"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/events"><img src="../../../../../graphics/smallevents.gif" width="42" height="16" border="0" alt="Events"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/membership"><img src="../../../../../graphics/smallmembership.gif" width="78" height="16" border="0" alt="Membership"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/publications"><img src="../../../../../graphics/on/smallpublications.gif" width="77" height="16" border="0" alt="Publications"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/divider16.gif" width="17" height="16" border="0" alt=""></td>
+<td bgcolor="#666666"><a href="https://www.usenix.org/legacy/students"><img src="../../../../../graphics/smallstudents.gif" width="54" height="16" border="0" alt="Students"></a></td>
+<td bgcolor="#666666"><img src="../../../../../graphics/smallright16.gif" width="34" height="16" border="0" alt=""></td>
+</tr>
+
+<tr><!-- row 3 -->
+<td colspan=12 bgcolor="#666666"><img src="../../../../../graphics/dot_clear.gif" width="2" height="7" border="0" alt=""></td>
+</tr>
+
+</table>
+</td></tr></table></td></tr></table>
+<!-- End of Banner -->
+
+
+<table width=100% border=0 cellspacing=0 cellpadding=8><tr><td>
+
+
+<font SIZE="+1" COLOR="#990000" FACE="verdana, arial, helvetica, sans-serif"><b>CARDIS '02 Paper</b></font>&nbsp&nbsp&nbsp
+<font SIZE="-1" FACE="verdana, arial, helvetica, sans-serif">[<a href="../../../tech.html">CARDIS '02 Tech Program Index</a>]</font>
+<p>
+<!-- START OF PAGE CONTENTS -->
+<table>
+<tr><td><b>Pp. 97-110 of the <i>Proceedings</i></b></td><td valign="top"><a href="https://www.usenix.org/legacy/publications/ordering/"><img src="../../../../../graphics/buy_now.gif" border=0></a></td></tr>
+</table>
+
+<BR>
+<BR>
+
+<H1 ALIGN=center>Secure Object Flow Analysis for Java Card</H1>
+
+<H3 ALIGN=center>
+Marc Éluard and Thomas Jensen<BR>{eluard,jensen}@irisa.fr<BR>&nbsp;<BR><EM>IRISA, Campus de Beaulieu</EM><BR><EM>F-35042 Rennes, France</EM><BR></H3>
+<!--TOC subsection Abstract-->
+
+<H3>Abstract</H3><!--SEC END -->
+
+The access control exercised by the Java Card firewall can be bypassed by the use of shareable objects. 
+To help detecting unwanted access to objects, we propose a static analysis that calculates a safe
+approximation of the possible flow of objects between
+Java Card applets. 
+The analysis deals with a subset of the Java Card
+bytecode focusing on aspects of the Java Card firewall, method invocation, field
+access, variable access, shareable objects and contexts. The technical vehicle for
+achieving this task is a new kind of constraints: quantified conditional
+constraints, 
+that permits us to model precisely the effects of the Java Card firewall by
+only producing a constraint if the corresponding operation is
+authorized by the firewall. <BR>
+<BR>
+<!--TOC section Introduction-->
+
+<H2>1&nbsp;&nbsp; Introduction</H2><!--SEC END -->
+The Java Card language is a subset of Java, tailored to the limited
+resources available on today's smart cards. Java Card keeps the essence of Java, like inheritance,
+virtual methods, overloading, but leaves out features such as
+large primitive data types (<TT>long</TT>, <TT>double</TT> and <TT>float</TT>),
+characters and strings, multidimensional arrays, garbage collection,
+object cloning, security managers&nbsp;[<A href="index.html#javacard211"><CITE>1</CITE></A><CITE>, </CITE><A href="index.html#jcbook2000"><CITE>10</CITE></A>].
+Given the security-critical application areas of Java Card, 
+the language has been endowed with an elaborate security architecture.
+<I>A priori</I>, applets are separated by a <EM>firewall</EM> which prevents one applet from
+accessing objects owned by another applet. Thus, even if a foreign applet obtains a reference to an
+object with confidential information this does not imply that
+the information is leaked. 
+In order to provide a means of communication between separated
+applets, objects can be marked as <EM>shareable</EM>. This allows to
+grant access to (a subset of) the methods of the objects through
+the firewall. The problem is that marking an object as shareable means
+that its shared methods can be accessed by <EM>all</EM> applets that
+manage to get a reference to the object. To counter this
+problem, Java Card offers a limited form of stack inspection, allowing a ``server'' applet to
+know the identity of a ``client'' object which invoked a particular
+method. This, however, must be programmed explicitly by the
+application programmer. These mechanisms (described in detail in
+section&nbsp;<A href="index.html#section-firewall">2</A>) allow the design of secure
+applications but do not themselves guarantee security. 
+Further code analysis must be employed to establish that the checks programmed in
+the server applet guarantee that confidential data is not
+leaked via shared objects. To summarize: 
+<BLOCKQUOTE>
+The Java Card firewall can be bypassed by using shareable
+objects. Data flow analysis permits to calculate a safe approximation
+to the access control actually implemented by a set of applets, and
+thus to verify that a given access
+policy is respected.
+</BLOCKQUOTE>This paper presents a flow analysis for Java Card programs. The analysis is
+<EM>constraint-based</EM> in that for each instruction of the program it 
+generates a set of constraints describing the data flow of the
+instruction. 
+The resolution of this system permits to find the possible values of the variables used in the program
+and the called method.
+The analysis relies on a novel technical device, 
+<EM>quantified conditional constraints</EM> (<I>QCC</I>s), that allows to generate the 
+set of constraints of a program <EM>on demand</EM>. This way of
+generating constraints is useful and natural when analyzing object-oriented 
+languages where the control flow and the data flow are
+inter-dependent. It generalizes the conditional constraints proposed by
+Palsberg and Schwartzbach&nbsp;[<A href="index.html#palsberg1994:book"><CITE>20</CITE></A>]
+for object-oriented type analysis.<BR>
+<BR>
+The paper is organized as follows. Section&nbsp;<A href="index.html#section-firewall">2</A>
+introduces the central features of the Java
+Card&nbsp;2.1.1 firewall and provides a detailed example. 
+Section&nbsp;<A href="index.html#section-bytecode">3</A> defines our representation of the Java
+Card bytecode. The abstract domains used
+in the analysis are given in Section&nbsp;<A href="index.html#section-absdom">4</A> and
+Section&nbsp;<A href="index.html#section-analysis">5</A> defines the set of quantified conditional constraints
+generated for each type of
+instruction. Section&nbsp;<A href="index.html#section-resolution">6</A> shows how these <I>QCC</I>s can be
+solved iteratively and Section&nbsp;<A href="index.html#section-exemple-resolution">7</A> shows
+how the analysis performs on the example from
+Section&nbsp;<A href="index.html#section-firewall">2</A>. 
+Section&nbsp;<A href="index.html#section-relatedwork">8</A> and
+Section&nbsp;<A href="index.html#section-conclusion">9</A> discuss related works and directions for extending this work.<BR>
+<BR>
+<!--TOC section The Java Card firewall-->
+
+<H2>2&nbsp;&nbsp; The Java Card firewall</H2><!--SEC END -->
+
+<A NAME="section-firewall"></A>The Java Card platform is a multi-application environment in which
+an applet's sensitive data must be protected against malicious access. In
+Java, this protection is achieved using class loaders and security
+managers to create private name spaces for applets. In Java Card,
+class loaders and security managers have been replaced with the
+Java Card firewall. The separation enforced by the firewall
+is based on the Java Card's package structure (the same as
+Java's) and the notion of <EM>contexts</EM> (in Java Card, this notion is called 
+<I>group context</I>).<BR>
+<BR>
+When an applet is created, the <I>Java Card Runtime Environment</I> (<TT>JCRE</TT>) assigns it a
+unique applet identifier (AID).
+If two applets are instances of classes coming from the same
+Java Card package, they are said to belong to the same context, identified by the
+package name. 
+In addition to 
+the contexts defined by the applets executed on the card, there is a
+special ``system'' context, called the <TT>JCRE</TT> context. Applets belonging
+to this context can access objects from any other context on the card.
+Thus, the set of Java Card contexts is defined by: <BR><DIV ALIGN=center>
+<I>Java Card contexts = { </I><I><TT>JCRE</TT></I><I> } </I><I><FONT FACE=symbol>È</FONT></I><I> { pckg: a package name }
+</I>
+</DIV><BR>
+Every object is assigned a unique <EM>owner context</EM>
+<EM>viz.</EM>, the context of the applet which created the object. 
+A method of an object is said to execute in the context of its
+owner<A NAME="text1" href="index.html#note1"><SUP><FONT SIZE=2>1</FONT></SUP></A>. 
+It is with this context that the <TT>JCRE</TT> determines whether an access to
+another object will succeed. The firewall isolates the contexts in
+the sense that a method executing in one context cannot access any fields or methods of
+objects belonging to another context. <BR>
+<BR>
+There are two ways for the firewall to be bypassed: via
+<TT>JCRE</TT> entry points and via shareable objects. 
+<TT>JCRE</TT> entry points are objects owned by the <TT>JCRE</TT> that have been
+specifically designated as objects accessible from any
+context. The most prominent example is the 
+<I>Application Protocol Data Unit</I> (APDU) 
+buffer in which
+commands sent to the card are stored. This object is managed by the
+<TT>JCRE</TT>, and in order to allow applets to access this object, it is
+designated as an entry point. Other entry points can be the elements of
+the table containing the AIDs of the applets installed on the card. Entry points
+can be marked as <EM>temporary</EM>. References to temporary entry
+points cannot be stored in objects (this is enforced by the
+firewall). <BR>
+<BR>
+Two applets in different contexts may want to share some
+information. Java Card offers a sharing mechanism, called
+<EM>shareable objects</EM>, that gives limited access to objects across
+contexts. 
+An applet can allow another applet to access an object's methods from
+outside its context.
+The mechanism is restricted to methods and cannot be applied to fields.
+It uses a shareable interface, that is an interface which extends <TT>javacard.framework.Shareable</TT>. In this interface, the applet gives
+the list of the method's signatures it wants to share. The class
+of the object to share must implement this interface. The
+``server'' applet defines a method, <TT>getShareableInterfaceObject</TT>, called when an applet is
+asked to provide a shared object. The method receives the AID
+of the ``client'' applet which requested the shared object. Based on
+this information, the server decides what to return to the client,
+thus it is possible to share different objects with different client applets.<BR>
+<BR>
+<!--TOC subsection An example using shareable objects-->
+
+<H3>2.1&nbsp;&nbsp; An example using shareable objects</H3><!--SEC END -->
+
+<A NAME="section-example"></A>Figure&nbsp;<A href="index.html#fig-ABC">1</A> contains an example illustrating the sharing
+mechanisms of the firewall. We have 3 applets: Alice, Bob and
+Charlie. Alice implements a shareable
+interface <TT>MSI</TT> (we assume an interface <TT>MSI</TT> that extend <TT>Shareable</TT> in which the
+signature of the method <TT>foo</TT> is given) and is prepared to share an object <TT>MSIO</TT> (an
+instance of the class that implements the interface <TT>MSI</TT>) with Bob. When Alice
+receives a request for sharing (via a call to her method <TT>getSIO</TT><A NAME="text2" href="index.html#note2"><SUP><FONT SIZE=2>2</FONT></SUP></A>) 
+by the <TT>JCRE</TT>, she verifies that the caller is Bob. If it is Bob, she returns <TT>MSIO</TT> else
+she returns <I>Null</I>.<BR>
+<BR>
+<BLOCKQUOTE><DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV>
+<DIV ALIGN=center><TT>
+</TT><TT>
+</TT><TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1>
+<TR><TD ALIGN=center NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public interface MSI extends Shareable {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; Secret foo (); }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=center NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Alice extends Applet implements MSI {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private Secret ObjectSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public Shareable getSIO (AID Client) {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (Client.equals (BobAID))</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; return (this);</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; return null; }</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public Secret foo () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AID Client;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Secret Response;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Client = getPrevCtx();</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if (Client.equals (BobAID))</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Response = ObjectSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; return Response; } }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=center NOWRAP><TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Bob extends Applet {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public static MSI AliceObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public void bar () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AliceObj = (MSI) getASIO</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; (AliceAID); } }</TT></TD>
+</TR></TABLE></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Charlie extends Applet {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static MSI AliceObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static Secret AliceSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public void bar () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AliceObj = Bob.AliceObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AliceSecret = AliceObj.foo (); } }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR></TABLE><TT>
+</TT><TT>
+</TT></DIV><TT>
+</TT>
+<BR>
+<DIV ALIGN=center>Figure 1: <A NAME="fig-ABC"></A> Example of shareable objects</DIV><BR>
+
+<DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV></BLOCKQUOTE>Bob can ask for a shareable object from Alice using the <TT>JCRE</TT> method <TT>getASIO</TT><A NAME="text3" href="index.html#note3"><SUP><FONT SIZE=2>3</FONT></SUP></A>. Assume now that Bob 
+(inadvertently) leaks a reference to <TT>MSIO</TT> to the third applet
+Charlie.
+Since the firewall only checks that the object is shared before
+granting access, Charlie can invoke the same methods of the <TT>MSIO</TT>
+object as Bob.
+Alice knows this so she decides to verify, at each
+access to one of her shared methods, the identity of
+the caller. Java Card offers a method for obtaining the AID of the
+context in operation before the last context switch, here called <TT>getPrevCtx</TT><A NAME="text4" href="index.html#note4"><SUP><FONT SIZE=2>4</FONT></SUP></A>. Using this information Alice can
+discover when applets from contexts other than Bob's attempt to access the <TT>MSIO</TT> object. <BR>
+<BR>
+<!--TOC subsection Limitations of the firewall-->
+
+<H3>2.2&nbsp;&nbsp; Limitations of the firewall</H3><!--SEC END -->
+The Java Card firewall has several shortcomings, as analysed in detail
+by Montgomery and Krishna&nbsp;[<A href="index.html#montgomery1999"><CITE>18</CITE></A>]. One potential
+difficulty with the Java Card firewall is that shareable objects can
+be accessed by any applet and not only by the applet to which the
+reference was given, as illustrated by the example above. Since
+references can be passed from one applet to another, this opens up the
+possibility for methods in shared objects to be invoked by applets
+other than those for which they were intended. To protect applets
+against unwanted access, Java Card offers a limited form of the stack
+inspection mechanism that underlies the Java&nbsp;2 security architecture.
+The system method <TT>getPrevCtx</TT> can be called to get access to the
+last context switch that took place. When a method is called from
+another applet, this context switch indicates the identity of the
+caller. This information can then be used to decide what value the
+method should return to the caller. It is, however, up to the
+programmer to implement this correctly. If the security mechanisms
+provided by the language are not used properly, unwanted information
+flow can arise as a result of objects flowing from one applet to
+another. In order to verify the access control actually implemented by
+a set of Java Card applets we have developed a static analysis that
+calculates, for each variable in a program, an approximation of
+the set of values that will be stored in this variable. This static
+approximation allows
+<UL>
+<LI>
+  to signal potential data flow between applets that violates a
+given access control policy, 
+ 
+<LI> or, if no such flow is detected, to provide a proof that all data 
+flow respects the policy.
+</UL>
+The analysis is based on a constraint-based type analysis for 
+Java-like languages, but is modified to keep an accurate account of
+the Java Card specificities (like context and firewall). Indeed, since the security of an applet to a
+large extent relies on the use of the <TT>getPrevCtx</TT> method, the
+analysis must be able to model calls to this method precisely. <BR>
+<BR>
+<!--TOC section A representation of Java Card bytecode-->
+
+<H2>3&nbsp;&nbsp; A representation of Java Card bytecode</H2><!--SEC END -->
+
+<A NAME="section-bytecode"></A>To simplify the presentation, we work with a ``three-address''
+representation of Java Card bytecode where
+arguments and results of an instruction are fetched and
+stored in local variables instead of being popped and pushed from a
+stack. This format is similar to the intermediate language <I>Jimple</I> used in the
+Java tool <I>Soot</I>&nbsp;[<A href="index.html#sitesoot"><CITE>23</CITE></A>] and the transformation of code into
+this format is straightforward.
+We furthermore assume that the
+constant pool has been expanded <EM>i.e.</EM> that indices into the
+constant pool have been replaced by the corresponding constant. For
+example, the bytecode instruction <TT>invokevirtual</TT> takes as
+parameter the signature of the method called, rather than an index
+into the constant pool. The formal representation of Java Card bytecode can be found
+in&nbsp;[<A href="index.html#eluard2001"><CITE>17</CITE></A>].<BR>
+<BR>
+<!--TOC subsection Notations-->
+
+<H3>3.1&nbsp;&nbsp; Notations</H3><!--SEC END -->
+The term <I><EM><I>P</I></EM></I><I>(X)</I> denotes the power set of <I>X: </I><I><EM><I>P</I></EM></I><I>(X) </I><I><FONT FACE=symbol>º</FONT></I><I> </I><I>{<I>S</I> | <I>S</I> <FONT FACE=symbol>Í</FONT> <I>X</I>}</I>.
+A product type <I>X</I> = <I>A</I> × <I>B</I> × <I>C</I> is sometimes treated as a labeled record: with an element
+<I>x</I> of type <I>X</I>, we can access its fields with the names of its constituent types (<I>x</I>.<I>A</I>,
+<I>x</I>.<I>B</I> or <I>x</I>.<I>C</I>).
+A list is defined by enumeration of its elements: <I>x</I><SUB><FONT SIZE=2>1</FONT></SUB> :: ··· :: <I>x</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB>. List elements can be
+directly accessed giving their position (<I>v</I>(<I>i</I>) for the <I>i</I><SUP><I><FONT SIZE=2><I>th</I></FONT></I></SUP> element). Lists can be
+concatened: (<I>x</I><SUB><FONT SIZE=2>1</FONT></SUB> :: ··· :: <I>x</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB>) ::: (<I>x</I><SUB><FONT SIZE=2><I>m</I></FONT></SUB> :: ··· :: <I>x</I><SUB><FONT SIZE=2><I>p</I></FONT></SUB>) = <I>x</I><SUB><FONT SIZE=2>1</FONT></SUB> :: ··· :: <I>x</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB> :: <I>x</I><SUB><FONT SIZE=2><I>m</I></FONT></SUB> ::
+··· :: <I>x</I><SUB><FONT SIZE=2><I>p</I></FONT></SUB>. <I>X</I><SUP><FONT SIZE=2>*</FONT></SUP> denotes the type of finite lists, whose elements are of type <I>X</I>.
+The symbol <FONT FACE=symbol>®</FONT> is used to form the type of partial functions: <I>X </I><I><FONT FACE=symbol>®</FONT></I><I> Y</I>.
+The <FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT> <FONT FACE=symbol>Î</FONT> <FONT FACE=symbol>á</FONT> <I>E</I> <FONT FACE=symbol>ñ</FONT> notation denotes the formula <I>v</I><SUB><FONT SIZE=2>1</FONT></SUB> <FONT FACE=symbol>Î</FONT> <I>E</I><SUB><FONT SIZE=2>1</FONT></SUB> <FONT FACE=symbol>Ù</FONT> ··· <FONT FACE=symbol>Ù</FONT> <I>v</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB> <FONT FACE=symbol>Î</FONT> <I>E</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB>.<BR>
+<BR>
+<!--TOC subsection Abstract syntax-->
+
+<H3>3.2&nbsp;&nbsp; Abstract syntax</H3><!--SEC END -->
+Our program representation is a modified version of that of
+Bertelsen&nbsp;[<A href="index.html#bertelsen1997"><CITE>5</CITE></A><CITE>, </CITE><A href="index.html#bertelsen1998"><CITE>6</CITE></A>].
+We use <I>Id</I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB>, <I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB>, <I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB> and
+<I>Id</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB> to denote the set of qualified name of a package, of a class or an interface,
+of a field and of a method, respectively<A NAME="text5" href="index.html#note5"><SUP><FONT SIZE=2>5</FONT></SUP></A>.
+<I>Id</I><SUB><I><FONT SIZE=2><I>v</I></FONT></I></SUB> is the set of (unqualified) names of variables.
+To extract name information from an identifier, we use the notation
+<FONT FACE=symbol>é</FONT><I>Id</I><FONT FACE=symbol>ù</FONT><SUP><FONT SIZE=2><I>x</I></FONT></SUP>, where <I>Id</I> is a qualified name and <I>x</I> the type of
+the projection<A NAME="text6" href="index.html#note6"><SUP><FONT SIZE=2>6</FONT></SUP></A>.
+We assume a set <TT>AID</TT> which contains the
+possible applet identifiers of the applets installed on a card. This set contains a special
+AID, written <TT>JCRE</TT>, for the Java Card Runtime Environment.<BR>
+<BR>
+<!--TOC paragraph Classes and Interfaces-->
+
+<H5> Classes and Interfaces</H5><!--SEC END -->
+A class or an interface descriptor consists of a set of the access modifiers
+(<I><EM><I>P</I></EM></I><I>(Mod</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I>), 
+the name of the class or
+interface (<I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB>), the name of the direct superclass or the names of direct
+super-interfaces (<I>Ext</I>), the name of the
+interfaces that the class implements (<I>Imp</I>), the name of its package (<I>Id</I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB>),
+field declarations (<I>Fld</I>), method
+declarations and implementations (<I>Mtd</I>).
+A class must have one superclass, the default being <TT>java.lang.Object</TT>, but an interface
+can have zero or more super-interfaces. Only a class can
+implement an interface, so for an interface this set is empty. 
+The fields are described by a map from field names (<I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB>)
+to a pair consisting of a set of access modifiers (<I><EM><I>P</I></EM></I><I>(Mod</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>)</I>)
+and a type descriptor (<I>Type</I>). The type of a field is either a primitive type
+(<TT>boolean</TT>, <TT>short</TT>, <TT>byte</TT>, <TT>int</TT>) or the name of
+a class or an interface. All of this information are stored in the class hierarchy (<I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB>).<BR>
+<BR>
+<!--TOC paragraph Methods-->
+
+<H5> Methods</H5><!--SEC END -->
+The methods are described by a map that to a method signature (<I>Sig</I>) associates a
+method descriptor (Desc<SUB><FONT SIZE=2><I>m</I></FONT></SUB>).
+This structure consists of a set of access modifiers (<I><EM><I>P</I></EM></I><I>(Mod</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB><I>)</I>),
+the code of the method (<I>Code</I>), a description of the formal
+parameters (<I>Param</I>), optionally a description of the variable used
+to return a value (<I>Res</I>)
+and the local variables of the method (<I>Varl</I>).
+A signature is the name of the method (<I>Id</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB>) and the list of type descriptors for
+its parameters (<I>Type</I><SUP><I><FONT SIZE=2>*</FONT></I></SUP>).
+Code is a list whose elements consist of a program counter value (<I>Pc</I><A NAME="text7" href="index.html#note7"><SUP><FONT SIZE=2>7</FONT></SUP></A>) and the instruction at
+this address (<I>Bytecode</I>).
+The set of local variables is the list of all variable names (<I>Id</I><SUB><I><FONT SIZE=2><I>v</I></FONT></I></SUB>) with their
+type descriptor (<I>Type</I>).<BR>
+<BR>
+<!--TOC paragraph Bytecode-->
+
+<H5> Bytecode</H5><!--SEC END -->
+Due to space limitations, in this paper, we only consider a subset of Java Card
+byte code. The subset is nevertheless sufficient 
+to illustrate the different features of our analysis; see
+[<A href="index.html#eluard2001:these"><CITE>16</CITE></A>] for a treatment of the full language. In the
+following, <I>T</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB> range over local variables and <I>S</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB> is
+used to give the list of the type of the parameters for a call (which can be found in the constant pool).<BR>
+<BR>
+The main departure from standard bytecode is the introduction of the
+construct <I><TT>ifAID</TT></I><I> T </I><I><FONT FACE=symbol>Î</FONT></I><I> S BCinst</I>. This specialized
+if-instruction takes as argument a variable <I>T</I> that contains an
+AID, a set <I>S </I><I><FONT FACE=symbol>Î</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(</I><I><TT>AID</TT></I><I>)</I> and executes the instruction <TT>BCinst</TT> if the AID belongs to 
+the set <I>S</I>. We have introduced this instruction
+to make
+explicit how the analysis takes information about AIDs into
+account. Ordinary bytecode can be transformed to use the 
+<TT>ifAID</TT> instruction by identifying those conditional instructions that
+make test of the form <I>Aid</I><I> </I><I><FONT FACE=symbol>Î</FONT></I><I> S</I>. Most of such tests are
+syntactically explicit in Java Card source programs or can be
+identified by simple intra-procedural flow analysis. <BR><DIV ALIGN=center>
+<I>Bytecode = </I><I><TT>ifAID</TT></I><I> T </I><I><FONT FACE=symbol>Î</FONT></I><I> S BCinst </I><I>|</I><I> BCinst
+</I>
+</DIV><BR>
+The Java Card bytecode is transformed into a ``three-address'' like language.
+We will not describe this program transformation any further. <BR><DIV ALIGN=center>
+<TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>BCinst</I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><I>T := </I><I><TT>getstatic</TT></I><I> f</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I>T</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB><I> := </I><I><TT>invokeinterface</TT></I><I> m T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I> </I><I>···</I><I> T</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I> S</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>::</I><I>···</I><I>S</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>::S</I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I>T := </I><I><TT>invokestatic</TT></I><I> getPrevCtx</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT>load</TT></I><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I>T := </I><I><TT>new</TT></I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I><TT>putstatic</TT></I><I> f T</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>|</I></TD>
+<TD ALIGN=left NOWRAP><I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT>store</TT></I><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I></I></TD>
+</TR></TABLE><I>
+</I>
+</DIV><BR>
+<I>T:=</I><I><TT>getstatic</TT></I><I> f</I> loads the value contained in the static field <I>f</I>
+of the class <FONT FACE=symbol>é</FONT><I>f</I><FONT FACE=symbol>ù</FONT><SUP><FONT SIZE=2><I>p</I>.<I>c</I></FONT></SUP> and stores it in <I>T</I>.
+<I>T</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB><I>:=</I><I><TT>invokevinterface</TT></I><I> m T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I> </I><I>···</I><I> T</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>
+ S</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>::</I><I>···</I><I>::S</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>::S</I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB> 
+ invokes the interface method <I>m</I> with the signature
+<I>S</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>::</I><I>···</I><I>::S</I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB> on the object contained in <I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB> with parameters <I>T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>
+ </I><I>···</I><I> T</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB> and the result is stored in the variable <I>T</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB> with type <I>S</I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB>.
+<I>T:=</I><I><TT>invokestatic</TT></I><I> getPrevCtx</I> retrieves the AID of the last active context before
+the last context switch and stores it in <I>T</I>.
+<I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT>load</TT></I><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> loads the value contained in <I>T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> and stores it
+in <I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB>.
+<I>T:=</I><I><TT>new</TT></I><I> C</I> stores a reference to the object created at this program
+point in <I>T</I>.
+<I><TT>putstatic</TT></I><I> f T</I> loads the value contained in the variable <I>T</I> and stores
+it in the static field <I>f</I> of the class <FONT FACE=symbol>é</FONT><I>f</I><FONT FACE=symbol>ù</FONT><SUP><FONT SIZE=2><I>p</I>.<I>c</I></FONT></SUP>.
+<I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT>store</TT></I><I> T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> loads the value contained in <I>T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> and stores it
+in <I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB>.<BR>
+<BR>
+<!--TOC subsection Auxiliary functions on the class hierarchy-->
+
+<H3>3.3&nbsp;&nbsp; Auxiliary functions on the class hierarchy</H3><!--SEC END -->
+We define three predicates to determine if a class member (the second parameter)
+is visible from a given instruction (the first parameter).
+We have <I>CI_Visibility?</I> for a class or an interface, <I>Method_Visibility?</I> for a method
+and <I>Field_Visibility?</I> for a field.
+We must keep this test in the constraint because in some
+cases, like for the modifier <TT>protect</TT>, we need information about its dynamic values. <BR><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>CI_Visibility?</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> Boolean</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Method_Visibility?</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I> </I><I>×</I><I> Desc</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> Boolean</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Field_Visibility?</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> Boolean</I></TD>
+</TR></TABLE><I>
+</I>
+</DIV><BR>
+The function <I>Lookup</I> models the dynamic search of methods underlying the virtual
+method calls. It takes as arguments the signature of a method, the class
+in which the method is declared, the class in which the invocation are
+made and the class hierarchy.
+It returns a set of fully qualified method names of the implementations of the method designated 
+by the signature. <BR><DIV ALIGN=center>
+<I>Lookup: Sig </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(</I><I>Id</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB><I>)</I>
+</DIV><BR>
+A full description of the Java visibility rules and method resolution
+would be quite lengthy due to the non-trivial semantics of these two
+language features. We refer instead to the literature&nbsp;[<A href="index.html#gosling2000"><CITE>12</CITE></A><CITE>, </CITE><A href="index.html#lindholm1999"><CITE>15</CITE></A><CITE>, </CITE><A href="index.html#jensen1998"><CITE>14</CITE></A>].<BR>
+<BR>
+<!--TOC section Abstract domains-->
+
+<H2>4&nbsp;&nbsp; Abstract domains</H2><!--SEC END -->
+
+<A NAME="section-absdom"></A><!--TOC paragraph Owners and contexts-->
+
+<H5> Owners and contexts</H5><!--SEC END -->
+
+An object is owned by an applet (or the <TT>JCRE</TT>) thus an owner is
+uniquely identified by
+an AID. Since an AID does not directly specify the package to which
+the applet belongs, we add this information for convenience. Thus, 
+the set of object owners is defined by: <BR><DIV ALIGN=center>
+<I>Owner = </I><I>Id</I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I><TT>AID</TT></I>
+</DIV><BR>
+We define an abstract context to be an abstraction of the call stack
+in which a method is executed (these contexts should not be 
+confused with the Java Card notion of context). Our abstract contexts are designed to
+provide exactly the information that can be obtained by a call to the
+stack-inspecting method <TT>getPrevCtx</TT>
+(<EM>cf</EM>.&nbsp;Section&nbsp;<A href="index.html#section-firewall">2</A>). 
+More precisely, the
+abstract context in which a method <I>m</I> is analyzed consists of a pair <I>(Prev,App)</I> 
+where the first component <I>Prev</I> is the last active Java Card context before the last context switch
+and the second component <I>App</I> is the Java Card context of the
+<EM>caller</EM> (<I>i.e.</I>, the active context that invoked <I>m</I>). Formally we define: <BR><DIV ALIGN=center>
+<I>Context = Owner </I><I>×</I><I> Owner</I>
+</DIV><BR>
+<!--TOC paragraph Values-->
+
+<H5> Values</H5><!--SEC END -->
+
+We are primarily interested in modeling the object structure and
+ownership so we abstract primitive values such as booleans and
+integers to their type. To model the heap of objects, we adopt a
+common approach (going back to at least&nbsp;[<A href="index.html#hudak1987"><CITE>13</CITE></A>]) in which all
+objects created by the same <TT>new</TT> instruction are identified by 
+one object. We refine this by keeping the owner as part of the abstract object. More precisely,
+a reference (<I>Ref</I>) to an object (<I>Obj</I>) is abstracted into the instruction that created the object 
+and the owner of the object. 
+We suppose we have a special <I>Null</I> reference. <BR><DIV ALIGN=center>
+<I>Ref</I><I> = (Pc </I><I>×</I><I> Owner) </I><I><FONT FACE=symbol>È</FONT></I><I> { </I><I>Null</I><I> }</I>
+</DIV><BR>
+We have three kinds of abstract values: references, applet
+identifiers and primitive values which as mentioned above are
+abstracted by their type. <BR><DIV ALIGN=center>
+<I>Value = </I><I>Ref</I><I> </I><I><FONT FACE=symbol>È</FONT></I><I> </I><I><TT>AID</TT></I><I> </I><I><FONT FACE=symbol>È</FONT></I><I> {</I><I><TT>boolean</TT></I><I>, </I><I><TT>short</TT></I><I>, </I><I><TT>byte</TT></I><I>, </I><I><TT>int</TT></I><I> }</I>
+</DIV><BR>
+Concerning the concrete value in memory, we can have
+a class instance (<I>Obj</I>) which contains the
+name of the class (<I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB>), the owner of this instance (<I>Owner</I>), boolean
+flags indicating whether or not it is a <TT>JCRE</TT> entry point or a
+temporary <TT>JCRE</TT> entry point
+(<EM>cf.</EM>&nbsp;Section&nbsp;<A href="index.html#section-firewall">2</A>) and the set of fields (<I>Fldv</I>), a function which
+maps a field name to a set of values. <BR><DIV ALIGN=center>
+<TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>Obj</I><I> </I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I>×</I><I> Owner </I><I>×</I><I> JCREep </I><I>×</I><I> tJCREep </I><I>×</I><I> Fldv</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Fldv</I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(Value)</I></TD>
+</TR></TABLE>
+</DIV><BR>
+<!--TOC paragraph Firewall checks-->
+
+<H5> Firewall checks</H5><!--SEC END -->
+The checks made by the firewall are formalized through a collection of 
+predicates. Covering all bytecode instructions would require eight
+different predicates ([<A href="index.html#eluard2001:these"><CITE>16</CITE></A>]); in this paper, 
+we only use two of these predicates:
+<UL>
+<LI>
+  The predicate <I>AccessInterface?</I> validates the access to methods of an
+object.<BR><DIV ALIGN=center>
+<I>AccessInterface?</I><I>: </I><I>Ref</I><I> </I><I>×</I><I> </I><I>Ref</I><I> </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB><I> </I><I>×</I><I> </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> boolean</I>
+</DIV><BR>
+The first reference represents the current context, the second represents the object on which the call is
+made and <I>Id</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB> is the name of the interface which declared the method called.
+The access is authorized if and only if the context represented by the
+first reference is the context
+of the <TT>JCRE</TT> or if the contexts of the two references are the same
+or if the second reference represents a <TT>JCRE</TT> entry point or
+if the class of the object represented by the second reference implements a shareable interface and
+<I>Id</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB> extends a shareable interface. <BR>
+<BR>
+ 
+<LI> The predicate <I>AccessPutstatic?</I> checks the validity of the access to
+a static field of a class.<BR><DIV ALIGN=center>
+<I>AccessPutstatic?</I><I>: </I><I>Ref</I><I> </I><I>×</I><I> Value </I><I><FONT FACE=symbol>®</FONT></I><I> boolean</I>
+</DIV><BR>
+The reference represents the current context that wants to store the
+value in the static field. 
+The access is only authorized if the Java Card context represented by the
+reference is the context of the <TT>JCRE</TT> or if the value is neither a global object nor a temporary
+<TT>JCRE</TT> entry point.
+</UL><!--TOC section Flow analysis-->
+
+<H2>5&nbsp;&nbsp; Flow analysis</H2><!--SEC END -->
+
+<A NAME="section-analysis"></A>In this section we describe a data flow analysis
+to approximate the part of a program's behaviour relevant to
+security verifications. 
+The main information calculated by 
+our analysis is an approximation of the objects stored in the
+variables of the program. More precisely, we calculate the following
+information: 
+<UL>
+<LI>
+  <I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>var,m,ctx</I><I>]]</I><I> </I><I><FONT FACE=symbol>Î</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(Value)</I>: the set of values stored in the variable <I>var</I> of method <I>m</I> when this method is called in context <I>ctx</I>. 
+ 
+<LI> <I><EM><I>SF</I></EM></I><I>&nbsp;</I><I>[[</I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>]]</I><I> : </I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I> </I><I><FONT FACE=symbol>®</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(Value)</I>: the possible values of the static fields of a
+ given class. 
+ 
+<LI> <I>mem</I><I> : </I><I><I>Ref</I></I><I><FONT FACE=symbol>®</FONT> </I><I><I>Obj</I></I>: an
+approximation of the memory in which an abstract reference of form
+(<I><I>pc</I></I><I>,</I><I><I>owner</I></I><I>)</I> is mapped to an abstract object that
+safely approximates all those concrete objects allocated by
+instruction at address <I><I>pc</I></I> and owned by <I><I>owner</I></I>. 
+ 
+<LI> <I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>m,ctx</I><I>]]</I><I> </I><I><FONT FACE=symbol>Î</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(</I><I>Ref</I><I>)</I>: the set of objects on which a call to method <I>m</I> in context <I>ctx</I> is made. 
+</UL>It is important to analyze methods for
+each calling context since this is the information available to the
+firewall at run-time. An analysis that does not exactly model this information 
+would have poor precision. This information serves two
+purposes: it permits constructing a control flow graph 
+(by resolving which method is called at a given virtual method
+call) and it makes explicit if an object owned by an applet is stored 
+in a variable accessible by another applet. <BR>
+<BR>
+An intra-procedural analysis is required in order to
+approximate the behaviour of each server applet when it receives a
+request for a shared object. This analysis is orthogonal to the
+analysis presented in this paper and will not be described here. We shall
+assume the function: <BR><DIV ALIGN=center>
+<I>Return_SIO</I><I>: </I><I><TT>AID</TT></I><I> </I><I>×</I><I> </I><I><TT>AID</TT></I><I> </I><I><FONT FACE=symbol>®</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(</I><I>Ref</I><I>)</I>
+</DIV><BR>
+It takes the AID of a server and the AID of a client and returns a
+safe approximation of the set of objects that
+the server accept to share with the client (the set that it returns is
+equal to or bigger than the
+set returned during the execution). <BR>
+<BR>
+<!--TOC subsection Quantified conditional constraints-->
+
+<H3>5.1&nbsp;&nbsp; Quantified conditional constraints</H3><!--SEC END -->
+
+<A NAME="section-qcc"></A>The analysis will be specified in constraint-based style. We introduce 
+a new type of constraints, the <EM>quantified conditional
+constraints</EM> (<I>QCC</I><I>s</I>) that can be considered as a 
+constraint scheme from which actual constraints can be generated. <BR>
+<BR>
+The first kind of constraints used in static analysis is the simple constraint
+(<I>SC</I>). It is used to model the flow and the modification of information.
+A simple constraint has the form: <BR><DIV ALIGN=center>
+Expression <FONT FACE=symbol>Í</FONT> Variable
+</DIV><BR>
+An extension of this kind of constraint was used by Palsberg
+and Schwartzbach&nbsp;[<A href="index.html#palsberg1994:book"><CITE>20</CITE></A>] for type analysis.
+They take a simple constraint and add a condition under which the
+constraint is valid. Such a <EM>conditional</EM> constraint has the form: <BR><DIV ALIGN=center>
+Class <FONT FACE=symbol>Î</FONT> Variable<SUB><FONT SIZE=2>1</FONT></SUB> <FONT FACE=symbol>®</FONT> Expression <FONT FACE=symbol>Í</FONT> Variable<SUB><FONT SIZE=2>2</FONT></SUB>
+</DIV><BR>
+The Variable<SUB><FONT SIZE=2>2</FONT></SUB> have Expression as possible value if and only if Class
+is a possible value for Variable<SUB><FONT SIZE=2>1</FONT></SUB>. The simple constraint models an
+instruction of a method and the condition model the fact that this method
+can effectively be called. <BR>
+<BR>
+This kind of constraints solves the problem that the constraints to be
+generated depend on the actual data flow of the program. The solution
+has the drawback that it has to generate all possible constraints from
+the outset and then test for each iteration and for each constraint
+whether it should be taken into consideration. In the following, we
+propose to generate the constraints set in an incremental fashion where
+constraints are only added once the data flow analysis has actually
+established that the constraints will be activated. <BR>
+<BR>
+We propose to extend this kind of constraints in the following two ways:
+<UL>
+<LI>
+  allow more conditions, to model, for example, the activities of the environment like the firewall checks or the visibility rules,
+ 
+<LI> produce dynamically the system based on the current value of each
+ variable (instead of generating constraints for all possible
+ values of the domain of the variable). 
+</UL>
+This new kind of constraints is called <EM>quantified conditional
+ constraints</EM> and has the form: <BR><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>&nbsp;<I>v</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,···,<I>v</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB></TD>
+<TD ALIGN=center NOWRAP><I><FONT FACE=symbol>Î</FONT></I></TD>
+<TD ALIGN=left NOWRAP><I><I>S</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,···,<I>S</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>cond</I>(<I>v</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,···,<I>v</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>cstr</I>(<I>v</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,···,<I>v</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>)</I></TD>
+</TR></TABLE><I>
+</I><I>
+</I>
+</DIV><BR>
+Here, <I>cstr</I> is a set of simple constraints parameterized on
+<I>v</I><SUB><FONT SIZE=2>1</FONT></SUB>, ···, <I>v</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB> and <I>cond</I> are conditions on the values <I>v</I><SUB><FONT SIZE=2>1</FONT></SUB>,···,<I>v</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB>. 
+Evaluation of such a <I>QCC</I> results in a set of constraints for each 
+value <I>v</I><SUB><FONT SIZE=2>1</FONT></SUB>,···,<I>v</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB> <FONT FACE=symbol>Î</FONT> <I>S</I><SUB><FONT SIZE=2>1</FONT></SUB>,···,<I>S</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB> satisfying the condition <I>cond</I>. In our 
+analysis, the <I>QCC</I>s have a particular structure, as shown
+below. 
+<UL>
+<LI>
+  The set <I>S</I>, used in the quantification, can be the set of possible values of a variable 
+(<I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>x,m,ctx</I><I>]]</I>), the set of objects on which a call is made (<I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>m,ctx</I><I>]]</I>), the
+result of the <I>Lookup</I> or a constant set.
+ 
+<LI> The condition <I>cond</I> is a conjunction of conditions. It can be a test on the visibility,
+a firewall check or a test for membership of a constant set.
+ 
+<LI> A constraint <I>const</I> is a set of simple constraint <I>SC</I>. 
+<I>SC</I> have a form: <I>Exp </I><I><FONT FACE=symbol>Í</FONT></I><I> Var</I>.
+<I>Exp</I> can be a variable, a constant set, a dereferencing of the
+memory, the set of the values of a static field or the call to <I>Return_SIO</I>.
+<I>Var</I> can be a variable, a dereferencing of the
+memory or the set of the values of a static field.
+</UL><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>QCC</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I> </I><I><FONT FACE=symbol>á</FONT> <I>value</I> <FONT FACE=symbol>ñ</FONT></I><I> </I><I><FONT FACE=symbol>Î</FONT></I><I> </I><I><FONT FACE=symbol>á</FONT> <I>S</I> <FONT FACE=symbol>ñ</FONT></I><I> </I><I><B>:</B></I><I> cond(</I><I><FONT FACE=symbol>á</FONT> <I>value</I> <FONT FACE=symbol>ñ</FONT></I><I>) </I><I><B><FONT FACE=symbol>®</FONT></B></I><I> cstr(</I><I><FONT FACE=symbol>á</FONT> <I>value</I> <FONT FACE=symbol>ñ</FONT></I><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>S</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>x,m,ctx</I><I>]]</I><I> </I><I>|</I><I> </I><I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>m,ctx</I><I>]]</I><I> </I><I>|</I><I> Const Set </I><I>|</I><I> Lookup (Sig, </I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>, </I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>, </I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>cond</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>H</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> </I><I><FONT FACE=symbol>Ù</FONT></I><I> </I><I>···</I><I> </I><I><FONT FACE=symbol>Ù</FONT></I><I> H</I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Condition (H)</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>CI_Visibility? (</I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I>,</I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I><I> </I><I>|</I><I> </I><I>Method_Visibility? (</I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I>,</I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I>,Desc</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB><I>)</I><I> </I><I>|</I><I> </I><I>Field_Visibility? (</I><I>Id</I><SUB><I><FONT SIZE=2><I>c</I></FONT></I></SUB><I>,</I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>)</I><I> </I><I>|</I><I> value </I><I><FONT FACE=symbol>Î</FONT></I><I> Const Set </I><I>|</I><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=left NOWRAP><I>AccessInterface? (</I><I>Ref</I><I>,</I><I>Ref</I><I>,</I><I>Id</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB><I>)</I><I> </I><I>|</I><I> </I><I>AccessPutstatic? (</I><I>Ref</I><I>,Value)</I><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>cstr</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>P</I></EM></I><I>(</I><I>SC</I><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Constraint (</I><I>SC</I><I>)</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Exp </I><I><FONT FACE=symbol>Í</FONT></I><I> Var</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Exp</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Const Set </I><I>|</I><I> </I><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>x,m,ctx</I><I>]]</I><I> </I><I>|</I><I> </I><I><EM><I>SF</I></EM></I><I>&nbsp;</I><I>[[</I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>]]</I><I>(</I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>) </I><I>|</I><I> 
+</I><I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>m,ctx</I><I>]]</I><I> </I><I>|</I><I> </I><I>mem</I><I>(</I><I>Ref</I><I>).Fldv(</I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>) </I><I>|</I><I> </I><I>Return_SIO (</I><I><TT>AID</TT></I><I>,</I><I><TT>AID</TT></I><I>)</I><I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>Var</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>x,m,ctx</I><I>]]</I><I> </I><I>|</I><I> </I><I><EM><I>SF</I></EM></I><I>&nbsp;</I><I>[[</I><I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>]]</I><I>(</I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>) </I><I>|</I><I> </I><I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>m,ctx</I><I>]]</I><I> </I><I>|</I><I> </I><I>mem</I><I>(</I><I>Ref</I><I>).Fldv(</I><I>Id</I><SUB><I><FONT SIZE=2><I>f</I></FONT></I></SUB><I>)</I></TD>
+</TR></TABLE><I>
+</I>
+</DIV><BR>
+<!--TOC subsection Analysis-->
+
+<H3>5.2&nbsp;&nbsp; Analysis</H3><!--SEC END -->
+
+<A NAME="section-equation"></A>The analysis generates, for each method and for an execution context <I>ctx</I>, a
+set of <I>QCC</I>s that describes the data flow of the method in this
+context. The set of constraints for a method is the union of the set of constraints for
+each instruction.
+The function to analyze an instruction is: <BR><DIV ALIGN=center>
+<I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I>: Inst </I><I>×</I><I> </I><I>Id</I><SUB><I><FONT SIZE=2><I>m</I></FONT></I></SUB><I> </I><I>×</I><I> Context </I><I><FONT FACE=symbol>®</FONT></I><I> </I><I><EM><I>P</I></EM></I><I>(</I><I>QCC</I><I>)</I>
+</DIV><BR>
+This function takes three parameters: the instruction to analyze, the
+current method, and the context in which the method is analyzed.
+An instruction is just a program counter and the bytecode instruction at this address.
+In the following we define this function for each bytecode
+instruction. <BR>
+<BR>
+<!--TOC paragraph getstatic-->
+
+<H5> getstatic</H5><!--SEC END -->
+
+The <TT>getstatic</TT> instruction loads a value stored in a static field of a class or interface
+and stores it into a local variable. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I> := </I><I><TT> <I>getstatic</I></TT></I><I> &nbsp; <I>f</I></I><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]]</EM></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>Field</I>_<I>Visibility</I>? (</I><I><I>mem</I></I><I>(<I>r</I>).</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>,<I>f</I>,</I><I><I>E</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><FONT FACE=symbol>
+ì<BR>í<BR>î</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> </EM></I><I><I>SF</I></I></TD>
+<TD NOWRAP><I>&nbsp;[[ <FONT FACE=symbol>é</FONT> <I>f</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>]](<I>f</I>)</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I><FONT FACE=symbol>
+ü<BR>ý<BR>þ</FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+The value in the field <I>C.f</I> is stored in the local variable <I>T</I> if and only if
+the field exists and the field is visible at instruction <I>Inst</I>.<BR>
+<BR>
+<!--TOC paragraph invokeinterface-->
+
+<H5> invokeinterface</H5><!--SEC END -->
+
+The <TT>invokeinterface</TT> instruction makes a call to an interface method. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I></I><SUB><I><FONT SIZE=2>0</FONT></I></SUB><I> := </I><I><TT> <I>invokeinterface</I></TT></I><I> &nbsp; <I>p</I> &nbsp; <I>T</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> &nbsp; <I>T</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I> &nbsp; ··· &nbsp; <I>T</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I> &nbsp;
+<I>S</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>:: ··· ::<I>S</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>::<I>S</I></I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>,<I>o</I>,<I>q</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]] × </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>T</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,<I>m</I>,<I>ctx</I>]] ×
+ </I><I><I>Lookup</I></I><I> (<I>sig</I>,</I><I><I>mem</I></I></TD>
+<TD NOWRAP><I>(<I>o</I>).<I>Type</I>,<FONT FACE=symbol>é</FONT> <I>p</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>,</I><I><I>E</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>AccessInterface</I>? (<I>r</I>,<I>o</I>,<FONT FACE=symbol>é</FONT> <I>p</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>,</I><I><I>E</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><FONT FACE=symbol>
+ì<BR>ï<BR>ï<BR>ï<BR>í<BR>ï<BR>ï<BR>ï<BR>î</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I></EM></I><SUB><I><EM><FONT SIZE=2>1</FONT></EM></I></SUB><I><EM>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Í</FONT> </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>P</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I>,<I>q</I>,<I>ctx</I>']],</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>···</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I></EM></I><SUB><I><EM><FONT SIZE=2><I>n</I></FONT></EM></I></SUB><I><EM>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Í</FONT> </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>P</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>,<I>q</I>,<I>ctx</I>']],</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Init</I>_<I>Var</I></I><I> (</I><I><I>E</I></I></TD>
+<TD NOWRAP><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>(<FONT FACE=symbol>é</FONT> <I>q</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>).<I>Mtd</I>((<FONT FACE=symbol>é</FONT> <I>q</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>m</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>,<I>S</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I> :: ··· :: <I>S</I></I><SUB><I><FONT SIZE=2><I>n</I>+1</FONT></I></SUB><I>)).<I>Varl</I>,<I>q</I>,<I>ctx</I>')</I></TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>q</I>,<I>ctx</I>']] <FONT FACE=symbol>Ê</FONT> { <I>o</I> }</EM></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I></EM></I><SUB><I><EM><FONT SIZE=2>0</FONT></EM></I></SUB><I><EM>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>R</I>,<I>q</I>,<I>ctx</I>']]</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I><FONT FACE=symbol>
+ü<BR>ï<BR>ï<BR>ï<BR>ý<BR>ï<BR>ï<BR>ï<BR>þ</FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+where we have used the following abbreviations: <BR><DIV ALIGN=center>
+ 
+<TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I>sig</I></TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP>(<FONT FACE=symbol>é</FONT> <I>p</I> <FONT FACE=symbol>ù</FONT></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><FONT SIZE=2><I>m</I></FONT></TD>
+</TR>
+<TR><TD>&nbsp;</TD>
+</TR></TABLE></TD>
+<TD NOWRAP>,<I>S</I><SUB><FONT SIZE=2>2</FONT></SUB>::···::<I>S</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB>)</TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>P</I><SUB><FONT SIZE=2>1</FONT></SUB>::···::<I>P</I><SUB><FONT SIZE=2><I>n</I></FONT></SUB></TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP>(<I><I>E</I></I></TD>
+<TD NOWRAP><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>(<FONT FACE=symbol>é</FONT> <I>q</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>).<I>Mtd</I>)((<I>q</I>,<I>S</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>::···::<I>S</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>)).<I>Param</I></I></TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>ctx</I>'</TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP>(<I>Prev</I>,<I>App</I>)</TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>App</I></TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP>(<I><I>mem</I></I><I>(<I>r</I>).<I>Owner</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I>, </I><I><I>mem</I></I><I>(<I>r</I>).<I>Owner</I>)</I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>Prev</I></TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><FONT FACE=symbol>
+ì<BR>í<BR>î</FONT></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>ctx</I>.<I>Prev</I>  if  <I>ctx</I>.<I>App</I>.<I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I> = <I>App</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>ctx</I>.<I>App</I>  otherwise</TD>
+</TR></TABLE></TD>
+<TD NOWRAP> </TD>
+</TR></TABLE></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>R</I></TD>
+<TD ALIGN=center NOWRAP>=</TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP>(<I><I>E</I></I></TD>
+<TD NOWRAP><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>(<FONT FACE=symbol>é</FONT> <I>q</I> <FONT FACE=symbol>ù</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></TD>
+</TR>
+<TR><TD><I>&nbsp;</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>).<I>Mtd</I>)((<I>q</I>,<I>S</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>::···::<I>S</I></I><SUB><I><FONT SIZE=2><I>n</I></FONT></I></SUB><I>)).<I>Res</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>v</I></FONT></I></SUB></TD>
+</TR></TABLE></TD>
+</TR></TABLE>
+
+</DIV><BR>
+We calculate the set of methods to which the method signature <I>sig</I> can be resolved <BR><DIV ALIGN=center><I>Lookup (sig,</I><I>mem</I><I>(o).Type,</I><I><FONT FACE=symbol>é</FONT></I><I>p</I><I><FONT FACE=symbol>ù</FONT></I><SUP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></SUP><I>,</I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></DIV> 
+together with the context in which 
+the methods called will be analyzed <I>(Prev,App)</I>.
+If the call is accepted by the firewall (<I>AccessInterface? (r,o,</I><I><FONT FACE=symbol>é</FONT></I><I>p</I><I><FONT FACE=symbol>ù</FONT></I><SUP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></SUP><I>,</I><I>E</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I>), we add
+constraints to simulate this call.
+We create constraints to simulate the transfer of the actual
+parameters to the formal parameters: <BR><DIV ALIGN=center><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>T</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB><I>,m,ctx</I><I>]]</I><I> </I><I><FONT FACE=symbol>Í</FONT></I><I> </I><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>P</I><SUB><I><FONT SIZE=2><I>i</I></FONT></I></SUB><I>,q,(Prev,App)</I><I>]]</I>,</DIV> <BR>and add a constraint to retrieve the value returned by the method called <BR><DIV ALIGN=center><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>T</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB><I>,m,ctx</I><I>]]</I><I> </I><I><FONT FACE=symbol>Ê</FONT></I><I> </I><I><EM><I>V</I></EM></I><I>&nbsp;</I><I>[[</I><I>R,q,(Prev,App)</I><I>]]</I>.</DIV> <BR>Finally, we add the object <I>o</I> in <I><EM><I>C</I></EM></I><I>&nbsp;</I><I>[[</I><I>q,(Prev,App)</I><I>]]</I> to indicate that the
+method <I>q</I> was invoked on this object.<BR>
+<BR>
+<!--TOC paragraph load-->
+
+<H5> load</H5><!--SEC END -->
+
+The <TT>load</TT> instruction loads value contained in a variable and stores it
+in an other variable. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT> <I>load</I></TT></I><I> &nbsp; <I>T</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I></EM></I><SUB><I><EM><FONT SIZE=2>1</FONT></EM></I></SUB><I><EM>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>T</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>,<I>m</I>,<I>ctx</I>]]</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+The values contained by the variable <I>T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> are transfered into the variable
+<I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB>.<BR>
+<BR>
+<!--TOC paragraph new-->
+
+<H5> new</H5><!--SEC END -->
+
+The <TT>new</TT> instruction simulates the creation of a new class
+instance and stores a reference to it into a variable. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I> := </I><I><TT> <I>new</I></TT></I><I> &nbsp; <I>c</I></I><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]]</EM></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>CI</I>_<I>Visibility</I>?</I><I> (</I><I><I>mem</I></I><I>(<I>r</I>).</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>,<I>c</I>,</I><I><I>E</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> { (<I>pc</I>,<I>r</I>.<I>Owner</I>) }</EM></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+If the class is visible by the instruction, we store in <EM><I>V</I></EM>&nbsp;[[T,m,ctx]] the reference to the
+created object.<BR>
+<BR>
+<!--TOC paragraph putstatic-->
+
+<H5> putstatic</H5><!--SEC END -->
+The <TT>putstatic</TT> instruction stores a value in a static field. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><TT> <I>putstatic</I></TT></I><I> &nbsp; <I>f</I> &nbsp; <I>T</I></I><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>,<I>v</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]] × </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]]</I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>Field</I>_<I>Visibility</I>?</I><I> (</I><I><I>mem</I></I><I>(<I>r</I>).</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>,<I>f</I>,</I><I><I>E</I></I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB><I>) <FONT FACE=symbol>Ù</FONT> </I><I><I>AccessPutstatic</I>?</I><I> (<I>r</I>,<I>v</I>)</I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><FONT FACE=symbol>
+ì<BR>í<BR>î</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><EM><I>SF</I></EM></I></TD>
+<TD NOWRAP><I><EM>&nbsp;[[ <FONT FACE=symbol>é</FONT> <I>f</I> <FONT FACE=symbol>ù</FONT></EM></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD NOWRAP><I><EM><FONT SIZE=2><I>p</I>.<I>c</I></FONT></EM></I></TD>
+</TR>
+<TR><TD><I><EM>&nbsp;</EM></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I><EM>]](<I>f</I>) <FONT FACE=symbol>Ê</FONT> { <I>v</I> }</EM></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I><FONT FACE=symbol>
+ü<BR>ý<BR>þ</FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+The value contained in variable <I>T</I> is stored in the static
+field <I>f</I> of the class <I><FONT FACE=symbol>é</FONT></I><I>f</I><I><FONT FACE=symbol>ù</FONT></I><SUP><I><FONT SIZE=2><I>p</I>.<I>c</I></FONT></I></SUP> if the field is visible by
+the instruction and if the firewall accepts this access.<BR>
+<BR>
+<!--TOC paragraph store-->
+
+<H5> store</H5><!--SEC END -->
+
+The <TT>store</TT> instruction stores the value contained in variable
+<I>T</I><SUB><FONT SIZE=2>2</FONT></SUB> in variable <I>T</I><SUB><FONT SIZE=2>1</FONT></SUB>. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I></I><SUB><I><FONT SIZE=2>1</FONT></I></SUB><I> := </I><I><TT> <I>store</I></TT></I><I> &nbsp; <I>T</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>), m, ctx)</I> = 
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I></EM></I><SUB><I><EM><FONT SIZE=2>1</FONT></EM></I></SUB><I><EM>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> </EM></I><I><I>V</I></I><I>&nbsp;[[ <I>T</I></I><SUB><I><FONT SIZE=2>2</FONT></I></SUB><I>,<I>m</I>,<I>ctx</I>]]</I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+This data flow is modeled by a simple set inclusion: values contained
+in variable <I>T</I><SUB><I><FONT SIZE=2>2</FONT></I></SUB> may also be contained in variable <I>T</I><SUB><I><FONT SIZE=2>1</FONT></I></SUB>.<BR>
+<BR>
+<!--TOC paragraph getPrevCtx-->
+
+<H5> getPrevCtx</H5><!--SEC END -->
+The instruction <TT>invokestatic</TT> <I>getPrevCtx</I> makes a call on the
+static method <I>JCSystem.getPreviousContextAID</I>. <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>T</I> := </I><I><TT> <I>invokestatic</I></TT></I><I> &nbsp; </I><I><I>getPrevCtx</I></I><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]]</EM></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>ctx</I>.<I>App</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I> = </I><I><I>mem</I></I><I>(<I>r</I>).<I>Owner</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> <I>ctx</I>.<I>Prev</I>.</EM></I><I><EM><TT> </TT></EM></I><I><EM><TT><I><I>AID</I></I></TT></EM></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I>
+</I><I>
+&nbsp;<BR></I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<I>r</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]]</EM></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>ctx</I>.<I>App</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I> <FONT FACE=symbol>¹</FONT> </I><I><I>mem</I></I><I>(<I>r</I>).<I>Owner</I>.</I><I><I>Id</I></I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ê</FONT> <I>ctx</I>.<I>App</I>.</EM></I><I><EM><TT> </TT></EM></I><I><EM><TT><I><I>AID</I></I></TT></EM></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+The method <I>getPrecCtx</I> serves to find the AID of the active
+applet before the last context switch.
+The first constraint is activated when the active context is the context of
+the caller, in which case they have the same previous context.
+The second one is activated when the active context differs from the context of
+the caller. In that case the previous context is the
+context of the caller.<BR>
+<BR>
+<!--TOC paragraph ifAID-->
+
+<H5> ifAID</H5><!--SEC END -->
+The <I>QCC</I> used in this construct is the one analyzed for the <I>BCinst</I> instruction. A
+condition is added such that the constraints are only generated if the
+condition in the test is true. <BR>Let <I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><I>BCinst</I></I><I>), m, ctx)</I> = <B><FONT FACE=symbol>"</FONT></B> &nbsp; <FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT> &nbsp;
+<B><FONT FACE=symbol>Î</FONT></B> &nbsp; <FONT FACE=symbol>á</FONT> <I>E</I> <FONT FACE=symbol>ñ</FONT> &nbsp; <B>:</B> &nbsp; <I><I>cond</I></I><I> &nbsp; </I><I><B><FONT FACE=symbol>®</FONT></B></I><I> &nbsp; {<I>C</I>}</I>. <BR>Then <BR><I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB><I> ((pc,</I><I><TT> <I>ifAID</I></TT></I><I> &nbsp; <I>T</I> <FONT FACE=symbol>Î</FONT> <I>S</I> &nbsp; </I><I><I>BCinst</I></I><I>), m, ctx)</I> =
+<DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=right NOWRAP><I><B><FONT FACE=symbol>"</FONT></B></I><I>   (<FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT>,<I>a</I>)</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>Î</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><I><FONT FACE=symbol>á</FONT> <I>E</I> <FONT FACE=symbol>ñ</FONT> × </I><I><EM><I>V</I></EM></I><I><EM>&nbsp;[[ <I>T</I>,<I>m</I>,<I>ctx</I>]]</EM></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B>:</B></I></TD>
+<TD ALIGN=left NOWRAP><I><I>cond</I> <FONT FACE=symbol>Ù</FONT> <I>a</I> <FONT FACE=symbol>Î</FONT> <I>S</I></I></TD>
+</TR>
+<TR><TD ALIGN=right NOWRAP><I>&nbsp;</I></TD>
+<TD ALIGN=center NOWRAP><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I>{</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><I>C</I></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+<TD NOWRAP><I>}</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+<!--TOC section Resolution-->
+
+<H2>6&nbsp;&nbsp; Resolution</H2><!--SEC END -->
+
+<A NAME="section-resolution"></A>The resolution of quantified conditional constraints can be done
+iteratively as an ordinary fix point computation. The main difference
+with a ``classic'' system
+is that the set of constraints and the values of
+variables in the constraints evolve together. 
+Hence, the iteration sequence consists
+of triples <I>(qcc,sc,val)</I>
+where <I>qcc</I> is the current set of quantified conditional constraints
+instantiated for particular contexts, <I>sc</I> is the current set of simple constraints and
+<I>val</I> is a valuation that to each variable associates 
+its current value. <BR>
+<BR>
+Suppose that we have a program <I>P</I> consisting of a set of applets (<I>Aplt</I>) and
+a set of methods (<I>Meth</I>). 
+Let <I>Q</I> be the set of (uninstantiated) <I>QCC</I>s obtained by analyzing
+<I>P</I> (with functions <I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Class</I></I></FONT></EM></I></SUB> for a class or an interface, <I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Meth</I></I></FONT></EM></I></SUB> for a method and <I><EM><I>A</I></EM></I><SUB><I><EM><FONT SIZE=2><I><I>Inst</I></I></FONT></EM></I></SUB>
+for an instruction).
+During the resolution of <I>Q</I>, we compute 
+the new set of instantiated <I>QCC</I>s, <I><EM><I>P</I></EM></I><I>(</I><I>QCC</I><I>)</I>, with the function <I>Eval</I><SUB><I><FONT SIZE=2><I>QCC</I></FONT></I></SUB>,
+the new set of simple constraints <I>SC</I>, <I><EM><I>P</I></EM></I><I>(</I><I>SC</I><I>)</I>, with the function <I>Eval</I><SUB><I><FONT SIZE=2><I>SC</I></FONT></I></SUB> 
+and the new valuation <I>Val</I> with the function <I>Eval</I><SUB><I><FONT SIZE=2><I>Val</I></FONT></I></SUB>, as defined
+below. <BR>
+<BR>
+<DIV ALIGN=center>
+<IMG src="eluard_cardis2002-html001.gif">
+</DIV><BR>
+The function <I>Eval</I><SUB><I><FONT SIZE=2><I>QCC</I></FONT></I></SUB> uses the current valuation to instantiate
+the <I>QCC</I>s in the set <I>Q</I> and adds the corresponding constraints to the
+current set of constraints. 
+This is where the resolution becomes context-sensitive: 
+if a method is not called in a particular context, no constraints for
+this method will be generated in that particular context. <BR><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>QCC</I></FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>P</I></EM></I><I><EM>(</EM></I><I><EM><I><I>QCC</I></I></EM></I><I><EM>) × <I>Val</I> <FONT FACE=symbol>®</FONT> </EM></I><I><I>P</I></I><I>(</I><I><I>QCC</I></I><I>)</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>QCC</I></FONT></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> (<I>qcc</I>,<I>val</I>)</I></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>qcc</I> <FONT FACE=symbol>È</FONT> </I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD ALIGN=center><I><FONT SIZE=2>&nbsp;</FONT></I></TD>
+</TR>
+<TR><TD ALIGN=center><I><FONT SIZE=7><FONT FACE=symbol>È</FONT></FONT></I></TD>
+</TR>
+<TR><TD ALIGN=center><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><FONT SIZE=2> </FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><FONT SIZE=2><I>m</I> <FONT FACE=symbol>Î</FONT> <I>Meth</I></FONT></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I><FONT SIZE=2><I>ctx</I> <FONT FACE=symbol>Î</FONT> <I>Context</I></FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>
+{ <I>ctr</I> | <I>o</I> <FONT FACE=symbol>Î</FONT> </I><I><EM><I>C</I></EM></I><I><EM>&nbsp;[[ <I>m</I>,<I>ctx</I>]] <FONT FACE=symbol>Ù</FONT> <I>ctx</I>' = <I>CalcCtx</I> (<I>o</I>,<I>ctx</I>,<I>val</I>) <FONT FACE=symbol>Ù</FONT> <I>ctr</I> <FONT FACE=symbol>Î</FONT>  </EM></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>A</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>Meth</I></FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I><EM> (<I>m</I>,<I>ctx</I>') }</EM></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I>
+</I><I>
+</I>
+</DIV><BR>
+where the function for calculating the context of the call is given by <BR><DIV ALIGN=center>
+
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>CalcCtx</I></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I>Ref</I><I> </I><I>×</I><I> Context </I><I>×</I><I> Val </I><I><FONT FACE=symbol>®</FONT></I><I> Context</I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>CalcCtx (r,c,v)</I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><I>(Prev, App)</I></TD>
+</TR></TABLE><I>
+</I><I><B>where</B></I><I><BR></I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I><I>App</I></I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><I>(<I>v</I>(</I><I><I>mem</I></I><I>))(<I>r</I>).<I>Owner</I></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I><I>Prev</I></I></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><FONT FACE=symbol>
+ì<BR>í<BR>î</FONT></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><I>c.Prev </I><I><B>if</B></I><I> c.App.</I><I>Id</I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB><I>= App.</I><I>Id</I><SUB><I><FONT SIZE=2><I>p</I></FONT></I></SUB></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><I>c.App </I><I><B>otherwise</B></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> </I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I>
+</I><I>
+</I>
+</DIV><BR>
+The function <I>Eval</I><SUB><I><FONT SIZE=2><I>SC</I></FONT></I></SUB> uses the current valuation to verify the condition
+for each constraint in the set of instantiated <I>QCC</I>s and adds the
+corresponding simple constraints to the current set of constraints.
+This evaluation permits to restrict the production of the simple constraints that model the
+effect of an instruction that ``executed''. We use the notation
+[[Exp]]<SUB><FONT SIZE=2><I>V</I></FONT></SUB> to denote the evaluation of the expression <I>Exp</I> with
+the values contained by the valuation <I>V</I>. <BR><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>SC</I></FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>P</I></EM></I><I><EM>(</EM></I><I><EM><I><I>QCC</I></I></EM></I><I><EM>) × </EM></I><I><I>P</I></I><I>(</I><I><I>SC</I></I><I>) × <I>Val</I> <FONT FACE=symbol>®</FONT> </I><I><EM><I>P</I></EM></I><I><EM>(</EM></I><I><EM><I><I>SC</I></I></EM></I><I><EM>)</EM></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>SC</I></FONT></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> (<I>qcc</I>,<I>sc</I>,<I>val</I>)</I></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>sc</I> <FONT FACE=symbol>È</FONT> { <I>ctr</I>[<FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT>/<FONT FACE=symbol>á</FONT> <I>x</I> <FONT FACE=symbol>ñ</FONT>] |
+</I><I><B><FONT FACE=symbol>"</FONT></B></I><I> <FONT FACE=symbol>á</FONT> <I>x</I> <FONT FACE=symbol>ñ</FONT>
+</I><I><B><FONT FACE=symbol>Î</FONT></B></I><I> <FONT FACE=symbol>á</FONT> <I>X</I> <FONT FACE=symbol>ñ</FONT> </I><I><B>:</B></I><I> <I>cond</I> </I><I><B><FONT FACE=symbol>®</FONT></B></I></TD>
+<TD NOWRAP><I> <I>ctr</I> <FONT FACE=symbol>Î</FONT> <I>qcc</I> <FONT FACE=symbol>Ù</FONT> <FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT> <FONT FACE=symbol>Î</FONT> [[ <FONT FACE=symbol>á</FONT> <I>X</I> <FONT FACE=symbol>ñ</FONT>]]</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>val</I></FONT></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> <FONT FACE=symbol>Ù</FONT> <I>cond</I>[<FONT FACE=symbol>á</FONT> <I>v</I> <FONT FACE=symbol>ñ</FONT>/<FONT FACE=symbol>á</FONT> <I>x</I> <FONT FACE=symbol>ñ</FONT>] }</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I> 
+</I><I>
+</I>
+</DIV><BR>
+The function <I>Eval</I><SUB><I><FONT SIZE=2><I>Val</I></FONT></I></SUB> is the standard evaluation function
+associated to a constraint set. For every constraint <I>exp
+</I><I><FONT FACE=symbol>Í</FONT></I><I> var</I> in the current constraint set <I>cs</I>
+we evaluate the expression with the current valuation and add the
+new value in <I>val(var)</I>. <BR><DIV ALIGN=center>
+<I>
+</I><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>Val</I></FONT></I></TD>
+</TR></TABLE></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>:</I></TD>
+<TD ALIGN=left NOWRAP><I><EM><I>P</I></EM></I><I><EM>(</EM></I><I><EM><I><I>SC</I></I></EM></I><I><EM>) × <I>Val</I> <FONT FACE=symbol>®</FONT> <I>Val</I></EM></I></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>Eval</I></I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>Val</I></FONT></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I> (<I>sc</I>,<I>val</I>)</I></TD>
+</TR></TABLE></TD>
+<TD ALIGN=center NOWRAP><I>=</I></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR VALIGN=middle><TD NOWRAP><I><I>val</I>[<I>var</I> |<FONT FACE=symbol>®</FONT> <I>val</I>(<I>var</I>) <FONT FACE=symbol>ú`½</FONT> [[ <I>exp</I>]]</I></TD>
+<TD NOWRAP><TABLE CELLSPACING=0 CELLPADDING=0>
+<TR><TD><I>&nbsp;</I></TD>
+</TR>
+<TR><TD NOWRAP><I><FONT SIZE=2><I>val</I></FONT></I></TD>
+</TR></TABLE></TD>
+<TD NOWRAP><I>]</I></TD>
+</TR></TABLE></TD>
+</TR></TABLE><I>
+</I><I>
+</I><I><B>with</B></I><I><BR></I><I><I>exp</I> <FONT FACE=symbol>Í</FONT> <I>var</I> <FONT FACE=symbol>Î</FONT> <I>sc</I>
+</I><I>
+</I>
+</DIV><BR>
+
+ 
+ <FONT COLOR=navy>Algorithm</FONT><BR><A NAME="res.algo"></A>
+<I>Q</I> := <FONT FACE=symbol>È</FONT><SUB><FONT SIZE=2><I>A</I> <FONT FACE=symbol>Î</FONT> <I>Aplt</I></FONT></SUB>  <EM><I>A</I></EM><SUB><EM><FONT SIZE=2><I><I>Class</I></I></FONT></EM></SUB><EM> (<I>A</I>)</EM> ;<BR><I>qcc</I>' :=  <EM><I>A</I></EM><SUB><EM><FONT SIZE=2><I><I>Class</I></I></FONT></EM></SUB><EM> (<I>JCRE</I>)</EM><SUB><FONT SIZE=2>(<I>JCRE</I>,<I>JCRE</I>)</FONT></SUB> ;<BR><I>sc</I>, <I>sc</I>', <I>qcc</I> := Ø ;<BR><I>val</I> := <FONT FACE=symbol>^</FONT> ;<BR><I>val</I>' := <I>val</I><SUB><FONT SIZE=2>0</FONT></SUB><A NAME="text8" href="index.html#note8"><SUP><FONT SIZE=2>8</FONT></SUP></A> ;<BR><B><I>while</I></B> <I>qcc</I> <FONT FACE=symbol>¹</FONT> <I>qcc</I>' <B><I>or</I></B> <I>sc</I> <FONT FACE=symbol>¹</FONT> <I>sc</I>' <B><I>or</I></B> <I>val</I> <FONT FACE=symbol>¹</FONT> <I>val</I>' <B><I>do</I></B><BR>&nbsp;&nbsp;&nbsp;&nbsp; <I>qcc</I> := <I>qcc</I>' ; <I>sc</I> := <I>sc</I>' ; <I>val</I> := <I>val</I>' ;<BR>&nbsp;&nbsp;&nbsp;&nbsp; <I>qcc</I>' := <I><I>Eval</I></I><SUB><I><FONT SIZE=2><I>QCC</I></FONT></I></SUB><I> (<I>qcc</I>,<I>val</I>) ;<BR>&nbsp;&nbsp;&nbsp;&nbsp; <I>sc</I>' := </I><I><I>Eval</I></I><SUB><I><FONT SIZE=2><I>SC</I></FONT></I></SUB><I> (<I>qcc</I>,<I>sc</I>,<I>val</I>) ;<BR>&nbsp;&nbsp;&nbsp;&nbsp; <I>val</I>' := </I><I><I>Eval</I></I><SUB><I><FONT SIZE=2><I>Val</I></FONT></I></SUB><I> (<I>sc</I>,<I>val</I>) ;<BR></I><I><B><I>endwhile</I></B></I><I><BR></I>
+
+ <FONT COLOR=navy>End</FONT> <BR>
+<BR>
+<DIV ALIGN=left><B>Proposition&nbsp;6.1</B>&nbsp;&nbsp;<EM>
+</EM><A NAME="proposition-termination"></A><EM>
+This algorithm terminates with a
+correct solution to </EM><EM><I>Q</I></EM><EM>. 
+</EM></DIV><BR>
+The proof of Proposition&nbsp;<A href="index.html#proposition-termination">6.1</A> is an
+extension of the standard argument based on Tarski's
+theorem&nbsp;[<A href="index.html#tarski1955"><CITE>24</CITE></A><CITE>, </CITE><A href="index.html#cousot1995"><CITE>11</CITE></A>].
+The specificity of the proof is to take into account that 
+the system evolves (in a monotonic fashion!) during the
+computation. The formal proof (termination and correctness) can be found
+in&nbsp;[<A href="index.html#eluard2001:these"><CITE>16</CITE></A>]. <BR>
+<BR>
+Establishing a start state for the iteration requires special
+attention in
+Java Card because there is no <TT>main</TT> to initialize the analysis. The
+sequence of operations is given by the <TT>JCRE</TT> and the user. We model 
+this interaction with the card by adding an
+artificial <TT>JCRE</TT> applet that is analyzed like the others. 
+For the <TT>JCRE</TT> we know its context (it is (<TT>JCRE</TT>,<TT>JCRE</TT>)) which permits
+the algorithm to
+produce the initial set of instantiated <I>QCC</I>s. 
+The initial valuation <I>val</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB> links each element with its default value.
+For each <EM><I>V</I></EM>&nbsp;[[x,m,ctx]] and <EM><I>C</I></EM>&nbsp;[[m,ctx]] the default value is Ø.
+For each <EM><I>SF</I></EM>&nbsp;[[<I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB>]] the default value is the function which links each static field of
+<I>Id</I><SUB><I><FONT SIZE=2><I>ci</I></FONT></I></SUB> with its default value (Ø for a reference and <I>{P}</I> for a
+primitive <I>P</I>).
+Finally, we initialize the abstract memory (<I>mem</I>) with the undefined abstract
+objects for each abstract reference. <BR>
+<BR>
+<!--TOC section An example analysis-->
+
+<H2>7&nbsp;&nbsp; An example analysis</H2><!--SEC END -->
+
+<A NAME="section-exemple-resolution"></A><BLOCKQUOTE><DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV>
+<DIV ALIGN=center><TT>
+</TT><TT>
+</TT><TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Bob extends Applet</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; implements MSI2{</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static MSI AliceObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>private void bar () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; AliceObj=(MSI) getSIO (AliceAID); }</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>public Secret foo2 () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; return AliceObj.foo (); } }</TT></TD>
+</TR></TABLE></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Charlie extends Applet {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static MSI2 BobObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static Secret AliceSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>private void bar () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; BobObj=(MSI2) getSIO (BobAID); }</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>private void foo3 () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; AliceSecret=BobObj.foo2 (); } }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR></TABLE><TT>
+</TT><TT>
+</TT></DIV><TT>
+</TT>
+<BR>
+<DIV ALIGN=center>Figure 2: <A NAME="fig-new-ABC"></A> An example of illegal object flow</DIV><BR>
+
+<DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV></BLOCKQUOTE>In figure&nbsp;<A href="index.html#fig-new-ABC">2</A>, we present a variation of the example given in
+section&nbsp;<A href="index.html#section-example">2.1</A>, in which the firewall and Alice can not prevent
+the flow of the Alice secret to Charlie.
+Here, Bob implements a shareable object and passes a reference to it to
+Charlie. In this case, the invoke at <I>Alice.foo</I> is valid at
+runtime, because for Alice the caller is always Bob. 
+Here, we only present the transformation of this example in our
+language in the figure&nbsp;<A href="index.html#fig-new-ABC-bc">3</A>.
+The constraints are neither generated nor solved automatically yet, but we work on an implementation
+of the previously presented algorithm.
+During the resolution, each ``variable'' received the possible values
+that it can contain. In this example, the important value is the
+secret of Alice (represented by the reference (<I>p</I>,<I>AliceAID</I>)) and the important variable is the static field 
+<TT>AliceSecret</TT> of Charlie. The resolution gives, as a part of the
+global solution, the following possible value for the static field of
+Charlie: <BR><DIV ALIGN=center>
+(<I>p</I>,<I>AliceAID</I>) <FONT FACE=symbol>Î</FONT> <EM><I>SF</I></EM><EM>&nbsp;[[ <I>Charlie</I>]](<I>Charlie</I>.<I>AliceSecret</I>)</EM>
+</DIV><BR>
+This result proves that there is an illegal object flow with
+the secret of Alice.<BR>
+<BR>
+<BLOCKQUOTE><DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV>
+<DIV ALIGN=center><TT>
+</TT><TT>
+</TT><TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1>
+<TR><TD ALIGN=center NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Alice extends Applet implements MSI {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private Secret ObjectSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; public Secret foo () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AID Client;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Secret Response;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1:T</TT><SUB><TT><FONT SIZE=2>1</FONT></TT></SUB><TT>:=invokestatic getPrevCtx</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 2:Client:=store T</TT><SUB><TT><FONT SIZE=2>1</FONT></TT></SUB><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 3:ifAID Client </TT><TT><FONT FACE=symbol>Î</FONT></TT><TT> {BobAID} T</TT><SUB><TT><FONT SIZE=2>2</FONT></TT></SUB><TT>:=getstatic Alice.ObjectSecret</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 4:Response:=store T</TT><SUB><TT><FONT SIZE=2>2</FONT></TT></SUB><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 5:Alice.foo_Ret:=load Response</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; return Alice.foo_Ret } }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=center NOWRAP><TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1>
+<TR><TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Bob extends Applet</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; implements MSI2{</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static MSI AliceObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>public Secret foo2 () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 6:T</TT><SUB><TT><FONT SIZE=2>3</FONT></TT></SUB><TT>:=getstatic Bob.AliceObj</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 7:T</TT><SUB><TT><FONT SIZE=2>4</FONT></TT></SUB><TT>:=invokeinterface MSI.foo T</TT><SUB><TT><FONT SIZE=2>3</FONT></TT></SUB><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 8:Bob.foo2_Ret:=store T</TT><SUB><TT><FONT SIZE=2>4</FONT></TT></SUB><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; return Bob.foo2_Ret } }</TT></TD>
+</TR></TABLE></TD>
+<TD ALIGN=left NOWRAP><TABLE CELLSPACING=2 CELLPADDING=0>
+<TR><TD ALIGN=left NOWRAP><TT>public class Charlie extends Applet {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static MSI2 BobObj;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; private static Secret AliceSecret;</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>private void foo3 () {</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 9:T</TT><SUB><TT><FONT SIZE=2>5</FONT></TT></SUB><TT>:=getstatic Charlie.BobObj</TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 10:T</TT><SUB><TT><FONT SIZE=2>6</FONT></TT></SUB><TT>:=invokeinterface MSI2.foo2 T</TT><SUB><TT><FONT SIZE=2>5</FONT></TT></SUB><TT></TT></TD>
+</TR>
+<TR><TD ALIGN=left NOWRAP><TT>&nbsp;&nbsp;&nbsp;&nbsp; 11:putstatic Charlie.AliceSecret T</TT><SUB><TT><FONT SIZE=2>6</FONT></TT></SUB><TT>} }</TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR></TABLE><TT></TT></TD>
+</TR></TABLE><TT>
+</TT><TT>
+</TT></DIV><TT>
+</TT>
+<BR>
+<DIV ALIGN=center>Figure 3: <A NAME="fig-new-ABC-bc"></A> The translation of the three methods of the example in our language</DIV><BR>
+
+<DIV ALIGN=center><HR WIDTH="80%" SIZE=2></DIV></BLOCKQUOTE><!--TOC section Related works-->
+
+<H2>8&nbsp;&nbsp; Related works</H2><!--SEC END -->
+
+<A NAME="section-relatedwork"></A>The formalization of the Java Card firewall has been the object of
+several works. Motré&nbsp;[<A href="index.html#motre2000"><CITE>19</CITE></A>] has formalized the firewall with
+the B method. She defines a machine for the firewall and an operation
+for each check of the firewall. This modeling provides a formal
+description of the firewall that is used to ensure that the firewall
+verifications are sufficient to fulfill the security policy. In
+addition, successive refinements lead to a reference implementation of
+the firewall. More traditional operational semantics for modeling the firewall
+checks have been given by Éluard <EM>et
+al.</EM>&nbsp;[<A href="index.html#eluard2001"><CITE>17</CITE></A>]. Siveroni <EM>et 
+al.</EM>&nbsp;[<A href="index.html#siveroni2001"><CITE>22</CITE></A>] show how to integrate this into an
+operational semantics for Java Card. 
+For the modeling of the <TT>JCRE</TT> it is necessary to be able to ``execute''
+the differents applets. We choose to follow the approach used by Attali
+<EM>et al.</EM>&nbsp;[<A href="index.html#attali2000"><CITE>3</CITE></A><CITE>, </CITE><A href="index.html#attali2001"><CITE>4</CITE></A>] and model the <TT>JCRE</TT> by an
+applet. With this approach, we can adapt the <TT>JCRE</TT> to obtain
+either exactly the execution we want or all possible executions.<BR>
+<BR>
+The problems related to the Java Card firewall have been observed by
+others, notably Montgomery and Krishna
+[<A href="index.html#montgomery1999"><CITE>18</CITE></A>], who propose another approach
+to secure object sharing based on delegates. A server implements a
+delegate object that mediates access to those methods that the server
+wants to share with others. The delegate object performs the 
+checks that it deems necessary to grant access. This approach is more
+flexible than the existing firewall but has the drawback that it
+requires (minor) changes to the JCVM. 
+This technique permits to use more sophisticated authentication mechanisms than 
+the one based only on AID comparison.
+In the paper it is shown how to use a protocol based on challenge/response phrases 
+to avoid the problem of AID spoofing.
+However, no technique is
+presented for proving that delegates indeed do respect a given security
+policy. In contrast, our approach works
+for the standard JCVM and relies on static analysis to check that no 
+unwanted access takes place. <BR>
+<BR>
+Two works on the verification of applet sharing on Java Card are
+closely related to ours. 
+Bieber <EM>et al.</EM>&nbsp;[<A href="index.html#bieber2000"><CITE>8</CITE></A><CITE>, </CITE><A href="index.html#cazin2000"><CITE>7</CITE></A>], as part of the Pacap
+project&nbsp;[<A href="index.html#pacap:an"><CITE>2</CITE></A>], have defined an analysis of Java Card
+applets which can detect illegal information flow. Their approach is based on three
+elements: an abstraction of values of variables into a <EM>level </EM> that
+describes the sharing of the value, an invariant that is a sufficient
+condition the security property to hold and
+a model checker to verify the invariant. 
+A lattice of levels is used to represent the sharing of objects. 
+If an applet <I>A</I> is allowed to share some
+information with an applet <I>B</I>, the level <I>A+B</I> is entered
+into the lattice specifying the security policy. Each applet is
+represented by a call graph and each call graph is transformed into an
+SMV model. To work with a shareable object, an applet must call an
+interface method so only call graphs which include an interface method
+are taken into account. The invariant together with the control flow
+graphs are given to the SMV model checker for verification. The work
+presented here complements their work by providing a precise
+description of how these control and data flow graphs can be calculated, taking 
+into account the firewall and the different calling contexts.<BR>
+<BR>
+The analysis proposed by Caromel, Henrio and
+Serpette&nbsp;[<A href="index.html#caromel2001"><CITE>9</CITE></A>] has as aim to signal whether a security
+exception might (or will definitely) be raised by the firewall at
+execution of a set of applets. The analysis thus shares objectives
+with ours and calculates the same type of information. The differences
+between the analyses lie in the precision. Caromel <EM>et al.</EM>
+have opted for a simple, flow-insensitive analysis whereas we can obtain
+some flow sensitivity through the choice of local variables in our
+three-address byte code. Instead of modeling the memory state
+explicitly, they use an alias analysis to track side effects of
+assignments. The control flow analysis in their analysis is a simple
+class hierarchy analysis, in contrast to our context-sensitive flow
+analysis. Indeed, their analysis does not analyze methods
+separately for each calling context and hence would not be able to
+deal with the call stack inspection as well as our analysis. Thus, the
+two analyses can be seen as two extremes of the design space for flow
+analysis for Java Card. <BR>
+<BR>
+The quantified conditional constraints (<I>QCC</I>s) introduced in
+Section&nbsp;<A href="index.html#section-qcc">5.1</A> are an extension of the conditional
+constraints (originally due to Reynolds&nbsp;[<A href="index.html#reynolds1969"><CITE>21</CITE></A>])
+that are used in the object-oriented type analysis defined by Palsberg and 
+Schwartzbach&nbsp;[<A href="index.html#palsberg1994:book"><CITE>20</CITE></A>]. In this analysis, conditions
+of the form <I>C</I> <FONT FACE=symbol>Î</FONT> <EM><I>V</I></EM><EM>(<I>X</I>)</EM> are used to guard the constraints
+generated from class <I>C</I> such that these are only evaluated when class 
+<I>C</I> is actually used. However, it is still necessary to generate the
+constraints for every class in the hierarchy which leads to
+scalability problems. The <I>QCC</I>s, on the other
+hand, generate these constraints <EM>on demand</EM>: only when the
+analysis discovers that a certain class or method is used, the
+corresponding constraints are generated and added to the current set
+of constraints. <BR>
+<BR>
+<!--TOC section Conclusions and future work-->
+
+<H2>9&nbsp;&nbsp; Conclusions and future work</H2><!--SEC END -->
+
+<A NAME="section-conclusion"></A>
+The access control exercised by the Java Card firewall is bypassed
+when invoking methods on shareable objects. In order to determine the
+access control that is implemented by a given set of Java Card applets
+we have presented a
+static analysis that calculates a safe approximation of the flow of
+objects between applets of a
+Java Card application. The static analysis is an extension of the
+constraint-based program analysis framework that allows to generate
+and solve data flow constraints in a demand-driven fashion. <BR>
+<BR>
+The information calculated by our analysis has other applications than
+verifying access control. 
+The data flow information allows to construct
+a precise <EM>control flow graph</EM> on which other safety-style
+properties of the application can be verified. Examples of these include
+verifying that all Java Card transactions are well-formed and that
+exceptions are properly caught and treated by the application. A
+verification technique based on model checking using finite automata
+is detailed in&nbsp;[<A href="index.html#eluard2001:these"><CITE>16</CITE></A>].<BR>
+<BR>
+The present analysis does not deal with the problem of
+<EM>(indirect) information flow</EM> between applets. 
+In particular, we do not model the flow of primitive
+values between applets so we cannot detect if applet B
+transfers data to applet C that contains information obtained from applet
+A. Analyses for detecting such information flow have been proposed
+elsewhere (see <EM>e.g.</EM>&nbsp;[<A href="index.html#volpano1996"><CITE>25</CITE></A>]) in the setting of a
+simple imperative language. The control and object flow information
+calculated by our analysis can be used to adapt such analyses to the
+Java Card language because it allows to eliminate the higher-order and
+object-oriented features of an application, essentially translating it
+into an imperative language. This requires an improvement to the abstract
+domains such that owner information can be attached to primitive values and
+primitive operations must be adjusted to calculate the possible owners
+depending on the values used in the operation as well as the applet
+which does the operation. <BR>
+<BR>
+Finally, for the moment the analysis does not take into account
+exceptions other than security exceptions. 
+With the current abstraction of the primitive values it is clear that
+exceptions related to <EM>e.g.</EM>, array access (index-out-of-bound
+exceptions) can only be dealt with in a very approximate
+fashion. Exceptions form an integral part of the control-flow of
+an application so progress in this direction is desirable. <BR>
+<BR>
+
+<!--TOC section References-->
+
+<H2>References</H2><!--SEC END -->
+<DL COMPACT=compact>
+<DT><A NAME="javacard211"><FONT COLOR=purple>[1]</FONT></A><DD>
+Java&nbsp;Card 2.1.1.
+<TT>http://java.sun.com/products/javacard/javacard21.html</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="pacap:an"><FONT COLOR=purple>[2]</FONT></A><DD>
+The <FONT COLOR=navy>pacap</FONT> project.
+<TT>http://www.gemplus.com/smart/r_d/projects/pacap.htm</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="attali2000"><FONT COLOR=purple>[3]</FONT></A><DD>
+Isabelle Attali, Denis Caromel, Carine Courbis, Ludovic Henrio, and Henrik
+ Nilsson.
+Smart tools for Java Cards.
+In Josep Domingo-Ferrer, David Chan, and Anthony Watson, editors,
+ <EM>CARDIS</EM>. Kluwer Academic Publishers, September 2000.<BR>
+<BR>
+
+<DT><A NAME="attali2001"><FONT COLOR=purple>[4]</FONT></A><DD>
+Isabelle Attali, Denis Caromel, Carine Courbis, Ludovic Henrio, and Henrik
+ Nilsson.
+An integrated development environment for Java Card.
+<EM>Special issue on </EM><EM>S</EM><EM>mart </EM><EM>C</EM><EM>ards of the </EM><EM>J</EM><EM>ournal </EM><EM>C</EM><EM>omputer
+ </EM><EM>N</EM><EM>etworks</EM>, 36(4):391--405, July 2001.<BR>
+<BR>
+
+<DT><A NAME="bertelsen1997"><FONT COLOR=purple>[5]</FONT></A><DD>
+Peter Bertelsen.
+Semantics of Java Byte Code.
+Technical report, DTU, March 1997.
+Home page <TT>http://www.dina.kvl.dk/~pmb/</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="bertelsen1998"><FONT COLOR=purple>[6]</FONT></A><DD>
+Peter Bertelsen.
+Dynamic semantics of Java bytecode.
+In <EM>Workshop on Principles on Abstract Machines</EM>, September 1998.
+Home page <TT>http://www.dina.kvl.dk/~pmb/</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="cazin2000"><FONT COLOR=purple>[7]</FONT></A><DD>
+Pierre Bieber, Jacques Cazin, Pierre Girard, Jean-Louis Lanet, Virginie Wiels,
+ and Guy Zanon.
+Checking secure interactions of smart cards applets.
+In <EM>ESORICS</EM>, volume 1895 of <EM>LNCS</EM>, pages 1--16.
+ Springer-Verlag, 2000.<BR>
+<BR>
+
+<DT><A NAME="bieber2000"><FONT COLOR=purple>[8]</FONT></A><DD>
+Pierre Bieber, Jacques Cazin, Abdellah&nbsp;El Marouani, Pierre Girard, Jean-Louis
+ Lanet, Virginie Wiels, and Guy Zanon.
+The PACAP prototype : a tool for detecting Java Card illegal
+ flow.
+In Isabelle Attali and Thomas Jensen, editors, <EM>JCW</EM>, volume 2041
+ of <EM>LNCS</EM>, September 2000.<BR>
+<BR>
+
+<DT><A NAME="caromel2001"><FONT COLOR=purple>[9]</FONT></A><DD>
+Denis Caromel, Ludovic Henrio, and Bernard Serpette.
+Context inference for static analysis of java card object sharing.
+In Isabelle Attali and Thomas Jensen, editors, <EM>ESMART</EM>, volume
+ 2140, September 2001.<BR>
+<BR>
+
+<DT><A NAME="jcbook2000"><FONT COLOR=purple>[10]</FONT></A><DD>
+Zhiqun Chen.
+<EM>J</EM><EM>ava </EM><EM>C</EM><EM>ard Technology for Smart Cards: Architecture and
+ Programmer's Guide</EM>.
+Addison-Wesley, 2000.<BR>
+<BR>
+
+<DT><A NAME="cousot1995"><FONT COLOR=purple>[11]</FONT></A><DD>
+Patrick Cousot and Radhia Cousot.
+Formal language, grammar and set-constraint-based program analysis by
+ abstract interpretation.
+In <EM>FPCA</EM>, pages 170--181. ACM Press, June 1995.<BR>
+<BR>
+
+<DT><A NAME="gosling2000"><FONT COLOR=purple>[12]</FONT></A><DD>
+James Gosling, Bill Joy, Guy Steele, and Gilad Bracha.
+<EM>The Java Language Specification, Second Edition</EM>.
+Addison-Wesley, 2000.
+896 pages, <TT>http://java.sun.com/docs/books/jls/index.html</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="hudak1987"><FONT COLOR=purple>[13]</FONT></A><DD>
+Paul&nbsp;R. Hudak.
+A semantic model of reference counting and its abstraction.
+In Samson Abramsky and Chris Hankin, editors, <EM>Abstract
+ Interpretation of Declarative Languages</EM>, chapter&nbsp;3, pages 45--62. Ellis
+ Horwood series in computer and their applications, 1987.<BR>
+<BR>
+
+<DT><A NAME="jensen1998"><FONT COLOR=purple>[14]</FONT></A><DD>
+Thomas Jensen, Daniel&nbsp;Le Métayer, and Tommy Thorn.
+Security and dynamic class loading in Java: A formalisation.
+In <EM>ICCL</EM>, pages 4--15, May 1998.<BR>
+<BR>
+
+<DT><A NAME="lindholm1999"><FONT COLOR=purple>[15]</FONT></A><DD>
+Tim Lindholm and Frank Yellin.
+<EM>The Java Virtual Machine Specification, Second Edition</EM>.
+Addison-Wesley, 1999.
+<TT>http://java.sun.com/docs/books/vmspec/index.html</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="eluard2001:these"><FONT COLOR=purple>[16]</FONT></A><DD>
+Marc Éluard.
+<EM>Analyse de sécurité pour la certification d'applications </EM><EM>J</EM><EM>ava
+ </EM><EM>C</EM><EM>ard</EM>.
+PhD thesis, Université de Rennes&nbsp;1, December 2001.
+N. d'ordre&nbsp;: 2614.<BR>
+<BR>
+
+<DT><A NAME="eluard2001"><FONT COLOR=purple>[17]</FONT></A><DD>
+Marc Éluard, Thomas Jensen, and Ewen Denney.
+An operational semantics of the Java Card firewall.
+<EM>LNCS</EM>, 2140:95--110, September 2001.<BR>
+<BR>
+
+<DT><A NAME="montgomery1999"><FONT COLOR=purple>[18]</FONT></A><DD>
+Michael Montgomery and Ksheerabdhi Krishna.
+Secure object sharing in Java Card.
+In <EM>Smartcard</EM>, pages 119--127. USENIX, May 1999.<BR>
+<BR>
+
+<DT><A NAME="motre2000"><FONT COLOR=purple>[19]</FONT></A><DD>
+Stéphanie Motré.
+Modélisation et implémentation formelle de la politique de sécurité
+ dynamique de la Java Card.
+In <EM>AFADL</EM>, pages 158--172. LSR/IMAG, January 2000.<BR>
+<BR>
+
+<DT><A NAME="palsberg1994:book"><FONT COLOR=purple>[20]</FONT></A><DD>
+Jens Palsberg and Michael&nbsp;I. Schwartzbach.
+<EM>Object-Oriented Type Systems</EM>.
+John Wiley &amp; Sons, 1994.<BR>
+<BR>
+
+<DT><A NAME="reynolds1969"><FONT COLOR=purple>[21]</FONT></A><DD>
+John&nbsp;C. Reynolds.
+Automatic computation of data set definitions.
+In <EM>Information Processing</EM>, volume&nbsp;1, pages 456--461.
+ North-Holland, August 1969.<BR>
+<BR>
+
+<DT><A NAME="siveroni2001"><FONT COLOR=purple>[22]</FONT></A><DD>
+Igor Siveroni, Thomas Jensen, and Marc Éluard.
+A formal specification of the Java Card applet firewall.
+In Hanne&nbsp;Riis Nielson, editor, <EM>NordSec</EM>, Technical Report
+ IMM-TR-2001-14, pages 108--122. Technical University of Denmark, November
+ 2001.<BR>
+<BR>
+
+<DT><A NAME="sitesoot"><FONT COLOR=purple>[23]</FONT></A><DD>
+Soot: a Java optimization framework.
+<TT>http://www.sable.mcgill.ca/soot/</TT>, 2001.<BR>
+<BR>
+
+<DT><A NAME="tarski1955"><FONT COLOR=purple>[24]</FONT></A><DD>
+Alfred Tarski.
+A lattice-theoretical fixpoint theorem and its applications.
+<EM>Pacific Journal of Mathematics</EM>, 5(2):285--309, June 1955.<BR>
+<BR>
+
+<DT><A NAME="volpano1996"><FONT COLOR=purple>[25]</FONT></A><DD>
+Dennis Volpano, Geoffrey Smith, and Cynthia Irvine.
+A sound type system for secure flow analysis.
+<EM>JCS</EM>, 4(3):167--187, December 1996.</DL>
+<!--BEGIN NOTES document-->
+&nbsp;------------------------------------------ &nbsp;<DL>
+<DT><A NAME="note1" href="index.html#text1"><FONT SIZE=5>1</FONT></A><DD> In the case of a static call, the execution is in the
+caller's context.
+
+<DT><A NAME="note2" href="index.html#text2"><FONT SIZE=5>2</FONT></A><DD> In reality, this method is called <TT>getShareableInterfaceObject</TT> and is invoked by the <TT>JCRE</TT> that mediates all requests for shared objects.
+
+<DT><A NAME="note3" href="index.html#text3"><FONT SIZE=5>3</FONT></A><DD> In reality, the method 
+<TT>JCSystem.getAppletShareableInterfaceObject.</TT>
+
+<DT><A NAME="note4" href="index.html#text4"><FONT SIZE=5>4</FONT></A><DD> In reality, this method is called <TT>JCSystem.getPreviousContextAID.</TT>
+
+<DT><A NAME="note5" href="index.html#text5"><FONT SIZE=5>5</FONT></A><DD> The qualified name of an entity is the complete name.
+For a class, it is <EM>p.c</EM> where <EM>p</EM> is the name of the package and <EM>c</EM> the
+(unqualified) name of the class. For a method (<EM>c.m</EM>) or a field (<EM>c.f</EM>), it is
+the qualified name of the class and the (unqualified) name of the method or field.
+
+<DT><A NAME="note6" href="index.html#text6"><FONT SIZE=5>6</FONT></A><DD> To extract a (unqualified name), we use <I>p</I>
+ for a package, <I>c</I> for a class or an interface, <I>m</I> for a
+ method and <I>f</I> for a field.
+To extract a qualified name, we combine the symbols so, for example,
+<FONT FACE=symbol>é</FONT><I>Id</I><FONT FACE=symbol>ù</FONT><SUP><FONT SIZE=2><I>p</I>.<I>c</I></FONT></SUP> will extract a qualified name of a class (or 
+interface) from the qualified name <I>Id</I>.
+
+<DT><A NAME="note7" href="index.html#text7"><FONT SIZE=5>7</FONT></A><DD> We assume furthermore a set <I>Pc</I> of program
+ counters. A program counter identifies an instruction within the whole class hierarchy
+ and not just a method.
+
+<DT><A NAME="note8" href="index.html#text8"><FONT SIZE=5>8</FONT></A><DD> The definition of the initial value <I>val</I><SUB><I><FONT SIZE=2>0</FONT></I></SUB> comes after the algorithm.
+</DL>
+<!--END NOTES-->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+
+<!--FOOTER-->
+<HR SIZE=2>
+<BLOCKQUOTE><EM>This document was translated from L<sup>A</sup>T<sub>E</sub>X by
+</EM><A href="http://pauillac.inria.fr/~maranget/hevea/index.html"><EM>H</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>V</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>A</EM></A><EM>.
+</EM></BLOCKQUOTE>
+
+<!-- END OF PAGE CONTENTS -->
+</td></tr>
+</table>
+<hr>
+<table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0" ALIGN="LEFT">
+<tr><td VALIGN="TOP" WIDTH="40%">
+<address>
+<font SIZE="2">This paper was originally published in the
+Proceedings of the Fifth Smart Card Research and Advanced Application Conference,  
+November 21&#150;22, 2002, San Jose, CA, USA
+</font><br>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<font SIZE="2">Last changed:  11 Oct. 2002 aw</font><br>
+</address>
+</td><td VALIGN="TOP" ALIGN="RIGHT" WIDTH="60%">
+
+<!-- Upwards Navigation Table -->
+<table border=0 cellspacing=0 cellpadding=0>
+<tr><td>
+<a href="../../../tech.html"><font size=1>Technical Program</font></a><br>
+</td></tr>
+<tr><td>
+<a href="../../../index.html"><font size=1>CARDIS '02 Home</font></a><br>
+</td></tr>
+<tr><td>
+<a href="https://www.usenix.org/legacy/index.html"><font size=1>USENIX home</font></a><br>
+</td></tr></table>
+<!-- End of Upwards Navigation Table -->
+
+</td></tr></table>
+</td></tr></table>
+</center>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":117,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></body>
+</html>
+

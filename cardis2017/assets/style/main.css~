@@ -1,0 +1,313 @@
+body {
+    padding-top: 10px;
+}
+
+.header-image {
+    margin-top: -20px;
+}
+
+.header-navbar {
+    margin-top: 20px;
+}
+
+.submenu {
+    margin-bottom: 30px;
+    width: 100%;
+
+    font-size: 0.8em;
+}
+
+.submenu td {
+    padding: 3px 10px;
+    border-width: 0px;
+    border-radius: 2px;
+}
+
+.submenu td:hover {
+    background-color: #d3d3d3;
+}
+
+.submenu td.active {
+    background-color: #5a92f9;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.submenu td.subsection {
+    padding-left: 40px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.main-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    height: 500px;
+}
+
+.main-content p {
+    margin-top: 20px;
+}
+
+.main-body {
+    padding-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #2d6ad9;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+h5.invited {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    color: #777777;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: right;
+}
+
+.slide {
+    color: #333333;
+    font-size: 0.7em;
+    font-style: normal;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.slide a {
+    color: #333333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.slide a:hover {
+    color: #666666;
+}
+
+.speakerPhoto {
+    float: right;
+    margin: 40px 0 15px 30px;
+    border: 2px solid;
+}
+
+.talk {
+    text-indent: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bio {
+    margin-top: 40px;
+    text-indent: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-style: italic;
+    color: #888888;
+}
+
+.session-chair {
+    font-style: normal;
+}
+
+.unbold {
+    font-weight: normal;
+}
+
+.authors {
+    font-style: italic;
+    font-weight: normal;
+    color: #888888;
+}
+
+.title {
+    color: #333333;
+}
+
+.accepted-papers-title {
+    font-weight: bold;
+}
+
+.accepted-papers li {
+    margin-top: 30px;
+}
+
+.accepted-papers-authors li {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.accepted-papers-affiliation {
+    color: #888;
+    font-style: italic;
+}
+
+.note {
+    font-size: 0.8em;
+}
+
+.agenda tbody tr th {
+    font-weight: normal;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle !important;
+    width: 30%;
+}
+
+.agenda tbody tr th.new-day {
+    border: none;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.agenda tbody tr td {
+    border: none;
+    font-weight: bold;
+    vertical-align: middle !important;
+}
+
+.agenda tbody tr {
+    border-bottom: 1px solid #CCC;
+}
+
+.agenda tbody tr.no-border-row {
+    border-bottom: none;
+}
+
+.cfp {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.committee-name {
+    font-weight: bold;
+}
+
+.affiliation {
+    font-style: italic;
+}
+
+dd {
+    padding-bottom: 0.8em;
+}
+
+dt {
+    white-space: normal;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.news {
+    margin-bottom: 60px;
+}
+
+.news table {
+    width: 100%;
+}
+
+.news td {
+    vertical-align: top;
+    padding: 5px;
+}
+
+.news td.date {
+    font-size: x-small;
+    width: 90px;
+}
+
+.news td.info {
+    font-size: small;
+
+    padding-left: 15px;
+}
+
+.sponsors {
+    margin-top: 60px;
+}
+
+.sponsors p {
+    margin-top: 30px;
+}
+
+.sponsors img {
+    height: 51px;
+    margin: 30px auto;
+}
+
+.sponsors .sponsorCategory {
+    margin-top: 30px;
+    font-size: 1.2em;
+    border-bottom: solid 2px grey;
+    margin-bottom: 10px;
+}
+
+.sponsors .sponsorCategoryGold {
+    color: gold;
+}
+
+.sponsors .sponsorCategorySilver {
+    color: grey;
+}
+
+.sponsors .sponsorCategoryPlatinium {
+    color: #a4a0ff;
+}
+
+.footer {
+    text-align: center;
+    font-size: small;
+    background-color: #202020;
+    color: white;
+}
+
+.footer-contact {
+    background-color: #505050;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    color: white;
+}
+
+.footer-contact li {
+    vertical-align: top;
+
+    margin-right: 10px;
+}
+
+.footer-contact li li {
+    margin-left: 20px;
+
+    font-size: x-small;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}

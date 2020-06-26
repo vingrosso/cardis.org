@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Description of the Advanced Encryption Standard</TITLE>
+<META NAME="description" CONTENT="Description of the Advanced Encryption Standard">
+<META NAME="keywords" CONTENT="aes_on_crypto2000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="aes_on_crypto2000.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="aes_on_crypto2000.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<a href="http://www.usenix.org"><img src="../../../../../../graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a>
+
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html100"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html98"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html92"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html101"
+  HREF="node8.html">The transformation AddRoundKey</A>
+<B> Up:</B> <A NAME="tex2html99"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html93"
+  HREF="node6.html">The required modular arithmetic</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="aes"></A>
+<BR>
+Description of the Advanced Encryption Standard
+</H1>
+
+In this section we briefly describe the Advanced
+Encryption Standard (AES). For a more detailed description we refer to [<A
+ HREF="node21.html#DR2">DR2</A>]. 
+
+AES encrypts plaintexts consisting of <!-- MATH
+ $\text{\tt lb}$
+ -->
+<TT>lb</TT> bytes, where <!-- MATH
+ $\text{\tt lb}=16, 24$
+ -->
+<TT>lb<IMG
+ WIDTH="62" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ =16, 24$"></TT>,
+or <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ 32$">. The plaintext is organized as a <!-- MATH
+ $(4\times \text{\tt Nb})$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$ (4\times$">&nbsp; &nbsp;<TT>Nb<IMG
+ WIDTH="12" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ )$"></TT> array
+<IMG
+ WIDTH="38" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ (a_{ij})$">, <!-- MATH
+ $0\le i<4, 0\le j<\text{\tt Nb}-1$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$ 0\le i&lt;4, 0\le j&lt;$"><TT>Nb<IMG
+ WIDTH="26" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ -1$"></TT>, where <!-- MATH
+ $\text{\tt Nb}=4,6,8$
+ -->
+<TT>Nb<IMG
+ WIDTH="61" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ =4,6,8$"></TT>, depending on
+the value of <!-- MATH
+ $\text{\tt lb}$
+ -->
+<TT>lb</TT>. The <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.png"
+ ALT="$ n$">-th byte of the plaintext is stored in
+byte <IMG
+ WIDTH="29" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ a_{i,j}$"> with <IMG
+ WIDTH="97" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$ i=n\mod 4$">, <!-- MATH
+ $j=\lfloor \frac{n}{4}\rfloor$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ j=\lfloor \frac{n}{4}\rfloor$">. 
+
+AES uses a secret key, called <I>cipher key</I>, consisting of <!-- MATH
+ $\text{\tt lk}$
+ -->
+<TT>lk</TT>
+bytes, where <!-- MATH
+ $\text{\tt lk}=16,24,$
+ -->
+<TT>lk<IMG
+ WIDTH="66" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$ =16,24,$"></TT> or <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ 32$">. Any combination of values <!-- MATH
+ $\text{\tt lb}$
+ -->
+<TT>lb</TT> and
+<!-- MATH
+ $\text{\tt lk}$
+ -->
+<TT>lk</TT> is allowed. The cipher key is organized in a <!-- MATH
+ $4\times \text{\tt Nk}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ 4\times$">&nbsp; &nbsp;<TT>Nk</TT>
+array <IMG
+ WIDTH="38" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ (k_{ij})$">, <!-- MATH
+ $0\le i< 4, 0\le j\le \text{\tt Nk}-1$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ 0\le i&lt; 4, 0\le j\le$">&nbsp; &nbsp;<TT>Nk<IMG
+ WIDTH="26" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ -1$"></TT>, where <!-- MATH
+ $\text{\tt Nk}=4,6,8$
+ -->
+<TT>Nk<IMG
+ WIDTH="61" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ =4,6,8$"></TT>,
+depending on the value of <!-- MATH
+ $\text{\tt lk}$
+ -->
+<TT>lk</TT>. The <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.png"
+ ALT="$ n$">-th key byte is stored in
+byte <IMG
+ WIDTH="26" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ k_{ij}$"> with <IMG
+ WIDTH="97" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$ i=n\mod 4$">, <!-- MATH
+ $j=\lfloor \frac{n}{4}\rfloor$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ j=\lfloor \frac{n}{4}\rfloor$">.
+
+The AES encryption process is composed of <I>rounds</I>. Except for the last round, each round
+consists of four
+transformations called <!-- MATH
+ $\text{\tt ByteSub},\text{\tt ShiftRow},\text{\tt MixColumn}$
+ -->
+<TT>ByteSub<IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ ,$"><TT>ShiftRow<IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ ,$"><TT>MixColumn</TT></TT></TT>, and <!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT>. In the last round
+the transformation <!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT> is omitted. The four transformations operate
+on intermediate results, called <I>states</I>. A state is a <!-- MATH
+ $4\times
+\text{\tt Nb}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ 4\times$">&nbsp; &nbsp;<TT>Nb</TT> array <IMG
+ WIDTH="38" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ (a_{ij})$"> of bytes. Initially, the state is given by the
+plaintext to be encrypted. The number of rounds <!-- MATH
+ $\text{\tt Nr}$
+ -->
+<TT>Nr</TT> is <IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ 10,12$">, or
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.png"
+ ALT="$ 14$">, depending on <!-- MATH
+ $\max\{\text{\tt Nb},\text{\tt Nk}\}$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ \max\{$"><TT>Nb<IMG
+ WIDTH="10" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ ,$"><TT>Nk<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \}$"></TT></TT>. In addition
+to the transformations performed in the <!-- MATH
+ $\text{\tt Nr}$
+ -->
+<TT>Nr</TT> rounds there is an
+<!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT> applied to the plaintext prior to the first round.  We call
+this the <I>initial <TT>AddRoundKey</TT></I>. 
+
+Next, we are going to describe the transformations used in the AES
+encryption process. We begin with <!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT>.
+ 
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html102"
+  HREF="node8.html">The transformation <!-- MATH
+ $\text{\tt AddRoundKey}$
+ -->
+<TT>AddRoundKey</TT></A>
+<LI><A NAME="tex2html103"
+  HREF="node9.html">The transformation <!-- MATH
+ $\text{\tt ByteSub}$
+ -->
+<TT>ByteSub</TT></A>
+<LI><A NAME="tex2html104"
+  HREF="node10.html">The transformation <!-- MATH
+ $\text{\tt ShiftRow}$
+ -->
+<TT>ShiftRow</TT></A>
+<LI><A NAME="tex2html105"
+  HREF="node11.html">The transformation <!-- MATH
+ $\text{\tt MixColumn}$
+ -->
+<TT>MixColumn</TT></A>
+<LI><A NAME="tex2html106"
+  HREF="node12.html">The operation <TT>xtime</TT></A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html100"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html98"
+  HREF="aes_on_crypto2000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html92"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html101"
+  HREF="node8.html">The transformation AddRoundKey</A>
+<B> Up:</B> <A NAME="tex2html99"
+  HREF="aes_on_crypto2000.html">On the implementation of</A>
+<B> Previous:</B> <A NAME="tex2html93"
+  HREF="node6.html">The required modular arithmetic</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Roger Fischlin
+2002-09-25
+</ADDRESS>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"d823139095","applicationID":"509444","transactionName":"YVJVZksCXkEEVhIMWFgYdlFNCl9cSkAVAFlfT2hAXAdZQABWEhZoWFhDbV8MRVwB","queueTime":0,"applicationTime":85,"ttGuid":"","agentToken":"","atts":"TRVWEAMYTU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></BODY>
+</HTML>

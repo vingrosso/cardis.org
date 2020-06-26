@@ -1,0 +1,87 @@
+<h1>Accepted Papers</h1>
+
+<ul class="list-unstyled accepted-papers">
+    <li><span class="accepted-papers-title">Kernel Discriminant Analysis for Information Extraction in the Presence of Masking</span><ul class="accepted-papers-authors">
+        <li>Eleonora Cagli <span class="accepted-papers-affiliation">Univ. Grenoble Alpes, CEA, LETI, Sorbonne Universit&eacute;s, France</span></li>
+        <li>C&eacute;cile Dumas <span class="accepted-papers-affiliation">Univ. Grenoble Alpes, CEA, LETI, France</span></li>
+        <li>Emmanuel Prouff  <span class="accepted-papers-affiliation">SAFRAN Identity &amp; Security, Sorbonne Universit&eacute;s, France</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Defeating Embedded Cryptographic Protocols by combining Second-Order with Brute Force</span><ul class="accepted-papers-authors">
+        <li>Benoit Feix <span class="accepted-papers-affiliation">UL Transaction Security, France</span></li>
+        <li>Andjy Ricart <span class="accepted-papers-affiliation">UL Transaction Security, UK</span></li>
+        <li>Benjamin Timon <span class="accepted-papers-affiliation">UL Transaction Security, UK</span></li>
+        <li>Lucille Tordella <span class="accepted-papers-affiliation">UL Transaction Security, UK</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Side-Channel Analysis of the TUAK Algorithm used for Authentication and Key Agreement in 3G/4G Networks</span><ul class="accepted-papers-authors">
+        <li>Houssem Maghrebi <span class="accepted-papers-affiliation">SAFRAN Identity &amp; Security, France</span></li>
+        <li>Julien Bringer <span class="accepted-papers-affiliation">SAFRAN Identity &amp; Security, France</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Reverse engineering Flash EEPROM memories using Scanning Electron Microscopy</span><ul class="accepted-papers-authors">
+        <li>Franck Courbon <span class="accepted-papers-affiliation">University of Cambridge, UK</span></li>
+        <li>Sergei Skorobogatov <span class="accepted-papers-affiliation">University of Cambridge, UK</span></li>
+        <li>Christopher Woods <span class="accepted-papers-affiliation">Quo Vadis Labs, UK</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">SpecTre: A Tiny Side-Channel Resistant Speck Core for FPGAs</span><ul class="accepted-papers-authors">
+        <li>Cong Chen <span class="accepted-papers-affiliation">Worcester Polytechnic Institute, US</span></li>
+        <li>Mehmet Sinan İnci <span class="accepted-papers-affiliation">Worcester Polytechnic Institute, US</span></li>
+        <li>Mostafa Taha <span class="accepted-papers-affiliation">Assiut University, Egypt</span></li>
+        <li>Thomas Eisenbarth <span class="accepted-papers-affiliation">Worcester Polytechnic Institute, US</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Concealing Secrets in Embedded Processors Designs</span><ul class="accepted-papers-authors">
+        <li>Hannes Gross <span class="accepted-papers-affiliation">TU Graz, Austria</span></li>
+        <li>Manuel Jelinek <span class="accepted-papers-affiliation">TU Graz, Austria</span></li>
+        <li>Stefan Mangard <span class="accepted-papers-affiliation">TU Graz, Austria</span></li>
+        <li>Thomas Unterluggauer <span class="accepted-papers-affiliation">TU Graz, Austria</span></li>
+        <li>Mario Werner <span class="accepted-papers-affiliation">TU Graz, Austria</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">The Hell Forgery, Self Modifying Codes Shoot again</span><ul class="accepted-papers-authors">
+        <li>Abdelhak Mesbah <span class="accepted-papers-affiliation">University Mhamed Bougara of Boumerdes, Algeria</span></li>
+        <li>Leo Reynaud <span class="accepted-papers-affiliation">University of Limoges, France</span></li>
+        <li>Jean-Louis Lanet <span class="accepted-papers-affiliation">INRIA-RBA, LHS-PEC, France</span></li>
+        <li>Mohamed Mezghiche <span class="accepted-papers-affiliation">University Mhamed Bougara of Boumerdes, Algeria</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Logical Attacks on Secured Containers of the Java Card Platform</span><ul class="accepted-papers-authors">
+        <li>Sergei Volokitin <span class="accepted-papers-affiliation">Riscure B.V., the Netherlands</span></li>
+        <li>Erik Poll <span class="accepted-papers-affiliation">Radboud University Nijmegen, the Netherlands</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Single-Trace Side-Channel Attacks on Scalar Multiplications with Precomputations</span><ul class="accepted-papers-authors">
+        <li>Kimmo J&auml;rvinen <span class="accepted-papers-affiliation">Aalto University, Finland</span></li>
+        <li>Josep Balasch <span class="accepted-papers-affiliation">KU Leuven, Belgium</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">A Compact and Exception-Free Ladder for All Short Weierstrass Elliptic Curves</span><ul class="accepted-papers-authors">
+        <li>Ruggero Susella <span class="accepted-papers-affiliation">STMicroelectronics, Italy</span></li>
+        <li>Sofia Montrasio <span class="accepted-papers-affiliation">Universit&agrave; degli Studi di Milano, Italy</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Inner Product Masking for Bitslice Ciphers and Security Order Amplification for Linear Leakages</span><ul class="accepted-papers-authors">
+        <li>Weijia Wang <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+        <li>François-Xavier Standaert <span class="accepted-papers-affiliation">UCL Crypto Group, Belgium</span></li>
+        <li>Yu Yu <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+        <li>Sihang Pu <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+        <li>Liu Junrong <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+        <li>Zheng Guo <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+        <li>Dawu Gu <span class="accepted-papers-affiliation">Shanghai Jiao Tong University, China</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Squeezing Polynomial Masking in Tower Fields</span><ul class="accepted-papers-authors">
+        <li>Fabrizio De Santis <span class="accepted-papers-affiliation">TU M&uuml;nchen, Germany</span></li>
+        <li>Tobias Bauer <span class="accepted-papers-affiliation">TU M&uuml;nchen, Germany</span></li>
+        <li>Georg Sigl <span class="accepted-papers-affiliation">TU M&uuml;nchen / Fraunhofer Institute AISEC, Germany</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">PRNGs for Masking Applications and Their Mapping to Evolvable Hardware</span><ul class="accepted-papers-authors">
+        <li>Stjepan Picek <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Bohan Yang <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Vladimir Rozic <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Jo Vliegen <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Jori Winderickx <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Thomas De Cnudde <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+        <li>Nele Mentens <span class="accepted-papers-affiliation">KU Leuven ESAT/COSIC and iMinds, Belgium</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">Automated Detection of Instruction Cache Leaks in RSA Software Implementations</span><ul class="accepted-papers-authors">
+        <li>Andreas Zankl <span class="accepted-papers-affiliation">Fraunhofer AISEC, Germany</span></li>
+        <li>Johann Heyszl <span class="accepted-papers-affiliation">Fraunhofer AISEC, Germany</span></li>
+        <li>Georg Sigl <span class="accepted-papers-affiliation">TU M&uuml;nchen, Germany</span></li>
+    </ul></li>
+    <li><span class="accepted-papers-title">An Analysis of the Learning Parity with Noise Assumptions Against Fault Attacks</span><ul class="accepted-papers-authors">
+        <li>Francesco Berti <span class="accepted-papers-affiliation">Universit&eacute; Catholique de Louvain, Belgium</span></li>
+        <li>Fran&ccedil;ois-Xavier Standaert <span class="accepted-papers-affiliation">Universit&eacute; Catholique de Louvain, Belgium</span></li>
+    </ul></li>
+</ul>

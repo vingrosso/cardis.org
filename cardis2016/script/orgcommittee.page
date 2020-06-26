@@ -1,0 +1,24 @@
+<h1>Organisation Committee</h1>
+
+<h3>General Chair</h3>
+<ul>
+    <li><span class="committee-name">Aur&eacute;lien Francillon</span>, <span class="affiliation">EURECOM</span></li>
+</ul>
+
+<h3>Web Chair</h3>
+<ul>
+    <li><span class="committee-name">Florian Lugou</span>, <span class="affiliation">Telecom ParisTech</span></li>
+</ul>
+
+<h3>Local Arrangement Chair</h3>
+<ul>
+    <li><span class="committee-name">Ludovic Apvrille</span>, <span class="affiliation">Telecom ParisTech</span></li>
+</ul>
+
+<h3>Conference Secretariat</h3>
+<address>
+    <strong>EURECOM</strong><br />
+    Campus SophiaTech, 450 Route des Chappes<br />
+    06410 Biot, FRANCE<br />
+    E-mail: <a href="mailto:aurelien.francillon@eurecom.fr">aurelien.francillon@eurecom.fr</a>
+</address>
