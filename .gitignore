@@ -1,1 +1,11 @@
 vendor
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+Gemfile.lock
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
